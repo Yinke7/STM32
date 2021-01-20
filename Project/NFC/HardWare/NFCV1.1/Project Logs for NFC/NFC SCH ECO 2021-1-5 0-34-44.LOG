@@ -1,0 +1,19 @@
+Remove Pin=J1-2 From Net=STM32_3V3
+Remove Pin=J2-2 From Net=ST95_VCC
+Remove Pin=J3-1 From Net=DP_3V3
+Remove Pin=LED1-2 From Net=LED
+Remove Pin=P1-4 From Net=STM32_3V3
+Remove Pin=R6-2 From Net=STM32_3V3
+Remove Pin=R8-2 From Net=STM32_3V3
+Remove Pin=U2-1 From Net=STM32_3V3
+Remove Pin=U2-5 From Net=STM32_3V3
+Remove Pin=U2-17 From Net=STM32_3V3
+Change Component Designator: OldDesignator=J3 NewDesignator=J1
+Add Pin To Net: Pin=J1-1 Old Net=DP_3V3 New Net=ST95_VCC
+Add Pin To Net: Pin=LED1-2 Old Net=LED New Net=GND
+Add Pin To Net: Pin=P1-4 Old Net=STM32_3V3 New Net=DP_3V3
+Add Pin To Net: Pin=R6-2 Old Net=STM32_3V3 New Net=DP_3V3
+Add Pin To Net: Pin=R8-2 Old Net=STM32_3V3 New Net=LED
+Add Pin To Net: Pin=U2-1 Old Net=STM32_3V3 New Net=DP_3V3
+Add Pin To Net: Pin=U2-5 Old Net=STM32_3V3 New Net=DP_3V3
+Add Pin To Net: Pin=U2-17 Old Net=STM32_3V3 New Net=DP_3V3

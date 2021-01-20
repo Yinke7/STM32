@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=P1 Old Footprint=2.54MM New Footprint=PIN-4-2.54-1.0
+Change Component Comment : Designator=P1 Old Comment=2.54mm New Comment=HDR1x4
+Added Room: Name=NFC

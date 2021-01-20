@@ -1,0 +1,10 @@
+Added Component: Designator=C117(SOP2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C118(SOP2)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=C117-1
+Added Pin To Net: NetName=ST95_VPS Pin=C117-2
+Added Pin To Net: NetName=GND Pin=C118-1
+Added Pin To Net: NetName=NetC115_2 Pin=C118-2
+Added Member To Class: ClassName=NFC Member=Component C117 1uF
+Added Member To Class: ClassName=NFC Member=Component C118 1uF

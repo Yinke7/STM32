@@ -1,0 +1,4 @@
+Change Net Name : Old Net Name=USB_DM_N New Net Name=USB_N
+Change Net Name : Old Net Name=USB_DP_P New Net Name=USB_P
+Added Differential Pair: Name=USB
+Added Room: Name=NFC

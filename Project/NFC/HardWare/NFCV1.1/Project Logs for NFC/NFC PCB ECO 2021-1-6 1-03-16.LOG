@@ -1,0 +1,97 @@
+Removed Pin From Net: NetName=GND Pin=P1-4
+Removed Pin From Net: NetName=ST95_SPI_SS Pin=U2-16
+Removed Pin From Net: NetName=ST95_SPI_MISO Pin=U2-21
+Removed Pin From Net: NetName=ST95_SPI_MOSI Pin=U2-22
+Removed Pin From Net: NetName=ST95_SPI_SCK Pin=U2-26
+Removed Pin From Net: NetName=KEY4 Pin=U2-27
+Removed Pin From Net: NetName=KEY3 Pin=U2-28
+Removed Pin From Net: NetName=KEY2 Pin=U2-29
+Removed Pin From Net: NetName=KEY1 Pin=U2-30
+Change Component Footprint: Designator=P1 Old Footprint=PIN-4-2.54-1.0 New Footprint=PIN-6-2.54-1.0
+Change Component Comment : Designator=R8 Old Comment=3K New Comment=10K
+Change Component Comment : Designator=P1 Old Comment=HDR1x4 New Comment=HDR1x6
+Added Component: Designator=LED2(SMDLED)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDocument"; Value = "Feb-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "3.2X1.6X1.1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=miso(TestPoint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=mosi(TestPoint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=nss(TestPoint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R205(res0402)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R206(res0402)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R207(res0402)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R208(res0402)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R209(res0402)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Component: Designator=R210(res0402)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Component: Designator=sck(TestPoint)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TP3(TestPoint)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=LED2-2
+Added Pin To Net: NetName=UART1_TX Pin=P1-4
+Added Pin To Net: NetName=UART1_RX Pin=P1-5
+Added Pin To Net: NetName=GND Pin=P1-6
+Added Pin To Net: NetName=USB_DP Pin=R205-1
+Added Pin To Net: NetName=USB_DM Pin=R206-1
+Added Pin To Net: NetName=STM32_3V3 Pin=R207-1
+Added Pin To Net: NetName=3V3 Pin=R208-2
+Added Pin To Net: NetName=UART1_RX Pin=R209-1
+Added Pin To Net: NetName=STM32_3V3 Pin=R209-2
+Added Pin To Net: NetName=UART1_TX Pin=R210-1
+Added Pin To Net: NetName=STM32_3V3 Pin=R210-2
+Added Pin To Net: NetName=RTC Pin=TP3-1
+Added Pin To Net: NetName=KEY4 Pin=U5-8
+Added Pin To Net: NetName=KEY3 Pin=U5-9
+Added Pin To Net: NetName=KEY2 Pin=U5-10
+Added Pin To Net: NetName=KEY1 Pin=U5-11
+Added Pin To Net: NetName=NetLED2_1 Pin=LED2-1
+Added Pin To Net: NetName=NetLED2_1 Pin=R208-1
+Added Net: Name=NetLED2_1
+Added Pin To Net: NetName=Netmiso_1 Pin=miso-1
+Added Pin To Net: NetName=Netmiso_1 Pin=U2-21
+Added Net: Name=Netmiso_1
+Added Pin To Net: NetName=Netmosi_1 Pin=mosi-1
+Added Pin To Net: NetName=Netmosi_1 Pin=U2-22
+Added Net: Name=Netmosi_1
+Added Pin To Net: NetName=Netnss_1 Pin=nss-1
+Added Pin To Net: NetName=Netnss_1 Pin=U2-16
+Added Net: Name=Netnss_1
+Added Pin To Net: NetName=NetR205_2 Pin=R205-2
+Added Pin To Net: NetName=NetR205_2 Pin=R207-2
+Added Pin To Net: NetName=NetR205_2 Pin=USB-3
+Added Net: Name=NetR205_2
+Added Pin To Net: NetName=NetR206_2 Pin=R206-2
+Added Pin To Net: NetName=NetR206_2 Pin=USB-2
+Added Net: Name=NetR206_2
+Added Pin To Net: NetName=Netsck_1 Pin=sck-1
+Added Pin To Net: NetName=Netsck_1 Pin=U2-26
+Added Net: Name=Netsck_1
+Added Member To Class: ClassName=NFC Member=Component LED2 LED1
+Added Member To Class: ClassName=NFC Member=Component miso TestPoint
+Added Member To Class: ClassName=NFC Member=Component mosi TestPoint
+Added Member To Class: ClassName=NFC Member=Component nss TestPoint
+Added Member To Class: ClassName=NFC Member=Component R205 25R
+Added Member To Class: ClassName=NFC Member=Component R206 25R
+Added Member To Class: ClassName=NFC Member=Component R207 10K
+Added Member To Class: ClassName=NFC Member=Component R208 10K
+Added Member To Class: ClassName=NFC Member=Component R209 10K
+Added Member To Class: ClassName=NFC Member=Component R210 10K
+Added Member To Class: ClassName=NFC Member=Component sck TestPoint
+Added Member To Class: ClassName=NFC Member=Component TP3 TestPoint
+Added Member To Class: ClassName=NFC Member=Component U4 AMS1117-3.3
+Added Room: Name=NFC

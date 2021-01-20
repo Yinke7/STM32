@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=D1-2
+Removed Member From Class: ClassName=NFC Member=D1
+Added Component: Designator=LED1(LED-0603)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=LED1-2
+Added Pin To Net: NetName=NetLED1_1 Pin=LED1-1
+Added Pin To Net: NetName=NetLED1_1 Pin=R8-1
+Added Net: Name=NetLED1_1
+Added Member To Class: ClassName=NFC Member=Component LED1 MHT192KGCT
+Added Room: Name=NFC

@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=GND Pin=FFC1-0
+Removed Pin From Net: NetName=GND Pin=U2-33
+Added Room: Name=NFC

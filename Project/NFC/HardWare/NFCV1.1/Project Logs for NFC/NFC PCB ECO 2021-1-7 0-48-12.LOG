@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=C201 NewDesignator=Crst
+Change Net Name : Old Net Name=NetC201_1 New Net Name=NetCrst_1
+Added Member To Class: ClassName=NFC Member=Component Crst 0.1uF
+Added Room: Name=NFC

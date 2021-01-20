@@ -1,0 +1,57 @@
+Protel Design System Design Rule Check
+PCB File : D:\ADProjectFiles\nfc\NFCV1.1\NFC.PcbDoc
+Date     : 2021/1/14
+Time     : 1:44:44
+
+Processing Rule : Clearance Constraint (Gap=4mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=4mil) (Max=50mil) (Preferred=10mil) ((InNet('AGND') OR InNet('GND')))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=4mil) (Max=500mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=4mil) (Max=50mil) (Preferred=10mil) ((InNet('VDD_SYS_3.3V') OR InNet('VDD_AV_3.3V') OR InNet('VDD_5V') OR InNet('VDD1V2-SYS') OR InNet('VDD1V1-EPHY') OR InNet('VDD-CPUX') OR InNet('VDD-CPUS') OR InNet('VDD-CPUFB') OR InNet('VCC-DRAM')))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Acute Angle Constraint (Minimum=60.000) (Disabled)(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=8mil) (Max=10000mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=7mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=1mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Waived Violations : 0
+Time Elapsed        : 00:00:00

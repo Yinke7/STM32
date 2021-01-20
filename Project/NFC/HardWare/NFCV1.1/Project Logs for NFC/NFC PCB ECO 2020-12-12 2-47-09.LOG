@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=GND Pin=FFC1-0
+Removed Pin From Net: NetName=NetBattery1_2 Pin=U1-1
+Removed Pin From Net: NetName=3V3 Pin=U1-6
+Removed Pin From Net: NetName=KEY5 Pin=U1-7
+Removed Pin From Net: NetName=KEY4 Pin=U1-8
+Removed Pin From Net: NetName=KEY3 Pin=U1-9
+Removed Pin From Net: NetName=KEY2 Pin=U1-10
+Removed Pin From Net: NetName=KEY1 Pin=U1-11
+Removed Pin From Net: NetName=VBAT Pin=U1-12
+Added Pin To Net: NetName=3V3 Pin=U1-1
+Added Pin To Net: NetName=NetBattery1_2 Pin=U1-6
+Added Pin To Net: NetName=VBAT Pin=U1-7
+Added Pin To Net: NetName=KEY5 Pin=U1-8
+Added Pin To Net: NetName=KEY4 Pin=U1-9
+Added Pin To Net: NetName=KEY3 Pin=U1-10
+Added Pin To Net: NetName=KEY2 Pin=U1-11
+Added Pin To Net: NetName=KEY1 Pin=U1-12
+Added Room: Name=NFC

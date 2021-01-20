@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND Pin=P1-1
+Removed Pin From Net: NetName=STM32_3V3 Pin=P1-4
+Added Pin To Net: NetName=STM32_3V3 Pin=P1-1
+Added Pin To Net: NetName=GND Pin=P1-4
+Added Member To Class: ClassName=NFC Member=Component U1 CodeSwitch
+Added Room: Name=NFC

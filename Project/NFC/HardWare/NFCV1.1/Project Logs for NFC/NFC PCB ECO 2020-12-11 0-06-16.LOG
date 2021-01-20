@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=ANT Pin=C104-1
+Removed Pin From Net: NetName=ANT Pin=C105-1
+Removed Pin From Net: NetName=ANT Pin=C108-2
+Removed Pin From Net: NetName=ANT Pin=C109-2
+Removed Pin From Net: NetName=ANT Pin=C110-2
+Removed Pin From Net: NetName=ANT Pin=R100-2
+Removed Pin From Net: NetName=ANT Pin=R101-1
+Added Component: Designator=T1(ST95ANT)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=ANT Pin=T1-1
+Added Pin To Net: NetName=ANT Pin=T1-1
+Change Net Name : Old Net Name=ANT New Net Name=NetC106_1
+Added Pin To Net: NetName=NetC104_1 Pin=C104-1
+Added Pin To Net: NetName=NetC104_1 Pin=C105-1
+Added Pin To Net: NetName=NetC104_1 Pin=C108-2
+Added Pin To Net: NetName=NetC104_1 Pin=C109-2
+Added Pin To Net: NetName=NetC104_1 Pin=C110-2
+Added Pin To Net: NetName=NetC104_1 Pin=R100-2
+Added Pin To Net: NetName=NetC104_1 Pin=R101-1
+Added Pin To Net: NetName=NetC104_1 Pin=T1-1
+Added Pin To Net: NetName=NetC104_1 Pin=T1-1
+Added Net: Name=NetC104_1
+Added Member To Class: ClassName=NFC Member=Component T1 ST95ANT
+Added Room: Name=NFC

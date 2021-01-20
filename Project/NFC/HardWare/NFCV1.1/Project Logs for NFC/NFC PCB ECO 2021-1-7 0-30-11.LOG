@@ -1,0 +1,20 @@
+Added Component: Designator=C205(0603p)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=C206(0603p)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=C207(0402cap)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ST95_VCC Pin=C205-1
+Added Pin To Net: NetName=GND Pin=C205-2
+Added Pin To Net: NetName=STM32_3V3 Pin=C206-1
+Added Pin To Net: NetName=GND Pin=C206-2
+Added Pin To Net: NetName=AMS1117_3V3 Pin=C207-1
+Added Pin To Net: NetName=GND Pin=C207-2
+Added Member To Class: ClassName=NFC Member=Component C200 0.1uF
+Added Member To Class: ClassName=NFC Member=Component C205 10uF
+Added Member To Class: ClassName=NFC Member=Component C206 10uF
+Added Member To Class: ClassName=NFC Member=Component C207 1uF
+Added Room: Name=NFC

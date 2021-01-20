@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=C3 NewDesignator=C200
+Added Component: Designator=C201(0402cap)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=NFC Member=Component C201 0.1uF
+Added Room: Name=NFC

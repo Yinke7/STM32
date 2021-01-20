@@ -1,0 +1,11 @@
+Change Component Comment : Designator=L10 Old Comment=560nH New Comment=220R,2.0A,0.05DCR
+Change Component Comment : Designator=L11 Old Comment=560nH New Comment=220R,2.0A,0.05DCR
+Change Component Comment : Designator=L12 Old Comment=742792042 New Comment=220R,2.0A,0.05DCR
+Change Component Comment : Designator=L13 Old Comment=742792042 New Comment=220R,2.0A,0.05DCR
+Change Component Comment : Designator=L14 Old Comment=742792093 New Comment=20k
+Change Component Library : Designator=L10 Old Library=WarShip V3 STM32103·â×°¿â.IntLib New Library=WARSHIP.SCHLIB
+Change Component Library : Designator=L11 Old Library=WarShip V3 STM32103·â×°¿â.IntLib New Library=WARSHIP.SCHLIB
+Change Component Library : Designator=L12 Old Library=WarShip V3 STM32103·â×°¿â.IntLib New Library=WARSHIP.SCHLIB
+Change Component Library : Designator=L13 Old Library=WarShip V3 STM32103·â×°¿â.IntLib New Library=WARSHIP.SCHLIB
+Change Component Library : Designator=L14 Old Library=WarShip V3 STM32103·â×°¿â.IntLib New Library=WARSHIP.SCHLIB
+Added Room: Name=NFC

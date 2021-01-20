@@ -1,0 +1,14 @@
+Added Component: Designator=U?(LQFP64_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=NFC Member=Component U? STM32F103RBT6
+Added Room: Name=NFC

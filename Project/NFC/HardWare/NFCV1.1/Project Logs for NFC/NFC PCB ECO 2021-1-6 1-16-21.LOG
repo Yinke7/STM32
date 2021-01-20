@@ -1,0 +1,36 @@
+Removed Pin From Net: NetName=INK_MOSI Pin=U2-11
+Removed Pin From Net: NetName=INK_CLK Pin=U2-12
+Removed Pin From Net: NetName=INK_CS Pin=U2-13
+Removed Pin From Net: NetName=INK_DC Pin=U2-14
+Removed Pin From Net: NetName=INK_RST Pin=U2-15
+Removed Pin From Net: NetName=INK_BUSY Pin=U2-18
+Removed Pin From Net: NetName=ST95_IRQ_IN Pin=U2-19
+Removed Pin From Net: NetName=ST95_IRQ_OUT Pin=U2-20
+Added Component: Designator=C3(0402cap)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=C301(0402cap)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R6(res0402)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NRST Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C301-1
+Added Pin To Net: NetName=NetC301_2 Pin=C301-2
+Added Pin To Net: NetName=NRST Pin=R6-1
+Added Pin To Net: NetName=STM32_3V3 Pin=R6-2
+Added Pin To Net: NetName=INK_MOSI Pin=U5-20
+Added Pin To Net: NetName=INK_CLK Pin=U5-21
+Added Pin To Net: NetName=INK_CS Pin=U5-22
+Added Pin To Net: NetName=INK_DC Pin=U5-23
+Added Pin To Net: NetName=INK_RST Pin=U5-24
+Added Pin To Net: NetName=INK_BUSY Pin=U5-25
+Added Pin To Net: NetName=ST95_IRQ_IN Pin=U5-29
+Added Pin To Net: NetName=ST95_IRQ_OUT Pin=U5-30
+Added Pin To Net: NetName=ST95_SPI_NSS Pin=U5-33
+Added Net: Name=ST95_SPI_NSS
+Added Member To Class: ClassName=NFC Member=Component C3 0.1uF
+Added Member To Class: ClassName=NFC Member=Component C301 22p
+Added Member To Class: ClassName=NFC Member=Component R6 10K
+Added Room: Name=NFC

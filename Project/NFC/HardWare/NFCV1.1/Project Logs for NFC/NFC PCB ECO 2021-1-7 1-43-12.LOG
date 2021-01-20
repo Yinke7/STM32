@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=STM32_3V3 Pin=R211-2
+Removed Pin From Net: NetName=STM32_3V3 Pin=U2-1
+Removed Pin From Net: NetName=STM32_3V3 Pin=U2-5
+Removed Pin From Net: NetName=STM32_3V3 Pin=U2-17
+Change Component Comment : Designator=R207 Old Comment=10K New Comment=1.5K
+Added Component: Designator=R212(res0402)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=STM32L0_VCC Pin=R211-2
+Added Pin To Net: NetName=STM32L0_VCC Pin=U2-1
+Added Pin To Net: NetName=STM32L0_VCC Pin=U2-5
+Added Pin To Net: NetName=STM32L0_VCC Pin=U2-17
+Added Net: Name=STM32L0_VCC
+Added Member To Class: ClassName=NFC Member=Component R212 0R
+Added Room: Name=NFC

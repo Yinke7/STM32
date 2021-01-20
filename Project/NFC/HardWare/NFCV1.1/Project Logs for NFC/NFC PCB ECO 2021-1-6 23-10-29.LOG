@@ -1,0 +1,18 @@
+Change Component Designator: OldDesignator=LED2 NewDesignator=PWR
+Added Component: Designator=DS(LED-0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R302(res0402)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=STM32_3V3 Pin=R302-2
+Change Net Name : Old Net Name=NetLED2_1 New Net Name=NetPWR_1
+Added Pin To Net: NetName=DS0 Pin=DS-2
+Added Pin To Net: NetName=DS0 Pin=U5-41
+Added Net: Name=DS0
+Added Pin To Net: NetName=NetDS_1 Pin=DS-1
+Added Pin To Net: NetName=NetDS_1 Pin=R302-1
+Added Net: Name=NetDS_1
+Added Member To Class: ClassName=NFC Member=Component C200 0.1uF
+Added Member To Class: ClassName=NFC Member=Component DS MHT192KGCT
+Added Member To Class: ClassName=NFC Member=Component R302 10K
+Added Room: Name=NFC

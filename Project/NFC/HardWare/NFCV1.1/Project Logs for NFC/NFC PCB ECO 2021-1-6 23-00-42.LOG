@@ -1,0 +1,5 @@
+Change Component Comment : Designator=U3 Old Comment=TPS61221DCKT New Comment=TPS61221DCKS
+Added Pin To Net: NetName=LDO3V3 Pin=C201-1
+Added Pin To Net: NetName=GND Pin=C201-2
+Added Member To Class: ClassName=NFC Member=Component C200 0.1uF
+Added Room: Name=NFC

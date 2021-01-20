@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=LED2 Old Footprint=SMDLED New Footprint=LED-0603
+Change Component Comment : Designator=LED2 Old Comment=LED1 New Comment=MHT192KGCT
+Change component parameters: Designator = "LED2"; Footprint = "LED-0603"; UniqueID = "\XAPNTFPZ"
+Change component parameters. Clean all parameters for all variants
+Added Room: Name=NFC

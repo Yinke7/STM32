@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=STM32_3V3 Pin=R8-2
+Added Pin To Net: NetName=STM32L0_VCC Pin=R8-2
+Added Room: Name=NFC

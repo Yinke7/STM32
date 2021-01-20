@@ -1,0 +1,6 @@
+Added Component: Designator=L13(0805)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=ST95_VCC Pin=L13-1
+Added Pin To Net: NetName=NetL13_2 Pin=L13-2
+Added Member To Class: ClassName=NFC Member=Component L13 220R,2.0A,0.05DCR
+Added Room: Name=NFC

@@ -1,0 +1,9 @@
+Change Component Footprint: Designator=R1 Old Footprint=RES_0402 New Footprint=res0402
+Change Component Footprint: Designator=R6 Old Footprint=RES_0402 New Footprint=res0402
+Change Component Footprint: Designator=R7 Old Footprint=RES_0402 New Footprint=res0402
+Change Component Footprint: Designator=R8 Old Footprint=RES_0402 New Footprint=res0402
+Change Component Footprint: Designator=R9 Old Footprint=RES_0402 New Footprint=res0402
+Change Component Footprint: Designator=R10 Old Footprint=RES_0402 New Footprint=res0402
+Change Component Footprint: Designator=R11 Old Footprint=RES_0402 New Footprint=res0402
+Change Component Footprint: Designator=R12 Old Footprint=RES_0402 New Footprint=res0402
+Added Room: Name=NFC

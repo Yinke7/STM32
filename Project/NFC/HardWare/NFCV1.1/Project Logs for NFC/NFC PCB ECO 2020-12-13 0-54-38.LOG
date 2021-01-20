@@ -1,0 +1,24 @@
+Change Component Comment : Designator=R17 Old Comment=10K New Comment=0R
+Change Component Comment : Designator=R18 Old Comment=10K New Comment=0R
+Change Component Comment : Designator=R24 Old Comment=10K New Comment=0R
+Change Component Comment : Designator=R25 Old Comment=10K New Comment=0R
+Change Component Comment : Designator=R14 Old Comment=10K New Comment=3.3k
+Change Component Comment : Designator=R15 Old Comment=10K New Comment=3.3k
+Change Component Comment : Designator=R20 Old Comment=10K New Comment=3.3k
+Change Component Comment : Designator=R21 Old Comment=10K New Comment=3.3k
+Change Component Comment : Designator=R16 Old Comment=10K New Comment=NC
+Change Component Comment : Designator=R19 Old Comment=10K New Comment=NC
+Change Component Comment : Designator=R22 Old Comment=10K New Comment=NC
+Change Component Comment : Designator=R23 Old Comment=10K New Comment=NC
+Change Component Comment : Designator=L14 Old Comment=20k New Comment=742792093
+Change Component Comment : Designator=C20 Old Comment=104 New Comment=1nf
+Change Component Comment : Designator=C111 Old Comment=104 New Comment=10p
+Change Component Comment : Designator=C112 Old Comment=104 New Comment=10p
+Change Component Comment : Designator=L10 Old Comment=220R,2.0A,0.05DCR New Comment=560nh
+Change Component Comment : Designator=L11 Old Comment=220R,2.0A,0.05DCR New Comment=560nh
+Change Component Comment : Designator=L12 Old Comment=220R,2.0A,0.05DCR New Comment=742792042
+Change Component Comment : Designator=L13 Old Comment=220R,2.0A,0.05DCR New Comment=742792042
+Change Component Comment : Designator=FL1 Old Comment=NFM18PS New Comment=NFM18PS105R0J3D
+Change Component Comment : Designator=Y1 Old Comment=NX2016 New Comment=27.12MHz
+Change Component Designator: OldDesignator=Y1 NewDesignator=NX2016
+Added Room: Name=NFC

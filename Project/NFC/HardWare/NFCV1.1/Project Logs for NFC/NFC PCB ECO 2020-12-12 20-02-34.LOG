@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=3V3 Pin=R30-2
+Removed Pin From Net: NetName=KEY5 Pin=R200-1
+Removed Pin From Net: NetName=KEY5 Pin=U1-8
+Removed Pin From Net: NetName=3V3 Pin=U4-2
+Removed Pin From Net: NetName=3V3 Pin=U4-4
+Removed Member From Class: ClassName=NFC Member=R30
+Added Pin To Net: NetName=3V3 Pin=R10-1
+Added Pin To Net: NetName=3V3 Pin=U3-4
+Added Pin To Net: NetName=AMS1117_3V3 Pin=R200-1
+Added Pin To Net: NetName=AMS1117_3V3 Pin=U1-8
+Added Pin To Net: NetName=AMS1117_3V3 Pin=U4-2
+Added Pin To Net: NetName=AMS1117_3V3 Pin=U4-4
+Added Net: Name=AMS1117_3V3
+Added Room: Name=NFC

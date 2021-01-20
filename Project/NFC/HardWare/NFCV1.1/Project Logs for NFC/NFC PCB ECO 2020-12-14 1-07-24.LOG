@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=P1 Old Footprint=HDR1X4 New Footprint=2.54MM
+Change Component Footprint: Designator=NX2016 Old Footprint=SOP4 New Footprint=SMD-2016_4P
+Added Room: Name=NFC

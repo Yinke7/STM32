@@ -1,0 +1,54 @@
+Removed Pin From Net: NetName=ST95_VCC Pin=J1-1
+Removed Pin From Net: NetName=3V3 Pin=J1-2
+Removed Pin From Net: NetName=GND Pin=LED1-2
+Removed Pin From Net: NetName=3V3 Pin=P1-4
+Removed Pin From Net: NetName=3V3 Pin=R6-2
+Removed Pin From Net: NetName=LED Pin=R8-2
+Removed Pin From Net: NetName=3V3 Pin=R10-1
+Removed Pin From Net: NetName=3V3 Pin=U1-1
+Removed Pin From Net: NetName=3V3 Pin=U1-2
+Removed Pin From Net: NetName=3V3 Pin=U1-3
+Removed Pin From Net: NetName=3V3 Pin=U1-4
+Removed Pin From Net: NetName=3V3 Pin=U1-5
+Removed Pin From Net: NetName=VBAT Pin=U1-7
+Removed Pin From Net: NetName=3V3 Pin=U2-1
+Removed Pin From Net: NetName=3V3 Pin=U2-5
+Removed Pin From Net: NetName=3V3 Pin=U2-17
+Removed Pin From Net: NetName=3V3 Pin=U3-4
+Change Component Designator: OldDesignator=J1 NewDesignator=J3
+Added Component: Designator=J1(0603P)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J2(0603P)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=VBAT Pin=Battery1-2
+Added Pin To Net: NetName=ST95_VCC Pin=J2-2
+Added Pin To Net: NetName=3V3 Pin=J3-1
+Added Pin To Net: NetName=LED Pin=LED1-2
+Change Net Name : Old Net Name=3V3 New Net Name=DP_3V3
+Change Net Name : Old Net Name=VBAT New Net Name=NetBattery1_2
+Added Pin To Net: NetName=3V3 Pin=J1-1
+Added Pin To Net: NetName=3V3 Pin=J2-1
+Added Pin To Net: NetName=3V3 Pin=J3-2
+Added Pin To Net: NetName=3V3 Pin=U1-5
+Added Pin To Net: NetName=3V3 Pin=U1-6
+Added Net: Name=3V3
+Added Pin To Net: NetName=LDO3V3 Pin=R10-1
+Added Pin To Net: NetName=LDO3V3 Pin=U1-7
+Added Pin To Net: NetName=LDO3V3 Pin=U3-4
+Added Net: Name=LDO3V3
+Added Pin To Net: NetName=NetU1_1 Pin=U1-1
+Added Pin To Net: NetName=NetU1_1 Pin=U1-2
+Added Pin To Net: NetName=NetU1_1 Pin=U1-3
+Added Pin To Net: NetName=NetU1_1 Pin=U1-4
+Added Net: Name=NetU1_1
+Added Pin To Net: NetName=STM32_3V3 Pin=J1-2
+Added Pin To Net: NetName=STM32_3V3 Pin=P1-4
+Added Pin To Net: NetName=STM32_3V3 Pin=R6-2
+Added Pin To Net: NetName=STM32_3V3 Pin=R8-2
+Added Pin To Net: NetName=STM32_3V3 Pin=U2-1
+Added Pin To Net: NetName=STM32_3V3 Pin=U2-5
+Added Pin To Net: NetName=STM32_3V3 Pin=U2-17
+Added Net: Name=STM32_3V3
+Added Member To Class: ClassName=NFC Member=Component J2 0R
+Added Member To Class: ClassName=NFC Member=Component J3 0R
+Added Room: Name=NFC

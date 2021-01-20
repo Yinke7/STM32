@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=NRST Pin=U2-4
+Added Component: Designator=C200(0402cap)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Added Component: Designator=R211(res0402)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "22R"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C200-2
+Added Pin To Net: NetName=STM32_3V3 Pin=R211-2
+Added Pin To Net: NetName=NetC200_1 Pin=C200-1
+Added Pin To Net: NetName=NetC200_1 Pin=R211-1
+Added Pin To Net: NetName=NetC200_1 Pin=U2-4
+Added Net: Name=NetC200_1
+Added Member To Class: ClassName=NFC Member=Component C200 0.1uF
+Added Member To Class: ClassName=NFC Member=Component R211 10K
+Added Room: Name=NFC

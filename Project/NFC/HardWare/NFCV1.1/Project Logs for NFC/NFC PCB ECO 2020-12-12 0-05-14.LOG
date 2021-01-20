@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=R201 Old Footprint=0603P New Footprint=SOP2
+Change Component Footprint: Designator=R202 Old Footprint=0603P New Footprint=SOP2
+Change Component Footprint: Designator=R203 Old Footprint=0603P New Footprint=SOP2
+Change Component Footprint: Designator=R204 Old Footprint=0603P New Footprint=SOP2
+Added Room: Name=NFC

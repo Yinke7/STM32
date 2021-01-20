@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=DS0 Pin=U5-41
+Added Pin To Net: NetName=DS0 Pin=U5-51
+Added Member To Class: ClassName=NFC Member=Component C200 0.1uF
+Added Room: Name=NFC

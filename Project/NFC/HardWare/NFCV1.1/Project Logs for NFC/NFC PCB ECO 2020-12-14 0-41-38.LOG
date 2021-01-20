@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=U4 Old Footprint=AMS1117 New Footprint=SOT-223
+Added Member To Class: ClassName=NFC Member=Component U0 ST95HF
+Added Room: Name=NFC

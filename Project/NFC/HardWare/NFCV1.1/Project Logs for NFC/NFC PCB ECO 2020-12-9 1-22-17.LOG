@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=J1 Old Footprint=0402-0R New Footprint=SOP2
+Change Component Comment : Designator=J1 Old Comment=ÌøÏß New Comment=0R
+Change component parameters: Designator = "J1"; Footprint = "SOP2"; UniqueID = "\VZCMLWCP"
+Change component parameters. Clean all parameters for all variants
+Added Pin To Net: NetName=ST95_VCC Pin=J1-1

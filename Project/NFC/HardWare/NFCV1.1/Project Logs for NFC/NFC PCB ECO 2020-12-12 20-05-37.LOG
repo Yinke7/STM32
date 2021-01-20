@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=AMS1117_3V3 Pin=R200-1
+Removed Pin From Net: NetName=GND Pin=R200-2
+Removed Member From Class: ClassName=NFC Member=R200
+Added Room: Name=NFC

@@ -1,0 +1,9 @@
+Added Pin To Net: NetName=NetC106_1 Pin=C104-1
+Added Pin To Net: NetName=NetC106_1 Pin=C105-1
+Added Pin To Net: NetName=NetC106_1 Pin=C108-2
+Added Pin To Net: NetName=NetC106_1 Pin=C109-2
+Added Pin To Net: NetName=NetC106_1 Pin=C110-2
+Added Pin To Net: NetName=NetC106_1 Pin=R100-2
+Added Pin To Net: NetName=NetC106_1 Pin=R101-1
+Change Net Name : Old Net Name=NetC106_1 New Net Name=NetC104_1
+Added Room: Name=NFC

@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=UART1_TX Pin=P1-2
+Removed Pin From Net: NetName=UART1_RX Pin=P1-3
+Removed Pin From Net: NetName=UART1_RX Pin=R209-1
+Removed Pin From Net: NetName=UART1_TX Pin=R210-1
+Added Pin To Net: NetName=UART1_RX Pin=P1-2
+Added Pin To Net: NetName=UART1_TX Pin=P1-3
+Added Pin To Net: NetName=UART1_TX Pin=R209-1
+Added Pin To Net: NetName=UART1_RX Pin=R210-1
+Added Room: Name=NFC

@@ -1,0 +1,9 @@
+Added Component: Designator=USB(MICRO-USB)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=USB-5
+Added Pin To Net: NetName=BAT+ Pin=Battery1-2
+Added Pin To Net: NetName=BAT+ Pin=U1-6
+Added Pin To Net: NetName=BAT+ Pin=USB-1
+Added Net: Name=BAT+
+Added Member To Class: ClassName=NFC Member=Component USB
+Added Room: Name=NFC

@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=ANT Pin=S1-a
+Removed Pin From Net: NetName=ANT Pin=S1-b
+Removed Pin From Net: NetName=ANT Pin=S1-c
+Removed Pin From Net: NetName=ANT Pin=S1-d
+Removed Pin From Net: NetName=ANT Pin=S1-e
+Removed Pin From Net: NetName=ANT Pin=S1-f
+Removed Pin From Net: NetName=ANT Pin=S1-g
+Removed Member From Class: ClassName=NFC Member=S1
+Added Room: Name=NFC

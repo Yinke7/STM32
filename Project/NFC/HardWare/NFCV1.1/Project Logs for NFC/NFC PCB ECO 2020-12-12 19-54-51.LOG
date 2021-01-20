@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=3V3 Pin=R10-1
+Removed Pin From Net: NetName=3V3 Pin=U3-4
+Added Component: Designator=R30(0603P)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U4(AMS1117)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=3V3 Pin=R30-2
+Added Pin To Net: NetName=GND Pin=U4-1
+Added Pin To Net: NetName=3V3 Pin=U4-2
+Added Pin To Net: NetName=3V3 Pin=U4-4
+Added Pin To Net: NetName=NetBattery1_2 Pin=Battery1-2
+Added Pin To Net: NetName=NetBattery1_2 Pin=U1-6
+Added Net: Name=NetBattery1_2
+Added Pin To Net: NetName=NetR10_1 Pin=R10-1
+Added Pin To Net: NetName=NetR10_1 Pin=R30-1
+Added Pin To Net: NetName=NetR10_1 Pin=U3-4
+Added Net: Name=NetR10_1
+Added Pin To Net: NetName=NetU4_3 Pin=U4-3
+Added Pin To Net: NetName=NetU4_3 Pin=USB-1
+Added Net: Name=NetU4_3
+Added Member To Class: ClassName=NFC Member=Component R30 0R
+Added Member To Class: ClassName=NFC Member=Component U0 ST95HF
+Added Member To Class: ClassName=NFC Member=Component U4 AMS1117-3.3
+Added Room: Name=NFC

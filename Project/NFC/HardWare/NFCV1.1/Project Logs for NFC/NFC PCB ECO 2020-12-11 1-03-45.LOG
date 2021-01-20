@@ -1,0 +1,6 @@
+Added Component: Designator=T1(ST95ANT)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetC104_1 Pin=T1-1
+Added Pin To Net: NetName=NetC106_1 Pin=T1-1
+Added Member To Class: ClassName=NFC Member=Component T1 ST95ANT
+Added Room: Name=NFC

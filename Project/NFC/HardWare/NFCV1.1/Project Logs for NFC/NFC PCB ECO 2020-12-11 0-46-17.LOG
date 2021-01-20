@@ -1,0 +1,35 @@
+Change Component Footprint: Designator=C100 Old Footprint=SOP2 New Footprint=0603P
+Change Component Footprint: Designator=C101 Old Footprint=SOP2 New Footprint=0603P
+Change Component Footprint: Designator=C102 Old Footprint=SOP2 New Footprint=0603P
+Change Component Footprint: Designator=C103 Old Footprint=SOP2 New Footprint=0603P
+Change Component Footprint: Designator=C104 Old Footprint=SOP2 New Footprint=0603P
+Change Component Footprint: Designator=C105 Old Footprint=SOP2 New Footprint=0603P
+Change Component Footprint: Designator=C106 Old Footprint=SOP2 New Footprint=0603P
+Change Component Footprint: Designator=C107 Old Footprint=SOP2 New Footprint=0603P
+Change Component Footprint: Designator=C108 Old Footprint=SOP2 New Footprint=0603P
+Change Component Footprint: Designator=C109 Old Footprint=SOP2 New Footprint=0603P
+Change Component Footprint: Designator=C110 Old Footprint=SOP2 New Footprint=0603P
+Change Component Footprint: Designator=R100 Old Footprint=SOP2 New Footprint=0603P
+Change Component Footprint: Designator=R101 Old Footprint=SOP2 New Footprint=0603P
+Change Component Footprint: Designator=R102 Old Footprint=SOP2 New Footprint=0603P
+Change Component Comment : Designator=R101 Old Comment=10K New Comment=330R
+Change Component Comment : Designator=R102 Old Comment=10K New Comment=330R
+Change Component Comment : Designator=R100 Old Comment=10K New Comment=NC
+Change Component Comment : Designator=C105 Old Comment=104 New Comment=47p
+Change Component Comment : Designator=C106 Old Comment=104 New Comment=47p
+Change Component Comment : Designator=C108 Old Comment=104 New Comment=82p
+Change Component Comment : Designator=C100 Old Comment=104 New Comment=100p
+Change Component Comment : Designator=C101 Old Comment=104 New Comment=100p
+Change Component Comment : Designator=C102 Old Comment=104 New Comment=100p
+Change Component Comment : Designator=C103 Old Comment=104 New Comment=100p
+Change Component Comment : Designator=C104 Old Comment=104 New Comment=NC
+Change Component Comment : Designator=C107 Old Comment=104 New Comment=NC
+Change Component Comment : Designator=C109 Old Comment=104 New Comment=NC
+Change Component Comment : Designator=C110 Old Comment=104 New Comment=NC
+Added Pin To Net: NetName=GND Pin=C100-1
+Added Pin To Net: NetName=GND Pin=C101-1
+Added Pin To Net: NetName=GND Pin=C102-2
+Added Pin To Net: NetName=GND Pin=C103-2
+Added Pin To Net: NetName=NetC106_1 Pin=T1-1
+Added Pin To Net: NetName=NetC106_1 Pin=T1-1
+Added Room: Name=NFC

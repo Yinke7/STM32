@@ -1,0 +1,67 @@
+Added Component: Designator=C300(0402cap)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C301(0402cap)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R300(res0402)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R301(res0402)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Y2(XTAL_US)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C300-1
+Added Pin To Net: NetName=GND Pin=C301-1
+Added Pin To Net: NetName=GND Pin=R300-1
+Added Pin To Net: NetName=STM32_3V3 Pin=U4-1
+Added Pin To Net: NetName=NRST Pin=U4-7
+Added Pin To Net: NetName=GND Pin=U4-12
+Added Pin To Net: NetName=STM32_3V3 Pin=U4-13
+Added Pin To Net: NetName=GND Pin=U4-18
+Added Pin To Net: NetName=STM32_3V3 Pin=U4-19
+Added Pin To Net: NetName=GND Pin=U4-31
+Added Pin To Net: NetName=STM32_3V3 Pin=U4-32
+Added Pin To Net: NetName=ST95_SPI_SCK Pin=U4-34
+Added Pin To Net: NetName=ST95_SPI_MISO Pin=U4-35
+Added Pin To Net: NetName=ST95_SPI_MOSI Pin=U4-36
+Added Pin To Net: NetName=SWDIO Pin=U4-46
+Added Pin To Net: NetName=GND Pin=U4-47
+Added Pin To Net: NetName=STM32_3V3 Pin=U4-48
+Added Pin To Net: NetName=SWCLK Pin=U4-49
+Added Pin To Net: NetName=GND Pin=U4-63
+Added Pin To Net: NetName=STM32_3V3 Pin=U4-64
+Added Pin To Net: NetName=NetC300_2 Pin=C300-2
+Added Pin To Net: NetName=NetC300_2 Pin=R301-2
+Added Pin To Net: NetName=NetC300_2 Pin=U4-5
+Added Pin To Net: NetName=NetC300_2 Pin=Y2-1
+Added Net: Name=NetC300_2
+Added Pin To Net: NetName=NetC301_2 Pin=C301-2
+Added Pin To Net: NetName=NetC301_2 Pin=R301-1
+Added Pin To Net: NetName=NetC301_2 Pin=U4-6
+Added Pin To Net: NetName=NetC301_2 Pin=Y2-2
+Added Net: Name=NetC301_2
+Added Pin To Net: NetName=NetR300_2 Pin=R300-2
+Added Pin To Net: NetName=NetR300_2 Pin=U4-60
+Added Net: Name=NetR300_2
+Added Pin To Net: NetName=RTC Pin=U4-2
+Added Net: Name=RTC
+Added Pin To Net: NetName=UART1_RX Pin=U4-43
+Added Net: Name=UART1_RX
+Added Pin To Net: NetName=UART1_TX Pin=U4-42
+Added Net: Name=UART1_TX
+Added Pin To Net: NetName=USB_DM Pin=U4-44
+Added Net: Name=USB_DM
+Added Pin To Net: NetName=USB_DP Pin=U4-45
+Added Net: Name=USB_DP
+Added Pin To Net: NetName=Wakeup Pin=U4-14
+Added Net: Name=Wakeup
+Added Member To Class: ClassName=NFC Member=Component C300 22p
+Added Member To Class: ClassName=NFC Member=Component C301 22p
+Added Member To Class: ClassName=NFC Member=Component R300 10K
+Added Member To Class: ClassName=NFC Member=Component R301 1M
+Added Member To Class: ClassName=NFC Member=Component U1 CodeSwitch
+Added Member To Class: ClassName=NFC Member=Component U4 STM32F103RBT6
+Added Member To Class: ClassName=NFC Member=Component Y2 8MHz
+Added Room: Name=NFC

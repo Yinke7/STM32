@@ -1,0 +1,59 @@
+Removed Pin From Net: NetName=GND Pin=FFC1-0
+Removed Pin From Net: NetName=NetBattery1_2 Pin=K1-1
+Removed Pin From Net: NetName=VBAT Pin=K1-2
+Removed Pin From Net: NetName=GND Pin=U2-33
+Removed Member From Class: ClassName=NFC Member=K1
+Added Component: Designator=R200(SOP2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R201(0603P)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R202(0603P)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R203(0603P)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R204(0603P)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U1(SOP12)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=R200-2
+Added Pin To Net: NetName=GND Pin=R201-1
+Added Pin To Net: NetName=GND Pin=R202-1
+Added Pin To Net: NetName=GND Pin=R203-1
+Added Pin To Net: NetName=GND Pin=R204-1
+Added Pin To Net: NetName=NetBattery1_2 Pin=U1-1
+Added Pin To Net: NetName=3V3 Pin=U1-2
+Added Pin To Net: NetName=3V3 Pin=U1-3
+Added Pin To Net: NetName=3V3 Pin=U1-4
+Added Pin To Net: NetName=3V3 Pin=U1-5
+Added Pin To Net: NetName=3V3 Pin=U1-6
+Added Pin To Net: NetName=VBAT Pin=U1-12
+Added Pin To Net: NetName=KEY1 Pin=R204-2
+Added Pin To Net: NetName=KEY1 Pin=U1-11
+Added Pin To Net: NetName=KEY1 Pin=U2-2
+Added Net: Name=KEY1
+Added Pin To Net: NetName=KEY2 Pin=R203-2
+Added Pin To Net: NetName=KEY2 Pin=U1-10
+Added Pin To Net: NetName=KEY2 Pin=U2-3
+Added Net: Name=KEY2
+Added Pin To Net: NetName=KEY3 Pin=R202-2
+Added Pin To Net: NetName=KEY3 Pin=U1-9
+Added Pin To Net: NetName=KEY3 Pin=U2-6
+Added Net: Name=KEY3
+Added Pin To Net: NetName=KEY4 Pin=R201-2
+Added Pin To Net: NetName=KEY4 Pin=U1-8
+Added Pin To Net: NetName=KEY4 Pin=U2-7
+Added Net: Name=KEY4
+Added Pin To Net: NetName=KEY5 Pin=R200-1
+Added Pin To Net: NetName=KEY5 Pin=U1-7
+Added Pin To Net: NetName=KEY5 Pin=U2-9
+Added Net: Name=KEY5
+Added Pin To Net: NetName=KEY6 Pin=U2-10
+Added Net: Name=KEY6
+Added Member To Class: ClassName=NFC Member=Component R200 3.3k
+Added Member To Class: ClassName=NFC Member=Component R201 3.3k
+Added Member To Class: ClassName=NFC Member=Component R202 3.3k
+Added Member To Class: ClassName=NFC Member=Component R203 3.3k
+Added Member To Class: ClassName=NFC Member=Component R204 3.3k
+Added Member To Class: ClassName=NFC Member=Component U0 ST95HF
+Added Member To Class: ClassName=NFC Member=Component U1 CodeSwitch
+Added Room: Name=NFC

@@ -1,0 +1,44 @@
+Removed Pin From Net: NetName=NetL10_1 Pin=U0-1
+Removed Pin From Net: NetName=NetL11_1 Pin=U0-2
+Removed Pin From Net: NetName=ST95_RX1 Pin=U0-5
+Removed Pin From Net: NetName=ST95_RX2 Pin=U0-6
+Removed Pin From Net: NetName=GND Pin=U0-8
+Removed Pin From Net: NetName=ST95_RS0 Pin=U0-9
+Removed Pin From Net: NetName=ST95_IRQ_IN Pin=U0-12
+Removed Pin From Net: NetName=ST95_VPS Pin=U0-13
+Removed Pin From Net: NetName=ST95_IRQ_OUT Pin=U0-14
+Removed Pin From Net: NetName=ST95_SPI_SS Pin=U0-15
+Removed Pin From Net: NetName=ST95_SPI_MISO Pin=U0-16
+Removed Pin From Net: NetName=ST95_SPI_MOSI Pin=U0-17
+Removed Pin From Net: NetName=ST95_SPI_SCK Pin=U0-18
+Removed Pin From Net: NetName=Interface_pin Pin=U0-19
+Removed Pin From Net: NetName=NetR14_1 Pin=U0-20
+Removed Pin From Net: NetName=NetR13_1 Pin=U0-21
+Removed Pin From Net: NetName=ST95_XIN Pin=U0-29
+Removed Pin From Net: NetName=ST95_XOUT Pin=U0-30
+Removed Pin From Net: NetName=GND Pin=U0-31
+Removed Pin From Net: NetName=ST95_VPS_TX Pin=U0-32
+Added Component: Designator=U0(Quad32)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetL10_1 Pin=U0-1
+Added Pin To Net: NetName=NetL11_1 Pin=U0-2
+Added Pin To Net: NetName=ST95_RX1 Pin=U0-5
+Added Pin To Net: NetName=ST95_RX2 Pin=U0-6
+Added Pin To Net: NetName=GND Pin=U0-8
+Added Pin To Net: NetName=ST95_RS0 Pin=U0-9
+Added Pin To Net: NetName=ST95_IRQ_IN Pin=U0-12
+Added Pin To Net: NetName=ST95_VPS Pin=U0-13
+Added Pin To Net: NetName=ST95_IRQ_OUT Pin=U0-14
+Added Pin To Net: NetName=ST95_SPI_SS Pin=U0-15
+Added Pin To Net: NetName=ST95_SPI_MISO Pin=U0-16
+Added Pin To Net: NetName=ST95_SPI_MOSI Pin=U0-17
+Added Pin To Net: NetName=ST95_SPI_SCK Pin=U0-18
+Added Pin To Net: NetName=Interface_pin Pin=U0-19
+Added Pin To Net: NetName=NetR14_1 Pin=U0-20
+Added Pin To Net: NetName=NetR13_1 Pin=U0-21
+Added Pin To Net: NetName=GND Pin=U0-22
+Added Pin To Net: NetName=ST95_XIN Pin=U0-29
+Added Pin To Net: NetName=ST95_XOUT Pin=U0-30
+Added Pin To Net: NetName=GND Pin=U0-31
+Added Pin To Net: NetName=ST95_VPS_TX Pin=U0-32
+Added Room: Name=NFC

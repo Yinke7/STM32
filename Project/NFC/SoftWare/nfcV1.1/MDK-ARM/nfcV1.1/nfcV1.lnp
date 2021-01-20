@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"nfcv1.1\startup_stm32f103xg.o"
+"nfcv1.1\main.o"
+"nfcv1.1\gpio.o"
+"nfcv1.1\spi.o"
+"nfcv1.1\usart.o"
+"nfcv1.1\stm32f1xx_it.o"
+"nfcv1.1\stm32f1xx_hal_msp.o"
+"nfcv1.1\stm32f1xx_hal_gpio_ex.o"
+"nfcv1.1\stm32f1xx_hal_spi.o"
+"nfcv1.1\stm32f1xx_hal.o"
+"nfcv1.1\stm32f1xx_hal_rcc.o"
+"nfcv1.1\stm32f1xx_hal_rcc_ex.o"
+"nfcv1.1\stm32f1xx_hal_gpio.o"
+"nfcv1.1\stm32f1xx_hal_dma.o"
+"nfcv1.1\stm32f1xx_hal_cortex.o"
+"nfcv1.1\stm32f1xx_hal_pwr.o"
+"nfcv1.1\stm32f1xx_hal_flash.o"
+"nfcv1.1\stm32f1xx_hal_flash_ex.o"
+"nfcv1.1\stm32f1xx_hal_exti.o"
+"nfcv1.1\stm32f1xx_hal_tim.o"
+"nfcv1.1\stm32f1xx_hal_tim_ex.o"
+"nfcv1.1\stm32f1xx_hal_uart.o"
+"nfcv1.1\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "nfcV1.1\nfcV1.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "nfcV1.map" -o nfcV1.1\nfcV1.1

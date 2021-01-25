@@ -77,7 +77,7 @@ void LED_Config(Led_TypeDef Led)
   */
 void LED_On(Led_TypeDef Led)
 {
-  GPIO_PORT[Led]->BSRR = GPIO_PIN[Led];     
+  GPIO_PORT[Led]->BRR = GPIO_PIN[Led];     
 }
 
 /**
@@ -91,7 +91,7 @@ void LED_On(Led_TypeDef Led)
   */
 void LED_Off(Led_TypeDef Led)
 {
-  GPIO_PORT[Led]->BRR = GPIO_PIN[Led];  
+  GPIO_PORT[Led]->BSRR = GPIO_PIN[Led];  
 }
 
 /**
@@ -101,9 +101,24 @@ void LED_AllOff(void)
 {
 	uint8_t i;
 	for (i=LED1;i<=LED5;i++)
-		GPIO_PORT[i]->BRR = GPIO_PIN[i];  
+		GPIO_PORT[i]->BSRR = GPIO_PIN[i];  
 }
-
+//add yinke 
+void LED_Troggle(Led_TypeDef Led)
+{
+	static uint8_t i = 0;
+	if (i == 0)
+	{
+		i = 1;
+		GPIO_PORT[Led]->BSRR = GPIO_PIN[Led]; 
+	}
+	else 
+	{
+		i = 0;
+		GPIO_PORT[Led]->BRR = GPIO_PIN[Led]; 
+	}
+}
+//end add 
 /**
  * @}
  */ 

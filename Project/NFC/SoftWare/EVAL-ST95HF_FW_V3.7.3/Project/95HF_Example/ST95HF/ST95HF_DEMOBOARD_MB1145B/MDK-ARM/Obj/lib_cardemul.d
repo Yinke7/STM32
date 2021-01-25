@@ -30,6 +30,8 @@
 .\obj\lib_cardemul.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\lib_cardemul.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\lib_cardemul.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\lib_cardemul.o: ..\usart\usart.h
+.\obj\lib_cardemul.o: ..\sys\sys.h
 .\obj\lib_cardemul.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h
 .\obj\lib_cardemul.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_core.h
 .\obj\lib_cardemul.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_type.h

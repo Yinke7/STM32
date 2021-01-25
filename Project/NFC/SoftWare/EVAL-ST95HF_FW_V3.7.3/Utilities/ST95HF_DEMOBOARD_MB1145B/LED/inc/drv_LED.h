@@ -35,16 +35,16 @@
 #define LED1_PIN                         GPIO_Pin_10
 #define LED1_GPIO_PORT                   GPIOC
 #define LED1_GPIO_CLK                    RCC_APB2Periph_GPIOC  
-#define LED2_PIN                         GPIO_Pin_0
+#define LED2_PIN                         GPIO_Pin_10
 #define LED2_GPIO_PORT                   GPIOC
 #define LED2_GPIO_CLK                    RCC_APB2Periph_GPIOC
-#define LED3_PIN                         GPIO_Pin_1
+#define LED3_PIN                         GPIO_Pin_10
 #define LED3_GPIO_PORT                   GPIOC
 #define LED3_GPIO_CLK                    RCC_APB2Periph_GPIOC  
-#define LED4_PIN                         GPIO_Pin_2
+#define LED4_PIN                         GPIO_Pin_10
 #define LED4_GPIO_PORT                   GPIOC
 #define LED4_GPIO_CLK                    RCC_APB2Periph_GPIOC  
-#define LED5_PIN                         GPIO_Pin_3
+#define LED5_PIN                         GPIO_Pin_10
 #define LED5_GPIO_PORT                   GPIOC
 #define LED5_GPIO_CLK                    RCC_APB2Periph_GPIOC     
 
@@ -62,6 +62,8 @@ void LED_Config (Led_TypeDef Led);
 void LED_On			(Led_TypeDef Led);
 void LED_Off		(Led_TypeDef Led);
 void LED_AllOff (void);
+
+void LED_Troggle(Led_TypeDef Led);
 
 #ifdef __cplusplus
 }

@@ -380,24 +380,24 @@ void TagReading(void)
   char LastUIDFound[20] = {' '};
 	bool NewTagDetected = false;
 
-	LCD_Clear(Black);
+//	LCD_Clear(Black);
 
-  /* Set the Back Color */
-  LCD_SetBackColor(Blue);
-  /* Set the Text Color */
-  LCD_SetTextColor(White);
-  
-  LCD_DisplayStringLine(Line0, (u8*)"  Tag reader mode   ");
-  LCD_DisplayStringLine(Line9, (u8*)"   Select to exit   ");
-	
-	 /* Set the Back Color */
-  LCD_SetBackColor(Black);
-  /* Set the Text Color */
-  LCD_SetTextColor(White);
-	
-	LCD_DisplayStringLine(Line2, (u8*)" CR95HF is waiting  ");
-  LCD_DisplayStringLine(Line3, (u8*)"for a tag with NDEF ");
-	LCD_DisplayStringLine(Line4, (u8*)"   content inside   ");
+//  /* Set the Back Color */
+//  LCD_SetBackColor(Blue);
+//  /* Set the Text Color */
+//  LCD_SetTextColor(White);
+//  
+//  LCD_DisplayStringLine(Line0, (u8*)"  Tag reader mode   ");
+//  LCD_DisplayStringLine(Line9, (u8*)"   Select to exit   ");
+//	
+//	 /* Set the Back Color */
+//  LCD_SetBackColor(Black);
+//  /* Set the Text Color */
+//  LCD_SetTextColor(White);
+//	
+//	LCD_DisplayStringLine(Line2, (u8*)" CR95HF is waiting  ");
+//  LCD_DisplayStringLine(Line3, (u8*)"for a tag with NDEF ");
+//	LCD_DisplayStringLine(Line4, (u8*)"   content inside   ");
 	
 	/* External Interrupt Enable */
 	IntExtOnOffConfig(ENABLE);
@@ -406,7 +406,8 @@ void TagReading(void)
 	KEYPress = false;
 	lockKEYUpDown = true;
 	/* wait user action to go back to previous screen */
-	while(!KEYPress)
+	//while(!KEYPress)
+	while(1)
 	{
 		/* Scan to find if there is a tag */
 		TagType = ConfigManager_TagHunting(TRACK_ALL);	
@@ -414,20 +415,19 @@ void TagReading(void)
 		/* Tag has been discovered, clear screen */
 		if( TagType != TRACK_NOTHING && FirstTagFounded == true)
 		{
-			LCD_DisplayStringLine(Line2, (u8*)"                    ");
-			LCD_DisplayStringLine(Line3, (u8*)"                    ");
-			LCD_DisplayStringLine(Line4, (u8*)"                    ");
+//			LCD_DisplayStringLine(Line2, (u8*)"                    ");
+//			LCD_DisplayStringLine(Line3, (u8*)"                    ");
+//			LCD_DisplayStringLine(Line4, (u8*)"                    ");
 			FirstTagFounded = false;
 		}		
-
 		switch(TagType)
 		{
 			case TRACK_NFCTYPE1:
 				if(memcmp (LastUIDFound, TagUID, 6))
 				{	
 					memcpy(LastUIDFound,TagUID,6);	
-					LED_On(LED1);
-					LCD_DisplayStringLine(Line2, (u8*)"Reading TT1...      ");
+//					LED_On(LED1);
+//					LCD_DisplayStringLine(Line2, (u8*)"Reading TT1...      ");
 					NewTagDetected = true;
 				}
 				else
@@ -438,8 +438,8 @@ void TagReading(void)
 				if(memcmp (LastUIDFound, ISO14443A_Card.UID, ISO14443A_Card.UIDsize))
 				{	
 					memcpy(LastUIDFound,ISO14443A_Card.UID,ISO14443A_Card.UIDsize);	
-					LED_On(LED2);
-					LCD_DisplayStringLine(Line2, (u8*)"Reading TT2...      ");
+//					LED_On(LED2);
+//					LCD_DisplayStringLine(Line2, (u8*)"Reading TT2...      ");
 					NewTagDetected = true;
 				}
 				else
@@ -450,8 +450,8 @@ void TagReading(void)
 				if(memcmp (LastUIDFound, FELICA_Card.UID, 8))
 				{	
 					memcpy(LastUIDFound,FELICA_Card.UID,8);
-					LED_On(LED3);
-					LCD_DisplayStringLine(Line2, (u8*)"Reading TT3...      ");
+//					LED_On(LED3);
+//					LCD_DisplayStringLine(Line2, (u8*)"Reading TT3...      ");
 					NewTagDetected = true;
 				}
 				else
@@ -462,8 +462,8 @@ void TagReading(void)
 				if(memcmp (LastUIDFound, ISO14443A_Card.UID, ISO14443A_Card.UIDsize))
 				{	
 					memcpy(LastUIDFound,ISO14443A_Card.UID,ISO14443A_Card.UIDsize);	
-					LED_On(LED4);
-					LCD_DisplayStringLine(Line2, (u8*)"Reading TT4A...     ");
+//					LED_On(LED4);
+//					LCD_DisplayStringLine(Line2, (u8*)"Reading TT4A...     ");
 					NewTagDetected = true;
 				}
 				else
@@ -474,8 +474,8 @@ void TagReading(void)
 				if(memcmp (LastUIDFound, ISO14443B_Card.PUPI, 4))
 				{	
 					memcpy(LastUIDFound,ISO14443B_Card.PUPI, 4);
-					LED_On(LED5);
-					LCD_DisplayStringLine(Line2, (u8*)"Reading TT4B...     ");		
+//					LED_On(LED5);
+//					LCD_DisplayStringLine(Line2, (u8*)"Reading TT4B...     ");		
 					NewTagDetected = true;					
 				}
 				else
@@ -486,9 +486,9 @@ void TagReading(void)
 				if(memcmp (LastUIDFound, TagUID, 8))
 				{	
 					memcpy(LastUIDFound,TagUID, 8);	
-					LED_On(LED2);
-					LED_On(LED5);
-					LCD_DisplayStringLine(Line2, (u8*)"Reading TT5...      ");
+//					LED_On(LED2);
+//					LED_On(LED5);
+//					LCD_DisplayStringLine(Line2, (u8*)"Reading TT5...      ");
 					NewTagDetected = true;
 				}
 				else
@@ -503,30 +503,41 @@ void TagReading(void)
 		/* Check the tag type found */
 		if (NewTagDetected == true)
 		{			
+			uint8_t i;
+			LED_Troggle(LED1);
+			//Hex2Char((u8 *)LastUIDFound,20,uidstring);
+			printf("Tag detected: TagType [%02X], UID [",TagType);
+			for(i = 0;i < 20; i ++)
+			{
+				printf("%02X ",LastUIDFound[i]);
+			}
+			printf("]\r\n");
+			
 			NewTagDetected = false;
 			/* Try to read the NDEF message inside the tag */
 			status = readNDEFfromTAG();
 			if (status == PCDNFC_ERROR_MEMORY_INTERNAL)
 			{
-				LCD_ClearLine(Line3);LCD_ClearLine(Line4);LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);
-				LCD_SetTextColor(Red);
-				LCD_DisplayStringLine(Line3, (u8*)"Cannot fill internal");
-				LCD_DisplayStringLine(Line4, (u8*)"memory with NDEF    ");
-				LCD_DisplayStringLine(Line5, (u8*)"message             ");
-				LCD_SetTextColor(White);
+//				LCD_ClearLine(Line3);LCD_ClearLine(Line4);LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);
+//				LCD_SetTextColor(Red);
+//				LCD_DisplayStringLine(Line3, (u8*)"Cannot fill internal");
+//				LCD_DisplayStringLine(Line4, (u8*)"memory with NDEF    ");
+//				LCD_DisplayStringLine(Line5, (u8*)"message             ");
+//				LCD_SetTextColor(White);
 			}
 			else if (status == PCDNFC_ERROR_NOT_FORMATED)
 			{
-				LCD_ClearLine(Line3);LCD_ClearLine(Line4);LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);
-				LCD_SetTextColor(White);
-				LCD_DisplayStringLine(Line3, (u8*)"     Empty tag      ");
+//				LCD_ClearLine(Line3);LCD_ClearLine(Line4);LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);
+//				LCD_SetTextColor(White);
+//				LCD_DisplayStringLine(Line3, (u8*)"     Empty tag      ");
+				
 			}
 			else if (status != PCDNFC_OK)
 			{
-				LCD_ClearLine(Line3);LCD_ClearLine(Line4);LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);
-				LCD_SetTextColor(Red);
-				LCD_DisplayStringLine(Line3, (u8*)"Transmission Error  ");
-				LCD_SetTextColor(White);
+//				LCD_ClearLine(Line3);LCD_ClearLine(Line4);LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);
+//				LCD_SetTextColor(Red);
+//				LCD_DisplayStringLine(Line3, (u8*)"Transmission Error  ");
+//				LCD_SetTextColor(White);
 				// In case of transmission error clear the LastUID
 				memset(LastUIDFound,'\0',20);
 			}

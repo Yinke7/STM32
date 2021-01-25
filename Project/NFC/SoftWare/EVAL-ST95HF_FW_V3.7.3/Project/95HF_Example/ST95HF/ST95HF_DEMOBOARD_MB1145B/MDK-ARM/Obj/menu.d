@@ -27,6 +27,8 @@
 .\obj\menu.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\menu.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\menu.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\menu.o: ..\usart\usart.h
+.\obj\menu.o: ..\sys\sys.h
 .\obj\menu.o: ..\..\..\..\..\libraries\NDEF\inc\lib_wrapper.h
 .\obj\menu.o: ..\..\..\..\..\libraries\NDEF\inc\lib_NDEF_SMS.h
 .\obj\menu.o: ..\..\..\..\..\libraries\NDEF\inc\lib_NDEF_Text.h

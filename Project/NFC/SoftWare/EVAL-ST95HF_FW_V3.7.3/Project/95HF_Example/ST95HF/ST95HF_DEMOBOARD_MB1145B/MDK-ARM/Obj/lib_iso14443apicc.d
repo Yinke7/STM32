@@ -31,6 +31,8 @@
 .\obj\lib_iso14443apicc.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
 .\obj\lib_iso14443apicc.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\lib_iso14443apicc.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\lib_iso14443apicc.o: ..\usart\usart.h
+.\obj\lib_iso14443apicc.o: ..\sys\sys.h
 .\obj\lib_iso14443apicc.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h
 .\obj\lib_iso14443apicc.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_core.h
 .\obj\lib_iso14443apicc.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_type.h

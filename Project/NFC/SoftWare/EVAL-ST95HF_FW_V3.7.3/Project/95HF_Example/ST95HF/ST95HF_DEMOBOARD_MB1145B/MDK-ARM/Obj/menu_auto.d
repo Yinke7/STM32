@@ -28,6 +28,8 @@
 .\obj\menu_auto.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\menu_auto.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\menu_auto.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\menu_auto.o: ..\usart\usart.h
+.\obj\menu_auto.o: ..\sys\sys.h
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\NDEF\inc\lib_wrapper.h
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\NDEF\inc\lib_NDEF_SMS.h
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\NDEF\inc\lib_NDEF_Text.h

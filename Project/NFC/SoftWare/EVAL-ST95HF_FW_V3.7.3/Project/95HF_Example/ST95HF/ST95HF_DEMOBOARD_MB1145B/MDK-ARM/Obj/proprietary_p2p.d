@@ -28,6 +28,8 @@
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
 .\obj\proprietary_p2p.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\proprietary_p2p.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\proprietary_p2p.o: ..\usart\usart.h
+.\obj\proprietary_p2p.o: ..\sys\sys.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\NDEF\inc\lib_wrapper.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\NDEF\inc\lib_NDEF_SMS.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\NDEF\inc\lib_NDEF_Text.h

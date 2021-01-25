@@ -25,6 +25,8 @@
 .\obj\stm32f10x_it.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\stm32f10x_it.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\stm32f10x_it.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\stm32f10x_it.o: ..\usart\usart.h
+.\obj\stm32f10x_it.o: ..\sys\sys.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_core.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_type.h

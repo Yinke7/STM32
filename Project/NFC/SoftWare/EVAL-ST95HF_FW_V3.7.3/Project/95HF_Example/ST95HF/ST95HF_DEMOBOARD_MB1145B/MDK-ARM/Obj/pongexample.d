@@ -28,6 +28,8 @@
 .\obj\pongexample.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
 .\obj\pongexample.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\pongexample.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\pongexample.o: ..\usart\usart.h
+.\obj\pongexample.o: ..\sys\sys.h
 .\obj\pongexample.o: ..\..\..\..\..\libraries\NDEF\inc\lib_wrapper.h
 .\obj\pongexample.o: ..\..\..\..\..\libraries\NDEF\inc\lib_NDEF_SMS.h
 .\obj\pongexample.o: ..\..\..\..\..\libraries\NDEF\inc\lib_NDEF_Text.h

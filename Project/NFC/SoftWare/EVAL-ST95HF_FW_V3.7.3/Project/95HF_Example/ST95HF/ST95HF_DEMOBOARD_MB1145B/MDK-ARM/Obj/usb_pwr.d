@@ -36,3 +36,5 @@
 .\obj\usb_pwr.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
 .\obj\usb_pwr.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\usb_pwr.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\usb_pwr.o: ..\usart\usart.h
+.\obj\usb_pwr.o: ..\sys\sys.h

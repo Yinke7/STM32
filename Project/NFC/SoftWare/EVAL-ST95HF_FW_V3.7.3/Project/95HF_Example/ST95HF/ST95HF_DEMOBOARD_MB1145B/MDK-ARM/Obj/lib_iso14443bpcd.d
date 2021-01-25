@@ -30,6 +30,8 @@
 .\obj\lib_iso14443bpcd.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\lib_iso14443bpcd.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\lib_iso14443bpcd.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\lib_iso14443bpcd.o: ..\usart\usart.h
+.\obj\lib_iso14443bpcd.o: ..\sys\sys.h
 .\obj\lib_iso14443bpcd.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h
 .\obj\lib_iso14443bpcd.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_core.h
 .\obj\lib_iso14443bpcd.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_type.h

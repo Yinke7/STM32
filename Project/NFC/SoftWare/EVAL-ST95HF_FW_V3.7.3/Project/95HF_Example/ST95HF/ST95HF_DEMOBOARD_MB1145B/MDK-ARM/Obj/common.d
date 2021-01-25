@@ -22,3 +22,5 @@
 .\obj\common.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\common.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\common.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\common.o: ..\usart\usart.h
+.\obj\common.o: ..\sys\sys.h

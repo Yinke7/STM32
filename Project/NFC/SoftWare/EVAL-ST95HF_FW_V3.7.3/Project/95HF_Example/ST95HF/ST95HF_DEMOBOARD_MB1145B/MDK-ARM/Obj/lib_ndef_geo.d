@@ -24,4 +24,6 @@
 .\obj\lib_ndef_geo.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\lib_ndef_geo.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\lib_ndef_geo.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\lib_ndef_geo.o: ..\usart\usart.h
+.\obj\lib_ndef_geo.o: ..\sys\sys.h
 .\obj\lib_ndef_geo.o: ..\..\..\..\..\libraries\NDEF\inc\lib_wrapper.h

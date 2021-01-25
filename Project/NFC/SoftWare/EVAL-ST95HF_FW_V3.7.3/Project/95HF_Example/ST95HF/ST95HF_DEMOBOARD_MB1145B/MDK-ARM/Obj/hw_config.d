@@ -25,6 +25,8 @@
 .\obj\hw_config.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\hw_config.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\hw_config.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\hw_config.o: ..\usart\usart.h
+.\obj\hw_config.o: ..\sys\sys.h
 .\obj\hw_config.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h
 .\obj\hw_config.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_core.h
 .\obj\hw_config.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_type.h

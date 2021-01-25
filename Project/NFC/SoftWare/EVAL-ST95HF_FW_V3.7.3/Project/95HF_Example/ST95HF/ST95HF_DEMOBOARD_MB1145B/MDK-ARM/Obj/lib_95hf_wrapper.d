@@ -23,6 +23,8 @@
 .\obj\lib_95hf_wrapper.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\lib_95hf_wrapper.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\lib_95hf_wrapper.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\lib_95hf_wrapper.o: ..\usart\usart.h
+.\obj\lib_95hf_wrapper.o: ..\sys\sys.h
 .\obj\lib_95hf_wrapper.o: ..\..\..\..\..\libraries\NDEF\inc\lib_ndef.h
 .\obj\lib_95hf_wrapper.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfctype1pcd.h
 .\obj\lib_95hf_wrapper.o: ..\..\..\..\..\libraries\95HF\inc\lib_PCD.h

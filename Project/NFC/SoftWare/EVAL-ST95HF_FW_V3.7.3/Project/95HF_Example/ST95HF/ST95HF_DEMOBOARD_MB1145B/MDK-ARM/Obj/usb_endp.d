@@ -38,4 +38,6 @@
 .\obj\usb_endp.o: ..\inc\hw_config.h
 .\obj\usb_endp.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
 .\obj\usb_endp.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\usb_endp.o: ..\usart\usart.h
+.\obj\usb_endp.o: ..\sys\sys.h
 .\obj\usb_endp.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h

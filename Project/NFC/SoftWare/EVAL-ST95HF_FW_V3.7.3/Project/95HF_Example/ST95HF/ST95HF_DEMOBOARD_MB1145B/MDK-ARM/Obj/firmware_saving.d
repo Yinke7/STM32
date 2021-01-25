@@ -22,6 +22,8 @@
 .\obj\firmware_saving.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\firmware_saving.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\firmware_saving.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\firmware_saving.o: ..\usart\usart.h
+.\obj\firmware_saving.o: ..\sys\sys.h
 .\obj\firmware_saving.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h
 .\obj\firmware_saving.o: ..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h
 .\obj\firmware_saving.o: ..\..\..\..\..\libraries\95HF\inc\lib_PICC.h

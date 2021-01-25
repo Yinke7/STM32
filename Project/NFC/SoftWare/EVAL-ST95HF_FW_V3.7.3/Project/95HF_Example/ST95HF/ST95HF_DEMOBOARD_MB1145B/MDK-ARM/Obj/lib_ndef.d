@@ -23,4 +23,6 @@
 .\obj\lib_ndef.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\lib_ndef.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\lib_ndef.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\lib_ndef.o: ..\usart\usart.h
+.\obj\lib_ndef.o: ..\sys\sys.h
 .\obj\lib_ndef.o: ..\..\..\..\..\libraries\NDEF\inc\lib_wrapper.h

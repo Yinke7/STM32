@@ -1,7 +1,7 @@
 # Introduction
-
 此项目参考了b站稚晖君的Link-Card项目，但是在其基础上做了修改，采用STM32和ST95HF芯片，预期将实现NFC Reader/Tag/Emulation等功能，一张卡可模拟多张卡，包括门禁、公交等场景。
 
+# Version iteration
 ## V1.0
 * 主控芯片：32L051K8U6
 * NFC芯片：ST95HF
@@ -36,6 +36,9 @@
 
 ### 2021.01.11
 * 开始移植程序，使用STM32CubeMX生成的demo,能正常读到ST95HF的设备ID
+
+### 2021.01.25
+* 读UID
 
 
 

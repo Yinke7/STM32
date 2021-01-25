@@ -1,0 +1,11 @@
+/*!
+\mainpage ST95HF discovery documentation
+\section sec_1 Introduction
+
+This document describes the firmware of the EVAL-ST95HF board.
+This document helps the developer to understand how works this firmware and how tailored its own application.
+
+\image html EVAL-ST95HF.jpg
+
+
+*/

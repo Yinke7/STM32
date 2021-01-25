@@ -38,6 +38,7 @@
 * 开始移植程序，使用STM32CubeMX生成的demo,能正常读到ST95HF的设备ID
 
 ### 2021.01.25
+* 上传ST95HF修改过的demo ` 95HF_Example`
 * 读UID
 
 

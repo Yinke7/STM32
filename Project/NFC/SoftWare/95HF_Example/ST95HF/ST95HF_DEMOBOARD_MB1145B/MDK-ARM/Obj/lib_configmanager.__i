@@ -1,0 +1,7 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -W -O0 --apcs=interwork --split_sections -I..\inc -I..\..\..\..\..\libraries\95HF\inc -I..\..\..\..\..\libraries\USB-FS-Device_Driver\inc -I..\..\..\..\..\libraries\USB_Composite\inc -I..\..\..\..\..\libraries\USB_MSD\inc -I..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport -I..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc -I..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\inc -I..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\pictures -I..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LED\inc -I..\..\..\..\..\libraries\NDEF\inc -I..\sys -I..\usart
+-I D:\CodeTest\STM32\ST95ÆÀ¹À°å´úÂë20210117\ST95ÆÀ¹À°å´úÂë\EVAL-ST95HF_FW_V3.7.3\Project\95HF_Example\ST95HF\ST95HF_DEMOBOARD_MB1145B\MDK-ARM\RTE
+-I E:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0
+-I E:\MDK5\ARM\CMSIS\Include
+-I E:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+-D__UVISION_VERSION="514" -DSTM32F10X_XL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_XL -DST95HF -DUSE_MB1145_BOARD
+-o .\obj\lib_configmanager.o --omf_browse .\obj\lib_configmanager.crf --depend .\obj\lib_configmanager.d "..\..\..\..\..\libraries\95HF\src\lib_ConfigManager.c"

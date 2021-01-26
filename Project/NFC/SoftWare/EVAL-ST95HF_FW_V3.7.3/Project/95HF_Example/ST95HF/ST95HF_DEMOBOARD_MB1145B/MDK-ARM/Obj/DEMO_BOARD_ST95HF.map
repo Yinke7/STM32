@@ -1,4 +1,4 @@
-Component: ARM Compiler 5.06 update 1 (build 61) Tool: armlink [4d35a8]
+Component: ARM Compiler 5.05 update 1 (build 106) Tool: armlink [4d0efa]
 
 ==============================================================================
 
@@ -5461,77 +5461,77 @@ Image component sizes
 
         52          0          0          0          0       1594   common.o
       1104        132          0          7        529      12347   drv_95hf.o
-       712        108          0          4          0       8927   drv_interrupt.o
-      1658        118       4560         10          0      20841   drv_lcdspi_ili9341.o
-       212         50         30         21          0       4141   drv_led.o
-       106          0          0          0          0       1950   drv_spi.o
-        60         10          0          0          0       1365   firmware_saving.o
+       712        108          0          4          0       8959   drv_interrupt.o
+      1658        118       4560         10          0      20441   drv_lcdspi_ili9341.o
+       212         50         30         21          0       4149   drv_led.o
+       106          0          0          0          0       1894   drv_spi.o
+        60         10          0          0          0       1357   firmware_saving.o
        780         32          0          2          0       7902   hw_config.o
-      1212         88          0          1          0       3847   lib_95hf_wrapper.o
-       608         58          0         34          0       3699   lib_cardemul.o
-       972        126          0          8         16      10202   lib_configmanager.o
-       544        102         75          0          0       4328   lib_flash_ndef.o
-      3030        228         10          6        934      17990   lib_iso14443apcd.o
-       348         18          0          1        141       2618   lib_iso14443apicc.o
+      1212         88          0          1          0       3795   lib_95hf_wrapper.o
+       608         58          0         34          0       3691   lib_cardemul.o
+       972        126          0          8         16      10122   lib_configmanager.o
+       544        102         75          0          0       4284   lib_flash_ndef.o
+      3030        228         10          6        934      17902   lib_iso14443apcd.o
+       348         18          0          1        141       2606   lib_iso14443apicc.o
        712         88         13          0         86       8381   lib_iso14443bpcd.o
-      4256         32          0          0          0      33290   lib_iso15693pcd.o
+      4256         32          0          0          0      32378   lib_iso15693pcd.o
        302         36          7          0         41       3817   lib_iso18092pcd.o
-       564         46          0          3       1324       4366   lib_iso7816pcd.o
-       296         34          0          0          0       3584   lib_iso7816picc.o
-      1236        110          0         16      10384       8753   lib_ndef.o
-       264         20          0          0          0       1572   lib_ndef_aar.o
-      1242         80          0          0          0       5036   lib_ndef_email.o
-      1044         48          0          0          0       4878   lib_ndef_geo.o
-      1092         66          0          0          0       4994   lib_ndef_sms.o
-       208         12          0          0          0        801   lib_ndef_text.o
-      2864        892          0          0          0       5799   lib_ndef_uri.o
-       564         36          0          0          0       4041   lib_nfctype1pcd.o
-      1112         36          0          0          0       5398   lib_nfctype2pcd.o
-       416         68          0          3          0       5855   lib_nfctype2picc.o
-      1116         70         40          0          0       6772   lib_nfctype3pcd.o
-       928         42          0          0          0       7254   lib_nfctype4pcd.o
-      1330        110         33          2          0      11837   lib_nfctype4picc.o
-       920         10          0          0          0       3883   lib_nfctype5pcd.o
-      1430         96          0          1          0      13175   lib_pcd.o
-       974         62          0          0          0      11927   lib_picc.o
-      1264        214          0         37          0      10378   lib_piccemulator.o
-      2660        530          0         92        768      17294   lib_proprietaryp2p.o
-       256         48       7713         17      27290     325744   main.o
-      2876        488     273983        788       4416      17090   menu.o
-      1260        514          0         73      30720       4546   menu_cardemul.o
-      2840        858         16          0          0       4078   menu_reader.o
-      1280        556          0          1          0       6309   menu_tagemul.o
-      1228        524          4         25          0       5306   menu_writer.o
-       140         24          0          0          0       2565   misc.o
-      3100        326          0         20          0       6498   pongexample.o
-      2582        738          0         29         28      14580   proprietary_p2p.o
-        36          8        304          0       2048        872   startup_stm32f10x_xl.o
-        24          8          0          0          0       1224   stm32f10x_crc.o
-       170         14          0          0          0       3358   stm32f10x_exti.o
-       640         54          0          0          0       9484   stm32f10x_flash.o
-       240          6          0          0          0       6375   stm32f10x_gpio.o
-       480         68          0         12          0       9104   stm32f10x_it.o
-       264         46          0         20          0       7260   stm32f10x_rcc.o
-       222         12          0          0          0       6737   stm32f10x_spi.o
-       222         42          0          0          0       5798   stm32f10x_tim.o
-       314          4          0          0          0       5838   stm32f10x_usart.o
-       328         28          0         20          0       2993   system_stm32f10x.o
-       324         26          0          6        256       3860   usart.o
+       564         46          0          3       1324       4242   lib_iso7816pcd.o
+       296         34          0          0          0       3516   lib_iso7816picc.o
+      1236        110          0         16      10384       8657   lib_ndef.o
+       264         20          0          0          0       1568   lib_ndef_aar.o
+      1242         80          0          0          0       4936   lib_ndef_email.o
+      1044         48          0          0          0       4774   lib_ndef_geo.o
+      1092         66          0          0          0       4886   lib_ndef_sms.o
+       208         12          0          0          0        793   lib_ndef_text.o
+      2864        892          0          0          0       5723   lib_ndef_uri.o
+       564         36          0          0          0       4025   lib_nfctype1pcd.o
+      1112         36          0          0          0       5370   lib_nfctype2pcd.o
+       416         68          0          3          0       5839   lib_nfctype2picc.o
+      1116         70         40          0          0       6724   lib_nfctype3pcd.o
+       928         42          0          0          0       7202   lib_nfctype4pcd.o
+      1330        110         33          2          0      11765   lib_nfctype4picc.o
+       920         10          0          0          0       3855   lib_nfctype5pcd.o
+      1430         96          0          1          0      12895   lib_pcd.o
+       974         62          0          0          0      11711   lib_picc.o
+      1264        214          0         37          0      10406   lib_piccemulator.o
+      2660        530          0         92        768      17098   lib_proprietaryp2p.o
+       256         48       7713         17      27290     325860   main.o
+      2876        488     273983        788       4416      17102   menu.o
+      1260        514          0         73      30720       4570   menu_cardemul.o
+      2840        858         16          0          0       4086   menu_reader.o
+      1280        556          0          1          0       6345   menu_tagemul.o
+      1228        524          4         25          0       5330   menu_writer.o
+       140         24          0          0          0       2461   misc.o
+      3100        326          0         20          0       6490   pongexample.o
+      2582        738          0         29         28      14496   proprietary_p2p.o
+        36          8        304          0       2048        876   startup_stm32f10x_xl.o
+        24          8          0          0          0       1208   stm32f10x_crc.o
+       170         14          0          0          0       3226   stm32f10x_exti.o
+       640         54          0          0          0       9140   stm32f10x_flash.o
+       240          6          0          0          0       5963   stm32f10x_gpio.o
+       480         68          0         12          0       9152   stm32f10x_it.o
+       264         46          0         20          0       7004   stm32f10x_rcc.o
+       222         12          0          0          0       6417   stm32f10x_spi.o
+       222         42          0          0          0       5518   stm32f10x_tim.o
+       314          4          0          0          0       5434   stm32f10x_usart.o
+       328         28          0         20          0       3005   system_stm32f10x.o
+       324         26          0          6        256       3864   usart.o
       3058        288          0          3          0      16679   usb_core.o
-         0          0        410         52          0       1749   usb_desc.o
-        22          0          0          0          0       2800   usb_endp.o
-      2208        136        394          6          0      18089   usb_hid.o
-         0          0          0         20         28       3975   usb_init.o
-       848         58          0          4          0       2689   usb_int.o
-        80         18          0         60          0       1744   usb_istr.o
+         0          0        410         52          0       1753   usb_desc.o
+        22          0          0          0          0       2808   usb_endp.o
+      2208        136        394          6          0      17837   usb_hid.o
+         0          0          0         20         28       3987   usb_init.o
+       848         58          0          4          0       2705   usb_int.o
+        80         18          0         60          0       1756   usb_istr.o
         96         10          0          0          0       2104   usb_mem.o
-       468         76          0        144          0      13229   usb_prop.o
-        56         10          0          7          0       2461   usb_pwr.o
-       660         96          0          0          0      11000   usb_regs.o
-       128          8          0          0          0       2586   usb_sil.o
+       468         76          0        144          0      13209   usb_prop.o
+        56         10          0          7          0       2473   usb_pwr.o
+       660         96          0          0          0      11008   usb_regs.o
+       128          8          0          0          0       2546   usb_sil.o
 
     ----------------------------------------------------------------------
-     64700       8900     287628       1572      79012     813560   Object Totals
+     64700       8900     287628       1572      79012     808016   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         58          0          4         17          3          0   (incl. Padding)
 
@@ -5584,8 +5584,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     68728       9160     287628       1600      80064    1006248   Grand Totals
-     68728       9160     287628        716      80064    1006248   ELF Image Totals (compressed)
+     68728       9160     287628       1600      80064    1000704   Grand Totals
+     68728       9160     287628        716      80064    1000704   ELF Image Totals (compressed)
      68728       9160     287628        716          0          0   ROM Totals
 
 ==============================================================================

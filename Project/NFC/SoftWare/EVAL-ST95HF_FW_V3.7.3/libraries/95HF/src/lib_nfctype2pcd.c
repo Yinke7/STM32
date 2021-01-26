@@ -226,6 +226,9 @@ uint8_t PCDNFCT2_WriteNDEF( void )
 	
 	// Check if CC is present with NDEF capability
 	errchk(PCDNFCT2_Read(0,buffer));
+	
+	//errchk(PCDNFCT2_Read(0x0c,buffer));
+	
 	if (buffer[14] != PCDNFCT2_NDEF_MNB)
 		return PCDNFCT2_ERROR_NOT_FORMATED;
 	// Check if the tag is not protected for read and write

@@ -215,7 +215,7 @@ int main(void)
 				TagWriteEMAIL();
 //				autoTypeAll();
 				delay_ms(1000);
-//			}
+//			} 
 			 
 //				printf("writting tag text...\r\n");
 //				TagWriteText();

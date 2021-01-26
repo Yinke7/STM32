@@ -2,7 +2,7 @@
 .\obj\stm32f10x_it.o: ..\inc\stm32f10x_it.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\stm32f10x_it.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\stm32f10x_it.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -22,9 +22,9 @@
 .\obj\stm32f10x_it.o: ..\inc\hw_config.h
 .\obj\stm32f10x_it.o: ..\inc\stm32f10x_it.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\stm32f10x_it.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\stm32f10x_it.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
-.\obj\stm32f10x_it.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\stm32f10x_it.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\stm32f10x_it.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\stm32f10x_it.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\stm32f10x_it.o: ..\usart\usart.h
 .\obj\stm32f10x_it.o: ..\sys\sys.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h

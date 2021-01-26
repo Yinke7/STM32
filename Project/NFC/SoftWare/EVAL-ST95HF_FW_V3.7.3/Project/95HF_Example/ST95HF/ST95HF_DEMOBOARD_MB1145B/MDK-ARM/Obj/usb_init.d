@@ -2,7 +2,7 @@
 .\obj\usb_init.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_lib.h
 .\obj\usb_init.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\usb_init.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\usb_init.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\usb_init.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\usb_init.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\usb_init.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\usb_init.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -23,7 +23,7 @@
 .\obj\usb_init.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_regs.h
 .\obj\usb_init.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_def.h
 .\obj\usb_init.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_core.h
-.\obj\usb_init.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\usb_init.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\usb_init.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_init.h
 .\obj\usb_init.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_mem.h
 .\obj\usb_init.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_int.h

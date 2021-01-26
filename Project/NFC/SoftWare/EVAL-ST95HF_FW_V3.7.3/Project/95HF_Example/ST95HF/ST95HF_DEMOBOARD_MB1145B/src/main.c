@@ -23,6 +23,7 @@
 
 #include "VcardCSL1.h"
 
+#include "menu_auto.h"
 
 /** @addtogroup User_Appli
  * 	@{
@@ -202,12 +203,22 @@ int main(void)
 //      SELStatus = 0;
 //    } 
 		//add yinke
-			LED_Troggle(LED1);
-			delayHighPriority_ms(1000);
+			//LED_Troggle(LED1);
+			//delayHighPriority_ms(1000);
+//			while(USART_RX_BUF[0] == 0x01)
+//			{
 			
-			printf("read tag...\r\n");
-			TagReading();
-			
+//				printf("read tag...\r\n");
+//				TagReading();
+				
+				printf("write tag...\r\n");
+				TagWriteEMAIL();
+//				autoTypeAll();
+				delay_ms(1000);
+//			}
+			 
+//				printf("writting tag text...\r\n");
+//				TagWriteText();
 		//end add 
   }
 	

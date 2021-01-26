@@ -1094,10 +1094,15 @@ void FillTagSMS(char* pTagType)
 void FillTagEMAIL(char* pTagType)
 {
 	/* Fill the structure of the NDEF Email */
-	strcpy(email.Information,pTagType);
-	strcpy(email.EmailAdd,"test@st.com");
-	strcpy(email.Subject,"STMicroelectronics wikipedia");
-	strcpy(email.Message,"STMicroelectronics is a French-Italian multinational electronics and semiconductor manufacturer headquartered in Geneva, Switzerland. It is Europe s largest semiconductor chip maker based on revenue. ST is among the world leaders in a broad range of segments, including semiconductors for industrial applications, inkjet printheads, MEMS (Micro-Electro-Mechanical Systems), MPEG decoders and smartcard chips, automotive integrated circuits, computer peripherals, and chips for wireless and mobile applications. While STMicroelectronics corporate headquarters and the headquarters for EMEA region are based in Geneva, the holding company, STMicroelectronics N.V. is registered in Amsterdam, Netherlands. The company s US headquarters is in Coppell, Texas. Headquarters for the Asia-Pacific region is in Singapore whilst Japan and Korea operations are headquartered in Tokyo. The company headquarters for the Greater China region is in Shanghai.");
+//	strcpy(email.Information,pTagType);
+//	strcpy(email.EmailAdd,"test@st.com");
+//	strcpy(email.Subject,"STMicroelectronics wikipedia");
+//	strcpy(email.Message,"STMicroelectronics is a French-Italian multinational electronics and semiconductor manufacturer headquartered in Geneva, Switzerland. It is Europe s largest semiconductor chip maker based on revenue. ST is among the world leaders in a broad range of segments, including semiconductors for industrial applications, inkjet printheads, MEMS (Micro-Electro-Mechanical Systems), MPEG decoders and smartcard chips, automotive integrated circuits, computer peripherals, and chips for wireless and mobile applications. While STMicroelectronics corporate headquarters and the headquarters for EMEA region are based in Geneva, the holding company, STMicroelectronics N.V. is registered in Amsterdam, Netherlands. The company s US headquarters is in Coppell, Texas. Headquarters for the Asia-Pacific region is in Singapore whilst Japan and Korea operations are headquartered in Tokyo. The company headquarters for the Greater China region is in Shanghai.");
+		
+		strcpy(email.Information,pTagType);
+		strcpy(email.EmailAdd,"test@st.com");
+		strcpy(email.Subject,"Subject");
+		strcpy(email.Message,"mesg");
 }
 
 

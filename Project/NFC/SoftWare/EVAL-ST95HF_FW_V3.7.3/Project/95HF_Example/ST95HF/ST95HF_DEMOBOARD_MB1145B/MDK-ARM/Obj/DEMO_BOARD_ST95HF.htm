@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\DEMO_BOARD_ST95HF.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\DEMO_BOARD_ST95HF.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue Jan 26 00:59:21 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Tue Jan 26 18:54:33 2021
 <BR><P>
 <H3>Maximum Stack Usage =       2984 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -356,7 +356,6 @@ Global Symbols
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PopDataCommand
 <LI><a href="#[21e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PP2P_SendBUF
 <LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initFlashNDEF
-<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
 <LI><a href="#[1ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_WriteText
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCDNFCT4_ReadNDEF
@@ -368,6 +367,7 @@ Global Symbols
 <LI><a href="#[1a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_ReadGeo
 <LI><a href="#[1a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_ReadEmail
 <LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_IdentifyNDEF
+<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
 <LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagHunting
 <LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CardEmul14443A
 <LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_Idle
@@ -502,8 +502,8 @@ Global Symbols
 <P><STRONG><a name="[191]"></a>memcmp</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, memcmp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = memcmp
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
+<BR>[Called By]<UL><LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
+<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
 <LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagHunting
 <LI><a href="#[192]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_FillGeoStruct
 <LI><a href="#[190]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_FillEmailStruct
@@ -657,14 +657,14 @@ Global Symbols
 <P><STRONG><a name="[78]"></a>CardEmul</STRONG> (Thumb, 476 bytes, Stack size 8 bytes, menu_cardemul.o(i.CardEmul))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = CardEmul &rArr; LCD_DrawRect &rArr; LCD_DrawLine &rArr; LCD_SetCursor_onwindows &rArr; LCD_WriteData &rArr; LCD_CtrlLinesWrite
 </UL>
-<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawRect
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_Stop
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearLine
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawRect
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_Stop
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear_ActiveWindow
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearLine
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;file_CRC
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
@@ -817,8 +817,8 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_P2PP
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigServer
-<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
+<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
 <LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagHunting
 </UL>
 
@@ -836,21 +836,19 @@ Global Symbols
 <P><STRONG><a name="[96]"></a>DisplayMenu</STRONG> (Thumb, 208 bytes, Stack size 16 bytes, menu.o(i.DisplayMenu))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = DisplayMenu &rArr; LCD_DisplayStringLine &rArr; LCD_DisplayChar &rArr; LCD_DrawChar &rArr; LCD_SetCursor &rArr; LCD_WriteData &rArr; LCD_CtrlLinesWrite
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_AllOff
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_AllOff
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRotateOnOffConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProprietaryP2PConfigServer
 <LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProprietaryP2PConfigClient
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigServer
 <LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigClient
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagEmul
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ApplicationClose
-<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagHunting
 <LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagDetectWakeUp
 <LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBRemoteControl
 <LI><a href="#[22d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SelFunc
@@ -1463,8 +1461,6 @@ Global Symbols
 <LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProprietaryP2PConfigClient
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigServer
 <LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigClient
-<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagEmul
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ApplicationInit
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ApplicationClose
@@ -1482,8 +1478,6 @@ Global Symbols
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearITPendingBit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
-<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagEmul
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ApplicationInit
 <LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagHunting
@@ -1519,15 +1513,13 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProprietaryP2PConfigServer
 <LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProprietaryP2PConfigClient
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigServer
 <LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigClient
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagEmul
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CardEmul
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayFWUScreen
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ApplicationClose
-<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagHunting
 <LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagDetectWakeUp
 <LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBRemoteControl
 </UL>
@@ -1537,10 +1529,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayChar
 </UL>
-<BR>[Called By]<UL><LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readNDEFfromTAG
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CardEmul
-<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagHunting
+<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CardEmul
 <LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagDetectWakeUp
 </UL>
 
@@ -1570,10 +1559,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawChar
 </UL>
 <BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongRefreshScreen
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readNDEFfromTAG
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearLine
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
 </UL>
 
 <P><STRONG><a name="[ae]"></a>LCD_DisplayStringLine</STRONG> (Thumb, 44 bytes, Stack size 24 bytes, drv_lcdspi_ili9341.o(i.LCD_DisplayStringLine))
@@ -1589,14 +1576,11 @@ Global Symbols
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckForUserAction
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;refreshScreen
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;handleCommandFromWOD
-<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigServer
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readNDEFfromTAG
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
+<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigServer
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagEmul
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CardEmul
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayFWUScreen
-<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagHunting
 <LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagDetectWakeUp
 <LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBRemoteControl
 <LI><a href="#[226]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowMenuIcons
@@ -1654,15 +1638,12 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProprietaryP2PConfigServer
 <LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProprietaryP2PConfigClient
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigServer
 <LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigClient
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readNDEFfromTAG
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagEmul
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CardEmul
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayFWUScreen
-<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagHunting
 <LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagDetectWakeUp
 <LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBRemoteControl
 <LI><a href="#[226]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowMenuIcons
@@ -1709,16 +1690,14 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProprietaryP2PConfigServer
 <LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProprietaryP2PConfigClient
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigServer
 <LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigClient
 <LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongRefreshScreen
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readNDEFfromTAG
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagEmul
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CardEmul
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayFWUScreen
-<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagHunting
 <LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagDetectWakeUp
 <LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBRemoteControl
 <LI><a href="#[226]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ShowMenuIcons
@@ -1846,8 +1825,8 @@ Global Symbols
 
 <P><STRONG><a name="[ec]"></a>LED_AllOff</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, drv_led.o(i.LED_AllOff))
 <BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
-<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
+<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
 <LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagHunting
 </UL>
 
@@ -1910,7 +1889,6 @@ Global Symbols
 
 <P><STRONG><a name="[243]"></a>LED_Troggle</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, drv_led.o(i.LED_Troggle))
 <BR><BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[31]"></a>MemManage_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_it.o(i.MemManage_Handler))
@@ -2088,8 +2066,8 @@ Global Symbols
 <P><STRONG><a name="[176]"></a>NVIC_Init</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, misc.o(i.NVIC_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = NVIC_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[271]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delayHighPriority_ms
+<BR>[Called By]<UL><LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delayHighPriority_ms
+<LI><a href="#[271]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
 <LI><a href="#[174]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Interrupts_Config
 </UL>
 
@@ -2259,6 +2237,7 @@ Global Symbols
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_TagHunting
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigServer
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
+<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
 <LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagHunting
 </UL>
 
@@ -3041,13 +3020,13 @@ Global Symbols
 <P><STRONG><a name="[16]"></a>PongConfigClient</STRONG> (Thumb, 156 bytes, Stack size 8 bytes, pongexample.o(i.PongConfigClient))
 <BR><BR>[Stack]<UL><LI>Max Depth = 776<LI>Call Chain = PongConfigClient &rArr; ConfigManager_CardEmulation &rArr; PICCEmul_ManagePICCEmulation &rArr; PICCEmul_ReceiveCommand &rArr; PICCNFCT4_ReplyCommand &rArr; PICCNFCT4_UpdateBinary &rArr; RFT_ReceiveFile &rArr; PICC7816_SendBuffer &rArr; PICC_Send &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; SPI_SendReceiveByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Rotate
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_CardEmulation
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Rotate
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_CardEmulation
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_On
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Off
 </UL>
@@ -3057,16 +3036,16 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 1504<LI>Call Chain = PongConfigServer &rArr; ConfigManager_TagHunting &rArr; FELICA_Initialization &rArr; FELICA_Init &rArr; PCD_WriteRegister &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; SPI_SendReceiveByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_FieldOff
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Rotate
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_TagHunting
 <LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongRefreshScreen
 <LI><a href="#[221]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongInitiator_SendRequestReceiveResponse
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_On
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Off
@@ -3098,10 +3077,10 @@ Global Symbols
 <LI><a href="#[224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initPP2PContext
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_On
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Off
@@ -3117,10 +3096,10 @@ Global Symbols
 <LI><a href="#[224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initPP2PContext
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_On
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Off
@@ -3395,9 +3374,9 @@ Global Symbols
 <P><STRONG><a name="[226]"></a>ShowMenuIcons</STRONG> (Thumb, 766 bytes, Stack size 16 bytes, menu.o(i.ShowMenuIcons))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = ShowMenuIcons &rArr; SelFunc &rArr; DisplayMenu &rArr; LCD_DisplayStringLine &rArr; LCD_DisplayChar &rArr; LCD_DrawChar &rArr; LCD_SetCursor &rArr; LCD_WriteData &rArr; LCD_CtrlLinesWrite
 </UL>
-<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawRect
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawRect
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
 <LI><a href="#[236]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockCmd
@@ -3544,10 +3523,10 @@ Global Symbols
 <P><STRONG><a name="[23d]"></a>TIM_ClearITPendingBit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_ClearITPendingBit))
 <BR><BR>[Called By]<UL><LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drvInt_TimeoutTimerConfig
 <LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drvInt_AppliTimeoutTimerConfig
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delayHighPriority_ms
 <LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer_Structure_Config
 <LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDelay_us_Config
 <LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDelay_ms_Config
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delayHighPriority_ms
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM4_IRQHandler
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_IRQHandler
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
@@ -3557,10 +3536,10 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drvInt_TimeoutTimerConfig
 <LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drvInt_AppliTimeoutTimerConfig
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delayHighPriority_ms
 <LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDelay_us_Config
 <LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerDelay_ms_Config
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delayHighPriority_ms
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM4_IRQHandler
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_IRQHandler
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StopAppliTimeOut
@@ -3580,8 +3559,8 @@ Global Symbols
 
 <P><STRONG><a name="[239]"></a>TIM_SetCounter</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_tim.o(i.TIM_SetCounter))
 <BR><BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delayHighPriority_ms
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartAppliTimeOut
 <LI><a href="#[23b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartTimeOut
 </UL>
@@ -3617,13 +3596,13 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearLine
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
 <LI><a href="#[1d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_WaitforTagDetection
 <LI><a href="#[1d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_TagDetectCalibration
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearLine
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> menu.o(.data)
 </UL>
@@ -3631,15 +3610,15 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 1840<LI>Call Chain = TagEmul &rArr; NDEF_WriteNDEF &rArr; WriteData &rArr; PCDNFCT5_WriteNDEF &rArr; ISO15693_WriteBytes_TagData &rArr; ISO15693_WriteTagData &rArr; ISO15693_WriteSingleBlock &rArr; PCD_SendRecv &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; SPI_SendReceiveByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_WriteNDEF
-<LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initFlashNDEF
-<LI><a href="#[1ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_WriteURI
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
+<LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initFlashNDEF
+<LI><a href="#[1ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_WriteURI
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRotateOnOffConfig
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_On
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Off
 <LI><a href="#[241]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;manageFlashNDEF
@@ -3757,20 +3736,14 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> menu.o(.data)
 </UL>
-<P><STRONG><a name="[c]"></a>TagHunting</STRONG> (Thumb, 996 bytes, Stack size 104 bytes, menu_reader.o(i.TagHunting))
+<P><STRONG><a name="[c]"></a>TagHunting</STRONG> (Thumb, 682 bytes, Stack size 104 bytes, menu_reader.o(i.TagHunting))
 <BR><BR>[Stack]<UL><LI>Max Depth = 1568<LI>Call Chain = TagHunting &rArr; ConfigManager_TagHunting &rArr; FELICA_Initialization &rArr; FELICA_Init &rArr; PCD_WriteRegister &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; SPI_SendReceiveByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_FieldOff
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_TagHunting
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_AllOff
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearLine
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRotateOnOffConfig
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_On
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hex2Char
 <LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
@@ -3779,21 +3752,18 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> menu.o(.data)
 </UL>
-<P><STRONG><a name="[e]"></a>TagReading</STRONG> (Thumb, 394 bytes, Stack size 24 bytes, menu_reader.o(i.TagReading))
-<BR><BR>[Stack]<UL><LI>Max Depth = 2080<LI>Call Chain = TagReading &rArr; readNDEFfromTAG &rArr; PCDNFCT2_ReadNDEF &rArr; PCDNFCT2_SectorSelect &rArr; PCD_SendRecv &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; SPI_SendReceiveByte
+<P><STRONG><a name="[e]"></a>TagReading</STRONG> (Thumb, 402 bytes, Stack size 48 bytes, menu_reader.o(i.TagReading))
+<BR><BR>[Stack]<UL><LI>Max Depth = 2104<LI>Call Chain = TagReading &rArr; readNDEFfromTAG &rArr; PCDNFCT2_ReadNDEF &rArr; PCDNFCT2_SectorSelect &rArr; PCD_SendRecv &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; SPI_SendReceiveByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_TagHunting
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_FieldOff
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_TagHunting
 <LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readNDEFfromTAG
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_AllOff
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRotateOnOffConfig
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Troggle
 <LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-</UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> menu.o(.data)
 </UL>
@@ -3802,6 +3772,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
 <LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FillTagEMAIL
+</UL>
+<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> menu.o(.data)
 </UL>
@@ -3843,23 +3815,15 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> menu.o(.data)
 </UL>
-<P><STRONG><a name="[245]"></a>TagWriting</STRONG> (Thumb, 1776 bytes, Stack size 56 bytes, menu_writer.o(i.TagWriting))
+<P><STRONG><a name="[245]"></a>TagWriting</STRONG> (Thumb, 596 bytes, Stack size 56 bytes, menu_writer.o(i.TagWriting))
 <BR><BR>[Stack]<UL><LI>Max Depth = 1896<LI>Call Chain = TagWriting &rArr; NDEF_WriteText &rArr; WriteData &rArr; PCDNFCT5_WriteNDEF &rArr; ISO15693_WriteBytes_TagData &rArr; ISO15693_WriteTagData &rArr; ISO15693_WriteSingleBlock &rArr; PCD_SendRecv &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; SPI_SendReceiveByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_WriteNDEF
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_FieldOff
-<LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayChar
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_TagHunting
 <LI><a href="#[1ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_WriteURI
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_AllOff
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearLine
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRotateOnOffConfig
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_On
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Off
 <LI><a href="#[1ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_WriteText
@@ -3869,13 +3833,14 @@ Global Symbols
 <LI><a href="#[191]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriteVCARD
+<BR>[Called By]<UL><LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriteEMAIL
+<LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriteVCARD
 <LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriteURI
 <LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriteText
 <LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriteSMS
 <LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriteGEO
-<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriteEMAIL
 </UL>
 
 <P><STRONG><a name="[24b]"></a>Timer_Config</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, hw_config.o(i.Timer_Config))
@@ -3950,11 +3915,11 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Cable_Config
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRotateOnOffConfig
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> menu.o(.data)
 </UL>
@@ -4078,9 +4043,11 @@ Global Symbols
 <P><STRONG><a name="[c5]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
+<BR>[Called By]<UL><LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readNDEFfromTAG
 <LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_HWInit
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriting
+<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
 </UL>
 
 <P><STRONG><a name="[25a]"></a>__0sprintf$8</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, printf8.o(i.__0sprintf$8), UNUSED)
@@ -4133,8 +4100,7 @@ Global Symbols
 <LI><a href="#[23d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
 <LI><a href="#[176]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendSPINSSPulse
+<BR>[Called By]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendSPINSSPulse
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendIRQINPulse
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ResetSPI
 <LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISO15693_RunAntiCollision
@@ -4430,19 +4396,17 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CheckForUserAction
 </UL>
 
-<P><STRONG><a name="[74]"></a>main</STRONG> (Thumb, 214 bytes, Stack size 0 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 2080<LI>Call Chain = main &rArr; TagReading &rArr; readNDEFfromTAG &rArr; PCDNFCT2_ReadNDEF &rArr; PCDNFCT2_SectorSelect &rArr; PCD_SendRecv &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; SPI_SendReceiveByte
+<P><STRONG><a name="[74]"></a>main</STRONG> (Thumb, 208 bytes, Stack size 0 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 1904<LI>Call Chain = main &rArr; TagWriteEMAIL &rArr; TagWriting &rArr; NDEF_WriteText &rArr; WriteData &rArr; PCDNFCT5_WriteNDEF &rArr; ISO15693_WriteBytes_TagData &rArr; ISO15693_WriteTagData &rArr; ISO15693_WriteSingleBlock &rArr; PCD_SendRecv &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; SPI_SendReceiveByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[271]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delayHighPriority_ms
 <LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer_Config
-<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagWriteEMAIL
 <LI><a href="#[230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
 <LI><a href="#[236]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockCmd
 <LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetVectorTable
 <LI><a href="#[235]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Menu_Init
-<LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Troggle
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_On
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Off
 <LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Config
@@ -4474,15 +4438,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initFlashNDEF
 </UL>
 
-<P><STRONG><a name="[244]"></a>readNDEFfromTAG</STRONG> (Thumb, 834 bytes, Stack size 560 bytes, menu_reader.o(i.readNDEFfromTAG))
+<P><STRONG><a name="[244]"></a>readNDEFfromTAG</STRONG> (Thumb, 382 bytes, Stack size 560 bytes, menu_reader.o(i.readNDEFfromTAG))
 <BR><BR>[Stack]<UL><LI>Max Depth = 2056<LI>Call Chain = readNDEFfromTAG &rArr; PCDNFCT2_ReadNDEF &rArr; PCDNFCT2_SectorSelect &rArr; PCD_SendRecv &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; SPI_SendReceiveByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayChar
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearLine
-<LI><a href="#[1cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCDNFCT5_ReadNDEF
+<BR>[Calls]<UL><LI><a href="#[1cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCDNFCT5_ReadNDEF
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCDNFCT4_ReadNDEF
 <LI><a href="#[1c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCDNFCT3_ReadNDEF
 <LI><a href="#[1ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCDNFCT2_ReadNDEF
@@ -4493,6 +4452,7 @@ Global Symbols
 <LI><a href="#[1a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_ReadEmail
 <LI><a href="#[194]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NDEF_IdentifyNDEF
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TagReading
 </UL>
@@ -4564,11 +4524,11 @@ Local Symbols
 <P><STRONG><a name="[220]"></a>PongRefreshScreen</STRONG> (Thumb, 1668 bytes, Stack size 8 bytes, pongexample.o(i.PongRefreshScreen))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = PongRefreshScreen &rArr; LCD_DrawRect &rArr; LCD_DrawLine &rArr; LCD_SetCursor_onwindows &rArr; LCD_WriteData &rArr; LCD_CtrlLinesWrite
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Rotate
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Rotate
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawRect
 <LI><a href="#[182]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawLine
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayChar
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
 </UL>
 <BR>[Called By]<UL><LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongConfigServer
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PongCheckForUserAction
@@ -4661,8 +4621,8 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = ApplicationClose &rArr; DisplayMenu &rArr; LCD_DisplayStringLine &rArr; LCD_DisplayChar &rArr; LCD_DrawChar &rArr; LCD_SetCursor &rArr; LCD_WriteData &rArr; LCD_CtrlLinesWrite
 </UL>
 <BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayMenu
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntExtOnOffConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CardEmul14443A
 </UL>
@@ -4680,11 +4640,11 @@ Local Symbols
 <P><STRONG><a name="[98]"></a>DisplayFWUScreen</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, menu_cardemul.o(i.DisplayFWUScreen))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = DisplayFWUScreen &rArr; LCD_DrawRect &rArr; LCD_DrawLine &rArr; LCD_SetCursor_onwindows &rArr; LCD_WriteData &rArr; LCD_CtrlLinesWrite
 </UL>
-<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawRect
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetTextColor
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetBackColor
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DrawRect
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DisplayStringLine
 </UL>
 <BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ApplicationInit
 </UL>

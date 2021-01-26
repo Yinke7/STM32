@@ -110,38 +110,38 @@ void TagWriting(void)
 	bool NewTagDetected = false;
 	
 	LED_On(LED1);
-	LCD_Clear(Black);
+//	LCD_Clear(Black);
 
-  /* Set the Back Color */
-  LCD_SetBackColor(Blue);
-  /* Set the Text Color */
-  LCD_SetTextColor(White);
-  
-  LCD_DisplayStringLine(Line0, (u8*)"  Tag Writer Mode   ");
-  LCD_DisplayStringLine(Line9, (u8*)"   Select to exit   ");
-	
-	 /* Set the Back Color */
-  LCD_SetBackColor(Black);
-  /* Set the Text Color */
-  LCD_SetTextColor(White);
-	
-	LCD_DisplayStringLine(Line2, (u8*)"ST95HF is searching ");
-  LCD_DisplayStringLine(Line3, (u8*)"for a tag to write..");
+//  /* Set the Back Color */
+//  LCD_SetBackColor(Blue);
+//  /* Set the Text Color */
+//  LCD_SetTextColor(White);
+//  
+//  LCD_DisplayStringLine(Line0, (u8*)"  Tag Writer Mode   ");
+//  LCD_DisplayStringLine(Line9, (u8*)"   Select to exit   ");
+//	
+//	 /* Set the Back Color */
+//  LCD_SetBackColor(Black);
+//  /* Set the Text Color */
+//  LCD_SetTextColor(White);
+//	
+//	LCD_DisplayStringLine(Line2, (u8*)"ST95HF is searching ");
+//  LCD_DisplayStringLine(Line3, (u8*)"for a tag to write..");
 	
 	LED_Off(LED1);
 	nfc_tagtype = UNDEFINED_TAG_TYPE;
 	devicemode = PCD;
 	
 	/* External Interrupt Enable */
-	IntExtOnOffConfig(ENABLE);
-	IntRotateOnOffConfig(DISABLE);
+//	IntExtOnOffConfig(ENABLE);
+//	IntRotateOnOffConfig(DISABLE);
 	/* Prepare to exit loop on SEL Key Press */
 	KEYPress = false; 
 	lockKEYUpDown = true;
 	/* wait user action to go back to previous screen */
-	while(!KEYPress)
+//	while(!KEYPress)
 	{		
-		LCD_SetTextColor(White);
+//		LCD_SetTextColor(White);
 		
 		/* Scan to find if there is a supported tag */
 		TagType = ConfigManager_TagHunting(TRACK_ALL);	
@@ -154,7 +154,8 @@ void TagWriting(void)
 				if(memcmp (LastUIDFound, TagUID, 6))
 				{	
 					memcpy(LastUIDFound,TagUID,6);	
-					LCD_DisplayStringLine(Line2, (u8*)"Writing TT1...      ");
+//					LCD_DisplayStringLine(Line2, (u8*)"Writing TT1...      ");
+					printf("Writing TT1...\r\n");
 					LED_On(LED1);
 					NewTagDetected = true;
 				}
@@ -166,7 +167,8 @@ void TagWriting(void)
 				if(memcmp (LastUIDFound, ISO14443A_Card.UID, ISO14443A_Card.UIDsize))
 				{	
 					memcpy(LastUIDFound,ISO14443A_Card.UID,ISO14443A_Card.UIDsize);	
-					LCD_DisplayStringLine(Line2, (u8*)"Writing TT2...      ");
+//					LCD_DisplayStringLine(Line2, (u8*)"Writing TT2...      ");
+					printf("Writing TT2...\r\n");
 					LED_On(LED2);
 					NewTagDetected = true;
 					}
@@ -178,7 +180,8 @@ void TagWriting(void)
 				if(memcmp (LastUIDFound, FELICA_Card.UID, 8))
 				{	
 					memcpy(LastUIDFound,FELICA_Card.UID,8);
-					LCD_DisplayStringLine(Line2, (u8*)"Writing TT3...      ");
+//					LCD_DisplayStringLine(Line2, (u8*)"Writing TT3...      ");
+					printf("Writing TT3...\r\n");
 					LED_On(LED3);
 					NewTagDetected = true;
 			  }
@@ -190,7 +193,8 @@ void TagWriting(void)
 				if(memcmp (LastUIDFound, ISO14443A_Card.UID, ISO14443A_Card.UIDsize))
 				{	
 					memcpy(LastUIDFound,ISO14443A_Card.UID,ISO14443A_Card.UIDsize);	
-					LCD_DisplayStringLine(Line2, (u8*)"Writing TT4A...      ");
+//					LCD_DisplayStringLine(Line2, (u8*)"Writing TT4A...      ");
+					printf("Writing TT4A...\r\n");
 					LED_On(LED4);
 					NewTagDetected = true;
 				}
@@ -202,7 +206,8 @@ void TagWriting(void)
 				if(memcmp (LastUIDFound, ISO14443B_Card.PUPI, 4))
 				{	
 					memcpy(LastUIDFound,ISO14443B_Card.PUPI, 4);
-					LCD_DisplayStringLine(Line2, (u8*)"Writing TT4B...      ");
+//					LCD_DisplayStringLine(Line2, (u8*)"Writing TT4B...      ");
+					printf("Writing TT4B...\r\n");
 					LED_On(LED5);
 					NewTagDetected = true;
 		    }
@@ -214,7 +219,8 @@ void TagWriting(void)
 				if(memcmp (LastUIDFound, TagUID, 8))
 				{	
 					memcpy(LastUIDFound,TagUID,8);	
-					LCD_DisplayStringLine(Line2, (u8*)"Writing TT5...       ");
+//					LCD_DisplayStringLine(Line2, (u8*)"Writing TT5...       ");
+					printf("Writing TT5...\r\n");
 					LED_On(LED2);
 					LED_On(LED5);
 					NewTagDetected = true;
@@ -231,11 +237,12 @@ void TagWriting(void)
 		/* We write the chosen message to the tag */
 		if( NewTagDetected == true)
 		{
-			LCD_ClearLine(Line3);
-			LCD_ClearLine(Line4);
-			LCD_ClearLine(Line5);	
-			LCD_ClearLine(Line6);
-			LCD_ClearLine(Line7);
+//			LCD_ClearLine(Line3);
+//			LCD_ClearLine(Line4);
+//			LCD_ClearLine(Line5);	
+//			LCD_ClearLine(Line6);
+//			LCD_ClearLine(Line7);
+			printf("tag detcted\r\n");
 			NewTagDetected = false;
 			
 			if (writeChoice == URI)
@@ -255,66 +262,76 @@ void TagWriting(void)
 			switch (status)
 			{
 				case PCDNFC_OK:
-					LCD_SetTextColor(Green);
-					LCD_DisplayChar(Line2, 16, 'D');
-					LCD_DisplayChar(Line2, 17, 'o');
-					LCD_DisplayChar(Line2, 18, 'n');
-					LCD_DisplayChar(Line2, 19, 'e');
-				
-					LCD_ClearLine(Line3);
-					LCD_ClearLine(Line4);
-					LCD_ClearLine(Line5);	
-					LCD_ClearLine(Line6);
-					LCD_ClearLine(Line7);
+//					LCD_SetTextColor(Green);
+//					LCD_DisplayChar(Line2, 16, 'D');
+//					LCD_DisplayChar(Line2, 17, 'o');
+//					LCD_DisplayChar(Line2, 18, 'n');
+//					LCD_DisplayChar(Line2, 19, 'e');
+//				
+//					LCD_ClearLine(Line3);
+//					LCD_ClearLine(Line4);
+//					LCD_ClearLine(Line5);	
+//					LCD_ClearLine(Line6);
+//					LCD_ClearLine(Line7);
+				printf("Done\r\n");
 					
-					if (writeChoice == URI)
-						LCD_DisplayStringLine(Line6, (u8*)" URL message stored ");
-					else if (writeChoice == SMS)
-						LCD_DisplayStringLine(Line6, (u8*)" SMS message stored ");
-					else if (writeChoice == EMAIL)
-						LCD_DisplayStringLine(Line6, (u8*)"EMAIL message stored");
-					else if (writeChoice == VCARD)
-						LCD_DisplayStringLine(Line6, (u8*)"VCARD message stored");
-					else if (writeChoice == GEO)
-						LCD_DisplayStringLine(Line6, (u8*)" GEO message stored ");
-					else if (writeChoice == TEXT)
-						LCD_DisplayStringLine(Line6, (u8*)"TEXT message stored ");
+//					if (writeChoice == URI)
+//						LCD_DisplayStringLine(Line6, (u8*)" URL message stored ");
+//					else if (writeChoice == SMS)
+//						LCD_DisplayStringLine(Line6, (u8*)" SMS message stored ");
+//					else if (writeChoice == EMAIL)
+//						LCD_DisplayStringLine(Line6, (u8*)"EMAIL message stored");
+//					else if (writeChoice == VCARD)
+//						LCD_DisplayStringLine(Line6, (u8*)"VCARD message stored");
+//					else if (writeChoice == GEO)
+//						LCD_DisplayStringLine(Line6, (u8*)" GEO message stored ");
+//					else if (writeChoice == TEXT)
+//						LCD_DisplayStringLine(Line6, (u8*)"TEXT message stored ");
+
+				printf("message stored\r\n");
 					break;
 				case PCDNFC_ERROR_MEMORY_INTERNAL:
 					LCD_SetTextColor(Red);
-					LCD_DisplayStringLine(Line2, (u8*)"Memory space in this");
-					LCD_DisplayStringLine(Line3, (u8*)" demonstration has  ");
-					LCD_DisplayStringLine(Line4, (u8*)"  been limited for  ");
-					LCD_DisplayStringLine(Line5, (u8*)"  this type of tag  ");
-					LCD_DisplayStringLine(Line6, (u8*)"  Please select a   ");
-					LCD_DisplayStringLine(Line7, (u8*)"  smaller content   ");
+//					LCD_DisplayStringLine(Line2, (u8*)"Memory space in this");
+//					LCD_DisplayStringLine(Line3, (u8*)" demonstration has  ");
+//					LCD_DisplayStringLine(Line4, (u8*)"  been limited for  ");
+//					LCD_DisplayStringLine(Line5, (u8*)"  this type of tag  ");
+//					LCD_DisplayStringLine(Line6, (u8*)"  Please select a   ");
+//					LCD_DisplayStringLine(Line7, (u8*)"  smaller content   ");
+				printf("Please select a smaller content\r\n");
 					break;
 				case PCDNFC_ERROR_MEMORY_TAG:
-					LCD_SetTextColor(Red);
-					LCD_ClearLine(Line2);
-					LCD_DisplayStringLine(Line3, (u8*)" Not enough memory  ");
-					LCD_DisplayStringLine(Line4, (u8*)"   inside the tag   ");
-					LCD_ClearLine(Line5);	
-					LCD_ClearLine(Line6);
-					LCD_ClearLine(Line7);
+//					LCD_SetTextColor(Red);
+//					LCD_ClearLine(Line2);
+//					LCD_DisplayStringLine(Line3, (u8*)" Not enough memory  ");
+//					LCD_DisplayStringLine(Line4, (u8*)"   inside the tag   ");
+//					LCD_ClearLine(Line5);	
+//					LCD_ClearLine(Line6);
+//					LCD_ClearLine(Line7);
+				printf("Not enough memory inside the tag\r\n");
+				
 					break;
 				case PCDNFC_ERROR_LOCKED:
-					LCD_SetTextColor(Red);
-				  LCD_ClearLine(Line2);
-					LCD_DisplayStringLine(Line3, (u8*)" The TAG is locked  ");
-					LCD_ClearLine(Line4);
-					LCD_ClearLine(Line5);
-					LCD_ClearLine(Line6);
-					LCD_ClearLine(Line7);
+//					LCD_SetTextColor(Red);
+//				  LCD_ClearLine(Line2);
+//					LCD_DisplayStringLine(Line3, (u8*)" The TAG is locked  ");
+//					LCD_ClearLine(Line4);
+//					LCD_ClearLine(Line5);
+//					LCD_ClearLine(Line6);
+//					LCD_ClearLine(Line7);
+				printf("The tag is locked\r\n");
+				
 					break;
 				default:
-					LCD_SetTextColor(Red);
-					LCD_ClearLine(Line2);
-					LCD_DisplayStringLine(Line3, (u8*)" Transmission Error ");
-					LCD_ClearLine(Line4);
-					LCD_ClearLine(Line5);
-					LCD_ClearLine(Line6);
-					LCD_ClearLine(Line7);
+//					LCD_SetTextColor(Red);
+//					LCD_ClearLine(Line2);
+//					LCD_DisplayStringLine(Line3, (u8*)" Transmission Error ");
+//					LCD_ClearLine(Line4);
+//					LCD_ClearLine(Line5);
+//					LCD_ClearLine(Line6);
+//					LCD_ClearLine(Line7);
+				
+				printf("Transmission Error\r\n");
 					memcpy(LastUIDFound,EmptyString,20); /* if Transmission error allow retry */
 					break;
 			}
@@ -325,7 +342,7 @@ End:
 		
 	PCD_FieldOff();				
 
-	LCD_Clear(White);
-  DisplayMenu();
-  IntExtOnOffConfig(ENABLE);
+//	LCD_Clear(White);
+//  DisplayMenu();
+//  IntExtOnOffConfig(ENABLE);
 }

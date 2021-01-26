@@ -135,20 +135,20 @@ void autoMode(void)
 	char message[21];
 	
 	/* Clear the LCD Screen */
-  LCD_Clear(Black);
-	/* Set the Back Color */
-  LCD_SetBackColor(Blue);
-  /* Set the Text Color */
-  LCD_SetTextColor(White);
-  LCD_DisplayStringLine(Line0, (u8*)"   AutoScan Mode    ");
-  LCD_DisplayStringLine(Line9, (u8*)"   Select to exit   ");
-	 /* Set the Back Color */
-  LCD_SetBackColor(Black);
-  /* Set the Text Color */
-  LCD_SetTextColor(White);
-	
-	// Print all the parameters selected
-  LCD_DisplayStringLine(Line2, (u8*)"Configured to detect");
+//  LCD_Clear(Black);
+//	/* Set the Back Color */
+//  LCD_SetBackColor(Blue);
+//  /* Set the Text Color */
+//  LCD_SetTextColor(White);
+//  LCD_DisplayStringLine(Line0, (u8*)"   AutoScan Mode    ");
+//  LCD_DisplayStringLine(Line9, (u8*)"   Select to exit   ");
+//	 /* Set the Back Color */
+//  LCD_SetBackColor(Black);
+//  /* Set the Text Color */
+//  LCD_SetTextColor(White);
+//	
+//	// Print all the parameters selected
+//  LCD_DisplayStringLine(Line2, (u8*)"Configured to detect");
 	// Try to find TT1/2/3/4A/4B/5/
 	if (manager.SelectedMode&SELECT_PCD)
 	{
@@ -166,21 +166,27 @@ void autoMode(void)
 	if (manager.SelectedMode&SELECT_PICC)
 	{
 		if( (manager.PiccMode&TRACK_NFCTYPE4A) || (manager.PiccMode&TRACK_NFCTYPE2) )
-			LCD_DisplayStringLine(Line4, (u8*)" NFCA reader        ");
+//			LCD_DisplayStringLine(Line4, (u8*)" NFCA reader        ");
+		printf("NFCA reader\r\n");
 	}
 	// Try to find P2P
 	if (manager.SelectedMode&SELECT_P2P)
 	{
 		if( manager.P2pMode & TARGET_LLCPA)
-			LCD_DisplayStringLine(Line5, (u8*)" P2P Initiator typeA");
+//			LCD_DisplayStringLine(Line5, (u8*)" P2P Initiator typeA");
+		printf("P2P Initiator typeA\r\n");
 		if( (manager.P2pMode & INITIATOR_LLCPA) && (manager.P2pMode & INITIATOR_LLCPF) )
-			LCD_DisplayStringLine(Line6, (u8*)" P2P Target typeA/F ");
+//			LCD_DisplayStringLine(Line6, (u8*)" P2P Target typeA/F ");
+		printf("P2P Target typeA/F\r\n");
 		else if (manager.P2pMode & INITIATOR_LLCPA)
-			LCD_DisplayStringLine(Line6, (u8*)" P2P Target typeA   ");
+//			LCD_DisplayStringLine(Line6, (u8*)" P2P Target typeA   ");
+		printf("P2P Target typeA\r\n");
 		else if (manager.P2pMode & INITIATOR_LLCPF)
-			LCD_DisplayStringLine(Line6, (u8*)" P2P Target typeF   ");		
+//			LCD_DisplayStringLine(Line6, (u8*)" P2P Target typeF   ");	
+			printf("P2P Target typeF\r\n");
 	}
-	LCD_DisplayStringLine(Line8, (u8*)"  Scan started...   ");
+//	LCD_DisplayStringLine(Line8, (u8*)"  Scan started...   ");
+	printf("Scan started...\r\n");
 	
 	initFlashNDEF();
   
@@ -193,8 +199,8 @@ void autoMode(void)
   
   delay_ms(1000);
   
-  LCD_ClearLine(Line1);LCD_ClearLine(Line2);LCD_ClearLine(Line3);LCD_ClearLine(Line4);
-  LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);LCD_ClearLine(Line8);
+//  LCD_ClearLine(Line1);LCD_ClearLine(Line2);LCD_ClearLine(Line3);LCD_ClearLine(Line4);
+//  LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);LCD_ClearLine(Line8);
 	
 	/* External Interrupt Enable */
 	IntExtOnOffConfig(ENABLE);
@@ -241,55 +247,61 @@ void autoMode(void)
 			status = readNDEFfromTAG();
 			if (status == PCDNFC_ERROR_MEMORY_INTERNAL)
 			{
-				LCD_ClearLine(Line3);LCD_ClearLine(Line4);LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);
-				LCD_SetTextColor(Red);
-				LCD_DisplayStringLine(Line3, (u8*)"Cannot fill internal");
-				LCD_DisplayStringLine(Line4, (u8*)"memory with NDEF    ");
-				LCD_DisplayStringLine(Line5, (u8*)"message             ");
-				LCD_SetTextColor(White);
+//				LCD_ClearLine(Line3);LCD_ClearLine(Line4);LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);
+//				LCD_SetTextColor(Red);
+//				LCD_DisplayStringLine(Line3, (u8*)"Cannot fill internal");
+//				LCD_DisplayStringLine(Line4, (u8*)"memory with NDEF    ");
+//				LCD_DisplayStringLine(Line5, (u8*)"message             ");
+//				LCD_SetTextColor(White);
+				printf("Cannot fill internal\r\n");
 			}
 			else if (status == PCDNFC_ERROR_NOT_FORMATED)
 			{
-				LCD_ClearLine(Line3);LCD_ClearLine(Line4);LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);
-				LCD_SetTextColor(White);
-				LCD_DisplayStringLine(Line3, (u8*)"     Empty tag      ");
+//				LCD_ClearLine(Line3);LCD_ClearLine(Line4);LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);
+//				LCD_SetTextColor(White);
+//				LCD_DisplayStringLine(Line3, (u8*)"     Empty tag      ");
+				printf("Empty tag\r\n");
 			}
       
       delay_ms(100);
 		}
     else if (devicemode == PICC)
     {    
-      LCD_ClearLine(Line1);LCD_ClearLine(Line2);LCD_ClearLine(Line3);LCD_ClearLine(Line4);
-      LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);LCD_ClearLine(Line8);
-      LED_AllOff();
-      memcpy(message,"NFCA reader detected",20);
-      LCD_DisplayStringLine(Line5, (u8*)message);
+//      LCD_ClearLine(Line1);LCD_ClearLine(Line2);LCD_ClearLine(Line3);LCD_ClearLine(Line4);
+//      LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);LCD_ClearLine(Line8);
+//      LED_AllOff();
+//      memcpy(message,"NFCA reader detected",20);
+//      LCD_DisplayStringLine(Line5, (u8*)message);
+		printf("NFCA reader detected\r\n");
 		}
 		else if(manager.Result == TARGET_LLCPA)
 		{
-			LCD_ClearLine(Line1);LCD_ClearLine(Line2);LCD_ClearLine(Line3);LCD_ClearLine(Line4);
-      LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);LCD_ClearLine(Line8);
-      LED_AllOff();
-			memcpy(message,"P2P Initiator TypeA ",20);
-      LCD_DisplayStringLine(Line5, (u8*)message);
+//			LCD_ClearLine(Line1);LCD_ClearLine(Line2);LCD_ClearLine(Line3);LCD_ClearLine(Line4);
+//      LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);LCD_ClearLine(Line8);
+//      LED_AllOff();
+//			memcpy(message,"P2P Initiator TypeA ",20);
+//      LCD_DisplayStringLine(Line5, (u8*)message);
+			printf("P2P Initiator TypeA\r\n");
 		}
 		else if(manager.Result == INITIATOR_LLCPA)
 		{
-			LCD_ClearLine(Line1);LCD_ClearLine(Line2);LCD_ClearLine(Line3);LCD_ClearLine(Line4);
-      LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);LCD_ClearLine(Line8);
-      LED_AllOff();
-			memcpy(message," P2P Target TypeA   ",20);
-      LCD_DisplayStringLine(Line5, (u8*)message);
+//			LCD_ClearLine(Line1);LCD_ClearLine(Line2);LCD_ClearLine(Line3);LCD_ClearLine(Line4);
+//      LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);LCD_ClearLine(Line8);
+//      LED_AllOff();
+//			memcpy(message," P2P Target TypeA   ",20);
+//      LCD_DisplayStringLine(Line5, (u8*)message);
+			printf("P2P Target TypeA\r\n");
 		}
 		else if(manager.Result == INITIATOR_LLCPF)
 		{
-			LCD_ClearLine(Line1);LCD_ClearLine(Line2);LCD_ClearLine(Line3);LCD_ClearLine(Line4);
-      LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);LCD_ClearLine(Line8);
-      LED_AllOff();
-			memcpy(message," P2P Target TypeF   ",20);
-      LCD_DisplayStringLine(Line5, (u8*)message);
+//			LCD_ClearLine(Line1);LCD_ClearLine(Line2);LCD_ClearLine(Line3);LCD_ClearLine(Line4);
+//      LCD_ClearLine(Line5);LCD_ClearLine(Line6);LCD_ClearLine(Line7);LCD_ClearLine(Line8);
+//      LED_AllOff();
+//			memcpy(message," P2P Target TypeF   ",20);
+//      LCD_DisplayStringLine(Line5, (u8*)message);
+			printf("P2P Target TypeF\r\n");
 		}
 	}// Exit the loop only when the hunt has been stoped by the user
 	
-  DisplayMenu();
+//  DisplayMenu();
 }

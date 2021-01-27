@@ -208,13 +208,13 @@ int main(void)
 //			while(USART_RX_BUF[0] == 0x01)
 //			{
 			
-//				printf("read tag...\r\n");
-//				TagReading();
+				printf("read tag...\r\n");
+				TagReading();
 				
-				printf("write tag...\r\n");
-				TagWriteEMAIL();
+//				printf("write tag...\r\n");
+//				TagWriteEMAIL();
 //				autoTypeAll();
-				delay_ms(1000);
+				delay_ms(3000);
 //			} 
 			 
 //				printf("writting tag text...\r\n");

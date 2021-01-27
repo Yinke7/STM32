@@ -2,7 +2,7 @@
 .\obj\main.o: ..\inc\main.h
 .\obj\main.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\main.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\main.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\main.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\main.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\main.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\main.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -31,9 +31,9 @@
 .\obj\main.o: ..\..\..\..\..\libraries\95HF\inc\drv_interrupt.h
 .\obj\main.o: ..\inc\hw_config.h
 .\obj\main.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\main.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\main.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\obj\main.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\main.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\main.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\obj\main.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\main.o: ..\usart\usart.h
 .\obj\main.o: ..\sys\sys.h
 .\obj\main.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h

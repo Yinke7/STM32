@@ -2,7 +2,7 @@
 .\obj\usb_desc.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_desc.h
 .\obj\usb_desc.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\usb_desc.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\usb_desc.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\usb_desc.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\usb_desc.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\usb_desc.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\usb_desc.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h

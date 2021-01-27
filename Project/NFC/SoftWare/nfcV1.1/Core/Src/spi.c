@@ -26,7 +26,7 @@
 #include "stdbool.h"
 
 
-#define RFTRANS_95HF_MAX_BUFFER_SIZE													0x20E
+
 uint8_t				u95HFBuffer [RFTRANS_95HF_MAX_BUFFER_SIZE+3];
 
 bool flagspi2 = false;
@@ -192,17 +192,18 @@ int8_t ConfigManager_PORsequence( void )
 		HAL_GPIO_WritePin(SPI2_SWNSS_GPIO_Port,SPI2_SWNSS_Pin,GPIO_PIN_SET);
 		HAL_Delay(1);
 		
-		if (timeout == 0)
-		{
-			printf("Echo respone err 0x%02X\r\n",u95HFBuffer[0]);
-			return 1;
-			
-		}
-		else
-		{
-			printf("Echo respone 0x%02x follow timeout=%d\r\n",u95HFBuffer[0] ,timeout);	
-			return 0;
-		}	
+//		if (timeout == 0)
+//		{
+//			printf("Echo respone err 0x%02X\r\n",u95HFBuffer[0]);
+//			return 1;
+//			
+//		}
+//		else
+//		{
+//			printf("Echo respone 0x%02x follow timeout=%d\r\n",u95HFBuffer[0] ,timeout);	
+//			return 0;
+//		}	
+	return 0;
 }
 
 
@@ -221,24 +222,203 @@ int8_t ConfigManager_IDN(void)
 		
 		//memcpy(buff,rxbuff,sizeof(rxbuff));
 		
-		printf("CMD NID Respone: ");
-		for(cnt = 0; cnt < sizeof(datarx);cnt++)
-		{
-			if(cnt == sizeof(datarx) - 1)
-			{
-				printf("%02x\r\n",datarx[cnt]);
-			}
-			else
-			{
-				printf("%02x ",datarx[cnt]);
-			}
+//		printf("NID Respone: ");
+//		for(cnt = 0; cnt < sizeof(datarx);cnt++)
+//		{
+//			if(cnt == sizeof(datarx) - 1)
+//			{
+//				printf("%02X\r\n",datarx[cnt]);
+//			}
+//			else
+//			{
+//				printf("%02X ",datarx[cnt]);
+//			}
 			
-		}
+//		}
 			
 	/* send the command to the PICC and retrieve its response */
 	//drv95HF_SendReceive(DataToSend, pResponse);
 		return 0;
 }
+//virefy
+/**  
+* @brief  	this function returns PCD_SUCCESSCODE is the reader reply is a succesful code.
+* @param  	CmdCode		:  	code command send to the reader
+* @param  	ReaderReply	:  	pointer on the PCD device response	
+* @retval  	PCD_SUCCESSCODE :  the PCD device returned a succesful code
+* @retval  	PCD_ERRORCODE_DEFAULT  :  the PCD device didn't return a succesful code
+* @retval  	PCD_NOREPLY_CODE : no the PCD device response
+*/
+int8_t PCD_IsReaderResultCodeOk (uint8_t CmdCode,uint8_t *ReaderReply)
+{
+
+	if (ReaderReply[READERREPLY_STATUSOFFSET] == PCD_ERRORCODE_DEFAULT)
+		return PCD_NOREPLY_CODE;
+
+  	switch (CmdCode)
+	{
+		case 0x55: 
+			if (ReaderReply[PSEUDOREPLY_OFFSET] == 0x55)
+				return PCD_SUCCESSCODE;
+			else 
+				return PCD_ERRORCODE_DEFAULT;
+		case 0x01: 
+			if (ReaderReply[READERREPLY_STATUSOFFSET] == IDN_RESULTSCODE_OK)
+				return PCD_SUCCESSCODE;
+			else 
+				return PCD_ERRORCODE_DEFAULT;
+		case 0x02: 
+			switch (ReaderReply[READERREPLY_STATUSOFFSET])
+			{
+				case IDN_RESULTSCODE_OK :
+					return PCD_SUCCESSCODE;
+				case PROTOCOLSELECT_ERRORCODE_CMDLENGTH :
+					return PCD_ERRORCODE_DEFAULT;
+				case PROTOCOLSELECT_ERRORCODE_INVALID :
+					return PCD_ERRORCODE_DEFAULT;
+				default : return PCD_ERRORCODE_DEFAULT;
+			}
+		case 0x04: 
+			switch (ReaderReply[READERREPLY_STATUSOFFSET])
+			{
+				case SENDRECV_RESULTSCODE_OK :
+					if (ReaderReply[READERREPLY_STATUSOFFSET+1] != 0)
+						return PCD_SUCCESSCODE;
+					else
+						return PCD_ERRORCODE_DEFAULT;
+				case SENDRECV_RESULTSRESIDUAL :
+					return PCD_SUCCESSCODE;
+				case SENDRECV_ERRORCODE_COMERROR :
+					return PCD_ERRORCODE_DEFAULT;
+				case SENDRECV_ERRORCODE_FRAMEWAIT :
+					return PCD_ERRORCODE_DEFAULT;
+				case SENDRECV_ERRORCODE_SOF :
+					return PCD_ERRORCODE_DEFAULT;
+				case SENDRECV_ERRORCODE_OVERFLOW :
+					return PCD_ERRORCODE_DEFAULT;
+				case SENDRECV_ERRORCODE_FRAMING :
+					return PCD_ERRORCODE_DEFAULT;
+				case SENDRECV_ERRORCODE_EGT :
+					return PCD_ERRORCODE_DEFAULT;
+				case SENDRECV_ERRORCODE_LENGTH :
+					return PCD_ERRORCODE_DEFAULT;
+				case SENDRECV_ERRORCODE_CRC :
+					return PCD_ERRORCODE_DEFAULT;
+				case SENDRECV_ERRORCODE_RECEPTIONLOST :
+					return PCD_ERRORCODE_DEFAULT;
+				default :
+					return PCD_ERRORCODE_DEFAULT;
+			}			
+		case 0x07: 
+			switch (ReaderReply[READERREPLY_STATUSOFFSET])
+			{
+				case IDLE_RESULTSCODE_OK :
+					return PCD_SUCCESSCODE;
+				case IDLE_ERRORCODE_LENGTH :
+					return PCD_ERRORCODE_DEFAULT;
+				default : return PCD_ERRORCODE_DEFAULT;
+			}
+		case 0x08: 
+			switch (ReaderReply[READERREPLY_STATUSOFFSET])
+			{
+				case READREG_RESULTSCODE_OK :
+					return PCD_SUCCESSCODE;
+				case READREG_ERRORCODE_LENGTH :
+					return PCD_ERRORCODE_DEFAULT;
+				default : return PCD_ERRORCODE_DEFAULT;
+			}
+		case 0x09: 
+			switch (ReaderReply[READERREPLY_STATUSOFFSET])
+			{
+				case 0x00 :
+					return PCD_SUCCESSCODE;
+				default : return PCD_ERRORCODE_DEFAULT;
+			}
+//		case BAUD_RATE: 
+//			return PCD_ERRORCODE_DEFAULT;
+		default: 
+			return 0x01;
+	}
+}
+
+
+
+
+//select protocol
+int8_t SelectProtocol(void)
+{
+	uint8_t cmdSelProto[] = {0x02,0x02,0x02,0x00};
+	
+	drv95HF_SendReceive(cmdSelProto,u95HFBuffer);
+
+}
+
+//AdjustTimerW
+int8_t AdjustTimerW(void)
+{
+	uint8_t cmdadjust[] = {0x09, 0x04, 0x3A, 0x00, 0x50, 0x04};
+	drv95HF_SendReceive(cmdadjust,u95HFBuffer);
+}
+//Modulation
+int8_t ModulationGain(void)
+{
+	uint8_t cmd[] = {0x09, 0x04, 0x68, 0x01, 0x01, 0xD1};
+	drv95HF_SendReceive(cmd,u95HFBuffer);
+}
+
+int8_t ISO14443A_REQA(void)
+{
+	uint8_t cmd[] = {0x04, 0x02, 0x26, 0x07};
+	drv95HF_SendReceive(cmd, u95HFBuffer);
+}
+int8_t ISO14443A_ANTICOL1(uint8_t *puid)
+{
+	uint8_t cmd[] = {0x04, 0x03, 0x93, 0x20, 0x08};
+	if(! drv95HF_SendReceive(cmd, u95HFBuffer))
+		memcpy(puid, u95HFBuffer + 2, 5);
+}
+
+int8_t ISO14443A_SELECT1(uint8_t *puid)
+{
+	uint8_t cmd[16];
+	cmd[0] = 0x04;
+	cmd[1] = 0x08;
+	cmd[2] = 0x93;
+	cmd[3] = 0x70;
+	memcpy(cmd + 4, puid, 5);
+	cmd[9] = 0x28;
+	drv95HF_SendReceive(cmd, u95HFBuffer);
+}
+// anticllo 
+int8_t ISO14443A_Anticollison_Algorithm(void)
+{
+		uint8_t CL1UID[20] = {0x00};
+		ISO14443A_REQA();
+		ISO14443A_ANTICOL1(CL1UID);
+		ISO14443A_SELECT1(CL1UID);
+}
+
+
+//read tag
+int8_t Readtag(void)
+{
+		uint8_t cmd[] = {0x04, 0x03, 0x30, 0x00, 0x28};
+		drv95HF_SendReceive(cmd, u95HFBuffer);
+}
+//write tag 
+int8_t Writetag(void)
+{
+		uint8_t cmd[20] = {0x04, 0x03, 0xa2, 0x00};
+		memset(cmd + 4, 0xa5, 5);
+		cmd[9] = 0x28;
+		drv95HF_SendReceive(cmd,u95HFBuffer);
+		
+}
+
+
+
+
+
 
 //send cmd 
 void drv95HF_SendSPICommand(uint8_t * pcmd)
@@ -296,7 +476,7 @@ void drv95HF_SPIPollingCommand(void)
 	
 	if(false)	//polling
 	{
-		printf("use spi poll\r\n");
+//		printf("use spi poll\r\n");
 		timeout = 500;
 		HAL_GPIO_WritePin(SPI2_SWNSS_GPIO_Port,SPI2_SWNSS_Pin,GPIO_PIN_RESET);
 		HAL_Delay(1);
@@ -312,7 +492,7 @@ void drv95HF_SPIPollingCommand(void)
 	}
 	else	//interrupt
 	{
-		printf("use interrupt\r\n");
+		//printf("use interrupt\r\n");
 			timeout = 500;
 		 while(flagspi2 == false && timeout != 0)
 		 {
@@ -322,14 +502,14 @@ void drv95HF_SPIPollingCommand(void)
 			  flagspi2 = false;
 	}
 	
-	if(timeout == 0)
-	{
-		printf("ST95 polling timeout err\r\n");
-	}
-	else 
-	{
-		printf("ST95 ready to read data\r\n");
-	}
+//	if(timeout == 0)
+//	{
+//		printf("ST95 polling timeout err\r\n");
+//	}
+//	else 
+//	{
+//		printf("ST95 ready to read data\r\n");
+//	}
 }
 
 //read respone
@@ -400,6 +580,8 @@ void drv95HF_ReceiveSPIResponse(uint8_t * pData)
 //send recieved 
 int8_t drv95HF_SendReceive(uint8_t *pCommand, uint8_t *pResponse)
 {
+		uint8_t errcode = 0x00;
+		uint16_t cnt = 0;
 		
 		printf("CMD[%02X]\r\n",pCommand[0]);
 		drv95HF_SendSPICommand(pCommand);
@@ -410,7 +592,25 @@ int8_t drv95HF_SendReceive(uint8_t *pCommand, uint8_t *pResponse)
 		//printf("RESPONE\r\n");
 		drv95HF_ReceiveSPIResponse(pResponse);
 	
+		errcode = PCD_IsReaderResultCodeOk (pCommand[0], pResponse);
 		
+		if(!errcode)
+		{
+			printf("Respone [OK] \r\n<<<");	
+			for(cnt = 0; cnt < pResponse[1] + 2; cnt++)
+			{
+				printf("%02X ",pResponse[cnt]);
+			}
+			printf("\r\n\r\n");
+			
+			return 0;
+		}
+		else
+		{
+			printf("Respone [Error]: 0x%02X\r\n",pResponse[0]);
+			return 1;
+		}
+		return 1;
 }
 
 

@@ -242,7 +242,7 @@ void TagWriting(void)
 //			LCD_ClearLine(Line5);	
 //			LCD_ClearLine(Line6);
 //			LCD_ClearLine(Line7);
-			printf("tag detcted\r\n");
+			//printf("tag detcted\r\n");
 			NewTagDetected = false;
 			
 			if (writeChoice == URI)

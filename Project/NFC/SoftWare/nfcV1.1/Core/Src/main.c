@@ -98,15 +98,27 @@ int main(void)
 	
 		printf("System Init OK!\r\n");
 		
+//		printf("POR \r\n");
 		ConfigManager_PORsequence();
-		printf("\r\n");
 		
+//		printf("NID \r\n");
 		ConfigManager_IDN();
-		printf("\r\n");
 		
+//		printf("SelProtocol \r\n");
+	  SelectProtocol();
 		
+		AdjustTimerW();
 		
+		ISO14443A_Anticollison_Algorithm();
 		
+		printf("read tag\r\n");
+		Readtag();
+		
+		printf(" write\r\n");
+		Writetag();
+		
+		printf("read tag\r\n");
+		Readtag();
 		
   /* USER CODE END 2 */
 
@@ -124,6 +136,9 @@ int main(void)
 			printf("Software Reset\r\n");
 			HAL_NVIC_SystemReset();
 		}
+		
+		
+		
 		HAL_Delay(1000);
 		
     /* USER CODE END WHILE */
@@ -172,6 +187,8 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+
 
 /* USER CODE END 4 */
 

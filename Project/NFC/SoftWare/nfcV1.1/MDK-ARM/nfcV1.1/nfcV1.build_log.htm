@@ -3,40 +3,39 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.18.0.0
-Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Yin yk15281095690@163.com, yk, LIC=47GSB-26R9L-Y7NRW-Q8QDG-15VID-1CTKQ
+IDE-Version: ¦ÌVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ke Yin, yk, LIC=LJWAR-KNRZ6-BVH1G-VZX31-JKCDR-MUBX4
  
 Tool Versions:
-Toolchain:       MDK-ARM Standard  Version: 5.18
-Toolchain Path:  E:\MDK\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.06 update 1 (build 61)
-Assembler:       Armasm.exe V5.06 update 1 (build 61)
-Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
-Library Manager: ArmAr.exe V5.06 update 1 (build 61)
-Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
-CPU DLL:         SARMCM3.DLL V5.18
-Dialog DLL:      DCM.DLL V1.13.6.0
-Target DLL:      Segger\JL2CM3.dll V2.99.18.0
-Dialog DLL:      TCM.DLL V1.14.8.0
+Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
+Toolchain Path:  E:\MDK5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
  
 <h2>Project:</h2>
-D:\GitHubFiles\STM32\Project\NFC\SoftWare\nfcV1.1\MDK-ARM\nfcV1.1.uvprojx
-Project File Date:  01/26/2021
+D:\GitHubProject\STM32\Project\NFC\SoftWare\nfcV1.1\MDK-ARM\nfcV1.1.uvprojx
+Project File Date:  01/27/2021
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'E:\MDK\ARM\ARMCC\Bin'
 Rebuild target 'nfcV1.1'
 assembling startup_stm32f103xg.s...
-compiling usart.c...
-compiling stm32f1xx_hal.c...
+compiling main.c...
+compiling gpio.c...
 compiling spi.c...
 ../Core/Src/spi.c(214): warning:  #177-D: variable "rxdata" was declared but never referenced
-  		uint8_t rxdata;
+                uint8_t rxdata;
 ../Core/Src/spi.c(216): warning:  #177-D: variable "datatx" was declared but never referenced
-  		uint8_t datatx[17] = {0xff};
+                uint8_t datatx[17] = {0xff};
 ../Core/Src/spi.c(218): warning:  #177-D: variable "cnt" was declared but never referenced
-  		uint8_t cnt = 0;
+                uint8_t cnt = 0;
 ../Core/Src/spi.c(354): warning:  #940-D: missing return statement at end of non-void function "SelectProtocol"
   }
 ../Core/Src/spi.c(361): warning:  #940-D: missing return statement at end of non-void function "AdjustTimerW"
@@ -49,56 +48,60 @@ compiling spi.c...
   }
 ../Core/Src/spi.c(391): warning:  #940-D: missing return statement at end of non-void function "ISO14443A_SELECT1"
   }
-../Core/Src/spi.c(399): warning:  #940-D: missing return statement at end of non-void function "ISO14443A_Anticollison_Algorithm"
+../Core/Src/spi.c(398): warning:  #940-D: missing return statement at end of non-void function "ISO14443A_ANTICOL2"
   }
-../Core/Src/spi.c(407): warning:  #940-D: missing return statement at end of non-void function "Readtag"
+../Core/Src/spi.c(410): warning:  #940-D: missing return statement at end of non-void function "ISO14443A_SELECT2"
   }
-../Core/Src/spi.c(416): warning:  #940-D: missing return statement at end of non-void function "Writetag"
+../Core/Src/spi.c(421): warning:  #940-D: missing return statement at end of non-void function "ISO14443A_Anticollison_Algorithm"
   }
-../Core/Src/spi.c(613): warning:  #111-D: statement is unreachable
-  		return 1;
-../Core/Src/spi.c: 13 warnings, 0 errors
+../Core/Src/spi.c(429): warning:  #940-D: missing return statement at end of non-void function "Readtag"
+  }
+../Core/Src/spi.c(438): warning:  #940-D: missing return statement at end of non-void function "Writetag"
+  }
+../Core/Src/spi.c(640): warning:  #111-D: statement is unreachable
+                return 1;
+../Core/Src/spi.c: 15 warnings, 0 errors
+compiling usart.c...
 compiling stm32f1xx_it.c...
-compiling stm32f1xx_hal_rcc.c...
-compiling stm32f1xx_hal_spi.c...
 compiling stm32f1xx_hal_msp.c...
-compiling gpio.c...
 compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_spi.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_rcc.c...
 compiling stm32f1xx_hal_rcc_ex.c...
-compiling main.c...
-compiling stm32f1xx_hal_tim.c...
-compiling stm32f1xx_hal_cortex.c...
-compiling stm32f1xx_hal_exti.c...
 compiling stm32f1xx_hal_gpio.c...
-compiling stm32f1xx_hal_flash_ex.c...
-compiling stm32f1xx_hal_pwr.c...
-compiling stm32f1xx_hal_uart.c...
 compiling stm32f1xx_hal_dma.c...
-compiling system_stm32f1xx.c...
-compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_pwr.c...
 compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_uart.c...
+compiling system_stm32f1xx.c...
 linking...
-Program Size: Code=9860 RO-data=372 RW-data=24 ZI-data=1712  
+Program Size: Code=9800 RO-data=384 RW-data=24 ZI-data=1712  
 FromELF: creating hex file...
-"nfcV1.1\nfcV1.1" - 0 Error(s), 13 Warning(s).
+"nfcV1.1\nfcV1.1" - 0 Error(s), 15 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
-                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
-                ARM::CMSIS:CORE:4.3.0
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
                 CMSIS (Cortex Microcontroller Software Interface Standard)
-   * Component: CORE Version: 4.3.0
+   * Component: CORE Version: 3.40.0
 
 <h2>Collection of Component include folders:</h2>
-  D:\GitHubFiles\STM32\Project\NFC\SoftWare\nfcV1.1\MDK-ARM\RTE
-  E:\MDK\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
-  E:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+  D:\GitHubProject\STM32\Project\NFC\SoftWare\nfcV1.1\MDK-ARM\RTE
+  E:\MDK5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  E:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:CORE:4.3.0
-Build Time Elapsed:  00:00:07
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
 </pre>
 </body>
 </html>

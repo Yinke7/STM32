@@ -338,9 +338,11 @@ int8_t ModulationGain(void);
 int8_t ISO14443A_REQA(void);
 int8_t ISO14443A_ANTICOL1(uint8_t *puid);
 int8_t ISO14443A_SELECT1(uint8_t *puid);
+int8_t ISO14443A_ANTICOL2(uint8_t *puid);
+int8_t ISO14443A_SELECT2(uint8_t *puid);
 int8_t ISO14443A_Anticollison_Algorithm(void);
-int8_t Readtag(void);
-int8_t Writetag(void);
+int8_t Readtag(uint8_t addr);
+int8_t Writetag(uint8_t addr);
 
 
 

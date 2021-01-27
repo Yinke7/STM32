@@ -68,7 +68,8 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	uint8_t addr;
+	
 	uint8_t uartcmd[4] = {0};
   /* USER CODE END 1 */
 
@@ -111,15 +112,17 @@ int main(void)
 		
 		ISO14443A_Anticollison_Algorithm();
 		
+		for(addr = 0x00; addr < 0xff; addr++)
+		{
 		printf("read tag\r\n");
-		Readtag();
+		Readtag(addr);
 		
-		printf(" write\r\n");
-		Writetag();
-		
-		printf("read tag\r\n");
-		Readtag();
-		
+//		printf("write\r\n");
+//		Writetag();
+//		
+//		printf("read tag\r\n");
+//		Readtag();
+		}
   /* USER CODE END 2 */
 
   /* Infinite loop */

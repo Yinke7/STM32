@@ -3,7 +3,7 @@
 <title>Static Call Graph - [nfcV1.1\nfcV1.1]</title></head>
 <body><HR>
 <H1>Static Call Graph for image nfcV1.1\nfcV1.1</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Wed Jan 27 19:01:14 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Thu Jan 28 00:42:07 2021
 <BR><P>
 <H3>Maximum Stack Usage =        808 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -99,7 +99,7 @@ Global Symbols
 <P><STRONG><a name="[48]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103xg.o(.text)
 </UL>
-<P><STRONG><a name="[95]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[94]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[4a]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -109,15 +109,15 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[96]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[95]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[97]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[96]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[98]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[97]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[99]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+<P><STRONG><a name="[98]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
 
-<P><STRONG><a name="[9a]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[99]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
 
 <P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32f103xg.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103xg.o(RESET)
@@ -307,17 +307,16 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[9b]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<P><STRONG><a name="[9a]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 
-<P><STRONG><a name="[4d]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Writetag
-<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<P><STRONG><a name="[4d]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
 <LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[9c]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[9b]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[9d]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[9c]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[4c]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -329,7 +328,7 @@ Global Symbols
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
 </UL>
 
-<P><STRONG><a name="[9e]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[9d]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[4e]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -339,7 +338,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
 <P><STRONG><a name="[4b]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
@@ -348,13 +347,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[9f]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[9e]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[51]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[a0]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[9f]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[53]"></a>AdjustTimerW</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, spi.o(i.AdjustTimerW))
 <BR><BR>[Stack]<UL><LI>Max Depth = 752<LI>Call Chain = AdjustTimerW &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
@@ -409,11 +408,11 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendSPICommand
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendSPICommand
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendIRQINPulse
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SPIPollingCommand
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SPIPollingCommand
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ResetSPI
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ReceiveSPIResponse
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ReceiveSPIResponse
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_PORsequence
 <LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -438,17 +437,17 @@ Global Symbols
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 </UL>
 
-<P><STRONG><a name="[93]"></a>HAL_GPIO_TogglePin</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, stm32f1xx_hal_gpio.o(i.HAL_GPIO_TogglePin))
+<P><STRONG><a name="[92]"></a>HAL_GPIO_TogglePin</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, stm32f1xx_hal_gpio.o(i.HAL_GPIO_TogglePin))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_GPIO_TogglePin
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[5a]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f1xx_hal_gpio.o(i.HAL_GPIO_WritePin))
-<BR><BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendSPICommand
+<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendSPICommand
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendIRQINPulse
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ResetSPI
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ReceiveSPIResponse
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ReceiveSPIResponse
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_PORsequence
 </UL>
@@ -525,7 +524,7 @@ Global Symbols
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
 </UL>
 
-<P><STRONG><a name="[94]"></a>HAL_NVIC_SystemReset</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, stm32f1xx_hal_cortex.o(i.HAL_NVIC_SystemReset))
+<P><STRONG><a name="[93]"></a>HAL_NVIC_SystemReset</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, stm32f1xx_hal_cortex.o(i.HAL_NVIC_SystemReset))
 <BR><BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -597,9 +596,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_EndRxTxTransaction
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendSPICommand
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendSPICommand
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ResetSPI
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ReceiveSPIResponse
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ReceiveSPIResponse
 </UL>
 
 <P><STRONG><a name="[76]"></a>HAL_SPI_TransmitReceive</STRONG> (Thumb, 554 bytes, Stack size 56 bytes, stm32f1xx_hal_spi.o(i.HAL_SPI_TransmitReceive))
@@ -608,8 +607,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_EndRxTxTransaction
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendSPICommand
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ReceiveSPIResponse
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendSPICommand
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ReceiveSPIResponse
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_SendReceiveBuffer
 </UL>
 
@@ -720,14 +719,14 @@ Global Symbols
 <P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f1xx_it.o(i.NMI_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103xg.o(RESET)
 </UL>
-<P><STRONG><a name="[92]"></a>PCD_IsReaderResultCodeOk</STRONG> (Thumb, 246 bytes, Stack size 0 bytes, spi.o(i.PCD_IsReaderResultCodeOk))
+<P><STRONG><a name="[91]"></a>PCD_IsReaderResultCodeOk</STRONG> (Thumb, 246 bytes, Stack size 0 bytes, spi.o(i.PCD_IsReaderResultCodeOk))
 <BR><BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendReceive
 </UL>
 
 <P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f1xx_it.o(i.PendSV_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103xg.o(RESET)
 </UL>
-<P><STRONG><a name="[83]"></a>Readtag</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, spi.o(i.Readtag))
+<P><STRONG><a name="[83]"></a>Readtag</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, spi.o(i.Readtag))
 <BR><BR>[Stack]<UL><LI>Max Depth = 752<LI>Call Chain = Readtag &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendReceive
@@ -740,8 +739,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
 </UL>
-<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendSPICommand
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ReceiveSPIResponse
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendSPICommand
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ReceiveSPIResponse
 </UL>
 
 <P><STRONG><a name="[6]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f1xx_it.o(i.SVC_Handler))
@@ -779,35 +778,26 @@ Global Symbols
 <P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f1xx_it.o(i.UsageFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f103xg.o(RESET)
 </UL>
-<P><STRONG><a name="[89]"></a>Writetag</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, spi.o(i.Writetag))
-<BR><BR>[Stack]<UL><LI>Max Depth = 760<LI>Call Chain = Writetag &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendReceive
-<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
-</UL>
-<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[89]"></a>__0printf$8</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[8a]"></a>__0printf$8</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
-</UL>
+<P><STRONG><a name="[a0]"></a>__1printf$8</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
 
-<P><STRONG><a name="[a1]"></a>__1printf$8</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
-
-<P><STRONG><a name="[90]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8))
+<P><STRONG><a name="[8f]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendReceive
 <LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a2]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[a1]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[a3]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[a2]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[a4]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[a3]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[8e]"></a>drv95HF_ReceiveSPIResponse</STRONG> (Thumb, 244 bytes, Stack size 552 bytes, spi.o(i.drv95HF_ReceiveSPIResponse))
+<P><STRONG><a name="[8d]"></a>drv95HF_ReceiveSPIResponse</STRONG> (Thumb, 244 bytes, Stack size 552 bytes, spi.o(i.drv95HF_ReceiveSPIResponse))
 <BR><BR>[Stack]<UL><LI>Max Depth = 704<LI>Call Chain = drv95HF_ReceiveSPIResponse &rArr; SPI_SendReceiveBuffer &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
@@ -830,7 +820,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_PORsequence
 </UL>
 
-<P><STRONG><a name="[8f]"></a>drv95HF_SPIPollingCommand</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, spi.o(i.drv95HF_SPIPollingCommand))
+<P><STRONG><a name="[8e]"></a>drv95HF_SPIPollingCommand</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, spi.o(i.drv95HF_SPIPollingCommand))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = drv95HF_SPIPollingCommand &rArr; HAL_Delay
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
@@ -848,19 +838,18 @@ Global Symbols
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_PORsequence
 </UL>
 
-<P><STRONG><a name="[54]"></a>drv95HF_SendReceive</STRONG> (Thumb, 102 bytes, Stack size 24 bytes, spi.o(i.drv95HF_SendReceive))
+<P><STRONG><a name="[54]"></a>drv95HF_SendReceive</STRONG> (Thumb, 130 bytes, Stack size 24 bytes, spi.o(i.drv95HF_SendReceive))
 <BR><BR>[Stack]<UL><LI>Max Depth = 736<LI>Call Chain = drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendSPICommand
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SPIPollingCommand
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ReceiveSPIResponse
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_IsReaderResultCodeOk
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendSPICommand
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SPIPollingCommand
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_ReceiveSPIResponse
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_IsReaderResultCodeOk
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISO14443A_SELECT1
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISO14443A_REQA
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISO14443A_ANTICOL1
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Writetag
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SelectProtocol
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Readtag
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_PORsequence
@@ -868,7 +857,7 @@ Global Symbols
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdjustTimerW
 </UL>
 
-<P><STRONG><a name="[91]"></a>drv95HF_SendSPICommand</STRONG> (Thumb, 142 bytes, Stack size 560 bytes, spi.o(i.drv95HF_SendSPICommand))
+<P><STRONG><a name="[90]"></a>drv95HF_SendSPICommand</STRONG> (Thumb, 142 bytes, Stack size 560 bytes, spi.o(i.drv95HF_SendSPICommand))
 <BR><BR>[Stack]<UL><LI>Max Depth = 712<LI>Call Chain = drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
@@ -887,26 +876,25 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> printf8.o(i.__0printf$8)
 </UL>
-<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, main.o(i.main))
+<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 128 bytes, Stack size 8 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 808<LI>Call Chain = main &rArr; ConfigManager_IDN &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Writetag
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SelectProtocol
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SelectProtocol
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Readtag
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART1_UART_Init
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_SPI2_Init
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISO14443A_Anticollison_Algorithm
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SystemReset
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_NVIC_SystemReset
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_TogglePin
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_TogglePin
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_PORsequence
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_IDN
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdjustTimerW
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL><P>
@@ -965,20 +953,20 @@ Local Symbols
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive
 </UL>
 
-<P><STRONG><a name="[8b]"></a>_printf_core</STRONG> (Thumb, 996 bytes, Stack size 104 bytes, printf8.o(i._printf_core), UNUSED)
+<P><STRONG><a name="[8a]"></a>_printf_core</STRONG> (Thumb, 996 bytes, Stack size 104 bytes, printf8.o(i._printf_core), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf$8
-</UL>
-
-<P><STRONG><a name="[8d]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, printf8.o(i._printf_post_padding), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf$8
 </UL>
 
-<P><STRONG><a name="[8c]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, printf8.o(i._printf_pre_padding), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[8c]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, printf8.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[8b]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, printf8.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 <P>
 <H3>

@@ -347,6 +347,7 @@ int8_t PCD_IsReaderResultCodeOk (uint8_t CmdCode,uint8_t *ReaderReply)
 //select protocol
 int8_t SelectProtocol(void)
 {
+//	uint8_t cmdSelProto[] = {0x02,0x02,0x02,0x00};
 	uint8_t cmdSelProto[] = {0x02,0x02,0x02,0x00};
 	
 	drv95HF_SendReceive(cmdSelProto,u95HFBuffer);
@@ -389,28 +390,50 @@ int8_t ISO14443A_SELECT1(uint8_t *puid)
 	cmd[9] = 0x28;
 	drv95HF_SendReceive(cmd, u95HFBuffer);
 }
+
+int8_t ISO14443A_ANTICOL2(uint8_t *puid)
+{
+	uint8_t cmd[] = {0x04, 0x03, 0x95, 0x20, 0x08};
+	if(! drv95HF_SendReceive(cmd, u95HFBuffer))
+		memcpy(puid, u95HFBuffer + 2, 5);
+}
+
+int8_t ISO14443A_SELECT2(uint8_t *puid)
+{
+	uint8_t cmd[16];
+	cmd[0] = 0x04;
+	cmd[1] = 0x08;
+	cmd[2] = 0x95;
+	cmd[3] = 0x70;
+	memcpy(cmd + 4, puid, 5);
+	cmd[9] = 0x28;
+	drv95HF_SendReceive(cmd, u95HFBuffer);
+}
+
 // anticllo 
 int8_t ISO14443A_Anticollison_Algorithm(void)
 {
-		uint8_t CL1UID[20] = {0x00};
+		uint8_t uidbuff[20] = {0x00};
 		ISO14443A_REQA();
-		ISO14443A_ANTICOL1(CL1UID);
-		ISO14443A_SELECT1(CL1UID);
+		ISO14443A_ANTICOL1(uidbuff);
+		ISO14443A_SELECT1(uidbuff);
+//		ISO14443A_ANTICOL2(uidbuff);
+//		ISO14443A_SELECT2(uidbuff);
 }
 
 
 //read tag
-int8_t Readtag(void)
+int8_t Readtag(uint8_t addr)
 {
-		uint8_t cmd[] = {0x04, 0x03, 0x30, 0x00, 0x28};
+		uint8_t cmd[] = {0x04, 0x03, 0x30, addr, 0x28};
 		drv95HF_SendReceive(cmd, u95HFBuffer);
 }
 //write tag 
-int8_t Writetag(void)
+int8_t Writetag(uint8_t addr)
 {
-		uint8_t cmd[20] = {0x04, 0x03, 0xa2, 0x00};
-		memset(cmd + 4, 0xa5, 5);
-		cmd[9] = 0x28;
+		uint8_t cmd[16] = {0x04, 0x07, 0x30, addr};
+		memset(cmd + 4, 0xa5, 4);
+		cmd[8] = 0x28;
 		drv95HF_SendReceive(cmd,u95HFBuffer);
 		
 }
@@ -582,8 +605,13 @@ int8_t drv95HF_SendReceive(uint8_t *pCommand, uint8_t *pResponse)
 {
 		uint8_t errcode = 0x00;
 		uint16_t cnt = 0;
-		
-		printf("CMD[%02X]\r\n",pCommand[0]);
+	
+		printf(">>>");
+		for(cnt = 0; cnt < pCommand[1] + 2;cnt ++)
+		{
+				printf("%02X ",pCommand[cnt]);
+		}
+		printf("\r\n");
 		drv95HF_SendSPICommand(pCommand);
 		
 		//printf("POLL\r\n");
@@ -596,7 +624,7 @@ int8_t drv95HF_SendReceive(uint8_t *pCommand, uint8_t *pResponse)
 		
 		if(!errcode)
 		{
-			printf("Respone [OK] \r\n<<<");	
+			printf("<<<");	
 			for(cnt = 0; cnt < pResponse[1] + 2; cnt++)
 			{
 				printf("%02X ",pResponse[cnt]);
@@ -607,7 +635,7 @@ int8_t drv95HF_SendReceive(uint8_t *pCommand, uint8_t *pResponse)
 		}
 		else
 		{
-			printf("Respone [Error]: 0x%02X\r\n",pResponse[0]);
+			printf("Respone [Error]: 0x%02X\r\n\r\n",pResponse[0]);
 			return 1;
 		}
 		return 1;

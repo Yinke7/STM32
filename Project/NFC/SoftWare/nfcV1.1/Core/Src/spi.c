@@ -357,7 +357,7 @@ int8_t SelectProtocol(void)
 //AdjustTimerW
 int8_t AdjustTimerW(void)
 {
-	uint8_t cmdadjust[] = {0x09, 0x04, 0x3A, 0x00, 0x50, 0x04};
+	uint8_t cmdadjust[] = {0x09, 0x04, 0x3A, 0x00, 0x58, 0x04};
 	drv95HF_SendReceive(cmdadjust,u95HFBuffer);
 }
 //Modulation
@@ -381,13 +381,14 @@ int8_t ISO14443A_ANTICOL1(uint8_t *puid)
 
 int8_t ISO14443A_SELECT1(uint8_t *puid)
 {
+	uint8_t numuid = 5;
 	uint8_t cmd[16];
 	cmd[0] = 0x04;
-	cmd[1] = 0x08;
+	cmd[1] = 3 + numuid;
 	cmd[2] = 0x93;
 	cmd[3] = 0x70;
-	memcpy(cmd + 4, puid, 5);
-	cmd[9] = 0x28;
+	memcpy(cmd + 4, puid, numuid);
+	cmd[4 + numuid] = 0x28;
 	drv95HF_SendReceive(cmd, u95HFBuffer);
 }
 
@@ -400,17 +401,19 @@ int8_t ISO14443A_ANTICOL2(uint8_t *puid)
 
 int8_t ISO14443A_SELECT2(uint8_t *puid)
 {
+	
+	uint8_t numuid = 4;
 	uint8_t cmd[16];
 	cmd[0] = 0x04;
-	cmd[1] = 0x08;
+	cmd[1] = 3 + numuid;
 	cmd[2] = 0x95;
 	cmd[3] = 0x70;
-	memcpy(cmd + 4, puid, 5);
-	cmd[9] = 0x28;
+	memcpy(cmd + 4, puid, numuid);
+	cmd[4 + numuid] = 0x28;
 	drv95HF_SendReceive(cmd, u95HFBuffer);
 }
 
-// anticllo 
+// anticollision
 int8_t ISO14443A_Anticollison_Algorithm(void)
 {
 		uint8_t uidbuff[20] = {0x00};
@@ -422,6 +425,9 @@ int8_t ISO14443A_Anticollison_Algorithm(void)
 }
 
 
+
+
+
 //read tag
 int8_t Readtag(uint8_t addr)
 {
@@ -431,14 +437,13 @@ int8_t Readtag(uint8_t addr)
 //write tag 
 int8_t Writetag(uint8_t addr)
 {
-		uint8_t cmd[16] = {0x04, 0x07, 0x30, addr};
-		memset(cmd + 4, 0xa5, 4);
-		cmd[8] = 0x28;
+		uint8_t numdata = 1;
+		uint8_t cmd[16] = {0x04, 3 + numdata, 0xa2, addr};
+		memset(cmd + 4, 0x55, numdata);
+		cmd[4 + numdata] = 0x28;
 		drv95HF_SendReceive(cmd,u95HFBuffer);
 		
 }
-
-
 
 
 

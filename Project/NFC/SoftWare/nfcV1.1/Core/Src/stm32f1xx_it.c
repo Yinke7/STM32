@@ -59,10 +59,11 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-
+extern UART_HandleTypeDef huart1;
 /* USER CODE BEGIN EV */
 
 extern bool flagspi2;
+extern uint8_t uartcmd[4];
 
 
 /* USER CODE END EV */
@@ -206,6 +207,20 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /**
+  * @brief This function handles USART1 global interrupt.
+  */
+void USART1_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART1_IRQn 0 */
+
+  /* USER CODE END USART1_IRQn 0 */
+  HAL_UART_IRQHandler(&huart1);
+  /* USER CODE BEGIN USART1_IRQn 1 */
+
+  /* USER CODE END USART1_IRQn 1 */
+}
+
+/**
   * @brief This function handles EXTI line[15:10] interrupts.
   */
 void EXTI15_10_IRQHandler(void)
@@ -225,7 +240,16 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 		flagspi2 = true;
 		//printf("ST95_IRQ_OUT Interrupt Occer\r\n");
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+//		printf("%02X\r\n",uartcmd[0]);
+//		printf("%02X\r\n",uartcmd[1]);
+//		printf("%02X\r\n",uartcmd[2]);
+//		printf("%02X\r\n",uartcmd[3]);
 	
+		HAL_UART_Receive_IT(&huart1, uartcmd, 1);
 }
 
 

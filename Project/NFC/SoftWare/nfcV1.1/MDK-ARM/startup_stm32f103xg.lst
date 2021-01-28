@@ -548,11 +548,11 @@ ARM Macro Assembler    Page 9
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=nfcv1.1\startup_stm32f103xg.d -onfcv1.1\startup_stm32f103xg.o -ID:
-\GitHubProject\STM32\Project\NFC\SoftWare\nfcV1.1\MDK-ARM\RTE -IE:\MDK5\ARM\PAC
-K\ARM\CMSIS\4.2.0\CMSIS\Include -IE:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0 --p
-redefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 514" --predefi
-ne="_RTE_ SETA 1" --predefine="STM32F10X_XL SETA 1" --list=startup_stm32f103xg.
-lst startup_stm32f103xg.s
+\GitHubFiles\STM32\Project\NFC\SoftWare\nfcV1.1\MDK-ARM\RTE -IE:\MDK\ARM\PACK\A
+RM\CMSIS\4.5.0\CMSIS\Include -IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\
+Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 518
+" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_XL SETA 1" --list=startup_s
+tm32f103xg.lst startup_stm32f103xg.s
 
 
 

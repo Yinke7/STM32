@@ -382,7 +382,7 @@ int8_t ISO14443A_ANTICOL1(uint8_t *puid)
 int8_t ISO14443A_SELECT1(uint8_t *puid)
 {
 	uint8_t numuid = 5;
-	uint8_t cmd[16];
+	uint8_t cmd[20];
 	cmd[0] = 0x04;
 	cmd[1] = 3 + numuid;
 	cmd[2] = 0x93;
@@ -402,25 +402,34 @@ int8_t ISO14443A_ANTICOL2(uint8_t *puid)
 int8_t ISO14443A_SELECT2(uint8_t *puid)
 {
 	
-	uint8_t numuid = 4;
-	uint8_t cmd[16];
-	cmd[0] = 0x04;
-	cmd[1] = 3 + numuid;
-	cmd[2] = 0x95;
-	cmd[3] = 0x70;
-	memcpy(cmd + 4, puid, numuid);
-	cmd[4 + numuid] = 0x28;
-	drv95HF_SendReceive(cmd, u95HFBuffer);
+		uint8_t numuid = 5;
+		uint8_t cmd[20];
+		cmd[0] = 0x04;
+		cmd[1] = 3 + numuid;
+		cmd[2] = 0x95;
+		cmd[3] = 0x70;
+		memcpy(cmd + 4, puid, numuid);
+		cmd[4 + numuid] = 0x28;
+		drv95HF_SendReceive(cmd, u95HFBuffer);
 }
 
 // anticollision
 int8_t ISO14443A_Anticollison_Algorithm(void)
 {
 		uint8_t uidbuff[20] = {0x00};
+		printf("Anticol REQA\r\n");
 		ISO14443A_REQA();
+		
+		printf("Anticol CL1\r\n");
 		ISO14443A_ANTICOL1(uidbuff);
+		
+		printf("Anticol Select1\r\n");
 		ISO14443A_SELECT1(uidbuff);
+		
+//		printf("Anticol CL2\r\n");
 //		ISO14443A_ANTICOL2(uidbuff);
+//		
+//		printf("Anticol Select2\r\n");
 //		ISO14443A_SELECT2(uidbuff);
 }
 
@@ -437,9 +446,9 @@ int8_t Readtag(uint8_t addr)
 //write tag 
 int8_t Writetag(uint8_t addr)
 {
-		uint8_t numdata = 1;
+		uint8_t numdata = 4;
 		uint8_t cmd[16] = {0x04, 3 + numdata, 0xa2, addr};
-		memset(cmd + 4, 0x55, numdata);
+		memset(cmd + 4, 0xa5, numdata);
 		cmd[4 + numdata] = 0x28;
 		drv95HF_SendReceive(cmd,u95HFBuffer);
 		

@@ -112,11 +112,15 @@ int main(void)
 		printf("select protocol \r\n");
 	  SelectProtocol();
 		
+		
 		printf("adjust gain\r\n");
 		AdjustTimerW();
 		
-		printf("ISO14443A anticollison\r\n");
+		printf("============ISO14443A anticollison start=============\r\n");
 		ISO14443A_Anticollison_Algorithm();
+		printf("============ISO14443A anticollison stop==============\r\n");
+		
+		
 		
 		addr = 0x0c;
 //		for(addr = 0x00; addr < 0x08; addr++)
@@ -130,7 +134,6 @@ int main(void)
 			
 			printf("read\r\n");
 			Readtag(addr);
-			
 			
 //		}
 
@@ -153,6 +156,7 @@ int main(void)
 			printf("Software [Reset]\r\n");
 			HAL_NVIC_SystemReset();
 		}
+		
 		
 		
 		

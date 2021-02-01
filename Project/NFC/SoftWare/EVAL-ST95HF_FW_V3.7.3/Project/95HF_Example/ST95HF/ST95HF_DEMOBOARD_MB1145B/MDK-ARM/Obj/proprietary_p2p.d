@@ -1,5 +1,5 @@
 .\obj\proprietary_p2p.o: ..\src\proprietary_p2p.c
-.\obj\proprietary_p2p.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\proprietary_p2p.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\proprietary_p2p.o: ..\inc\proprietary_p2p.h
 .\obj\proprietary_p2p.o: ..\inc\menu.h
 .\obj\proprietary_p2p.o: ..\inc\menu_writer.h
@@ -9,7 +9,7 @@
 .\obj\proprietary_p2p.o: ..\inc\common.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\proprietary_p2p.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\proprietary_p2p.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -26,8 +26,10 @@
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\proprietary_p2p.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\proprietary_p2p.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\proprietary_p2p.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\proprietary_p2p.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\obj\proprietary_p2p.o: ..\usart\usart.h
+.\obj\proprietary_p2p.o: ..\sys\sys.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\NDEF\inc\lib_wrapper.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\NDEF\inc\lib_NDEF_SMS.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\NDEF\inc\lib_NDEF_Text.h

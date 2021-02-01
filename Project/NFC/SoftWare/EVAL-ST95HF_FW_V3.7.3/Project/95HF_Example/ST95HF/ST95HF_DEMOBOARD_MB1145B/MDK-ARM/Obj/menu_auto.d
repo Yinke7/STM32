@@ -8,7 +8,7 @@
 .\obj\menu_auto.o: ..\inc\common.h
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\menu_auto.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\menu_auto.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -25,9 +25,11 @@
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\menu_auto.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\menu_auto.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\obj\menu_auto.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\menu_auto.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\menu_auto.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\obj\menu_auto.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\menu_auto.o: ..\usart\usart.h
+.\obj\menu_auto.o: ..\sys\sys.h
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\NDEF\inc\lib_wrapper.h
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\NDEF\inc\lib_NDEF_SMS.h
 .\obj\menu_auto.o: ..\..\..\..\..\libraries\NDEF\inc\lib_NDEF_Text.h

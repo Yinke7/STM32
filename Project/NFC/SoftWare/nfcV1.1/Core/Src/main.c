@@ -47,6 +47,9 @@
 /* USER CODE BEGIN PV */
 
 uint8_t dviceid[20] = {0xff};
+uint8_t uartcmd[4] = {0};
+
+
 
 /* USER CODE END PV */
 
@@ -68,8 +71,8 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
-	uint8_t uartcmd[4] = {0};
+	uint8_t addr;
+	
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -95,19 +98,47 @@ int main(void)
   MX_USART1_UART_Init();
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
+	HAL_UART_Receive_IT(&huart1, uartcmd, 1);
 	
-		printf("System Init OK!\r\n");
+	
+		printf("System Init [OK]\r\n");
 		
+		printf("POR \r\n");
 		ConfigManager_PORsequence();
-		printf("\r\n");
 		
+		printf("read ID \r\n");
 		ConfigManager_IDN();
-		printf("\r\n");
+		
+		printf("select protocol \r\n");
+	  SelectProtocol();
 		
 		
+		printf("adjust gain\r\n");
+		AdjustTimerW();
+		
+		printf("============ISO14443A anticollison start=============\r\n");
+		ISO14443A_Anticollison_Algorithm();
+		printf("============ISO14443A anticollison stop==============\r\n");
 		
 		
+		//¶ÁÈ¡µÄµØÖ· addr
+		addr = 0x01;	
+//		for(addr = 0x00; addr < 0x08; addr++)
+//		{
+			
+			printf("read\r\n");
+			Readtag(addr);
 		
+			printf("write\r\n");
+			Writetag(addr);
+			
+			printf("read\r\n");
+			Readtag(addr);
+			
+//		}
+
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -117,14 +148,19 @@ int main(void)
 		
 		
 		HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
-		HAL_UART_Receive(&huart1, uartcmd,1,0x1);
+//		HAL_UART_Receive(&huart1, uartcmd, 1, 0xf);
 		
-		if(uartcmd[0] == 0x12)
+		
+		if(uartcmd[0] == 0x31)
 		{
-			printf("Software Reset\r\n");
+			printf("Software [Reset]\r\n");
 			HAL_NVIC_SystemReset();
 		}
-		HAL_Delay(1000);
+		
+		
+		
+		
+//		HAL_Delay(1000);
 		
     /* USER CODE END WHILE */
 
@@ -172,6 +208,8 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+
 
 /* USER CODE END 4 */
 

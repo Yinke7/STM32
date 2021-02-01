@@ -23,6 +23,7 @@
 
 #include "VcardCSL1.h"
 
+#include "menu_auto.h"
 
 /** @addtogroup User_Appli
  * 	@{
@@ -129,11 +130,11 @@ int main(void)
 	//LCD_Clear(White);
 
 	/* configure the LED  */
-//	for (i=LED1;i<=LED5;i++)
-//	{
-//		LED_Config(i);	
-//		LED_On(i);
-//	}
+	for (i=LED1;i<=LED5;i++)
+	{
+		LED_Config(i);	
+		LED_On(i);
+	}
 	
 	/* Display ST Logo and FW Version */
 //	STIntro();
@@ -167,8 +168,8 @@ int main(void)
 //  /* Set the LCD Text Color */
 //  LCD_SetTextColor(White);
 //  
-//  /* Initialize the Menu */
-//  Menu_Init();
+  /* Initialize the Menu */
+  Menu_Init();
 
 	/* configure the LED  */
 	for (i=LED1;i<=LED1;i++)
@@ -179,7 +180,7 @@ int main(void)
 	
   /* Display the main menu icons */
 //  ShowMenuIcons();
-	
+	printf("start while loop\r\n");
 	while (1)
   {
 //		if (refreshMenu)
@@ -202,16 +203,27 @@ int main(void)
 //      SELStatus = 0;
 //    } 
 		//add yinke
-			LED_Off(LED1);
-			delayHighPriority_ms(1000);
-			printf ("uart test\r\n");
-			LED_On(LED1);
-			delayHighPriority_ms(1000);
+			//LED_Troggle(LED1);
+			//delayHighPriority_ms(1000);
+//			while(USART_RX_BUF[0] == 0x01)
+//			{
+			
+				printf("read tag...\r\n");
+				TagReading();
+				
+//				printf("write tag...\r\n");
+//				TagWriteEMAIL();
+//				autoTypeAll();
+				delay_ms(3000);
+//			} 
+			 
+//				printf("writting tag text...\r\n");
+//				TagWriteText();
 		//end add 
   }
 	
-End:
-		return 0;
+//End:
+//		return 0;
 	
 	
 }

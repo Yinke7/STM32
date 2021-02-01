@@ -1,9 +1,9 @@
 .\obj\miscellaneous.o: ..\src\miscellaneous.c
 .\obj\miscellaneous.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\miscellaneous.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
-.\obj\miscellaneous.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\miscellaneous.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
-.\obj\miscellaneous.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\miscellaneous.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\miscellaneous.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\miscellaneous.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\obj\miscellaneous.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\miscellaneous.o: ..\usart\usart.h
 .\obj\miscellaneous.o: ..\sys\sys.h
 .\obj\miscellaneous.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h

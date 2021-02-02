@@ -59,8 +59,14 @@
 
 * 根据` st95hf.pdf`中的` ErrorCodes`可以看出，返回数据中的错误码是` 0x90`，其描述是` Residual bits in last byte. Useful for ACK/NAK reception of ISO/IEC 14443 Type A`，大概意思是最后一格字节有剩余位，被用在` ISO14443A`的` ACK/NAK`中，但是在` ACK/NAK`相关部分介绍中，返回数据的` 90 04`后要么是` 0a`，要么是` 02`，但是我接受的数据` 90 04 04 24 00 00`中后面是` 04`，所以这就存在问题。
 
+<<<<<<< HEAD
   ![ErrorCodes](D:\GitHubFiles\STM32\Project\NFC\image\errorcode.jpg)
 
   ![ACK/NAK](D:\GitHubFiles\STM32\Project\NFC\image\ACK_NAK.jpg)
   
   
+=======
+  ![ErrorCodes](https://github.com/Yinke7/STM32/tree/debug/Project/NFC/image/errorcodes.jpg)
+
+  ![ACK/NAK](https://github.com/Yinke7/STM32/tree/debug/Project/NFC/image/ACK_NAK.jpg)
+>>>>>>> 5c6e8e80f880c046c994d64de8d4c93e8d2c7b1c

@@ -63,10 +63,4 @@
   ![ErrorCodes](D:\GitHubFiles\STM32\Project\NFC\image\errorcode.jpg)
 
   ![ACK/NAK](D:\GitHubFiles\STM32\Project\NFC\image\ACK_NAK.jpg)
-  
-  
-=======
-  ![ErrorCodes](https://github.com/Yinke7/STM32/tree/debug/Project/NFC/image/errorcodes.jpg)
 
-  ![ACK/NAK](https://github.com/Yinke7/STM32/tree/debug/Project/NFC/image/ACK_NAK.jpg)
->>>>>>> 5c6e8e80f880c046c994d64de8d4c93e8d2c7b1c

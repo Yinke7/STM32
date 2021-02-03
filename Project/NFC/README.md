@@ -63,3 +63,6 @@
 
   ![ACK/NAK](https://github.com/Yinke7/STM32/blob/debug/Project/NFC/image/ACK_NAK.jpg)
 
+### 2021.02.03
+* 测试ST官方的NFC扩展版` X-NUCLEO-NFC06A1`
+

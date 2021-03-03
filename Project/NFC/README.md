@@ -70,4 +70,4 @@
 
 * 增加文件夹 ` demo`，包含` st25r3916`相关测试程序
   * ` ST25R3916_X-NUCLEO-NFC06A1.zip`：ST官方程序
-  * ` STM32CubeExpansion_NFC5_V1.2.0.zip`：读取` M1`卡程序， ` https://www.stmcu.org.cn/module/forum/thread-621336-1-1.html` 
+  * ` STM32CubeExpansion_NFC5_V1.2.0.zip`：读取` M1`卡的程序，https://www.stmcu.org.cn/module/forum/thread-621336-1-1.html 

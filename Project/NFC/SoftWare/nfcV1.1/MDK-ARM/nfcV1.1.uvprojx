@@ -421,6 +421,21 @@
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32f1xx_hal_msp.c</FilePath>
             </File>
+            <File>
+              <FileName>mifare.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\mifare.c</FilePath>
+            </File>
+            <File>
+              <FileName>ntag.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\ntag.c</FilePath>
+            </File>
+            <File>
+              <FileName>pn532.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\pn532.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

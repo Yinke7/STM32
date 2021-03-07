@@ -121,7 +121,6 @@ int main(void)
 		printf("============ISO14443A anticollison stop==============\r\n");
 		
 		
-		//¶ÁÈ¡µÄµØÖ· addr
 		addr = 0x01;	
 //		for(addr = 0x00; addr < 0x08; addr++)
 //		{

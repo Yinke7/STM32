@@ -1,0 +1,9 @@
+rfal_t4t.c:103:12:rfalT4TPollerComposeCAPDU	24	static
+rfal_t4t.c:172:12:rfalT4TPollerParseRAPDU	16	static
+rfal_t4t.c:198:12:rfalT4TPollerComposeSelectAppl	40	static
+rfal_t4t.c:225:12:rfalT4TPollerComposeSelectFile	40	static
+rfal_t4t.c:252:12:rfalT4TPollerComposeSelectFileV1Mapping	40	static
+rfal_t4t.c:279:12:rfalT4TPollerComposeReadData	40	static
+rfal_t4t.c:300:12:rfalT4TPollerComposeReadDataODO	48	static
+rfal_t4t.c:331:12:rfalT4TPollerComposeWriteData	40	static
+rfal_t4t.c:357:12:rfalT4TPollerComposeWriteDataODO	48	static

@@ -1,0 +1,7 @@
+ndef_type_wifi.c:187:17:ndefWifiPayloadGetLength	24	static
+ndef_type_wifi.c:210:23:ndefWifiToPayloadItem	48	static
+ndef_type_wifi.c:340:12:ndefWifi	24	static
+ndef_type_wifi.c:364:12:ndefGetWifi	24	static
+ndef_type_wifi.c:388:19:ndefPayloadToWifi	48	static
+ndef_type_wifi.c:471:12:ndefRecordToWifi	24	static
+ndef_type_wifi.c:497:12:ndefWifiToRecord	16	static

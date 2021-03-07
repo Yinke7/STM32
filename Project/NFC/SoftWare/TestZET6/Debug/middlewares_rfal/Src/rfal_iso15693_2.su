@@ -1,0 +1,6 @@
+rfal_iso15693_2.c:113:12:iso15693PhyConfigure	16	static
+rfal_iso15693_2.c:140:12:iso15693PhyGetConfiguration	16	static
+rfal_iso15693_2.c:147:12:iso15693VCDCode	56	static
+rfal_iso15693_2.c:286:12:iso15693VICCDecode	40	static
+rfal_iso15693_2.c:434:19:iso15693PhyVCDCode1Of4	40	static
+rfal_iso15693_2.c:492:19:iso15693PhyVCDCode1Of256	40	static

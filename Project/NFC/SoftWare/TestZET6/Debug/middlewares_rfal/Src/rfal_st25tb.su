@@ -1,0 +1,13 @@
+rfal_st25tb.c:164:13:rfalSt25tbPollerDoCollisionResolution	32	static
+rfal_st25tb.c:244:12:rfalSt25tbPollerInitialize	8	static
+rfal_st25tb.c:251:12:rfalSt25tbPollerCheckPresence	24	static
+rfal_st25tb.c:278:12:rfalSt25tbPollerInitiate	48	static
+rfal_st25tb.c:309:12:rfalSt25tbPollerPcall	40	static
+rfal_st25tb.c:333:12:rfalSt25tbPollerSlotMarker	40	static
+rfal_st25tb.c:362:12:rfalSt25tbPollerSelect	48	static
+rfal_st25tb.c:387:12:rfalSt25tbPollerGetUID	40	static
+rfal_st25tb.c:411:12:rfalSt25tbPollerCollisionResolution	32	static
+rfal_st25tb.c:462:12:rfalSt25tbPollerReadBlock	40	static
+rfal_st25tb.c:487:12:rfalSt25tbPollerWriteBlock	48	static
+rfal_st25tb.c:538:12:rfalSt25tbPollerCompletion	32	static
+rfal_st25tb.c:551:12:rfalSt25tbPollerResetToInventory	32	static

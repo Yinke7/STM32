@@ -1,0 +1,5 @@
+st25r3916_led.c:72:6:st25r3916ledInit	8	static
+st25r3916_led.c:83:6:st25r3916ledEvtIrq	16	static
+st25r3916_led.c:104:6:st25r3916ledEvtWrReg	16	static
+st25r3916_led.c:121:6:st25r3916ledEvtWrMultiReg	24	static
+st25r3916_led.c:133:6:st25r3916ledEvtCmd	16	static

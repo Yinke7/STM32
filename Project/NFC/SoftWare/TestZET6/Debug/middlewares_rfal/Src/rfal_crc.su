@@ -1,0 +1,2 @@
+rfal_crc.c:56:10:rfalCrcCalculateCcitt	24	static
+rfal_crc.c:74:17:rfalCrcUpdateCcitt	24	static

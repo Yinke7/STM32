@@ -1,0 +1,17 @@
+ndef_t5t.c:130:12:ndefT5TPollerReadBytes	56	static
+ndef_t5t.c:221:12:ndefT5TPollerContextInitialization	32	static
+ndef_t5t.c:290:12:ndefT5TPollerNdefDetect	48	static
+ndef_t5t.c:460:12:ndefT5TPollerReadRawMessage	40	static
+ndef_t5t.c:481:12:ndefT5TPollerWriteBytes	56	static
+ndef_t5t.c:594:12:ndefT5TPollerWriteRawMessageLen	32	static
+ndef_t5t.c:642:12:ndefT5TPollerWriteRawMessage	32	static
+ndef_t5t.c:701:19:ndefT5TWriteCC	24	static
+ndef_t5t.c:747:12:ndefT5TPollerTagFormat	40	static
+ndef_t5t.c:860:12:ndefT5TPollerCheckPresence	32	static
+ndef_t5t.c:879:12:ndefT5TPollerCheckAvailableSpace	24	static
+ndef_t5t.c:903:12:ndefT5TPollerBeginWriteMessage	24	static
+ndef_t5t.c:937:12:ndefT5TPollerEndWriteMessage	24	static
+ndef_t5t.c:965:19:ndefT5TPollerWriteSingleBlock	40	static
+ndef_t5t.c:997:19:ndefT5TPollerReadMultipleBlocks	48	static
+ndef_t5t.c:1029:19:ndefT5TPollerReadSingleBlock	40	static
+ndef_t5t.c:1059:19:ndefT5TGetSystemInformation	64	static

@@ -1,0 +1,8 @@
+rfal_nfcf.c:147:13:rfalNfcfComputeValidSENF	64	static
+rfal_nfcf.c:228:12:rfalNfcfPollerInitialize	24	static
+rfal_nfcf.c:250:12:rfalNfcfPollerPoll	40	static
+rfal_nfcf.c:256:12:rfalNfcfPollerCheckPresence	24	static
+rfal_nfcf.c:269:12:rfalNfcfPollerCollisionResolution	40	static
+rfal_nfcf.c:330:12:rfalNfcfPollerCheck	136	static
+rfal_nfcf.c:417:12:rfalNfcfPollerUpdate	56	static
+rfal_nfcf.c:515:6:rfalNfcfListenerIsT3TReq	24	static

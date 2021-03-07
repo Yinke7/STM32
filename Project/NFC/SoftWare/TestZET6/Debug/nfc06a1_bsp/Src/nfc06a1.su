@@ -1,0 +1,5 @@
+nfc06a1.c:72:6:NFC06A1_LED_Init	40	static
+nfc06a1.c:100:6:NFC06A1_LED_DeInit	32	static
+nfc06a1.c:116:6:NFC06A1_LED_ON	16	static
+nfc06a1.c:126:6:NFC06A1_LED_OFF	16	static
+nfc06a1.c:136:6:NFC06A1_LED_Toggle	16	static

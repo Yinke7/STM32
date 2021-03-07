@@ -1,0 +1,14 @@
+rfal_nfca.c:195:16:rfalNfcaCalculateBcc	24	static
+rfal_nfca.c:212:19:rfalNfcaPollerStartSingleCollisionResolution	24	static
+rfal_nfca.c:247:19:rfalNfcaPollerGetSingleCollisionResolutionStatus	40	static
+rfal_nfca.c:476:12:rfalNfcaPollerInitialize	16	static
+rfal_nfca.c:492:12:rfalNfcaPollerCheckPresence	32	static
+rfal_nfca.c:511:12:rfalNfcaPollerTechnologyDetection	24	static
+rfal_nfca.c:527:12:rfalNfcaPollerSingleCollisionResolution	40	static
+rfal_nfca.c:540:12:rfalNfcaPollerStartFullCollisionResolution	40	static
+rfal_nfca.c:620:12:rfalNfcaPollerGetFullCollisionResolutionStatus	32	static
+rfal_nfca.c:696:12:rfalNfcaPollerFullCollisionResolution	32	static
+rfal_nfca.c:706:12:rfalNfcaPollerSleepFullCollisionResolution	32	static
+rfal_nfca.c:758:12:rfalNfcaPollerSelect	56	static
+rfal_nfca.c:818:12:rfalNfcaPollerSleep	32	static
+rfal_nfca.c:838:6:rfalNfcaListenerIsSleepReq	16	static

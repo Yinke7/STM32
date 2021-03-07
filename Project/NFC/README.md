@@ -66,3 +66,19 @@
 ### 2021.02.03
 * 测试ST官方的NFC扩展版` X-NUCLEO-NFC06A1`
 
+### 2021.03.03
+
+* 增加文件夹 ` demo`，包含` st25r3916`相关测试程序
+  * ` ST25R3916_X-NUCLEO-NFC06A1.zip`：ST官方程序
+  * ` STM32CubeExpansion_NFC5_V1.2.0.zip`：读取` M1`卡的程序，https://www.stmcu.org.cn/module/forum/thread-621336-1-1.html 
+
+### 2021.03.04
+
+* 上传 ` TESTRCT6`
+  * 该程序用STM32CubeIDE打开
+  * 连接好线路，注意` IRQ`是高电平有效，所以要配置成上升沿触发中断。（前几天就是因为配置成下降沿触发，始终无法读到` UID`，今天才找到原因）
+  * 可读取` M1`卡的` UID`
+
+### 2021.03.07
+
+	*  上传`ST25R3916`的`demo TestZET6`，能读到`NTAG`的`NEDF`数据

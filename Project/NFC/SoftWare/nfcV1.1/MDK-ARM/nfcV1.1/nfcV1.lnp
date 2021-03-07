@@ -23,6 +23,6 @@
 "nfcv1.1\stm32f1xx_hal_uart.o"
 "nfcv1.1\system_stm32f1xx.o"
 --library_type=microlib --strict --scatter "nfcV1.1\nfcV1.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "nfcV1.map" -o nfcV1.1\nfcV1.1

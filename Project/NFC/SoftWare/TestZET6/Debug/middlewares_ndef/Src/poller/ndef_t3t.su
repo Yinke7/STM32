@@ -1,0 +1,16 @@
+ndef_t3t.c:131:19:ndefT3TPollerReadBlocks	64	static
+ndef_t3t.c:187:12:ndefT3TPollerReadBytes	72	static
+ndef_t3t.c:302:19:ndefT3TPollerReadAttributeInformationBlock	40	static
+ndef_t3t.c:348:12:ndefT3TPollerContextInitialization	16	static
+ndef_t3t.c:363:12:ndefT3TPollerNdefDetect	56	static
+ndef_t3t.c:447:12:ndefT3TPollerReadRawMessage	40	static
+ndef_t3t.c:486:19:ndefT3TPollerWriteBlocks	80	static
+ndef_t3t.c:518:12:ndefT3TPollerWriteBytes	80	static
+ndef_t3t.c:636:19:ndefT3TPollerWriteAttributeInformationBlock	32	static
+ndef_t3t.c:702:12:ndefT3TPollerWriteRawMessage	32	static
+ndef_t3t.c:760:12:ndefT3TPollerTagFormat	64	static
+ndef_t3t.c:806:12:ndefT3TPollerCheckPresence	32	static
+ndef_t3t.c:821:12:ndefT3TPollerCheckAvailableSpace	16	static
+ndef_t3t.c:840:12:ndefT3TPollerBeginWriteMessage	24	static
+ndef_t3t.c:868:12:ndefT3TPollerEndWriteMessage	24	static
+ndef_t3t.c:896:12:ndefT3TPollerWriteRawMessageLen	16	static

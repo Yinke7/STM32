@@ -1,0 +1,3 @@
+rfal_t2t.c:134:13:rfalT2TPollerRead	48	static
+rfal_t2t.c:160:13:rfalT2TPollerWrite	48	static
+rfal_t2t.c:191:13:rfalT2TPollerSectorSelect	48	static

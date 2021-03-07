@@ -1,0 +1,7 @@
+ndef_message.c:80:20:ndefAllocRecord	4	static
+ndef_message.c:101:12:ndefMessageInit	16	static
+ndef_message.c:119:12:ndefMessageGetInfo	32	static
+ndef_message.c:148:10:ndefMessageGetRecordCount	24	static
+ndef_message.c:162:12:ndefMessageAppend	24	static
+ndef_message.c:209:12:ndefMessageDecode	40	static
+ndef_message.c:255:12:ndefMessageEncode	48	static

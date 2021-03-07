@@ -1,0 +1,17 @@
+ndef_record.c:78:12:ndefRecordReset	32	static
+ndef_record.c:106:12:ndefRecordInit	24	static
+ndef_record.c:126:10:ndefRecordGetHeaderLength	24	static
+ndef_record.c:157:10:ndefRecordGetLength	24	static
+ndef_record.c:174:12:ndefRecordSetType	24	static
+ndef_record.c:193:12:ndefRecordGetType	24	static
+ndef_record.c:209:6:ndefRecordTypeMatch	24	static
+ndef_record.c:228:12:ndefRecordSetId	16	static
+ndef_record.c:254:12:ndefRecordGetId	16	static
+ndef_record.c:269:12:ndefRecordSetPayload	16	static
+ndef_record.c:288:12:ndefRecordGetPayload	16	static
+ndef_record.c:303:12:ndefRecordDecode	24	static
+ndef_record.c:424:12:ndefRecordEncodeHeader	24	static
+ndef_record.c:485:19:ndefRecordPayloadEncode	40	static
+ndef_record.c:522:12:ndefRecordEncode	48	static
+ndef_record.c:581:10:ndefRecordGetPayloadLength	24	static
+ndef_record.c:604:16:ndefRecordGetPayloadItem	24	static

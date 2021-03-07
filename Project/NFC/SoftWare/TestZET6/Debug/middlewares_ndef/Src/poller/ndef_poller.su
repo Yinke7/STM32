@@ -1,0 +1,14 @@
+ndef_poller.c:102:12:ndefPollerContextInitialization	16	static
+ndef_poller.c:251:12:ndefPollerNdefDetect	16	static
+ndef_poller.c:267:12:ndefPollerReadRawMessage	32	static
+ndef_poller.c:283:12:ndefPollerReadBytes	40	static
+ndef_poller.c:301:12:ndefPollerWriteRawMessage	24	static
+ndef_poller.c:317:12:ndefPollerTagFormat	24	static
+ndef_poller.c:333:12:ndefPollerWriteRawMessageLen	16	static
+ndef_poller.c:349:12:ndefPollerWriteBytes	32	static
+ndef_poller.c:365:12:ndefPollerCheckPresence	16	static
+ndef_poller.c:381:12:ndefPollerCheckAvailableSpace	16	static
+ndef_poller.c:397:12:ndefPollerBeginWriteMessage	16	static
+ndef_poller.c:413:12:ndefPollerEndWriteMessage	16	static
+ndef_poller.c:429:12:ndefPollerWriteMessage	64	static
+ndef_poller.c:542:23:ndefPollerGetDeviceType	24	static

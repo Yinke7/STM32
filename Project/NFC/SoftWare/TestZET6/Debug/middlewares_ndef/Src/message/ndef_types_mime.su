@@ -1,0 +1,15 @@
+ndef_types_mime.c:114:12:ndefMedia	32	static
+ndef_types_mime.c:140:12:ndefGetMedia	32	static
+ndef_types_mime.c:163:12:ndefRecordToMedia	32	static
+ndef_types_mime.c:193:12:ndefMediaToRecord	24	static
+ndef_types_mime.c:221:17:ndefVCardPayloadGetLength	32	static
+ndef_types_mime.c:273:23:ndefVCardToPayloadItem	32	static
+ndef_types_mime.c:430:12:ndefVCard	32	static
+ndef_types_mime.c:474:12:ndefGetVCard	32	static
+ndef_types_mime.c:519:19:ndefVCardFindMarker	32	static
+ndef_types_mime.c:550:19:ndefVCardExtractLine	32	static
+ndef_types_mime.c:581:19:ndefVCardParseLine	40	static
+ndef_types_mime.c:629:13:ndefIsVCardTypeFound	24	static
+ndef_types_mime.c:648:19:ndefPayloadToVcard	56	static
+ndef_types_mime.c:725:12:ndefRecordToVCard	24	static
+ndef_types_mime.c:751:12:ndefVCardToRecord	16	static

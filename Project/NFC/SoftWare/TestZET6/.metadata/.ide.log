@@ -1,0 +1,931 @@
+2021-03-01 23:37:19,933 [INFO] Activator:170 - 
+
+
+2021-03-01 23:37:19,936 [INFO] Activator:171 - !SESSION log4j initialized
+2021-03-01 23:37:35,414 [INFO] McuFinderGlobals:39 - Set McuFinder mode to 2 (CubeIDE integrated)
+2021-03-01 23:37:35,972 [INFO] ApplicationProperties:181 - Using Application install path: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602
+2021-03-01 23:37:35,984 [INFO] DbMcusXml:74 - Set database path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/mcu/
+2021-03-01 23:37:35,989 [INFO] DbBoardsPdsc:56 - Set plugin database path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/boardmanager/
+2021-03-01 23:37:35,989 [INFO] DbMcus:258 - Set plugin images path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-01 23:37:35,989 [INFO] DbBoards:264 - Set plugin images path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-01 23:37:35,993 [INFO] DbExamples:333 - Set plugin images path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-01 23:37:36,001 [INFO] DbMcusAds:85 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,002 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,004 [INFO] DbMcusJson:65 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,005 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,006 [INFO] DbBoardsJson:58 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,015 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-03-01 23:37:36,018 [INFO] DbExamplesSqlite:690 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,119 [INFO] RulesReader:52 - Compatibility file has been processed (237 Rules)
+2021-03-01 23:37:36,238 [INFO] MicroXplorer:622 - Detected Java Version = 11.0.9.1
+2021-03-01 23:37:36,239 [INFO] DbMcusXml:74 - Set database path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/mcu/
+2021-03-01 23:37:36,239 [INFO] DbBoardsPdsc:56 - Set plugin database path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/boardmanager/
+2021-03-01 23:37:36,240 [INFO] DbMcus:258 - Set plugin images path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-01 23:37:36,240 [INFO] DbBoards:264 - Set plugin images path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-01 23:37:36,240 [INFO] DbExamples:333 - Set plugin images path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-01 23:37:36,240 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,240 [INFO] DbMcusAds:85 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,240 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,241 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,241 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,241 [INFO] DbMcusJson:65 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,241 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,241 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,241 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,241 [INFO] DbBoardsJson:58 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,241 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,242 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,242 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-03-01 23:37:36,242 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,242 [INFO] DbExamplesSqlite:690 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,321 [INFO] MainPanel:204 - HeapMemory: 268435456
+2021-03-01 23:37:36,404 [INFO] DbMcusXml:74 - Set database path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/mcu/
+2021-03-01 23:37:36,404 [INFO] DbBoardsPdsc:56 - Set plugin database path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/boardmanager/
+2021-03-01 23:37:36,404 [INFO] DbMcus:258 - Set plugin images path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-01 23:37:36,404 [INFO] DbBoards:264 - Set plugin images path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-01 23:37:36,404 [INFO] DbExamples:333 - Set plugin images path to: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/plugins/mcufinder/images/
+2021-03-01 23:37:36,405 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,405 [INFO] DbMcusAds:85 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,406 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,406 [INFO] DbMcusDocs:110 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,406 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,406 [INFO] DbMcusJson:65 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,406 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,406 [INFO] DbBoardsDocs:110 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,406 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,406 [INFO] DbBoardsJson:58 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,407 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,407 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,407 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/cs/
+2021-03-01 23:37:36,407 [WARN] DbFile:35 - Overriding database path with different value: C:\Users\yk152\.stmcufinder\plugins\mcufinder/ => C:\Users\yk152\.stmcufinder\plugins\mcufinder
+2021-03-01 23:37:36,407 [INFO] DbExamplesSqlite:690 - Set database path to: C:\Users\yk152\.stmcufinder\plugins\mcufinder//mcu/
+2021-03-01 23:37:36,432 [INFO] ApplicationProperties:181 - Using Application install path: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602
+2021-03-01 23:37:36,433 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, ]
+2021-03-01 23:37:36,435 [INFO] PluginManage:292 - Check plugin analytics
+2021-03-01 23:37:36,612 [INFO] AnalyticsPlugin:233 - Accepted Software Licenses: STM32CubeMX.6.1.0
+2021-03-01 23:37:36,613 [INFO] AnalyticsPlugin:235 - Accepted CMSIS Pack Licenses: 
+2021-03-01 23:37:36,613 [INFO] AnalyticsPlugin:237 - Accepted Firmware Licenses: 
+2021-03-01 23:37:36,614 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2021-03-01 23:37:36,614 [INFO] PluginManage:292 - Check plugin clock
+2021-03-01 23:37:36,627 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2021-03-01 23:37:36,627 [INFO] PluginManage:292 - Check plugin ddr
+2021-03-01 23:37:36,629 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2021-03-01 23:37:36,630 [INFO] PluginManage:292 - Check plugin filemanager
+2021-03-01 23:37:36,763 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2021-03-01 23:37:36,763 [INFO] PluginManage:292 - Check plugin ipmanager
+2021-03-01 23:37:36,773 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2021-03-01 23:37:36,774 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2021-03-01 23:37:36,784 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2021-03-01 23:37:36,784 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2021-03-01 23:37:36,828 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2021-03-01 23:37:36,828 [INFO] PluginManage:292 - Check plugin power
+2021-03-01 23:37:36,838 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2021-03-01 23:37:36,838 [INFO] PluginManage:292 - Check plugin projectmanager
+2021-03-01 23:37:36,856 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2021-03-01 23:37:36,856 [INFO] PluginManage:292 - Check plugin thirdparty
+2021-03-01 23:37:36,967 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2021-03-01 23:37:36,968 [INFO] PluginManage:292 - Check plugin tools
+2021-03-01 23:37:36,968 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2021-03-01 23:37:36,969 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2021-03-01 23:37:36,969 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [1/15]
+2021-03-01 23:37:36,971 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2021-03-01 23:37:36,971 [INFO] PluginManage:292 - Check plugin tutovideos
+2021-03-01 23:37:37,185 [INFO] PluginManage:342 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2021-03-01 23:37:37,185 [INFO] PluginManage:292 - Check plugin updater
+2021-03-01 23:37:37,197 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2021-03-01 23:37:37,198 [INFO] PluginManage:265 - PluginManage : Loaded plugins [13]
+2021-03-01 23:37:37,410 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-01 23:37:37,509 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,509 [INFO] PluginManager:203 - loadIPPluginJar : add adc
+2021-03-01 23:37:37,511 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,511 [INFO] PluginManager:203 - loadIPPluginJar : add aes
+2021-03-01 23:37:37,514 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,514 [INFO] PluginManager:203 - loadIPPluginJar : add can
+2021-03-01 23:37:37,518 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,518 [INFO] PluginManager:203 - loadIPPluginJar : add comp
+2021-03-01 23:37:37,521 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,521 [INFO] PluginManager:203 - loadIPPluginJar : add cryp
+2021-03-01 23:37:37,524 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,524 [INFO] PluginManager:203 - loadIPPluginJar : add dfsdm
+2021-03-01 23:37:37,529 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,530 [INFO] PluginManager:203 - loadIPPluginJar : add dma
+2021-03-01 23:37:37,532 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,533 [INFO] PluginManager:203 - loadIPPluginJar : add fatfs
+2021-03-01 23:37:37,538 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,538 [INFO] PluginManager:203 - loadIPPluginJar : add fmc
+2021-03-01 23:37:37,543 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,544 [INFO] PluginManager:203 - loadIPPluginJar : add freertos
+2021-03-01 23:37:37,546 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,546 [INFO] PluginManager:203 - loadIPPluginJar : add genericplugin
+2021-03-01 23:37:37,548 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,549 [INFO] PluginManager:203 - loadIPPluginJar : add gfxmmu
+2021-03-01 23:37:37,554 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,555 [INFO] PluginManager:203 - loadIPPluginJar : add gic
+2021-03-01 23:37:37,559 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,559 [INFO] PluginManager:203 - loadIPPluginJar : add gpio
+2021-03-01 23:37:37,562 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,562 [INFO] PluginManager:203 - loadIPPluginJar : add gtzc
+2021-03-01 23:37:37,564 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,565 [INFO] PluginManager:203 - loadIPPluginJar : add hash
+2021-03-01 23:37:37,568 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,568 [INFO] PluginManager:203 - loadIPPluginJar : add i2c
+2021-03-01 23:37:37,571 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,571 [INFO] PluginManager:203 - loadIPPluginJar : add i2s
+2021-03-01 23:37:37,575 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,575 [INFO] PluginManager:203 - loadIPPluginJar : add ipddr
+2021-03-01 23:37:37,579 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,579 [INFO] PluginManager:203 - loadIPPluginJar : add lorawan
+2021-03-01 23:37:37,580 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,580 [INFO] PluginManager:203 - loadIPPluginJar : add ltdc
+2021-03-01 23:37:37,584 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,584 [INFO] PluginManager:203 - loadIPPluginJar : add mdma
+2021-03-01 23:37:37,588 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,588 [INFO] PluginManager:203 - loadIPPluginJar : add nvic
+2021-03-01 23:37:37,591 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,591 [INFO] PluginManager:203 - loadIPPluginJar : add opamp
+2021-03-01 23:37:37,595 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,595 [INFO] PluginManager:203 - loadIPPluginJar : add openamp
+2021-03-01 23:37:37,598 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,598 [INFO] PluginManager:203 - loadIPPluginJar : add pdm2pcm
+2021-03-01 23:37:37,603 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,605 [INFO] PluginManager:203 - loadIPPluginJar : add plateformsettings
+2021-03-01 23:37:37,607 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,607 [INFO] PluginManager:203 - loadIPPluginJar : add quadspi
+2021-03-01 23:37:37,612 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,612 [INFO] PluginManager:203 - loadIPPluginJar : add resmgrutility
+2021-03-01 23:37:37,617 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,617 [INFO] PluginManager:203 - loadIPPluginJar : add sai
+2021-03-01 23:37:37,620 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,620 [INFO] PluginManager:203 - loadIPPluginJar : add spi
+2021-03-01 23:37:37,624 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,624 [INFO] PluginManager:203 - loadIPPluginJar : add stm32_wpan
+2021-03-01 23:37:37,626 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,626 [INFO] PluginManager:203 - loadIPPluginJar : add tim
+2021-03-01 23:37:37,628 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,629 [INFO] PluginManager:203 - loadIPPluginJar : add touchsensing
+2021-03-01 23:37:37,631 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,631 [INFO] PluginManager:203 - loadIPPluginJar : add tracer_emb
+2021-03-01 23:37:37,635 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,635 [INFO] PluginManager:203 - loadIPPluginJar : add ts
+2021-03-01 23:37:37,637 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,637 [INFO] PluginManager:203 - loadIPPluginJar : add tsc
+2021-03-01 23:37:37,639 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,639 [INFO] PluginManager:203 - loadIPPluginJar : add ucpd
+2021-03-01 23:37:37,642 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:37:37,643 [INFO] PluginManager:203 - loadIPPluginJar : add usart
+2021-03-01 23:37:38,018 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-01 23:37:38,136 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-01 23:37:38,139 [INFO] DbMcusAds:132 - JSON generation date=Thu Feb 11 22:55:24 CST 2021 (1613055324029)
+2021-03-01 23:37:38,140 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-01 23:37:38,182 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-03-01 23:37:38,383 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-01 23:37:38,387 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-01 23:37:38,387 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-01 23:37:38,387 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-03-01 23:37:38,389 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-01 23:37:38,438 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-01 23:37:38,438 [WARN] ThirdParty:796 - waiting for thirdparty lock release [close project]
+2021-03-01 23:37:39,970 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [2/15]
+2021-03-01 23:37:42,970 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-01 23:37:42,970 [ERROR] AbstractThirdPartyUpdaterManager:153 - class java.lang.Integer cannot be cast to class java.util.List (java.lang.Integer and java.util.List are in module java.base of loader 'bootstrap')
+2021-03-01 23:37:42,970 [INFO] ThirdParty:900 - Integrity check success = false
+2021-03-01 23:37:42,971 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2021-03-01 23:37:42,971 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2021-03-01 23:37:42,971 [INFO] ThirdParty:798 - entering critical section [close project]
+2021-03-01 23:37:42,972 [INFO] ThirdParty:809 - exiting critical section [close project]
+2021-03-01 23:37:42,977 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-01 23:37:42,977 [FATAL] Updater:284 - Updater called before beeing initialized
+2021-03-01 23:37:42,988 [INFO] Updater:1002 - Updater Version found : 6.2.0
+2021-03-01 23:37:43,007 [INFO] ApplicationProperties:181 - Using Application install path: E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602
+2021-03-01 23:37:43,056 [INFO] MainUpdater:479 - Copy updater definitions from MX database
+2021-03-01 23:37:43,197 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-01 23:37:43,197 [INFO] MainUpdater:3349 - Updater definition file requires update
+2021-03-01 23:37:43,199 [INFO] MainUpdater:255 - Updater Check For Update Now.
+2021-03-01 23:37:43,199 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.20
+2021-03-01 23:37:43,247 [INFO] ServerAccessManage:348 - Download File updaters.zip
+2021-03-01 23:37:43,366 [INFO] FileExtend:225 - Unzip File : updaters.zip
+2021-03-01 23:37:43,366 [INFO] FileExtend:240 - Standard Zip Deflate
+2021-03-01 23:37:43,827 [INFO] ServerAccessManage:348 - Download File PacksControlFlags.xml
+2021-03-01 23:37:43,889 [INFO] ServerAccessManage:348 - Download File cubemx.pidx
+2021-03-01 23:37:43,970 [INFO] LoadServerUpdatesThread:329 - End of LoadServerUpdate Thread
+2021-03-01 23:37:43,998 [INFO] CheckServerUpdateThread:102 - End of CheckServer Thread
+2021-03-01 23:37:44,019 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-01 23:37:44,370 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\yk152\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2021-03-01 23:37:44,376 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2021-03-01 23:37:44,379 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2021-03-01 23:37:44,381 [INFO] DbMcusXml:100 - Load MCU database from E:\STM32CubeIDE\STM32CubeIDE_1.6.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.2.0.202102191602\\db\/mcu/families.xml
+2021-03-01 23:37:45,021 [INFO] DbMcusJson:94 - JSON generation date=Mon Feb 08 21:35:07 CST 2021 (1612791307)
+2021-03-01 23:37:45,684 [INFO] DbMcus:175 - Found 1906 MCUs (1866 are supported by CubeMX, 1866 are visible in CubeMX)
+2021-03-01 23:37:45,685 [INFO] ApiDb:242 - User favorites file not found: C:\Users\yk152/.stm32cubeide/favorites.mcus.txt
+2021-03-01 23:37:45,685 [INFO] DbMcus:187 - Set 0 / 0 favorites MCUs
+2021-03-01 23:37:46,269 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-03-01 23:37:46,712 [INFO] DbBoardsPdsc:90 - Found 24 items
+2021-03-01 23:37:46,715 [INFO] DbBoardsPdsc:90 - Found 9 items
+2021-03-01 23:37:46,717 [INFO] DbBoardsPdsc:90 - Found 33 items
+2021-03-01 23:37:46,720 [INFO] DbBoardsPdsc:90 - Found 1 items
+2021-03-01 23:37:46,729 [INFO] DbBoardsPdsc:90 - Found 46 items
+2021-03-01 23:37:46,736 [INFO] DbBoardsPdsc:90 - Found 41 items
+2021-03-01 23:37:46,739 [INFO] DbBoardsPdsc:90 - Found 2 items
+2021-03-01 23:37:46,742 [INFO] DbBoardsPdsc:90 - Found 5 items
+2021-03-01 23:37:46,744 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Three user LEDs, n=1
+2021-03-01 23:37:46,745 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=One reset and three user push-buttons, n=1
+2021-03-01 23:37:46,745 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Arduino Uno V3 expansion connector, n=1
+2021-03-01 23:37:46,745 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=ST morpho extension pin headers for full access to all STM32WB I/Os, n=1
+2021-03-01 23:37:46,745 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Integrated PCB antenna and SMA connector footprint, n=1
+2021-03-01 23:37:46,745 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Flexible power-supply options: ST-LINK, USB VBUS, or external sources, n=1
+2021-03-01 23:37:46,745 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=On-board footprint to mount a CR2032 battery socket, n=1
+2021-03-01 23:37:46,745 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=On-board ST-LINK/V2-1 debugger/programmer with USB re-enumeration capability: mass storage, Virtual COM port, and debug port, n=1
+2021-03-01 23:37:46,745 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Comprehensive free software libraries and examples available with the STM32CubeWB MCU Package, n=1
+2021-03-01 23:37:46,745 [WARN] DbBoardsPdsc:254 - Board NUCLEO-WB15CC: unknown feature type=, name=, username=Support of a wide choice of Integrated Development Environments (IDEs) including IAR Embedded Workbench, MDK-ARM, STM32CubeIDE, and Mbed Studio, n=1
+2021-03-01 23:37:46,748 [WARN] DbBoardsPdsc:254 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2021-03-01 23:37:46,749 [WARN] DbBoardsPdsc:254 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2021-03-01 23:37:46,749 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=Time-of-Flight and gesture-detection sensor, n=1
+2021-03-01 23:37:46,749 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=3 push-buttons (2 users and 1 reset) and 1 touch key button, n=1
+2021-03-01 23:37:46,749 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=Flexible power-supply options: ST-LINK/V2-1 USB connector, 5 V delivered by ARDUINO?? or external connector, USB charger, or USB power, n=1
+2021-03-01 23:37:46,750 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=On-board ST-LINK/V2-1 debugger/programmer with USB re-enumeration capability: Virtual COM port and debug port, n=1
+2021-03-01 23:37:46,750 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=Comprehensive free software libraries and examples available with the STM32CubeWB MCU Package, n=1
+2021-03-01 23:37:46,750 [WARN] DbBoardsPdsc:254 - Board STM32WB5MM-DK: unknown feature type=, name=, username=Support of a wide choice of Integrated Development Environments (IDEs) including IAR Embedded Workbench??, MDK-ARM, and STM32CubeIDE, n=1
+2021-03-01 23:37:46,751 [WARN] DbBoardsPdsc:254 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2021-03-01 23:37:46,751 [WARN] DbBoardsPdsc:254 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2021-03-01 23:37:46,751 [WARN] DbBoardsPdsc:254 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2021-03-01 23:37:46,777 [INFO] DbBoardsJson:87 - JSON generation date=Fri Feb 05 00:53:45 CST 2021 (1612457625)
+2021-03-01 23:37:46,783 [INFO] DbBoards:117 - Found 161 boards (158 are supported by CubeMX)
+2021-03-01 23:37:46,796 [INFO] DbBoardsDocs:143 - JSON generation date=Mon Feb 08 21:35:07 CST 2021 (1612791307)
+2021-03-01 23:37:46,822 [INFO] DbBoardsDocs:79 - Found 193 boards documents
+2021-03-01 23:37:46,822 [WARN] DbBoards:127 - board B-L462E-CELL1 has no document id list !
+2021-03-01 23:37:46,822 [WARN] DbBoards:127 - board B-L475E-IOT01A2 has no document id list !
+2021-03-01 23:37:46,823 [WARN] DbBoards:127 - board NUCLEO-G0B1RE has no document id list !
+2021-03-01 23:37:46,823 [WARN] DbBoards:127 - board NUCLEO-H743ZI2 has no document id list !
+2021-03-01 23:37:46,824 [WARN] DbBoards:127 - board NUCLEO-L4A6ZG has no document id list !
+2021-03-01 23:37:46,824 [WARN] DbBoards:127 - board NUCLEO-WB15CC has no document id list !
+2021-03-01 23:37:46,825 [WARN] DbBoards:127 - board NUCLEO-WB55RG has no document id list !
+2021-03-01 23:37:46,825 [WARN] DbBoards:127 - board NUCLEO-WL55JC2 has no document id list !
+2021-03-01 23:37:46,825 [WARN] DbBoards:127 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2021-03-01 23:37:46,825 [WARN] DbBoards:127 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2021-03-01 23:37:46,825 [WARN] DbBoards:127 - board STEVAL-BFA001V1B has no document id list !
+2021-03-01 23:37:46,825 [WARN] DbBoards:127 - board STEVAL-BFA001V2B has no document id list !
+2021-03-01 23:37:46,825 [WARN] DbBoards:127 - board STEVAL-IDP005V1 has no document id list !
+2021-03-01 23:37:46,825 [WARN] DbBoards:127 - board STEVAL-IDP005V2 has no document id list !
+2021-03-01 23:37:46,825 [WARN] DbBoards:127 - board STEVAL-MKSBOX1V1 has no document id list !
+2021-03-01 23:37:46,826 [WARN] DbBoards:127 - board STEVAL-STWINKT1 has no document id list !
+2021-03-01 23:37:46,826 [WARN] DbBoards:127 - board STEVAL-STWINKT1B has no document id list !
+2021-03-01 23:37:46,826 [WARN] DbBoards:127 - board STM32F401C-DISCO has no document id list !
+2021-03-01 23:37:46,827 [WARN] DbBoards:127 - board STM32F769I-DISC1 has no document id list !
+2021-03-01 23:37:46,827 [WARN] DbBoards:127 - board STM32G0C1E-EV has no document id list !
+2021-03-01 23:37:46,827 [WARN] DbBoards:127 - board STM32G474E-EVAL1 has no document id list !
+2021-03-01 23:37:46,827 [WARN] DbBoards:127 - board STM32H743I-EVAL2 has no document id list !
+2021-03-01 23:37:46,827 [WARN] DbBoards:127 - board STM32H747I-DISC1 has no document id list !
+2021-03-01 23:37:46,828 [WARN] DbBoards:127 - board STM32H753I-EVAL2 has no document id list !
+2021-03-01 23:37:46,828 [WARN] DbBoards:127 - board STM32L-DISCOVERY has no document id list !
+2021-03-01 23:37:46,828 [WARN] DbBoards:127 - board STM32MP157A-DK1 has no document id list !
+2021-03-01 23:37:46,828 [WARN] DbBoards:127 - board STM32MP157F-DK2 has no document id list !
+2021-03-01 23:37:46,828 [WARN] DbBoards:127 - board STM32MP157F-EV1 has no document id list !
+2021-03-01 23:37:46,828 [WARN] DbBoards:127 - board STM32WB5MM-DK has no document id list !
+2021-03-01 23:37:48,530 [INFO] ApiDb:242 - User favorites file not found: C:\Users\yk152/.stm32cubeide/favorites.boards.txt
+2021-03-01 23:37:48,530 [INFO] DbBoards:206 - Set 0 / 0 favorites Boards
+2021-03-01 23:38:15,434 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:38:15,438 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:38:16,441 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:38:16,442 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:38:18,640 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:38:18,640 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:38:18,730 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-01 23:38:18,732 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-01 23:38:18,799 [INFO] MicroXplorer:442 - Change Database Path : 
+2021-03-01 23:38:18,800 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.20
+2021-03-01 23:38:18,800 [WARN] ThirdParty:796 - waiting for thirdparty lock release [close project]
+2021-03-01 23:38:18,801 [INFO] ThirdParty:798 - entering critical section [close project]
+2021-03-01 23:38:18,801 [INFO] ThirdParty:809 - exiting critical section [close project]
+2021-03-01 23:38:18,806 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-01 23:38:18,808 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 329285968 Bytes (506462208)
+2021-03-01 23:38:20,820 [INFO] ServerAccessManage:348 - Download File stm32cube_db_v6010.zip
+2021-03-01 23:38:21,244 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:38:21,245 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:38:24,075 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:38:24,075 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:38:24,995 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:38:24,995 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:38:26,091 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:38:26,091 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:38:27,984 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:38:27,984 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:38:28,799 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:38:28,800 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:38:35,198 [INFO] FileExtend:225 - Unzip File : stm32cube_db_v6010.zip
+2021-03-01 23:38:35,199 [INFO] FileExtend:240 - Standard Zip Deflate
+2021-03-01 23:38:42,900 [INFO] LoadServerPackagesThread:169 - End of LoadServerPackages Thread
+2021-03-01 23:38:42,974 [INFO] CheckServerUpdateThread:102 - End of CheckServer Thread
+2021-03-01 23:38:43,081 [INFO] ServerAccessManage:348 - Download File stm32cube_fw_f1_v180.zip
+2021-03-01 23:39:13,379 [INFO] FileExtend:225 - Unzip File : stm32cube_fw_f1_v180.zip
+2021-03-01 23:39:13,380 [INFO] FileExtend:240 - Standard Zip Deflate
+2021-03-01 23:39:35,494 [INFO] ServerAccessManage:348 - Download File stm32cube_fw_f1_v183.zip
+2021-03-01 23:39:46,960 [INFO] FileExtend:225 - Unzip File : stm32cube_fw_f1_v183.zip
+2021-03-01 23:39:46,961 [INFO] FileExtend:240 - Standard Zip Deflate
+2021-03-01 23:39:50,090 [INFO] LoadServerPackagesThread:169 - End of LoadServerPackages Thread
+2021-03-01 23:39:50,147 [INFO] CheckServerUpdateThread:102 - End of CheckServer Thread
+2021-03-01 23:39:50,158 [INFO] MicroXplorer:442 - Change Database Path : C:/Users/yk152/.stm32cubemx/databases/DB.6.0.10/db/
+2021-03-01 23:39:50,159 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.10
+2021-03-01 23:39:50,159 [INFO] OpenFileManager:303 - Change cursor
+2021-03-01 23:39:50,180 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2021-03-01 23:39:50,180 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2021-03-01 23:39:50,266 [WARN] PackLoader:226 - Cannot read IP mode file for RoweBots.I-CUBE-UNISONRTOS.5.5.0-4
+2021-03-01 23:39:50,287 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0
+2021-03-01 23:39:50,344 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.8.2.0
+2021-03-01 23:39:50,475 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.3.0.0
+2021-03-01 23:39:50,482 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.2.0.2
+2021-03-01 23:39:50,489 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.2.0
+2021-03-01 23:39:50,499 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.4.0.0
+2021-03-01 23:39:50,529 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.1.0.0
+2021-03-01 23:39:50,540 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.1.0.0
+2021-03-01 23:39:50,546 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.2.0
+2021-03-01 23:39:50,553 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.5.2.0
+2021-03-01 23:39:50,558 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.6.1.0
+2021-03-01 23:39:50,562 [WARN] PackLoader:226 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSL.4.7.0
+2021-03-01 23:39:50,565 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.16.1
+2021-03-01 23:39:50,568 [WARN] PackLoader:226 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.5.2.0
+2021-03-01 23:39:50,569 [INFO] ThirdParty:900 - Integrity check success = true
+2021-03-01 23:39:50,569 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2021-03-01 23:39:50,569 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2021-03-01 23:39:52,568 [INFO] Context:587 - Trying to add GPIOservice into a context  which must be forbidden
+2021-03-01 23:39:53,006 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-01 23:39:53,006 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-01 23:39:53,006 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-01 23:39:53,010 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,010 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,010 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,010 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,010 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,011 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,011 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,011 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,011 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,011 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,011 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,012 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,012 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,012 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,012 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,012 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,012 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,012 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,013 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,013 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,013 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,013 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,013 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,013 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,013 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,013 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,013 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-01 23:39:53,022 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-01 23:39:53,023 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-01 23:39:53,023 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-01 23:39:53,165 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-01 23:39:53,165 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-01 23:39:53,165 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-01 23:39:53,174 [WARN] ApiManager:294 - Cannot register API 'Board Extension:EEPRMA1' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2021-03-01 23:39:53,175 [WARN] ApiManager:294 - Cannot register API 'Board Extension:EEPRMA2' from pack STMicroelectronics.X-CUBE-EEPRMA1.3.0.0: no header file found
+2021-03-01 23:39:53,177 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2021-03-01 23:39:53,178 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2021-03-01 23:39:53,179 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2021-03-01 23:39:53,179 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2021-03-01 23:39:53,179 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2021-03-01 23:39:53,182 [WARN] ApiManager:294 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-01 23:39:53,182 [WARN] ApiManager:294 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-01 23:39:53,182 [WARN] ApiManager:294 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-01 23:39:53,183 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-MS' from pack STMicroelectronics.X-CUBE-BLE1.6.1.0: no header file found
+2021-03-01 23:39:53,185 [WARN] ApiManager:294 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.2: no header file found
+2021-03-01 23:39:53,186 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.2.0: no header file found
+2021-03-01 23:39:53,509 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (ADCFreqValue) has invalid value (36000000)
+2021-03-01 23:39:53,509 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2021-03-01 23:39:53,509 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (MCOFreq_Value) has invalid value (72000000)
+2021-03-01 23:39:53,510 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (72000000)
+2021-03-01 23:39:54,035 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 692839936 Bytes (1073741824)
+2021-03-01 23:39:54,039 [WARN] ThirdParty:762 - waiting for thirdparty lock release [change project]
+2021-03-01 23:39:54,039 [INFO] ThirdParty:764 - entering critical section [change project]
+2021-03-01 23:39:54,039 [INFO] ThirdParty:952 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2021-03-01 23:39:54,039 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 3.0.0
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 4.0.0
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 1.0.0
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.2.0
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 3.0.0
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 1.0.0
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2021-03-01 23:39:54,040 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.2.0
+2021-03-01 23:39:54,041 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.2.0
+2021-03-01 23:39:54,041 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 6.1.0
+2021-03-01 23:39:54,041 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2021-03-01 23:39:54,041 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2021-03-01 23:39:54,041 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2021-03-01 23:39:54,041 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.2
+2021-03-01 23:39:54,041 [INFO] ThirdParty:952 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 4.7.0
+2021-03-01 23:39:54,041 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.1
+2021-03-01 23:39:54,041 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 5.2.0
+2021-03-01 23:39:54,041 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2021-03-01 23:39:54,041 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2021-03-01 23:39:54,041 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2021-03-01 23:39:54,041 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.2.0
+2021-03-01 23:39:54,042 [INFO] ThirdParty:770 - exiting critical section [change project]
+2021-03-01 23:39:54,606 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-01 23:39:54,609 [INFO] PinOutPanel:1435 - setPackage(STM32F103ZETx,LQFP144)
+2021-03-01 23:39:55,294 [INFO] UtilMem:74 - Before build in PCC Used Memory: 524914928 Bytes (1073741824)
+2021-03-01 23:39:55,743 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/yk152/.stm32cubemx/plugins/power
+2021-03-01 23:39:55,790 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/yk152/.stm32cubemx/plugins/power
+2021-03-01 23:39:55,860 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/yk152/.stm32cubemx/plugins/power
+2021-03-01 23:39:55,865 [INFO] SharedServices:72 - Folder for power plug-in: C:/Users/yk152/.stm32cubemx/plugins/power
+2021-03-01 23:39:56,054 [INFO] UtilMem:74 - After build in PCC Used Memory: 605655280 Bytes (1073741824)
+2021-03-01 23:39:56,079 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,079 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,079 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,079 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,079 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,080 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,080 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,080 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,080 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,080 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,081 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,081 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,081 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,081 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,081 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,082 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,082 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,082 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,082 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,083 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,083 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,083 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,083 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,084 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,084 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,084 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,085 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,085 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,085 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,086 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,087 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,088 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,088 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,089 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,089 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,090 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,091 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,091 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,092 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,093 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-01 23:39:56,135 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2021-03-01 23:39:56,267 [INFO] OpenFileManager:323 - Restore cursor
+2021-03-01 23:39:56,594 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 684428016 Bytes (1073741824)
+2021-03-01 23:39:56,701 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 695310576 Bytes (1073741824)
+2021-03-01 23:39:57,132 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SPI
+2021-03-01 23:39:57,132 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-03-01 23:39:57,132 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-03-01 23:39:57,132 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-03-01 23:39:57,133 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-03-01 23:39:57,133 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-03-01 23:39:57,135 [INFO] CodeGenerator:641 - code generatio: config db path: C:/Users/yk152/.stm32cubemx/databases/DB.6.0.10/db/
+2021-03-01 23:39:57,882 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\MXTmpFiles\license.tmp_save
+2021-03-01 23:39:58,266 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\MXTmpFiles\license.tmp
+2021-03-01 23:39:58,386 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Src\gpio.c_save
+2021-03-01 23:39:58,481 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Src\gpio.c
+2021-03-01 23:39:58,485 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Inc\gpio.h_save
+2021-03-01 23:39:58,537 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Inc\gpio.h
+2021-03-01 23:39:58,683 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-01 23:39:58,694 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Src\spi.c_save
+2021-03-01 23:39:58,793 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Src\spi.c
+2021-03-01 23:39:58,798 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Inc\spi.h_save
+2021-03-01 23:39:58,851 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Inc\spi.h
+2021-03-01 23:39:58,853 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-01 23:39:58,862 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Src\usart.c_save
+2021-03-01 23:39:58,933 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Src\usart.c
+2021-03-01 23:39:58,937 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Inc\usart.h_save
+2021-03-01 23:39:58,986 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Inc\usart.h
+2021-03-01 23:39:59,000 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Src\stm32f1xx_it.c_save
+2021-03-01 23:39:59,070 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Src\stm32f1xx_it.c
+2021-03-01 23:39:59,075 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Inc\stm32f1xx_it.h_save
+2021-03-01 23:39:59,125 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Inc\stm32f1xx_it.h
+2021-03-01 23:39:59,139 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Src\stm32f1xx_hal_msp.c_save
+2021-03-01 23:39:59,227 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Src\stm32f1xx_hal_msp.c
+2021-03-01 23:39:59,232 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\MXTmpFiles\system.tmp_save
+2021-03-01 23:39:59,277 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\MXTmpFiles\system.tmp
+2021-03-01 23:39:59,289 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Inc\stm32f1xx_hal_conf.h_save
+2021-03-01 23:39:59,347 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Inc\stm32f1xx_hal_conf.h
+2021-03-01 23:39:59,387 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Inc\main.h_save
+2021-03-01 23:39:59,446 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Inc\main.h
+2021-03-01 23:39:59,453 [INFO] CodeEngine:229 - oldGeneratedFile, D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Src\main.c_save
+2021-03-01 23:39:59,564 [INFO] CodeEngine:247 - Generated code: D:\STM32CubeIDEPath\TestZET6\TestZET6\Core\Src\main.c
+2021-03-01 23:40:00,405 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 105mS.
+2021-03-01 23:40:00,413 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-03-01 23:40:00,742 [INFO] ConfigFileManager:1242 - The Die is : DIE414
+2021-03-01 23:40:00,759 [INFO] ApiDbMcu:458 - Load IP Config File for FATFS
+2021-03-01 23:40:00,785 [INFO] ApiDbMcu:458 - Load IP Config File for FREERTOS
+2021-03-01 23:40:00,809 [INFO] ApiDbMcu:458 - Load IP Config File for USB_DEVICE
+2021-03-01 23:40:06,616 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 6203mS.
+2021-03-01 23:40:06,618 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 2mS.
+2021-03-01 23:40:06,620 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-03-01 23:40:08,613 [INFO] ApiDb:276 - Save user favorites file C:\Users\yk152/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2021-03-01 23:40:08,613 [INFO] ApiDb:280 - User favorites MCUs=[]
+2021-03-01 23:40:51,900 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://marketplace.eclipse.org:80: Software caused connection abort: recv failed
+2021-03-01 23:40:51,901 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://marketplace.eclipse.org:80
+2021-03-01 23:41:50,826 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://127.0.0.1:7890->http://www.genuitec.com:80: The target server failed to respond
+2021-03-01 23:41:50,826 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://www.genuitec.com:80
+2021-03-01 23:45:53,186 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:45:53,187 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:45:55,751 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:45:55,751 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:45:56,664 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:45:56,664 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:45:58,850 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:45:58,850 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:46:01,279 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:46:01,280 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:46:03,025 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:46:03,025 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:46:05,083 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:46:05,084 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:46:07,174 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:46:07,174 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:46:07,581 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:46:07,581 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:46:07,770 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:46:07,771 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:46:08,127 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:46:08,127 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:46:08,314 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:46:08,314 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:46:09,344 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:46:09,344 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:46:09,530 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:46:09,531 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:46:09,896 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:46:09,896 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:46:10,084 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-01 23:46:10,084 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-01 23:50:54,099 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://127.0.0.1:7890->http://downloads.genuitec.com:80: The target server failed to respond
+2021-03-01 23:50:54,099 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://downloads.genuitec.com:80
+2021-03-02 00:06:05,493 [INFO] Activator:170 - 
+
+
+2021-03-02 00:06:05,520 [INFO] Activator:171 - !SESSION log4j initialized
+2021-03-02 00:06:23,415 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://marketplace.eclipse.org:80: Software caused connection abort: recv failed
+2021-03-02 00:06:23,419 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://marketplace.eclipse.org:80
+2021-03-02 00:06:41,664 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:06:41,665 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:06:46,410 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:06:46,410 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:06:53,432 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:06:53,433 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:06:54,584 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:06:54,585 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:06:55,511 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:06:55,512 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:06:55,830 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:06:55,831 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:06:56,203 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:06:56,204 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:06:56,898 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:06:56,898 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:06:57,228 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:06:57,229 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:07:11,372 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://127.0.0.1:7890->http://www.genuitec.com:80: The target server failed to respond
+2021-03-02 00:07:11,372 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://www.genuitec.com:80
+2021-03-02 00:14:17,740 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:14:17,740 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:14:27,368 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:14:27,368 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:14:28,887 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:14:28,888 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:14:30,552 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:14:30,553 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:14:30,886 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:14:30,887 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:14:31,241 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:14:31,241 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:14:32,222 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:14:32,224 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:14:32,528 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:14:32,528 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:14:45,295 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://127.0.0.1:7890->http://downloads.genuitec.com:80: The target server failed to respond
+2021-03-02 00:14:45,296 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://downloads.genuitec.com:80
+2021-03-02 00:14:59,147 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://127.0.0.1:7890->http://www.genuitec.com:80: The target server failed to respond
+2021-03-02 00:14:59,147 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://www.genuitec.com:80
+2021-03-02 00:15:13,176 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://127.0.0.1:7890->http://downloads.genuitec.com:80: The target server failed to respond
+2021-03-02 00:15:13,177 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://downloads.genuitec.com:80
+2021-03-02 00:43:16,917 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:16,917 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:16,918 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:16,918 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:16,996 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:16,996 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:17,459 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:17,460 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:17,692 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:17,693 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:18,548 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:18,548 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:19,495 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:19,495 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:20,006 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:20,006 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:20,043 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:20,043 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:20,124 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:20,124 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:20,383 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:20,384 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:21,205 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:21,205 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:21,594 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:21,594 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:21,779 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:21,779 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:22,004 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:22,005 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:22,868 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:22,869 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:23,135 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:23,136 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:23,303 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:23,303 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:23,437 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:23,437 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:24,094 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:24,094 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:24,189 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:24,190 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:24,557 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:24,557 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:26,131 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:26,132 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:26,489 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:26,489 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:27,109 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:27,109 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:27,601 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:27,602 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:28,216 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:28,216 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:28,277 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:28,277 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:28,479 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:28,479 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:28,882 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:28,882 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:29,204 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:29,205 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:29,205 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:29,206 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:29,452 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:29,452 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:29,790 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:29,790 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:29,894 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:29,895 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:29,896 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:29,897 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:30,546 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:30,546 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:30,625 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:30,626 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:30,700 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:30,700 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:31,317 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:31,317 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:31,318 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:31,318 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:31,356 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:31,356 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:31,803 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:31,803 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:32,094 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:32,095 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:32,230 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:32,230 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:32,269 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:32,269 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:32,636 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:32,636 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:32,956 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:32,956 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:33,017 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:33,018 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:33,100 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:33,101 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:33,407 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:33,407 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:33,930 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:33,931 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:33,931 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:33,932 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:34,155 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:34,155 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:34,332 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:34,332 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 00:43:34,521 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 00:43:34,521 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 10:35:12,153 [INFO] Activator:170 - 
+
+
+2021-03-02 10:35:12,156 [INFO] Activator:171 - !SESSION log4j initialized
+2021-03-02 10:36:06,835 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 10:36:06,838 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 10:36:07,058 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 10:36:07,059 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 10:36:08,732 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 10:36:08,732 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 10:36:10,334 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 10:36:10,335 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 10:36:12,172 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 10:36:12,172 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 10:36:12,476 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 10:36:12,476 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 10:36:12,798 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 10:36:12,799 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 10:36:13,120 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 10:36:13,120 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 10:36:13,445 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 10:36:13,445 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 10:36:13,784 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 10:36:13,784 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 10:36:14,106 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 10:36:14,106 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:03,859 [INFO] Activator:170 - 
+
+
+2021-03-02 11:01:03,861 [INFO] Activator:171 - !SESSION log4j initialized
+2021-03-02 11:01:33,198 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:33,200 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:33,593 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:33,593 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:33,786 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:33,787 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:35,186 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:35,186 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:35,572 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:35,572 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:35,762 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:35,762 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:36,143 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:36,144 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:36,332 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:36,332 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:36,698 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:36,698 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:36,879 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:36,879 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:37,534 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:37,534 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:37,716 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:37,717 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:38,123 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:38,123 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:38,302 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:38,302 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:38,657 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:38,657 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:38,841 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:38,841 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:39,212 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:39,212 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:39,390 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:39,391 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:39,788 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:39,789 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:39,979 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:39,980 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:40,324 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:40,325 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:40,510 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:40,510 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:41,440 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:41,440 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:41,626 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:41,626 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:41,989 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:41,989 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:42,174 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:42,174 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:42,600 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:42,601 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:42,789 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:42,789 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:43,154 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:43,154 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:43,336 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:43,336 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:43,779 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:43,779 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:44,434 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:44,434 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:47,349 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:47,349 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:50,367 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:50,368 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:52,627 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:52,627 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:53,354 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:53,354 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:53,538 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:53,538 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:53,986 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:53,986 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:54,170 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:54,170 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:54,508 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:54,508 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:54,690 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:54,690 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:55,016 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:55,016 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:55,194 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:55,194 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:56,047 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:56,047 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:56,237 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:56,237 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:56,573 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:56,573 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:01:56,754 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:01:56,754 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:02:20,391 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://marketplace.eclipse.org:80: Software caused connection abort: recv failed
+2021-03-02 11:02:20,391 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://marketplace.eclipse.org:80
+2021-03-02 11:02:31,272 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:02:31,273 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:02:31,674 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:02:31,675 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:02:31,858 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:02:31,859 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:02:32,148 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:02:32,149 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:02:32,339 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:02:32,340 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:06:56,471 [INFO] Activator:170 - 
+
+
+2021-03-02 11:06:56,474 [INFO] Activator:171 - !SESSION log4j initialized
+2021-03-02 11:07:25,604 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:25,606 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:25,916 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:25,917 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:26,574 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:26,574 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:27,343 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:27,343 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:27,676 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:27,676 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:28,008 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:28,008 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:28,333 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:28,333 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:28,679 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:28,680 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:28,995 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:28,995 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:29,310 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:29,310 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:29,681 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:29,682 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:30,018 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:30,018 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:30,339 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:30,339 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:30,686 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:30,686 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:30,999 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:30,999 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:31,315 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:31,315 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:31,624 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:31,625 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:31,933 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: The target server failed to respond
+2021-03-02 11:07:31,933 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:32,237 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:32,237 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:32,454 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:32,454 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:33,829 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:33,830 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:34,827 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:34,827 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:36,096 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:36,097 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:36,399 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:36,399 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:36,721 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:36,721 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:37,041 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:37,041 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:37,317 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:37,317 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:37,630 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:37,630 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80
+2021-03-02 11:07:38,002 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80: Software caused connection abort: recv failed
+2021-03-02 11:07:38,002 [INFO] RetryExec:113 - Retrying request to {}->http://127.0.0.1:7890->http://sw-center.st.com:80

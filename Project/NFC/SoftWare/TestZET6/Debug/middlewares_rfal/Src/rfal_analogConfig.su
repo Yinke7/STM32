@@ -1,0 +1,9 @@
+rfal_analogConfig.c:122:6:rfalAnalogConfigInitialize	4	static
+rfal_analogConfig.c:139:6:rfalAnalogConfigIsReady	4	static
+rfal_analogConfig.c:144:12:rfalAnalogConfigListWriteRaw	16	static
+rfal_analogConfig.c:180:12:rfalAnalogConfigListWrite	16	static
+rfal_analogConfig.c:241:12:rfalAnalogConfigListReadRaw	24	static
+rfal_analogConfig.c:265:12:rfalAnalogConfigListRead	32	static
+rfal_analogConfig.c:296:12:rfalSetAnalogConfig	32	static
+rfal_analogConfig.c:346:10:rfalAnalogConfigGenModeID	24	static
+rfal_analogConfig.c:440:28:rfalAnalogConfigSearch	32	static

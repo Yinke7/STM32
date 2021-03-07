@@ -81,4 +81,8 @@
 
 ### 2021.03.07
 
-	*  上传`ST25R3916`的`demo TestZET6`，能读到`NTAG`的`NEDF`数据
+* 上传`ST25R3916`的`demo TestZET6`，能读到`NTAG`的`NEDF`数据
+
+  ![ntagread](https://github.com/Yinke7/STM32/blob/debug/Project/NFC/image/ntag_read.jpg)
+
+  

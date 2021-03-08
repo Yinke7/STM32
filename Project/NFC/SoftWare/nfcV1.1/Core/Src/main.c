@@ -106,11 +106,11 @@ int main(void)
 		printf("POR \r\n");
 		ConfigManager_PORsequence();
 		
-		printf("read ID \r\n");
-		ConfigManager_IDN();
+		printf("read DevID \r\n");
+		ConfigManager_DevIDN();
 		
 		printf("select protocol \r\n");
-	  SelectProtocol();
+        SelectProtocol();
 		
 		
 		printf("adjust gain\r\n");
@@ -128,11 +128,11 @@ int main(void)
 			printf("read\r\n");
 			Readtag(addr);
 		
-			printf("write\r\n");
-			Writetag(addr);
-			
-			printf("read\r\n");
-			Readtag(addr);
+//			printf("write\r\n");
+//			Writetag(addr);
+//			
+//			printf("read\r\n");
+//			Readtag(addr);
 			
 //		}
 

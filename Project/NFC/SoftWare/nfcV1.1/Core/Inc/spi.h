@@ -330,7 +330,7 @@ void MX_SPI2_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
-int8_t ConfigManager_IDN(void);
+int8_t ConfigManager_DevIDN(void);
 int8_t ConfigManager_PORsequence( void );
 int8_t SelectProtocol(void);
 int8_t AdjustTimerW(void);

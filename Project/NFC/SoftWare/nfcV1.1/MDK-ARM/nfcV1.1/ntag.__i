@@ -1,6 +1,0 @@
---c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include
--I.\RTE\_nfcV1.1
--IE:\MDK\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
--IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
--D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_XL -DUSE_HAL_DRIVER -DSTM32F103xG -DST95HF
--o nfcv1.1\ntag.o --omf_browse nfcv1.1\ntag.crf --depend nfcv1.1\ntag.d "..\Core\Src\ntag.c"

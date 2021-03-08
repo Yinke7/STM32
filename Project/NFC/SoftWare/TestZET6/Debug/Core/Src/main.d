@@ -26,15 +26,15 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Inc/spi.h ../Core/Inc/main.h ../Core/Inc/usart.h \
  ../Core/Inc/gpio.h ../App/Inc/demo.h \
  ../App/Inc/../../st25r3916_bsp/Inc/platform.h \
- d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\st_errno.h \
- d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\timer.h \
- d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h \
- d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\logger.h \
+ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h \
+ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\timer.h \
+ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h \
+ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\logger.h \
  ../App/Inc/../../st25r3916_bsp/Inc/st_errno.h \
  ../middlewares_rfal/Inc/rfal_nfc.h ../middlewares_rfal/Inc/rfal_rf.h \
  ../middlewares_rfal/Inc/rfal_features.h \
- ../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/platform.h \
- ../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/st_errno.h \
+ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h \
+ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h \
  ../middlewares_rfal/Inc/rfal_nfca.h ../middlewares_rfal/Inc/rfal_t1t.h \
  ../middlewares_rfal/Inc/rfal_nfcb.h ../middlewares_rfal/Inc/rfal_nfcf.h \
  ../middlewares_rfal/Inc/rfal_nfcv.h \
@@ -105,13 +105,13 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../App/Inc/../../st25r3916_bsp/Inc/platform.h:
 
-d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\st_errno.h:
+d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h:
 
-d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\timer.h:
+d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\timer.h:
 
-d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h:
+d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
 
-d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\logger.h:
+d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\logger.h:
 
 ../App/Inc/../../st25r3916_bsp/Inc/st_errno.h:
 
@@ -121,9 +121,9 @@ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\logger.h:
 
 ../middlewares_rfal/Inc/rfal_features.h:
 
-../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/platform.h:
+d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
 
-../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/st_errno.h:
+d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h:
 
 ../middlewares_rfal/Inc/rfal_nfca.h:
 

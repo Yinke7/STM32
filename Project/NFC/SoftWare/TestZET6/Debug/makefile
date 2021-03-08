@@ -67,8 +67,8 @@ all: main-build
 main-build: TestZET6.elf secondary-outputs
 
 # Tool invocations
-TestZET6.elf: $(OBJS) $(USER_OBJS) D:\STM32CubeIDE_Project\TestZET6\STM32F103ZETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "TestZET6.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\STM32CubeIDE_Project\TestZET6\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TestZET6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+TestZET6.elf: $(OBJS) $(USER_OBJS) D:\STM32CubeIDEPath\TestZET6\STM32F103ZETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "TestZET6.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\STM32CubeIDEPath\TestZET6\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TestZET6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

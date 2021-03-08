@@ -28,7 +28,7 @@ middlewares_ndef/Src/message/ndef_types_mime.o: \
  ../Core/Inc/spi.h ../Core/Inc/main.h \
  ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/st_errno.h \
  ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/timer.h \
- d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h \
+ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h \
  ../Core/Inc/main.h ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/logger.h \
  ../st25r3916_bsp/Inc/st_errno.h ../st25r3916_bsp/Inc/utils.h \
  ../middlewares_ndef/Inc/message/ndef_record.h \
@@ -97,7 +97,7 @@ middlewares_ndef/Src/message/ndef_types_mime.o: \
 
 ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/timer.h:
 
-d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h:
+d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
 
 ../Core/Inc/main.h:
 

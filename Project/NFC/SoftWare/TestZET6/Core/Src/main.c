@@ -174,8 +174,8 @@ int main(void)
 	  }
 	  else
 	  {
-		  demoCE(&nfcDev);
-//		  demoCycle();
+//		  demoCE(&nfcDev);
+		  demoCycle();
 //		  HAL_Delay(200);
 	  }
 //	  printf("test\r\n");

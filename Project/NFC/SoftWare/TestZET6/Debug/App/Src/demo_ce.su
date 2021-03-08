@@ -1,9 +1,0 @@
-demo_ce.c:174:13:cmdCompare	32	static
-demo_ce.c:196:17:demoCeT4TSelect	40	static
-demo_ce.c:252:17:demoCeT4TRead	24	static
-demo_ce.c:295:17:demoCeT4TUpdate	24	static
-demo_ce.c:331:17:demoCeT3TCheck	552	static
-demo_ce.c:435:17:demoCeT3TUpdate	552	static
-demo_ce.c:542:6:demoCeInit	24	static
-demo_ce.c:563:10:demoCeT4T	24	static
-demo_ce.c:609:10:demoCeT3T	24	static

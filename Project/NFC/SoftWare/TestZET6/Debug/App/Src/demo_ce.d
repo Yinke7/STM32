@@ -1,4 +1,4 @@
-App/Src/ndef_dump.o: ../App/Src/ndef_dump.c \
+App/Src/demo_ce.o: ../App/Src/demo_ce.c ../App/Inc/demo_ce.h \
  ../st25r3916_bsp/Inc/platform.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
@@ -27,18 +27,17 @@ App/Src/ndef_dump.o: ../App/Src/ndef_dump.c \
  ../Core/Inc/spi.h ../Core/Inc/main.h \
  ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/st_errno.h \
  ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/timer.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h \
  ../Core/Inc/main.h ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/logger.h \
- ../st25r3916_bsp/Inc/st_errno.h ../st25r3916_bsp/Inc/utils.h \
- ../middlewares_ndef/Inc/message/ndef_record.h \
- ../middlewares_ndef/Inc/message/ndef_buffer.h \
- ../middlewares_ndef/Inc/message/ndef_message.h \
- ../middlewares_ndef/Inc/message/ndef_record.h \
- ../middlewares_ndef/Inc/message/ndef_types_rtd.h \
- ../middlewares_ndef/Inc/message/ndef_types.h \
- ../middlewares_ndef/Inc/message/ndef_type_wifi.h \
- ../middlewares_ndef/Inc/message/ndef_types_mime.h ../App/Inc/ndef_dump.h \
- ../middlewares_ndef/Inc/message/ndef_types.h
+ ../st25r3916_bsp/Inc/utils.h ../st25r3916_bsp/Inc/st_errno.h \
+ ../middlewares_rfal/Inc/rfal_rf.h \
+ ../middlewares_rfal/Inc/rfal_features.h \
+ ../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/platform.h \
+ ../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/st_errno.h \
+ ../middlewares_rfal/Inc/rfal_nfca.h ../middlewares_rfal/Inc/rfal_rf.h \
+ ../middlewares_rfal/Inc/rfal_t1t.h ../middlewares_rfal/Inc/rfal_nfcf.h
+
+../App/Inc/demo_ce.h:
 
 ../st25r3916_bsp/Inc/platform.h:
 
@@ -98,32 +97,28 @@ App/Src/ndef_dump.o: ../App/Src/ndef_dump.c \
 
 ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/timer.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h:
 
 ../Core/Inc/main.h:
 
 ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/logger.h:
 
-../st25r3916_bsp/Inc/st_errno.h:
-
 ../st25r3916_bsp/Inc/utils.h:
 
-../middlewares_ndef/Inc/message/ndef_record.h:
+../st25r3916_bsp/Inc/st_errno.h:
 
-../middlewares_ndef/Inc/message/ndef_buffer.h:
+../middlewares_rfal/Inc/rfal_rf.h:
 
-../middlewares_ndef/Inc/message/ndef_message.h:
+../middlewares_rfal/Inc/rfal_features.h:
 
-../middlewares_ndef/Inc/message/ndef_record.h:
+../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/platform.h:
 
-../middlewares_ndef/Inc/message/ndef_types_rtd.h:
+../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/st_errno.h:
 
-../middlewares_ndef/Inc/message/ndef_types.h:
+../middlewares_rfal/Inc/rfal_nfca.h:
 
-../middlewares_ndef/Inc/message/ndef_type_wifi.h:
+../middlewares_rfal/Inc/rfal_rf.h:
 
-../middlewares_ndef/Inc/message/ndef_types_mime.h:
+../middlewares_rfal/Inc/rfal_t1t.h:
 
-../App/Inc/ndef_dump.h:
-
-../middlewares_ndef/Inc/message/ndef_types.h:
+../middlewares_rfal/Inc/rfal_nfcf.h:

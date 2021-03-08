@@ -1,7 +1,7 @@
 middlewares_rfal/Src/rfal_nfc.o: ../middlewares_rfal/Src/rfal_nfc.c \
  ../middlewares_rfal/Inc/rfal_nfc.h ../middlewares_rfal/Inc/rfal_rf.h \
  ../middlewares_rfal/Inc/rfal_features.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h \
+ ../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/platform.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -27,12 +27,12 @@ middlewares_rfal/Src/rfal_nfc.o: ../middlewares_rfal/Src/rfal_nfc.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  ../Core/Inc/spi.h ../Core/Inc/main.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\timer.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\st_errno.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\timer.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h \
  ../Core/Inc/main.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\logger.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\logger.h \
+ ../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/st_errno.h \
  ../middlewares_rfal/Inc/rfal_nfca.h ../middlewares_rfal/Inc/rfal_t1t.h \
  ../middlewares_rfal/Inc/rfal_nfcb.h ../middlewares_rfal/Inc/rfal_nfcf.h \
  ../middlewares_rfal/Inc/rfal_nfcv.h \
@@ -40,7 +40,7 @@ middlewares_rfal/Src/rfal_nfc.o: ../middlewares_rfal/Src/rfal_nfc.c \
  ../middlewares_rfal/Inc/rfal_nfcDep.h \
  ../middlewares_rfal/Inc/rfal_isoDep.h \
  ../middlewares_rfal/Inc/rfal_analogConfig.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\utils.h
+ ../middlewares_rfal/Src/../../st25r3916_bsp/Inc/utils.h
 
 ../middlewares_rfal/Inc/rfal_nfc.h:
 
@@ -48,7 +48,7 @@ middlewares_rfal/Src/rfal_nfc.o: ../middlewares_rfal/Src/rfal_nfc.c \
 
 ../middlewares_rfal/Inc/rfal_features.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
+../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/platform.h:
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 
@@ -102,17 +102,17 @@ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
 
 ../Core/Inc/main.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\st_errno.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\timer.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\timer.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h:
 
 ../Core/Inc/main.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\logger.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\logger.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h:
+../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/st_errno.h:
 
 ../middlewares_rfal/Inc/rfal_nfca.h:
 
@@ -132,4 +132,4 @@ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h:
 
 ../middlewares_rfal/Inc/rfal_analogConfig.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\utils.h:
+../middlewares_rfal/Src/../../st25r3916_bsp/Inc/utils.h:

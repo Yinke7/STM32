@@ -1,6 +1,6 @@
 st25r3916_bsp/Src/st25r3916_irq.o: ../st25r3916_bsp/Src/st25r3916_irq.c \
  ../st25r3916_bsp/Src/../../st25r3916_bsp/Inc/st25r3916_irq.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -26,21 +26,21 @@ st25r3916_bsp/Src/st25r3916_irq.o: ../st25r3916_bsp/Src/st25r3916_irq.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  ../Core/Inc/spi.h ../Core/Inc/main.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\timer.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\st_errno.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\timer.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h \
  ../Core/Inc/main.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\logger.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\logger.h \
  ../st25r3916_bsp/Src/../../st25r3916_bsp/Inc/st25r3916.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st25r3916_com.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\st_errno.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\st25r3916_com.h \
  ../st25r3916_bsp/Src/../../st25r3916_bsp/Inc/st25r3916_com.h \
  ../st25r3916_bsp/Src/../../st25r3916_bsp/Inc/st25r3916_led.h \
  ../st25r3916_bsp/Src/../../st25r3916_bsp/Inc/utils.h
 
 ../st25r3916_bsp/Src/../../st25r3916_bsp/Inc/st25r3916_irq.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h:
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 
@@ -94,21 +94,21 @@ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
 
 ../Core/Inc/main.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\st_errno.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\timer.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\timer.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h:
 
 ../Core/Inc/main.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\logger.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\logger.h:
 
 ../st25r3916_bsp/Src/../../st25r3916_bsp/Inc/st25r3916.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\st_errno.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st25r3916_com.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\st25r3916_com.h:
 
 ../st25r3916_bsp/Src/../../st25r3916_bsp/Inc/st25r3916_com.h:
 

@@ -94,6 +94,7 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 
+	rfalNfcDevice nfcDev;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -173,7 +174,8 @@ int main(void)
 	  }
 	  else
 	  {
-		  demoCycle();
+		  demoCE(&nfcDev);
+//		  demoCycle();
 //		  HAL_Delay(200);
 	  }
 //	  printf("test\r\n");

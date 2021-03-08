@@ -156,7 +156,7 @@ static void demoP2P( rfalNfcDevice *nfcDev );
 static void demoAPDU( void );
 static void demoNfcv( rfalNfcvListenDevice *nfcvDev );
 static void demoNfcf( rfalNfcfListenDevice *nfcfDev );
-static void demoCE( rfalNfcDevice *nfcDev );
+//static void demoCE( rfalNfcDevice *nfcDev );
 static void demoNotif( rfalNfcState st );
 ReturnCode  demoTransceiveBlocking( uint8_t *txBuf, uint16_t txBufSize, uint8_t **rxBuf, uint16_t **rcvLen, uint32_t fwt );
 
@@ -485,8 +485,9 @@ void demoCycle( void )
             break;
     }
 }
-
-static void demoCE( rfalNfcDevice *nfcDev )
+//add yinke
+//static void demoCE( rfalNfcDevice *nfcDev )
+void demoCE( rfalNfcDevice *nfcDev )
 {
 #if (defined(ST25R3916) || defined(ST25R95)) && RFAL_FEATURE_LISTEN_MODE
 

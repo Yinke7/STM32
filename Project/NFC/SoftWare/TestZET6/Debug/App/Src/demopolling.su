@@ -1,0 +1,9 @@
+demopolling.c:174:13:demoNotif	24	static
+demopolling.c:208:6:demoIni	24	static
+demopolling.c:302:6:demoCycle	32	static
+demopolling.c:490:6:demoCE	144	static
+demopolling.c:544:13:demoNfcf	128	static
+demopolling.c:585:13:demoNfcv	56	static
+demopolling.c:648:6:demoP2P	40	static
+demopolling.c:705:6:demoAPDU	40	static
+demopolling.c:760:12:demoTransceiveBlocking	40	static

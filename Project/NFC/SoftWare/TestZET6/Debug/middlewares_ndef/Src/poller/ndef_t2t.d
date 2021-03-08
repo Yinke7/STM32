@@ -29,13 +29,13 @@ middlewares_ndef/Src/poller/ndef_t2t.o: \
  ../Core/Inc/spi.h ../Core/Inc/main.h \
  ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/st_errno.h \
  ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/timer.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h \
  ../Core/Inc/main.h ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/logger.h \
  ../st25r3916_bsp/Inc/st_errno.h ../middlewares_rfal/Inc/rfal_nfca.h \
  ../middlewares_rfal/Inc/rfal_rf.h \
  ../middlewares_rfal/Inc/rfal_features.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h \
+ ../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/platform.h \
+ ../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/st_errno.h \
  ../middlewares_rfal/Inc/rfal_t1t.h ../middlewares_rfal/Inc/rfal_nfcb.h \
  ../middlewares_rfal/Inc/rfal_nfcf.h ../middlewares_rfal/Inc/rfal_nfcv.h \
  ../middlewares_rfal/Inc/rfal_nfc.h ../middlewares_rfal/Inc/rfal_nfca.h \
@@ -112,7 +112,7 @@ middlewares_ndef/Src/poller/ndef_t2t.o: \
 
 ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/timer.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h:
 
 ../Core/Inc/main.h:
 
@@ -126,9 +126,9 @@ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
 
 ../middlewares_rfal/Inc/rfal_features.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
+../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/platform.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h:
+../middlewares_rfal/Inc/../../st25r3916_bsp/Inc/st_errno.h:
 
 ../middlewares_rfal/Inc/rfal_t1t.h:
 

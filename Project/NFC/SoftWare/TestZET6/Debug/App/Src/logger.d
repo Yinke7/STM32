@@ -27,7 +27,7 @@ App/Src/logger.o: ../App/Src/logger.c ../App/Inc/logger.h \
  ../Core/Inc/spi.h ../Core/Inc/main.h \
  ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/st_errno.h \
  ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/timer.h \
- d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h \
+ d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h \
  ../Core/Inc/main.h ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/logger.h
 
 ../App/Inc/logger.h:
@@ -90,7 +90,7 @@ App/Src/logger.o: ../App/Src/logger.c ../App/Inc/logger.h \
 
 ../st25r3916_bsp/Inc/../../st25r3916_bsp/Inc/timer.h:
 
-d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
+d:\stm32cubeide_project\testzet6\st25r3916_bsp\inc\platform.h:
 
 ../Core/Inc/main.h:
 

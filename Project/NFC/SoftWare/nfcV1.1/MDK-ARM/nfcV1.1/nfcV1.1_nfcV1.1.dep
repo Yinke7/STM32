@@ -1,6 +1,6 @@
 Dependencies for Project 'nfcV1.1', Target 'nfcV1.1': (DO NOT MODIFY !)
 F (startup_stm32f103xg.s)(0x60458743)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_nfcV1.1-IE:\MDK\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 525" --pd "_RTE_ SETA 1" --pd "STM32F10X_XL SETA 1"--list startup_stm32f103xg.lst --xref -o nfcv1.1\startup_stm32f103xg.o --depend nfcv1.1\startup_stm32f103xg.d)
-F (../Core/Src/main.c)(0x6045D1B0)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../PN532\Inc-I.\RTE\_nfcV1.1-IE:\MDK\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_XL -DUSE_HAL_DRIVER -DSTM32F103xG -DST95HF-o nfcv1.1\main.o --omf_browse nfcv1.1\main.crf --depend nfcv1.1\main.d)
+F (../Core/Src/main.c)(0x60473163)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../PN532\Inc-I.\RTE\_nfcV1.1-IE:\MDK\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_XL -DUSE_HAL_DRIVER -DSTM32F103xG -DST95HF-o nfcv1.1\main.o --omf_browse nfcv1.1\main.crf --depend nfcv1.1\main.d)
 I (../Core/Inc/main.h)(0x60458743)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60458743)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x60458743)
@@ -30,7 +30,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60458743)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x60458743)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60458743)
 I (E:\MDK\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (../Core/Inc/spi.h)(0x6045D1A9)
+I (../Core/Inc/spi.h)(0x6047314A)
 I (../Core/Inc/usart.h)(0x60458743)
 I (../Core/Inc/gpio.h)(0x60458743)
 F (../Core/Src/gpio.c)(0x60458743)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../PN532\Inc-I.\RTE\_nfcV1.1-IE:\MDK\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_XL -DUSE_HAL_DRIVER -DSTM32F103xG -DST95HF-o nfcv1.1\gpio.o --omf_browse nfcv1.1\gpio.crf --depend nfcv1.1\gpio.d)
@@ -64,8 +64,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60458743)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x60458743)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60458743)
 I (E:\MDK\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-F (../Core/Src/spi.c)(0x6045D1B8)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../PN532\Inc-I.\RTE\_nfcV1.1-IE:\MDK\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_XL -DUSE_HAL_DRIVER -DSTM32F103xG -DST95HF-o nfcv1.1\spi.o --omf_browse nfcv1.1\spi.crf --depend nfcv1.1\spi.d)
-I (../Core/Inc/spi.h)(0x6045D1A9)
+F (../Core/Src/spi.c)(0x6047312E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../PN532\Inc-I.\RTE\_nfcV1.1-IE:\MDK\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_XL -DUSE_HAL_DRIVER -DSTM32F103xG -DST95HF-o nfcv1.1\spi.o --omf_browse nfcv1.1\spi.crf --depend nfcv1.1\spi.d)
+I (../Core/Inc/spi.h)(0x6047314A)
 I (../Core/Inc/main.h)(0x60458743)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60458743)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x60458743)
@@ -190,9 +190,14 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60458743)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x60458743)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60458743)
 I (E:\MDK\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-F (..\PN532\Src\mifare.c)(0x6045B8EC)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../PN532\Inc-I.\RTE\_nfcV1.1-IE:\MDK\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_XL -DUSE_HAL_DRIVER -DSTM32F103xG -DST95HF-o nfcv1.1\mifare.o --omf_browse nfcv1.1\mifare.crf --depend nfcv1.1\mifare.d)
+F (..\PN532\Src\mifare.c)(0x604723AA)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../PN532\Inc-I.\RTE\_nfcV1.1-IE:\MDK\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_XL -DUSE_HAL_DRIVER -DSTM32F103xG -DST95HF-o nfcv1.1\mifare.o --omf_browse nfcv1.1\mifare.crf --depend nfcv1.1\mifare.d)
 I (../PN532\Inc/mifare.h)(0x60459D58)
 I (E:\MDK\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (../PN532\Inc/pn532.h)(0x60459D58)
+I (E:\MDK\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (E:\MDK\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (../Core/Inc/spi.h)(0x6047314A)
+I (../Core/Inc/main.h)(0x60458743)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60458743)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x60458743)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x60458743)
@@ -200,7 +205,6 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x60458743)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x60458743)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xg.h)(0x60458743)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x60458743)
-I (E:\MDK\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (../Drivers/CMSIS/Include/cmsis_version.h)(0x60458743)
 I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x60458743)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x60458743)
@@ -220,10 +224,13 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x60458743)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60458743)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x60458743)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60458743)
-I (../PN532\Inc/pn532.h)(0x60459D58)
-I (E:\MDK\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
-F (..\PN532\Src\ntag.c)(0x60459D58)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../PN532\Inc-I.\RTE\_nfcV1.1-IE:\MDK\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_XL -DUSE_HAL_DRIVER -DSTM32F103xG -DST95HF-o nfcv1.1\ntag.o --omf_browse nfcv1.1\ntag.crf --depend nfcv1.1\ntag.d)
+I (E:\MDK\ARM\ARMCC\include\string.h)(0x599ECD2C)
+F (..\PN532\Src\ntag.c)(0x60470F5E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../PN532\Inc-I.\RTE\_nfcV1.1-IE:\MDK\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_XL -DUSE_HAL_DRIVER -DSTM32F103xG -DST95HF-o nfcv1.1\ntag.o --omf_browse nfcv1.1\ntag.crf --depend nfcv1.1\ntag.d)
 I (../PN532\Inc/ntag.h)(0x60459D58)
+I (../PN532\Inc/pn532.h)(0x60459D58)
+I (E:\MDK\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (E:\MDK\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (E:\MDK\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 F (..\PN532\Src\pn532.c)(0x60459D58)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../PN532\Inc-I.\RTE\_nfcV1.1-IE:\MDK\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F10X_XL -DUSE_HAL_DRIVER -DSTM32F103xG -DST95HF-o nfcv1.1\pn532.o --omf_browse nfcv1.1\pn532.crf --depend nfcv1.1\pn532.d)
 I (E:\MDK\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (../PN532\Inc/pn532.h)(0x60459D58)

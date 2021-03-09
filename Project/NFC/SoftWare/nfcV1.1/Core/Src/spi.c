@@ -462,12 +462,36 @@ int8_t Writetag(uint8_t addr)
     return 0;
 }
 //Authentication
-int8_t Authentication()
+//remark: see */pdf/pn532um P130 [Example]
+void AuthenticateBlock(uint8_t *uid, uint8_t block)
 {
-    uint8_t cmd[] = {0x04};
-    return 0;
+//    uint8_t MIFARE_CMD_AUTH_A = 0x60;
+//    uint8_t MIFARE_CMD_AUTH_B = 0x61;
+    uint8_t i;
+    uint8_t uid_len = 4;
+    uint8_t key_len = 6;
+    uint8_t data_len = 12;
+    uint8_t key_a[6] = {0xff, 0xff, 0xff, 0xff, 0xff, 0xff};
+    uint8_t data[12] = {0x00};
+    uint8_t cmd[15] = {0x00};   //SPI发送长度
+    
+    data[0] = 0x60;     //key_a认证命令
+    data[1] = block & 0xff; //认证的块
+    for(i = 0; i < key_len; i++)
+    {
+        data[i + 2] = key_a[i];
+    }
+    for(i = 0; i < key_len; i++)
+    {
+        data[i + 2 + uid_len] = uid[i];
+    }
+    cmd[0] = 0x04;
+    cmd[1] = data_len;
+    memcmp(cmd + 2, data, sizeof(data));
+    cmd[2 + data_len] = 0x28;
+    
+    drv95HF_SendReceive(cmd,u95HFBuffer);
 }
-
 
 
 //send cmd 

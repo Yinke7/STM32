@@ -72,6 +72,7 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 	uint8_t addr;
+    uint8_t uidbuff[20] = {0x00};
 	
   /* USER CODE END 1 */
 
@@ -115,11 +116,26 @@ int main(void)
 		
 		printf("adjust gain\r\n");
 		AdjustTimerW();
-		
+        
+        
+        
 		printf("============ISO14443A anticollison start=============\r\n");
-		ISO14443A_Anticollison_Algorithm();
-		printf("============ISO14443A anticollison stop==============\r\n");
 		
+        printf("Anticol REQA\r\n");
+        ISO14443A_REQA();
+
+        printf("Anticol CL1\r\n");
+        ISO14443A_ANTICOL1(uidbuff);
+
+        printf("Anticol Select1\r\n");
+        ISO14443A_SELECT1(uidbuff);
+		printf("============ISO14443A anticollison stop==============\r\n");
+        
+        printf("\r\n");
+        
+		printf("============Authenticate satrt==========\r\n");
+        AuthenticateBlock(uidbuff,1);
+		printf("============Authenticate stop===========\r\n");
 		
 		addr = 0x01;	
 //		for(addr = 0x00; addr < 0x08; addr++)

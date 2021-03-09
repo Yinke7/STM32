@@ -7,12 +7,6 @@
 extern uint8_t u95HFBuffer [RFTRANS_95HF_MAX_BUFFER_SIZE+3];
 
 
-void mifare_get_uid(uint8_t* uid)
-{
-    ISO14443A_REQA();
-    memcpy(uid, u95HFBuffer, 4);
-}
-
 //mifare
 void mifare_dump(void)
 {

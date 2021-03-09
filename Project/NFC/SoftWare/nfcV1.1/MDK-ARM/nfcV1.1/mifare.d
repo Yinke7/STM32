@@ -1,9 +1,9 @@
 nfcv1.1\mifare.o: ..\PN532\Src\mifare.c
 nfcv1.1\mifare.o: ../PN532\Inc/mifare.h
-nfcv1.1\mifare.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+nfcv1.1\mifare.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdio.h
 nfcv1.1\mifare.o: ../PN532\Inc/pn532.h
-nfcv1.1\mifare.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
-nfcv1.1\mifare.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+nfcv1.1\mifare.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdint.h
+nfcv1.1\mifare.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdbool.h
 nfcv1.1\mifare.o: ../Core/Inc/spi.h
 nfcv1.1\mifare.o: ../Core/Inc/main.h
 nfcv1.1\mifare.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
@@ -20,7 +20,7 @@ nfcv1.1\mifare.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 nfcv1.1\mifare.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 nfcv1.1\mifare.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 nfcv1.1\mifare.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-nfcv1.1\mifare.o: E:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+nfcv1.1\mifare.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stddef.h
 nfcv1.1\mifare.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 nfcv1.1\mifare.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 nfcv1.1\mifare.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
@@ -33,4 +33,4 @@ nfcv1.1\mifare.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 nfcv1.1\mifare.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 nfcv1.1\mifare.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
 nfcv1.1\mifare.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-nfcv1.1\mifare.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+nfcv1.1\mifare.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\string.h

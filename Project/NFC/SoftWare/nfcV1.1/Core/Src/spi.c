@@ -481,13 +481,13 @@ void AuthenticateBlock(uint8_t *uid, uint8_t block)
     {
         data[i + 2] = key_a[i];
     }
-    for(i = 0; i < key_len; i++)
+    for(i = 0; i < data_len; i++)
     {
-        data[i + 2 + uid_len] = uid[i];
+        data[i + 2 + key_len] = uid[i];
     }
     cmd[0] = 0x04;
-    cmd[1] = data_len;
-    memcmp(cmd + 2, data, sizeof(data));
+    cmd[1] = data_len + 1;
+    memcpy(cmd + 2, data, sizeof(data));
     cmd[2 + data_len] = 0x28;
     
     drv95HF_SendReceive(cmd,u95HFBuffer);

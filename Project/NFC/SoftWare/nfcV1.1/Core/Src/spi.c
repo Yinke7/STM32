@@ -347,7 +347,6 @@ int8_t PCD_IsReaderResultCodeOk (uint8_t CmdCode,uint8_t *ReaderReply)
 //select protocol
 int8_t SelectProtocol(void)
 {
-//	uint8_t cmdSelProto[] = {0x02,0x02,0x02,0x00};
 	uint8_t cmdSelProto[] = {0x02,0x02,0x02,0x00};
 	
 	drv95HF_SendReceive(cmdSelProto,u95HFBuffer);
@@ -631,42 +630,43 @@ void drv95HF_ReceiveSPIResponse(uint8_t * pData)
 //send recieved 
 int8_t drv95HF_SendReceive(uint8_t *pCommand, uint8_t *pResponse)
 {
-		uint8_t errcode = 0x00;
-		uint16_t cnt = 0;
-	
-		printf(">>>");
-		for(cnt = 0; cnt < pCommand[1] + 2;cnt ++)
-		{
-				printf("%02X ",pCommand[cnt]);
-		}
-		printf("\r\n");
-		drv95HF_SendSPICommand(pCommand);
-		
-		//printf("POLL\r\n");
-		drv95HF_SPIPollingCommand();
-	
-		//printf("RESPONE\r\n");
-		drv95HF_ReceiveSPIResponse(pResponse);
-	
-		errcode = PCD_IsReaderResultCodeOk (pCommand[0], pResponse);
-		
-		if(!errcode)
-		{
-			printf("<<<");	
-			for(cnt = 0; cnt < pResponse[1] + 2; cnt++)
-			{
-				printf("%02X ",pResponse[cnt]);
-			}
-			printf("\r\n\r\n");
-			
-			return 0;
-		}
-		else
-		{
-			printf("Respone [Error]: 0x%02X\r\n\r\n",pResponse[0]);
-			return 1;
-		}
-		return 1;
+    uint8_t errcode = 0x00;
+    uint16_t cnt = 0;
+    
+    printf(">>>");
+    //打印出SPI上发送的所有字节
+    for(cnt = 0; cnt < pCommand[1] + 2;cnt ++)
+    {
+        printf("%02X ",pCommand[cnt]);
+    }
+    printf("\r\n");
+    drv95HF_SendSPICommand(pCommand);
+    
+    //printf("POLL\r\n");
+    drv95HF_SPIPollingCommand();
+
+    //printf("RESPONE\r\n");
+    drv95HF_ReceiveSPIResponse(pResponse);
+
+    errcode = PCD_IsReaderResultCodeOk (pCommand[0], pResponse);
+    
+    if(!errcode)
+    {
+        printf("<<<");	
+        for(cnt = 0; cnt < pResponse[1] + 2; cnt++)
+        {
+            printf("%02X ",pResponse[cnt]);
+        }
+        printf("\r\n\r\n");
+        
+        return 0;
+    }
+    else
+    {
+        printf("Respone [Error]: 0x%02X\r\n\r\n",pResponse[0]);
+        return 1;
+    }
+    return 1;
 }
 
 

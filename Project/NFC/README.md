@@ -85,4 +85,123 @@
 
   ![ntagread](https://github.com/Yinke7/STM32/blob/debug/Project/NFC/image/ntag_read.jpg)
 
-* `stm32 + PN532`的程序：https://www.cirmall.com/circuit/5477
+* `stm32 + PN532`的程序：https://www.cirmall.com/circuit/5477 
+
+### 2021.03.10
+
+* `demo/en.stsw-st95hf001`大致流程：
+
+  * `Menu_Init()`将菜单结构初始化，并完成每个小功能与对应回调函数的联系，菜单结构为：
+
+    ```c++
+    Mian Menu
+        	Tag Reader
+        			TAG Hunting
+        			TAG Detect Wake-UP
+        			TAG Reading
+        			PC link mode
+        	Tag Writer
+        			Write TEXT        30
+        			Write GEO         67
+        			Write URI         71
+        			Write SMS        156
+        			Write EMAIL     1050
+        			Write VCARD     7711
+        	Tag Emulator
+        			TT2  (ISO14443A)
+        					Emulate URL
+        					Emulate SMS
+        					Previous content
+        			TT4A (ISO14443A)
+        					Emulate URL
+        					Emulate SMS
+        					Emulate EMAIL
+        					Emulate VCARD
+        					Previous content
+        	Card Emulator
+        			DWL (ISO14443A)
+        	Perr to Peer
+        			Pong Config Client
+        			Pong Config Server
+        			Prop P2P Client
+        			Prop P2P Server
+    ```
+
+    ```c
+    /*Main Menu*/
+    struct sMenuItem MainMenuItems[] = {
+      {(u8*)"     Tag Reader     ", IdleFunc, IdleFunc, &TagReaderMenu},
+      {(u8*)"     Tag Writer     ", IdleFunc, IdleFunc, &TagWriterMenu},
+      {(u8*)"    Tag Emulator    ", IdleFunc, IdleFunc, &TagEmulMenu},
+      {(u8*)"   Card Emulator    ", IdleFunc, IdleFunc, &CardEmulMenu },
+      {(u8*)"    Peer to Peer    ", IdleFunc, IdleFunc, &P2PMenu}
+    };
+    ```
+
+    ```c
+    /*TAG Reader*/
+    struct sMenuItem TagReaderMenuItems[] = {{(u8*)"    TAG Hunting     ", TagHunting, IdleFunc},
+    									{(u8*)" TAG Detect Wake-UP ", TagDetectWakeUp, IdleFunc},
+    									{(u8*)"    TAG Reading     ", TagReading, IdleFunc},
+    								 	{(u8*)"    PC link mode    ", USBRemoteControl, IdleFunc},
+    									{(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
+    struct sMenu TagReaderMenu = {(u8*)"   Tag Reader Mode  ", TagReaderMenuItems, countof(TagReaderMenuItems)};
+    ```
+
+    ```c
+    /*TAG Writer*/
+    struct sMenuItem TagWriterMenuItems[] = {{(u8*)"Write TEXT        30", TagWriteText, IdleFunc},
+    									{(u8*)"Write GEO         67", TagWriteGEO, IdleFunc},
+    									{(u8*)"Write URI         71", TagWriteURI, IdleFunc},
+    									{(u8*)"Write SMS        156", TagWriteSMS, IdleFunc},
+    									{(u8*)"Write EMAIL     1050",TagWriteEMAIL, IdleFunc},
+    									{(u8*)"Write VCARD     7711", TagWriteVCARD, IdleFunc},
+    									{(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
+    struct sMenu TagWriterMenu = {(u8*)"   Tag Writer Mode  ", TagWriterMenuItems, countof(TagWriterMenuItems)};
+    ```
+
+    ```c
+    /*Tag Emulator*/	
+    struct sMenuItem TagEmulMenuItems[] = {{(u8*)"  TT2  (ISO14443A)  ", IdleFunc, IdleFunc,&TagEmulT2Menu},								    {(u8*)"  TT4A (ISO14443A)  ", IdleFunc, IdleFunc,&TagEmulT4AMenu},
+          								{(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
+    
+    /*TT2 Emulator*/
+    struct sMenuItem TagEmulT2MenuItems[] = {{(u8*)"    Emulate GEO     ", TagEmulT2GEO, IdleFunc},
+    									{(u8*)"    Emulate URL     ", TagEmulT2URI, IdleFunc},
+    									{(u8*)"    Emulate SMS     ", TagEmulT2SMS, IdleFunc},
+    									{(u8*)"  Previous content  ", TagEmulT2, IdleFunc},
+    									{(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
+    struct sMenu TagEmulT2Menu = {(u8*)"   TT2 Emulator     ", TagEmulT2MenuItems, countof(TagEmulT2MenuItems)};
+    
+    /*TT4A Emulator*/
+    struct sMenuItem TagEmulT4AMenuItems[] = {{(u8*)"    Emulate GEO     ", TagEmulT4AGEO, IdleFunc},
+    									{(u8*)"    Emulate URL     ", TagEmulT4AURI, IdleFunc},
+    									{(u8*)"    Emulate SMS     ", TagEmulT4ASMS, IdleFunc},
+    									{(u8*)"   Emulate EMAIL    ", TagEmulT4AEMAIL, IdleFunc},
+    									{(u8*)"   Emulate VCARD    ", TagEmulT4AVCARD, IdleFunc},
+    									{(u8*)"  Previous content  ", TagEmulT4A, IdleFunc},
+    									{(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
+    struct sMenu TagEmulT4AMenu = {(u8*)"  TT4A Emulator ", TagEmulT4AMenuItems, countof(TagEmulT4AMenuItems)};
+    ```
+
+    ```c
+    /*Card Emulator*/
+    struct sMenuItem CardEmulMenuItems[] = {{(u8*)"  DWL (ISO14443A)   ", CardEmul14443A, IdleFunc},
+                                           {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
+    struct sMenu CardEmulMenu = {(u8*)" Card Emulator Mode ", CardEmulMenuItems, countof(CardEmulMenuItems)};
+    ```
+
+    ```c
+    /*Peer to Peer*/
+    struct sMenuItem P2PMenuItems[] = { /*{(u8*)"   Prop P2P Auto    ", ProprietaryP2PAuto, IdleFunc},  */
+    								{(u8*)" Pong Config Client ", PongConfigClient, IdleFunc}, 
+                                       {(u8*)" Pong Config Server ", PongConfigServer, IdleFunc},
+    								{(u8*)"  Prop P2P Client   ", ProprietaryP2PConfigClient, IdleFunc},
+                                       {(u8*)"  Prop P2P Server   ", ProprietaryP2PConfigServer, IdleFunc},
+    								{(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
+    struct sMenu P2PMenu = {(u8*)"    Peer to Peer    ", P2PMenuItems, countof(P2PMenuItems)};
+    ```
+
+  * 选择对应菜单功能，则执行对应回调函数
+
+  * 

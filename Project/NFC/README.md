@@ -126,10 +126,10 @@
     |	|__	DWL (ISO14443A)
     |	
     |__	Perr to Peer
-	|__	Pong Config Client
-    	|__	Pong Config Server
-    	|__	Prop P2P Client
-    	|__	Prop P2P Server
+ 	|__	Pong Config Client
+     	|__	Pong Config Server
+     	|__	Prop P2P Client
+     	|__	Prop P2P Server
     ```
     
     ```c

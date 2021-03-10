@@ -105,39 +105,43 @@
     |	|__	Write TEXT        30
     |	|__	Write GEO         67
     |	|__	Write URI         71
-    Write SMS        156
-    Write EMAIL     1050
-    Write VCARD     7711
+    |	|__	Write SMS        156
+    |	|__	Write EMAIL     1050
+    |	|__	Write VCARD     7711
+    |
     |__ Tag Emulator
-        			TT2  (ISO14443A)
-        					Emulate URL
-        					Emulate SMS
-        					Previous content
-        			TT4A (ISO14443A)
-        					Emulate URL
-        					Emulate SMS
-        					Emulate EMAIL
-        					Emulate VCARD
-        					Previous content
+    |	|__	TT2  (ISO14443A)
+    |	|	|__	Emulate URL
+    |	|	|__	Emulate SMS
+    |	|	|__	Previous content
+    |	|    
+    |	|__	TT4A (ISO14443A)
+    |    	|__	Emulate URL
+    |    	|__	Emulate SMS
+    |    	|__	Emulate EMAIL
+    |    	|__	Emulate VCARD
+    |    	|__	Previous content
+    |		
     |__	Card Emulator
-        			DWL (ISO14443A)
+    |	|__	DWL (ISO14443A)
+    |	
     |__	Perr to Peer
-        			Pong Config Client
-        			Pong Config Server
-        			Prop P2P Client
-        			Prop P2P Server
-```
+	|__	Pong Config Client
+    	|__	Pong Config Server
+    	|__	Prop P2P Client
+    	|__	Prop P2P Server
+    ```
     
     ```c
     /*Main Menu*/
     struct sMenuItem MainMenuItems[] = {
         {(u8*)"     Tag Reader     ", IdleFunc, IdleFunc, &TagReaderMenu},
         {(u8*)"     Tag Writer     ", IdleFunc, IdleFunc, &TagWriterMenu},
-        {(u8*)"    Tag Emulator    ", IdleFunc, IdleFunc, &TagEmulMenu},
+    {(u8*)"    Tag Emulator    ", IdleFunc, IdleFunc, &TagEmulMenu},
         {(u8*)"   Card Emulator    ", IdleFunc, IdleFunc, &CardEmulMenu },
         {(u8*)"    Peer to Peer    ", IdleFunc, IdleFunc, &P2PMenu}
     };
-```
+    ```
     
     ```c
     /*TAG Reader*/

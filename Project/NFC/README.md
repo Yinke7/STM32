@@ -95,19 +95,20 @@
 
     ```c++
     Mian Menu
-        	Tag Reader
-        			TAG Hunting
-        			TAG Detect Wake-UP
-        			TAG Reading
-        			PC link mode
-        	Tag Writer
-        			Write TEXT        30
-        			Write GEO         67
-        			Write URI         71
-        			Write SMS        156
-        			Write EMAIL     1050
-        			Write VCARD     7711
-        	Tag Emulator
+    |__	Tag Reader
+    |	|__	TAG Hunting
+    |	|__	TAG Detect Wake-UP
+    |	|__	TAG Reading
+    |	|__	PC link mode
+    |
+    |__	Tag Writer
+    |	|__	Write TEXT        30
+    |	|__	Write GEO         67
+    |	|__	Write URI         71
+    Write SMS        156
+    Write EMAIL     1050
+    Write VCARD     7711
+    |__ Tag Emulator
         			TT2  (ISO14443A)
         					Emulate URL
         					Emulate SMS
@@ -118,15 +119,15 @@
         					Emulate EMAIL
         					Emulate VCARD
         					Previous content
-        	Card Emulator
+    |__	Card Emulator
         			DWL (ISO14443A)
-        	Perr to Peer
+    |__	Perr to Peer
         			Pong Config Client
         			Pong Config Server
         			Prop P2P Client
         			Prop P2P Server
-    ```
-
+```
+    
     ```c
     /*Main Menu*/
     struct sMenuItem MainMenuItems[] = {
@@ -136,8 +137,8 @@
         {(u8*)"   Card Emulator    ", IdleFunc, IdleFunc, &CardEmulMenu },
         {(u8*)"    Peer to Peer    ", IdleFunc, IdleFunc, &P2PMenu}
     };
-    ```
-
+```
+    
     ```c
     /*TAG Reader*/
     struct sMenuItem TagReaderMenuItems[] = {

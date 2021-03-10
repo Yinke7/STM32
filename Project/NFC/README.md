@@ -125,19 +125,20 @@
     |__	Card Emulator
     |	|__	DWL (ISO14443A)
     |	
-    |__	Perr to Peer 
-		|__Pong Config Client
-     		|__	Pong Config Server
-     		|__	Prop P2P Client
-     		|__	Prop P2P Server
+    |__	Perr to Peer
+	|__Pong Config Client
+     	|__	Pong Config Server
+     	|__	Prop P2P Client
+     	|__	Prop P2P Server
+        
     ```
     
     ```c
     /*Main Menu*/
     struct sMenuItem MainMenuItems[] = {
         {(u8*)"     Tag Reader     ", IdleFunc, IdleFunc, &TagReaderMenu},
-        {(u8*)"     Tag Writer     ", IdleFunc, IdleFunc, &TagWriterMenu},
-    {(u8*)"    Tag Emulator    ", IdleFunc, IdleFunc, &TagEmulMenu},
+    {(u8*)"     Tag Writer     ", IdleFunc, IdleFunc, &TagWriterMenu},
+        {(u8*)"    Tag Emulator    ", IdleFunc, IdleFunc, &TagEmulMenu},
         {(u8*)"   Card Emulator    ", IdleFunc, IdleFunc, &CardEmulMenu },
         {(u8*)"    Peer to Peer    ", IdleFunc, IdleFunc, &P2PMenu}
     };

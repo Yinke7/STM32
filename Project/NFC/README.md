@@ -109,7 +109,7 @@
     |	|__	Write EMAIL     1050
     |	|__	Write VCARD     7711
     |
-    |__ Tag Emulator
+    |__	Tag Emulator
     |	|__	TT2  (ISO14443A)
     |	|	|__	Emulate URL
     |	|	|__	Emulate SMS

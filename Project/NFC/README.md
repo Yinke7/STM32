@@ -116,11 +116,11 @@
     |	|	|__	Previous content
     |	|    
     |	|__	TT4A (ISO14443A)
-    |    	|__	Emulate URL
-    |    	|__	Emulate SMS
-    |    	|__	Emulate EMAIL
-    |    	|__	Emulate VCARD
-    |    	|__	Previous content
+    |		|__	Emulate URL
+    |		|__	Emulate SMS
+    |		|__	Emulate EMAIL
+    |		|__	Emulate VCARD
+    |		|__	Previous content
     |		
     |__	Card Emulator
     |	|__	DWL (ISO14443A)

@@ -163,50 +163,50 @@
     ```
     
     ```c
-      /*Tag Emulator*/	
-      struct sMenuItem TagEmulMenuItems[] = {
-          {(u8*)"  TT2  (ISO14443A)  ", IdleFunc, IdleFunc,&TagEmulT2Menu},
-          {(u8*)"  TT4A (ISO14443A)  ", IdleFunc, IdleFunc,&TagEmulT4AMenu},
-          {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
+    /*Tag Emulator*/	
+    struct sMenuItem TagEmulMenuItems[] = {
+        {(u8*)"  TT2  (ISO14443A)  ", IdleFunc, IdleFunc,&TagEmulT2Menu},
+        {(u8*)"  TT4A (ISO14443A)  ", IdleFunc, IdleFunc,&TagEmulT4AMenu},
+        {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
       
-      /*TT2 Emulator*/
-      struct sMenuItem TagEmulT2MenuItems[] = {
-          {(u8*)"    Emulate GEO     ", TagEmulT2GEO, IdleFunc},
-          {(u8*)"    Emulate URL     ", TagEmulT2URI, IdleFunc},
-          {(u8*)"    Emulate SMS     ", TagEmulT2SMS, IdleFunc},
-          {(u8*)"  Previous content  ", TagEmulT2, IdleFunc},
-          {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
-      struct sMenu TagEmulT2Menu = {(u8*)"   TT2 Emulator  ", TagEmulT2MenuItems, countof(TagEmulT2MenuItems)};
-      
-      /*TT4A Emulator*/
-      struct sMenuItem TagEmulT4AMenuItems[] = {
-          {(u8*)"    Emulate GEO     ", TagEmulT4AGEO, IdleFunc},
-          {(u8*)"    Emulate URL     ", TagEmulT4AURI, IdleFunc},
-          {(u8*)"    Emulate SMS     ", TagEmulT4ASMS, IdleFunc},
-          {(u8*)"   Emulate EMAIL    ", TagEmulT4AEMAIL, IdleFunc},
-          {(u8*)"   Emulate VCARD    ", TagEmulT4AVCARD, IdleFunc},
-          {(u8*)"  Previous content  ", TagEmulT4A, IdleFunc},
-          {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
-      struct sMenu TagEmulT4AMenu = {(u8*)"  TT4A Emulator ", TagEmulT4AMenuItems, countof(TagEmulT4AMenuItems)};
+    /*TT2 Emulator*/
+    struct sMenuItem TagEmulT2MenuItems[] = {
+        {(u8*)"    Emulate GEO     ", TagEmulT2GEO, IdleFunc},
+        {(u8*)"    Emulate URL     ", TagEmulT2URI, IdleFunc},
+        {(u8*)"    Emulate SMS     ", TagEmulT2SMS, IdleFunc},
+        {(u8*)"  Previous content  ", TagEmulT2, IdleFunc},
+        {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
+    struct sMenu TagEmulT2Menu = {(u8*)"   TT2 Emulator  ", TagEmulT2MenuItems, countof(TagEmulT2MenuItems)};
+    
+    /*TT4A Emulator*/
+    struct sMenuItem TagEmulT4AMenuItems[] = {
+        {(u8*)"    Emulate GEO     ", TagEmulT4AGEO, IdleFunc},
+        {(u8*)"    Emulate URL     ", TagEmulT4AURI, IdleFunc},
+        {(u8*)"    Emulate SMS     ", TagEmulT4ASMS, IdleFunc},
+        {(u8*)"   Emulate EMAIL    ", TagEmulT4AEMAIL, IdleFunc},
+        {(u8*)"   Emulate VCARD    ", TagEmulT4AVCARD, IdleFunc},
+        {(u8*)"  Previous content  ", TagEmulT4A, IdleFunc},
+        {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
+    struct sMenu TagEmulT4AMenu = {(u8*)"  TT4A Emulator ", TagEmulT4AMenuItems, countof(TagEmulT4AMenuItems)};
     ```
     
     ```c
-     /*Card Emulator*/
-      struct sMenuItem CardEmulMenuItems[] = {
-          {(u8*)"  DWL (ISO14443A)   ", CardEmul14443A, IdleFunc},
-          {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
-      struct sMenu CardEmulMenu = {(u8*)" Card Emulator Mode ", CardEmulMenuItems, countof(CardEmulMenuItems)};
+    /*Card Emulator*/
+    struct sMenuItem CardEmulMenuItems[] = {
+        {(u8*)"  DWL (ISO14443A)   ", CardEmul14443A, IdleFunc},
+        {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
+    struct sMenu CardEmulMenu = {(u8*)" Card Emulator Mode ", CardEmulMenuItems, countof(CardEmulMenuItems)};
     ```
     
     ```c
-      /*Peer to Peer*/
-      struct sMenuItem P2PMenuItems[] = { /*{(u8*)"   Prop P2P Auto    ", ProprietaryP2PAuto, IdleFunc},*/
-          {(u8*)" Pong Config Client ", PongConfigClient, IdleFunc}, 
-          {(u8*)" Pong Config Server ", PongConfigServer, IdleFunc},
-          {(u8*)"  Prop P2P Client   ", ProprietaryP2PConfigClient, IdleFunc},
-          {(u8*)"  Prop P2P Server   ", ProprietaryP2PConfigServer, IdleFunc},
-          {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
-      struct sMenu P2PMenu = {(u8*)"    Peer to Peer    ", P2PMenuItems, countof(P2PMenuItems)};
+    /*Peer to Peer*/
+    struct sMenuItem P2PMenuItems[] = { /*{(u8*)"   Prop P2P Auto    ", ProprietaryP2PAuto, IdleFunc},*/
+        {(u8*)" Pong Config Client ", PongConfigClient, IdleFunc}, 
+        {(u8*)" Pong Config Server ", PongConfigServer, IdleFunc},
+        {(u8*)"  Prop P2P Client   ", ProprietaryP2PConfigClient, IdleFunc},
+        {(u8*)"  Prop P2P Server   ", ProprietaryP2PConfigServer, IdleFunc},
+        {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
+    struct sMenu P2PMenu = {(u8*)"    Peer to Peer    ", P2PMenuItems, countof(P2PMenuItems)};
     ```
   * 选择对应菜单功能，则执行对应回调函数
   

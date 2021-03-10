@@ -151,7 +151,7 @@
         {(u8*)"    TAG Reading     ", TagReading, IdleFunc},
         {(u8*)"    PC link mode    ", USBRemoteControl, IdleFunc},
         {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
-    struct sMenu TagReaderMenu = {(u8*)"   Tag Reader Mode  ", TagReaderMenuItems, countof(TagReaderMenuItems)};
+    struct sMenu TagReaderMenu = {(u8*)"  Tag Reader Mode  ", TagReaderMenuItems, countof(TagReaderMenuItems)};
     ```
     
     ```c

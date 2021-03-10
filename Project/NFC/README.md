@@ -150,15 +150,15 @@
     ```
     
     ```c
-      /*TAG Writer*/
+    /*TAG Writer*/
     struct sMenuItem TagWriterMenuItems[] = {
-      	{(u8*)"Write TEXT        30", TagWriteText, IdleFunc},
-      	{(u8*)"Write GEO         67", TagWriteGEO, IdleFunc},
-      	{(u8*)"Write URI         71", TagWriteURI, IdleFunc},
-      	{(u8*)"Write SMS        156", TagWriteSMS, IdleFunc},
-      	{(u8*)"Write EMAIL     1050",TagWriteEMAIL, IdleFunc},
-      	{(u8*)"Write VCARD     7711", TagWriteVCARD, IdleFunc},
-      	{(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
+        {(u8*)"Write TEXT        30", TagWriteText, IdleFunc},
+        {(u8*)"Write GEO         67", TagWriteGEO, IdleFunc},
+        {(u8*)"Write URI         71", TagWriteURI, IdleFunc},
+        {(u8*)"Write SMS        156", TagWriteSMS, IdleFunc},
+        {(u8*)"Write EMAIL     1050",TagWriteEMAIL, IdleFunc},
+        {(u8*)"Write VCARD     7711", TagWriteVCARD, IdleFunc},
+        {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
     struct sMenu TagWriterMenu = {(u8*)"   Tag Writer Mode  ", TagWriterMenuItems, countof(TagWriterMenuItems)};
     ```
     

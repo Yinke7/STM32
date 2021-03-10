@@ -125,11 +125,11 @@
     |__	Card Emulator
     |	|__	DWL (ISO14443A)
     |	
-    |__	Perr to Peer
-    |__	Pong Config Client
-     	|__	Pong Config Server
-     	|__	Prop P2P Client
-     	|__	Prop P2P Server
+    |__	Perr to Peer 
+		|__Pong Config Client
+     		|__	Pong Config Server
+     		|__	Prop P2P Client
+     		|__	Prop P2P Server
     ```
     
     ```c

@@ -93,7 +93,7 @@
 
   * `Menu_Init()`将菜单结构初始化，并完成每个小功能与对应回调函数的联系，菜单结构为：
 
-    ```c++
+    ```c
     Mian Menu
     |__	Tag Reader
     |	|__	TAG Hunting

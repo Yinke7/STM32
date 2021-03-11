@@ -24,22 +24,22 @@
 * 此版本暂时放一边，准备使用ST95官方的硬件方案，用STM32F103RGT6作为MCU，另外预留出STM32L051K8U6的位置。
 
 ## V1.1
-* MCU：STM32F103RGT6
-* NFC芯片：ST95HF
-* 显示屏：1.54inch墨水屏
+* `MCU：STM32F103RGT6`
+* `NFC`芯片：`ST95HF`
+* 显示屏：`1.54inch`墨水屏
 
 ### 2021.01.08 
-* 上传PCB工程 NFCV1.1(修正了投板PCB上的错误)
+* 上传`PCB`工程 `NFCV1.1`(修正了投板`PCB`上的错误)
 
 ### 2021.01.09
 * 板子焊接大部分焊接完成，初步测试通过。
 
 ### 2021.01.11
-* 开始移植程序，使用STM32CubeMX生成的demo,能正常读到ST95HF的设备ID
+* 开始移植程序，使用`STM32CubeMX`生成的`demo`,能正常读到`ST95HF`的设备`Device ID`
 
 ### 2021.01.25
-* 上传ST95HF修改过的demo ` EVAL-ST95HF_FW_V3.7.3`
-* 读UID
+* 上传`ST95HF`修改过的`demo  EVAL-ST95HF_FW_V3.7.3`
+* 读`UID`
 
 ### 2021.02.01
 
@@ -83,7 +83,7 @@
     <<<90 04 04 24 00 00
     ```
 
-* 能检测到卡的类型，但是不能读取NDEF
+* 能检测到卡的类型，但是不能读取`NDEF`
 
 * 发送命令：
 
@@ -256,6 +256,21 @@
         {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
     struct sMenu P2PMenu = {(u8*)"    Peer to Peer    ", P2PMenuItems, countof(P2PMenuItems)};
     ```
+    
   * 选择对应菜单功能，则执行对应回调函数
+  
 
+### 2021.03.11
+
+  * `ISO/IEC-14443-TypeA/TypeB`防冲突原理和算法：https://blog.csdn.net/tianyuan12345678/article/details/80724114 （此文章应该是摘自`*/pdf/ISO14443-3.pdf`，可将两者结合阅读）
+  
+  * 截取`Chap 2021.02.01`的`uart log`部分：
+
+      ```c
+      Anticol CL1
+      >>>04 03 93 20 08 
+      <<<80 08 F4 74 8F AB A4 28 00 00 
+      ```
+
+      经分析`ISO14443-3.pdf`和上文链接，发现在`Respone`数据`80 08 F4 74 8F AB A4 28 00 00 `中，`Byte[0:1]`是`ST95HF`自身返回的数据，`byte[2:5]`是卡片返回的内容，是其四个字节的`UID`,`byte[6]`是`BCC (see ISO14443-3.pdf Chap 4)`，是在四字节`UID`之上做异或的结果，即是`0xF4^ 0x74^ 0x8F^ 0xAB = 0xA4`，`byte[7:9]`也是`ST95HF`自身返回的数据
 

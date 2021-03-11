@@ -42,6 +42,47 @@
 * 读UID
 
 ### 2021.02.01
+
+* `UART log`:
+
+    ```c
+    System Init [OK]
+    POR 
+    >>>55 00 
+    <<<55 00 
+    
+    read DevID 
+    >>>01 00 
+    <<<00 0F 4E 46 43 20 46 53 32 4A 41 53 54 34 00 2A CE 
+    
+    select protocol 
+    >>>02 02 02 00 
+    <<<00 00 
+    
+    adjust gain
+    >>>09 04 68 01 01 DF 
+    <<<00 00 
+    
+    ============ISO14443A anticollison start=============
+    Anticol REQA
+    >>>04 02 26 07 
+    <<<80 05 04 00 28 00 00 
+    
+    Anticol CL1
+    >>>04 03 93 20 08 
+    <<<80 08 F4 74 8F AB A4 28 00 00 
+    
+    Anticol Select1
+    >>>04 08 93 70 F4 74 8F AB A4 28 
+    <<<80 06 08 B6 DD 08 00 00 
+    
+    ============ISO14443A anticollison stop==============
+    
+    read
+    >>>04 03 30 01 28 
+    <<<90 04 04 24 00 00
+    ```
+
 * 能检测到卡的类型，但是不能读取NDEF
 
 * 发送命令：
@@ -126,14 +167,14 @@
     |	|__	DWL (ISO14443A)
     |	
     |__	Perr to Peer
-	|	|__	Pong Config Client
+    |	|__	Pong Config Client
     |	|__	Pong Config Server
     |	|__	Prop P2P Client
     |	|__	Prop P2P Server
     |
     ...
     ```
-    
+
     ```c
     /*Main Menu*/
     struct sMenuItem MainMenuItems[] = {
@@ -144,7 +185,7 @@
         {(u8*)"    Peer to Peer    ", IdleFunc, IdleFunc, &P2PMenu}
     };
     ```
-    
+
     ```c
     /*TAG Reader*/
     struct sMenuItem TagReaderMenuItems[] = {
@@ -155,7 +196,7 @@
         {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
     struct sMenu TagReaderMenu = {(u8*)"  Tag Reader Mode  ", TagReaderMenuItems, countof(TagReaderMenuItems)};
     ```
-    
+
     ```c
     /*TAG Writer*/
     struct sMenuItem TagWriterMenuItems[] = {
@@ -168,7 +209,7 @@
         {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
     struct sMenu TagWriterMenu = {(u8*)"   Tag Writer Mode  ", TagWriterMenuItems, countof(TagWriterMenuItems)};
     ```
-    
+
     ```c
     /*Tag Emulator*/	
     struct sMenuItem TagEmulMenuItems[] = {
@@ -196,7 +237,7 @@
         {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
     struct sMenu TagEmulT4AMenu = {(u8*)"  TT4A Emulator ", TagEmulT4AMenuItems, countof(TagEmulT4AMenuItems)};
     ```
-    
+
     ```c
     /*Card Emulator*/
     struct sMenuItem CardEmulMenuItems[] = {
@@ -204,7 +245,7 @@
         {(u8*)"<-     Return       ", ReturnFunc, IdleFunc}};
     struct sMenu CardEmulMenu = {(u8*)" Card Emulator Mode ", CardEmulMenuItems, countof(CardEmulMenuItems)};
     ```
-    
+
     ```c
     /*Peer to Peer*/
     struct sMenuItem P2PMenuItems[] = { /*{(u8*)"   Prop P2P Auto    ", ProprietaryP2PAuto, IdleFunc},*/
@@ -216,5 +257,5 @@
     struct sMenu P2PMenu = {(u8*)"    Peer to Peer    ", P2PMenuItems, countof(P2PMenuItems)};
     ```
   * 选择对应菜单功能，则执行对应回调函数
-  
+
 

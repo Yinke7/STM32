@@ -207,6 +207,15 @@ int8_t ConfigManager_PORsequence( void )
 }
 
 
+
+//Senc ECHO
+int8_t PCD_ECHO(void)
+{
+    uint8_t cmd[1] = {0x55};
+    drv95HF_SendReceive(cmd, u95HFBuffer);
+    
+    return 0;
+}
 //read ID
 int8_t ConfigManager_DevIDN(void)
 {
@@ -378,6 +387,16 @@ int8_t ISO14443A_ANTICOL1(uint8_t *puid)
 {
 	uint8_t cmd[] = {0x04, 0x03, 0x93, 0x20, 0x08};
 	if(! drv95HF_SendReceive(cmd, u95HFBuffer))
+    //add yinke 
+    //打印SPI上接收的全部数据
+    printf("ANTICOL1 :\r\n");
+    for (uint8_t k = 0; k < u95HFBuffer[1]; k++)
+    {
+        printf("%02X ",u95HFBuffer[k]);
+    }
+    printf("\r\n");
+    
+    //end add 
 		memcpy(puid, u95HFBuffer + 2, 5);
     return 0;
 }

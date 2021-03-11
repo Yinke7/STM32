@@ -332,6 +332,7 @@ void MX_SPI2_Init(void);
 
 int8_t ConfigManager_DevIDN(void);
 int8_t ConfigManager_PORsequence( void );
+int8_t PCD_ECHO(void);
 int8_t SelectProtocol(void);
 int8_t AdjustTimerW(void);
 int8_t ModulationGain(void);

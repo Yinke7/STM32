@@ -115,7 +115,9 @@ int main(void)
 		
 		
 		printf("adjust gain\r\n");
-		AdjustTimerW();
+//		AdjustTimerW();
+        ModulationGain();
+        
         
         
         

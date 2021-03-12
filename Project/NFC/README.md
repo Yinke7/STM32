@@ -274,3 +274,108 @@
 
       经分析`ISO14443-3.pdf`和上文链接，发现在`Respone`数据`80 08 F4 74 8F AB A4 28 00 00 `中，`Byte[0:1]`是`ST95HF`自身返回的数据，`byte[2:5]`是卡片返回的内容，是其四个字节的`UID`,`byte[6]`是`BCC (see ISO14443-3.pdf Chap 4)`，是在四字节`UID`之上做异或的结果，即是`0xF4^ 0x74^ 0x8F^ 0xAB = 0xA4`，`byte[7:9]`也是`ST95HF`自身返回的数据
 
+### 2021.03.12
+
+* 添加`STM32CubeExpansion_NFC3_V1.3.0 - M1_.rar` https://www.stmcu.org.cn/module/forum/thread-620546-1-1.html ， https://www.stmcu.org.cn/module/forum/thread-621336-1-1.html
+
+* `NDEF Format`的数据格式 https://learn.adafruit.com/adafruit-pn532-rfid-nfc/ndef# 
+
+    * `NDEF(NFC Data Exchange Format)`
+
+    * `Messages`
+
+        * `NDEF Messages `是`NDEF Records`的基本“传输”机制，每个`Message`包含一个或多个`NDEF Records`
+
+    * `Records`
+
+        * `NDEF Records`包含了特定的有效负载，其结构如下所示
+
+            ```c
+            Bit 7     6       5       4       3       2       1       0
+            ------  ------  ------  ------  ------  ------  ------  ------ 
+            [ MB ]  [ ME ]  [ CF ]  [ SR ]  [ IL ]  [        TNF         ]  
+             
+            [                         TYPE LENGTH                        ]
+             
+            [                       PAYLOAD LENGTH                       ]
+             
+            [                          ID LENGTH                         ]
+             
+            [                         RECORD TYPE                        ]
+             
+            [                              ID                            ]
+             
+            [                           PAYLOAD                          ]
+            ```
+
+        * `Record Header`定义如下所示
+
+            ```c
+            TNF Value	Record Type
+            ---------	-----------------------------------------
+            0x00		Empty Record
+                		Indicates no type, id, or payload is associated with this NDEF Record.This record type is useful on newly formatted cards since every NDEF tag must have at least one NDEF Record.
+                
+            0x01         Well-Known Record
+            			Indicates the type field uses the RTD type name format.  This type name is used to stored any record defined by a Record Type Definition (RTD), such as storing RTD Text, RTD URIs, etc., and is one of the mostly frequently used and useful record types.
+                
+            0x02         MIME Media Record
+            			Indicates the payload is an intermediate or final chunk of a chunked NDEF Record
+                
+            0x03         Absolute URI Record
+            			Indicates the type field contains a value that follows the absolute-URI BNF
+            construct defined by RFC 3986
+                
+            0x04         External Record
+            			Indicates the type field contains a value that follows the RTD external
+            name specification
+                
+            0x05         Unknown Record
+            			Indicates the payload type is unknown
+                
+            0x06         Unchanged Record
+            			Indicates the payload is an intermediate or final chunk of a chunked NDEF Record
+                
+            IL Value	ID LENGTH Field
+            --------- 	---------------------------------------
+            			IL标志表示ID长度字段是否可以使用。如果将其设置为0，则在记录中省略ID长度字段。
+                            
+            SR 			Short Record Bit
+            --------	--------------------------------------
+                      	如果有效载荷长度字段为1字节(8比特/0-255)或更少，SR标志将被设置为1。这允许更紧凑的记录。
+                            
+            CF			Chunk Flag
+            --------	--------------------------------------
+            			CF标志表明这是第一个记录块还是中间记录块。
+            		
+            ME			Message End
+            --------	--------------------------------------
+                       	ME标志指示这是否是消息中的最后一条记录
+                            
+            MB			Message Begin
+            --------	--------------------------------------
+                        MB标志指示这是否是消息中的第一条记录
+            ```
+
+        * `Type Length`
+
+        * `Payload Length`
+
+        * `ID Length`
+
+        * `Record Type`
+
+        * `Record ID`
+
+        * `Payload`
+
+        
+
+        
+
+        
+
+        
+
+
+

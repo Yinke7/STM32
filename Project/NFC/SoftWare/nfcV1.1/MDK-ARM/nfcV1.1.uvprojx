@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xG,ST95HF</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Application/inc;../mcc_src;../Library/95HF/inc;..\Library\USB_Composite\inc;..\Library\USB_MSD\inc;..\Library\USB-FS-Device_Driver\inc;..\Library\NDEF\inc;..\Inlcude;..\common\inc</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Application/inc;../mcc_src;../Inlcude;../lib/common/inc;../lib/lib_ndef/inc;../lib/lib_pcd/inc;../Component</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -520,6 +520,36 @@
               <FileName>mcc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\mcc_src\mcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>mcc_crypto.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcc_src\mcc_crypto.c</FilePath>
+            </File>
+            <File>
+              <FileName>mcc_crypto_card.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcc_src\mcc_crypto_card.c</FilePath>
+            </File>
+            <File>
+              <FileName>mcc_crypto_reader.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcc_src\mcc_crypto_reader.c</FilePath>
+            </File>
+            <File>
+              <FileName>mcc_macros.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcc_src\mcc_macros.c</FilePath>
+            </File>
+            <File>
+              <FileName>mcc_raw_request.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcc_src\mcc_raw_request.c</FilePath>
+            </File>
+            <File>
+              <FileName>rfal_crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcc_src\rfal_crc.c</FilePath>
             </File>
           </Files>
         </Group>

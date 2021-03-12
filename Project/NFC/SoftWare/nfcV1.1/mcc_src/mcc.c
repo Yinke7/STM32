@@ -42,14 +42,15 @@
 #include "rfal_crc.h"
 #include "lib_iso14443A.h"
 #include "lib_iso14443Apcd.h"
-//#include "mcc_macros.h"
-//#include "mcc_crypto.h"
-//#include "mcc_crypto_reader.h"
-//#include "mcc_raw_request.h"
-//#include "mcc.h"
-//#include "utils.h"
-//#include "st_errno.h"
-//#include "lib_95HFConfigManager.h"
+#include "mcc_macros.h"
+#include "mcc_crypto.h"
+#include "mcc_crypto_reader.h"
+#include "mcc_raw_request.h"
+#include "mcc.h"
+#include "utils.h"
+#include "st_errno.h"
+#include "lib_95HFConfigManager.h"
+
 
 //add yinke
 #include "main.h"

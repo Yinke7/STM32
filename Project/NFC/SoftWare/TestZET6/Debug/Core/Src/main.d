@@ -31,7 +31,17 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h \
  d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\logger.h \
  ../App/Inc/../../st25r3916_bsp/Inc/st_errno.h \
- ../nfc06a1_bsp/Inc/nfc06a1.h ../nfc06a1_bsp/Inc/nfc06a1_conf.h
+ ../middlewares_rfal/Inc/rfal_nfc.h ../middlewares_rfal/Inc/rfal_rf.h \
+ ../middlewares_rfal/Inc/rfal_features.h \
+ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h \
+ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h \
+ ../middlewares_rfal/Inc/rfal_nfca.h ../middlewares_rfal/Inc/rfal_t1t.h \
+ ../middlewares_rfal/Inc/rfal_nfcb.h ../middlewares_rfal/Inc/rfal_nfcf.h \
+ ../middlewares_rfal/Inc/rfal_nfcv.h \
+ ../middlewares_rfal/Inc/rfal_st25tb.h \
+ ../middlewares_rfal/Inc/rfal_nfcDep.h \
+ ../middlewares_rfal/Inc/rfal_isoDep.h ../nfc06a1_bsp/Inc/nfc06a1.h \
+ ../nfc06a1_bsp/Inc/nfc06a1_conf.h
 
 ../Core/Inc/main.h:
 
@@ -104,6 +114,32 @@ d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
 d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\logger.h:
 
 ../App/Inc/../../st25r3916_bsp/Inc/st_errno.h:
+
+../middlewares_rfal/Inc/rfal_nfc.h:
+
+../middlewares_rfal/Inc/rfal_rf.h:
+
+../middlewares_rfal/Inc/rfal_features.h:
+
+d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\platform.h:
+
+d:\stm32cubeidepath\testzet6\st25r3916_bsp\inc\st_errno.h:
+
+../middlewares_rfal/Inc/rfal_nfca.h:
+
+../middlewares_rfal/Inc/rfal_t1t.h:
+
+../middlewares_rfal/Inc/rfal_nfcb.h:
+
+../middlewares_rfal/Inc/rfal_nfcf.h:
+
+../middlewares_rfal/Inc/rfal_nfcv.h:
+
+../middlewares_rfal/Inc/rfal_st25tb.h:
+
+../middlewares_rfal/Inc/rfal_nfcDep.h:
+
+../middlewares_rfal/Inc/rfal_isoDep.h:
 
 ../nfc06a1_bsp/Inc/nfc06a1.h:
 

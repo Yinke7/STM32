@@ -27,23 +27,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  000301b0  2**0
                   CONTENTS, READONLY
- 12 .debug_info   0004d80d  00000000  00000000  000301d9  2**0
+ 12 .debug_info   0004e3eb  00000000  00000000  000301d9  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00008dd9  00000000  00000000  0007d9e6  2**0
+ 13 .debug_abbrev 00008e19  00000000  00000000  0007e5c4  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00001ec0  00000000  00000000  000867c0  2**3
+ 14 .debug_aranges 00001ec0  00000000  00000000  000873e0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_macro  0002875d  00000000  00000000  00088680  2**0
+ 15 .debug_macro  000287e0  00000000  00000000  000892a0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_line   00033a3f  00000000  00000000  000b0ddd  2**0
+ 16 .debug_line   00033b04  00000000  00000000  000b1a80  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_str    000b9737  00000000  00000000  000e481c  2**0
+ 17 .debug_str    000b973e  00000000  00000000  000e5584  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .comment      00000053  00000000  00000000  0019df53  2**0
+ 18 .comment      00000053  00000000  00000000  0019ecc2  2**0
                   CONTENTS, READONLY
- 19 .debug_ranges 00001b78  00000000  00000000  0019dfa8  2**3
+ 19 .debug_ranges 00001b78  00000000  00000000  0019ed18  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_frame  000082cc  00000000  00000000  0019fb20  2**2
+ 20 .debug_frame  000082cc  00000000  00000000  001a0890  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -5432,7 +5432,7 @@ PUTCHAR_PROTOTYPE
 int main(void)
 {
  80027a4:	b580      	push	{r7, lr}
- 80027a6:	b082      	sub	sp, #8
+ 80027a6:	b0a0      	sub	sp, #128	; 0x80
  80027a8:	af00      	add	r7, sp, #0
   /* USER CODE END 1 */
 
@@ -5516,7 +5516,7 @@ int main(void)
  8002812:	f019 fb17 	bl	801be44 <puts>
 	  for (int i = 0; i < 6; i++)
  8002816:	2300      	movs	r3, #0
- 8002818:	607b      	str	r3, [r7, #4]
+ 8002818:	67fb      	str	r3, [r7, #124]	; 0x7c
  800281a:	e017      	b.n	800284c <main+0xa8>
 	  	{
 	  		NFC06A1_LED_Toggle( TX_LED );
@@ -5541,10 +5541,10 @@ int main(void)
  8002840:	20c8      	movs	r0, #200	; 0xc8
  8002842:	f000 fb9d 	bl	8002f80 <HAL_Delay>
 	  for (int i = 0; i < 6; i++)
- 8002846:	687b      	ldr	r3, [r7, #4]
+ 8002846:	6ffb      	ldr	r3, [r7, #124]	; 0x7c
  8002848:	3301      	adds	r3, #1
- 800284a:	607b      	str	r3, [r7, #4]
- 800284c:	687b      	ldr	r3, [r7, #4]
+ 800284a:	67fb      	str	r3, [r7, #124]	; 0x7c
+ 800284c:	6ffb      	ldr	r3, [r7, #124]	; 0x7c
  800284e:	2b05      	cmp	r3, #5
  8002850:	dde4      	ble.n	800281c <main+0x78>
 	  	}
@@ -5592,6 +5592,7 @@ int main(void)
 	  }
 	  else
 	  {
+//		  demoCE(&nfcDev);
 		  demoCycle();
  8002896:	f7fd fe19 	bl	80004cc <demoCycle>
 	  if (trogleLED)

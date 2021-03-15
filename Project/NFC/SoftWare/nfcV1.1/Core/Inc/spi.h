@@ -330,8 +330,9 @@ void MX_SPI2_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
-int8_t ConfigManager_IDN(void);
+int8_t ConfigManager_DevIDN(void);
 int8_t ConfigManager_PORsequence( void );
+int8_t PCD_ECHO(void);
 int8_t SelectProtocol(void);
 int8_t AdjustTimerW(void);
 int8_t ModulationGain(void);
@@ -343,7 +344,7 @@ int8_t ISO14443A_SELECT2(uint8_t *puid);
 int8_t ISO14443A_Anticollison_Algorithm(void);
 int8_t Readtag(uint8_t addr);
 int8_t Writetag(uint8_t addr);
-
+void AuthenticateBlock(uint8_t *uid, uint8_t block);
 
 
 int8_t PCD_IsReaderResultCodeOk (uint8_t CmdCode,uint8_t *ReaderReply);

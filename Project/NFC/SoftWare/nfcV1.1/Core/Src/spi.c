@@ -207,8 +207,17 @@ int8_t ConfigManager_PORsequence( void )
 }
 
 
+
+//Senc ECHO
+int8_t PCD_ECHO(void)
+{
+    uint8_t cmd[1] = {0x55};
+    drv95HF_SendReceive(cmd, u95HFBuffer);
+    
+    return 0;
+}
 //read ID
-int8_t ConfigManager_IDN(void)
+int8_t ConfigManager_DevIDN(void)
 {
 		//uint8_t txcmdtype = 0x00;
 		uint8_t rxdata;
@@ -347,11 +356,10 @@ int8_t PCD_IsReaderResultCodeOk (uint8_t CmdCode,uint8_t *ReaderReply)
 //select protocol
 int8_t SelectProtocol(void)
 {
-//	uint8_t cmdSelProto[] = {0x02,0x02,0x02,0x00};
 	uint8_t cmdSelProto[] = {0x02,0x02,0x02,0x00};
 	
 	drv95HF_SendReceive(cmdSelProto,u95HFBuffer);
-
+    return 0;
 }
 
 //AdjustTimerW
@@ -359,24 +367,38 @@ int8_t AdjustTimerW(void)
 {
 	uint8_t cmdadjust[] = {0x09, 0x04, 0x3A, 0x00, 0x58, 0x04};
 	drv95HF_SendReceive(cmdadjust,u95HFBuffer);
+    return 0;
 }
 //Modulation
 int8_t ModulationGain(void)
 {
 	uint8_t cmd[] = {0x09, 0x04, 0x68, 0x01, 0x01, 0xD1};
 	drv95HF_SendReceive(cmd,u95HFBuffer);
+    return 0;
 }
 
 int8_t ISO14443A_REQA(void)
 {
 	uint8_t cmd[] = {0x04, 0x02, 0x26, 0x07};
 	drv95HF_SendReceive(cmd, u95HFBuffer);
+    return 0;
 }
 int8_t ISO14443A_ANTICOL1(uint8_t *puid)
 {
 	uint8_t cmd[] = {0x04, 0x03, 0x93, 0x20, 0x08};
 	if(! drv95HF_SendReceive(cmd, u95HFBuffer))
+    //add yinke 
+    //打印SPI上接收的全部数据
+    printf("ANTICOL1 :\r\n");
+    for (uint8_t k = 0; k < u95HFBuffer[1]; k++)
+    {
+        printf("%02X ",u95HFBuffer[k]);
+    }
+    printf("\r\n");
+    
+    //end add 
 		memcpy(puid, u95HFBuffer + 2, 5);
+    return 0;
 }
 
 int8_t ISO14443A_SELECT1(uint8_t *puid)
@@ -390,6 +412,7 @@ int8_t ISO14443A_SELECT1(uint8_t *puid)
 	memcpy(cmd + 4, puid, numuid);
 	cmd[4 + numuid] = 0x28;
 	drv95HF_SendReceive(cmd, u95HFBuffer);
+    return 0;
 }
 
 int8_t ISO14443A_ANTICOL2(uint8_t *puid)
@@ -397,40 +420,43 @@ int8_t ISO14443A_ANTICOL2(uint8_t *puid)
 	uint8_t cmd[] = {0x04, 0x03, 0x95, 0x20, 0x08};
 	if(! drv95HF_SendReceive(cmd, u95HFBuffer))
 		memcpy(puid, u95HFBuffer + 2, 5);
+    return 0;
 }
 
 int8_t ISO14443A_SELECT2(uint8_t *puid)
 {
 	
-		uint8_t numuid = 5;
-		uint8_t cmd[20];
-		cmd[0] = 0x04;
-		cmd[1] = 3 + numuid;
-		cmd[2] = 0x95;
-		cmd[3] = 0x70;
-		memcpy(cmd + 4, puid, numuid);
-		cmd[4 + numuid] = 0x28;
-		drv95HF_SendReceive(cmd, u95HFBuffer);
+    uint8_t numuid = 5;
+    uint8_t cmd[20];
+    cmd[0] = 0x04;
+    cmd[1] = 3 + numuid;
+    cmd[2] = 0x95;
+    cmd[3] = 0x70;
+    memcpy(cmd + 4, puid, numuid);
+    cmd[4 + numuid] = 0x28;
+    drv95HF_SendReceive(cmd, u95HFBuffer);
+    return 0;
 }
 
 // anticollision
 int8_t ISO14443A_Anticollison_Algorithm(void)
 {
-		uint8_t uidbuff[20] = {0x00};
-		printf("Anticol REQA\r\n");
-		ISO14443A_REQA();
+    uint8_t uidbuff[20] = {0x00};
+    printf("Anticol REQA\r\n");
+    ISO14443A_REQA();
+
+    printf("Anticol CL1\r\n");
+    ISO14443A_ANTICOL1(uidbuff);
+
+    printf("Anticol Select1\r\n");
+    ISO14443A_SELECT1(uidbuff);
 		
-		printf("Anticol CL1\r\n");
-		ISO14443A_ANTICOL1(uidbuff);
-		
-		printf("Anticol Select1\r\n");
-		ISO14443A_SELECT1(uidbuff);
-		
-//		printf("Anticol CL2\r\n");
-//		ISO14443A_ANTICOL2(uidbuff);
-//		
-//		printf("Anticol Select2\r\n");
-//		ISO14443A_SELECT2(uidbuff);
+//    printf("Anticol CL2\r\n");
+//    ISO14443A_ANTICOL2(uidbuff);
+//    
+//    printf("Anticol Select2\r\n");
+//    ISO14443A_SELECT2(uidbuff);
+    return 0;
 }
 
 
@@ -440,21 +466,51 @@ int8_t ISO14443A_Anticollison_Algorithm(void)
 //read tag
 int8_t Readtag(uint8_t addr)
 {
-		uint8_t cmd[] = {0x04, 0x03, 0x30, addr, 0x28};
-		drv95HF_SendReceive(cmd, u95HFBuffer);
+    uint8_t cmd[16] = {0x04, 0x03, 0x30, addr, 0x28};
+    drv95HF_SendReceive(cmd, u95HFBuffer);
+    return 0;
 }
 //write tag 
 int8_t Writetag(uint8_t addr)
 {
-		uint8_t numdata = 4;
-		uint8_t cmd[16] = {0x04, 3 + numdata, 0xa2, addr};
-		memset(cmd + 4, 0xa5, numdata);
-		cmd[4 + numdata] = 0x28;
-		drv95HF_SendReceive(cmd,u95HFBuffer);
-		
+    uint8_t numdata = 4;
+    uint8_t cmd[16] = {0x04, 3 + numdata, 0xa2, addr};
+    memset(cmd + 4, 0xa5, numdata);
+    cmd[4 + numdata] = 0x28;
+    drv95HF_SendReceive(cmd,u95HFBuffer);
+    return 0;
 }
-
-
+//Authentication
+//remark: see */pdf/pn532um P130 [Example]
+void AuthenticateBlock(uint8_t *uid, uint8_t block)
+{
+//    uint8_t MIFARE_CMD_AUTH_A = 0x60;
+//    uint8_t MIFARE_CMD_AUTH_B = 0x61;
+    uint8_t i;
+    uint8_t uid_len = 4;
+    uint8_t key_len = 6;
+    uint8_t data_len = 12;
+    uint8_t key_a[6] = {0xff, 0xff, 0xff, 0xff, 0xff, 0xff};
+    uint8_t data[12] = {0x00};
+    uint8_t cmd[15] = {0x00};   //SPI发送长度
+    
+    data[0] = 0x60;     //key_a认证命令
+    data[1] = block & 0xff; //认证的块
+    for(i = 0; i < key_len; i++)
+    {
+        data[i + 2] = key_a[i];
+    }
+    for(i = 0; i < data_len; i++)
+    {
+        data[i + 2 + key_len] = uid[i];
+    }
+    cmd[0] = 0x04;
+    cmd[1] = data_len + 1;
+    memcpy(cmd + 2, data, sizeof(data));
+    cmd[2 + data_len] = 0x28;
+    
+    drv95HF_SendReceive(cmd,u95HFBuffer);
+}
 
 
 //send cmd 
@@ -617,42 +673,43 @@ void drv95HF_ReceiveSPIResponse(uint8_t * pData)
 //send recieved 
 int8_t drv95HF_SendReceive(uint8_t *pCommand, uint8_t *pResponse)
 {
-		uint8_t errcode = 0x00;
-		uint16_t cnt = 0;
-	
-		printf(">>>");
-		for(cnt = 0; cnt < pCommand[1] + 2;cnt ++)
-		{
-				printf("%02X ",pCommand[cnt]);
-		}
-		printf("\r\n");
-		drv95HF_SendSPICommand(pCommand);
-		
-		//printf("POLL\r\n");
-		drv95HF_SPIPollingCommand();
-	
-		//printf("RESPONE\r\n");
-		drv95HF_ReceiveSPIResponse(pResponse);
-	
-		errcode = PCD_IsReaderResultCodeOk (pCommand[0], pResponse);
-		
-		if(!errcode)
-		{
-			printf("<<<");	
-			for(cnt = 0; cnt < pResponse[1] + 2; cnt++)
-			{
-				printf("%02X ",pResponse[cnt]);
-			}
-			printf("\r\n\r\n");
-			
-			return 0;
-		}
-		else
-		{
-			printf("Respone [Error]: 0x%02X\r\n\r\n",pResponse[0]);
-			return 1;
-		}
-		return 1;
+    uint8_t errcode = 0x00;
+    uint16_t cnt = 0;
+    
+    printf(">>>");
+    //打印出SPI上发送的所有字节
+    for(cnt = 0; cnt < pCommand[1] + 2;cnt ++)
+    {
+        printf("%02X ",pCommand[cnt]);
+    }
+    printf("\r\n");
+    drv95HF_SendSPICommand(pCommand);
+    
+    //printf("POLL\r\n");
+    drv95HF_SPIPollingCommand();
+
+    //printf("RESPONE\r\n");
+    drv95HF_ReceiveSPIResponse(pResponse);
+
+    errcode = PCD_IsReaderResultCodeOk (pCommand[0], pResponse);
+    
+    if(!errcode)
+    {
+        printf("<<<");	
+        for(cnt = 0; cnt < pResponse[1] + 2; cnt++)
+        {
+            printf("%02X ",pResponse[cnt]);
+        }
+        printf("\r\n\r\n");
+        
+        return 0;
+    }
+    else
+    {
+        printf("Respone [Error]: 0x%02X\r\n\r\n",pResponse[0]);
+        return 1;
+    }
+    return 1;
 }
 
 

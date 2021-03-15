@@ -72,6 +72,7 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 	uint8_t addr;
+    uint8_t uidbuff[20] = {0x00};
 	
   /* USER CODE END 1 */
 
@@ -106,22 +107,38 @@ int main(void)
 		printf("POR \r\n");
 		ConfigManager_PORsequence();
 		
-		printf("read ID \r\n");
-		ConfigManager_IDN();
+		printf("read DevID \r\n");
+		ConfigManager_DevIDN();
 		
 		printf("select protocol \r\n");
-	  SelectProtocol();
+        SelectProtocol();
 		
 		
 		printf("adjust gain\r\n");
-		AdjustTimerW();
-		
+//		AdjustTimerW();
+        ModulationGain();
+        
+        
+        
+        
 		printf("============ISO14443A anticollison start=============\r\n");
-		ISO14443A_Anticollison_Algorithm();
+		
+        printf("Anticol REQA\r\n");
+        ISO14443A_REQA();
+
+        printf("Anticol CL1\r\n");
+        ISO14443A_ANTICOL1(uidbuff);
+
+        printf("Anticol Select1\r\n");
+        ISO14443A_SELECT1(uidbuff);
 		printf("============ISO14443A anticollison stop==============\r\n");
+        
+        printf("\r\n");
+        
+		printf("============Authenticate satrt==========\r\n");
+        AuthenticateBlock(uidbuff,1);
+		printf("============Authenticate stop===========\r\n");
 		
-		
-		//¶ÁÈ¡µÄµØÖ· addr
 		addr = 0x01;	
 //		for(addr = 0x00; addr < 0x08; addr++)
 //		{
@@ -129,11 +146,11 @@ int main(void)
 			printf("read\r\n");
 			Readtag(addr);
 		
-			printf("write\r\n");
-			Writetag(addr);
-			
-			printf("read\r\n");
-			Readtag(addr);
+//			printf("write\r\n");
+//			Writetag(addr);
+//			
+//			printf("read\r\n");
+//			Readtag(addr);
 			
 //		}
 

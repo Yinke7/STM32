@@ -126,7 +126,9 @@
 
   ![ntagread](https://github.com/Yinke7/STM32/blob/debug/Project/NFC/image/ntag_read.jpg)
 
-* `stm32 + PN532`的程序：https://www.cirmall.com/circuit/5477  
+* `stm32 + PN532`：https://www.cirmall.com/circuit/5477  
+
+* `stm32 + PN532`卡模拟程序：https://download.csdn.net/download/wsqrf/10351894 
 
 ### 2021.03.10
 

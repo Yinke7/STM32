@@ -2,7 +2,7 @@
 .\obj\firmware_saving.o: ..\inc\common.h
 .\obj\firmware_saving.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\firmware_saving.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\firmware_saving.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\firmware_saving.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\firmware_saving.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\firmware_saving.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\firmware_saving.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -19,9 +19,9 @@
 .\obj\firmware_saving.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\obj\firmware_saving.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\firmware_saving.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\firmware_saving.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\firmware_saving.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\obj\firmware_saving.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\firmware_saving.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\firmware_saving.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\obj\firmware_saving.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\firmware_saving.o: ..\usart\usart.h
 .\obj\firmware_saving.o: ..\sys\sys.h
 .\obj\firmware_saving.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h

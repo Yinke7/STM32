@@ -3,7 +3,7 @@
 .\obj\lib_ndef.o: ..\inc\common.h
 .\obj\lib_ndef.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\lib_ndef.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\lib_ndef.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\lib_ndef.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\lib_ndef.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\lib_ndef.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\lib_ndef.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -20,9 +20,9 @@
 .\obj\lib_ndef.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\obj\lib_ndef.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\lib_ndef.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\lib_ndef.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\lib_ndef.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\obj\lib_ndef.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\lib_ndef.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\lib_ndef.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\obj\lib_ndef.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\lib_ndef.o: ..\usart\usart.h
 .\obj\lib_ndef.o: ..\sys\sys.h
 .\obj\lib_ndef.o: ..\..\..\..\..\libraries\NDEF\inc\lib_wrapper.h

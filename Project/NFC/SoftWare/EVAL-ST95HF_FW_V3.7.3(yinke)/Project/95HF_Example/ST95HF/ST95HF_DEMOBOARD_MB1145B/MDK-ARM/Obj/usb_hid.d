@@ -2,7 +2,7 @@
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_hid.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\usb_hid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\usb_hid.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -18,8 +18,8 @@
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\obj\usb_hid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\obj\usb_hid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\usb_hid.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\obj\usb_hid.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_lib.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_type.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_conf.h
@@ -35,7 +35,7 @@
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\95HF\inc\drv_interrupt.h
 .\obj\usb_hid.o: ..\inc\hw_config.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\usb_hid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\usb_hid.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\usb_hid.o: ..\usart\usart.h
 .\obj\usb_hid.o: ..\sys\sys.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h
@@ -62,6 +62,7 @@
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h
+.\obj\usb_hid.o: ..\M1emulation\lib_nfcm1picc.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h
 .\obj\usb_hid.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h

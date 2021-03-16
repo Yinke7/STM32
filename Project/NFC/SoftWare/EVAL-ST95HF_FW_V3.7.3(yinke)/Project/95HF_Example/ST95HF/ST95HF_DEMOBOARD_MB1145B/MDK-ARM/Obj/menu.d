@@ -7,7 +7,7 @@
 .\obj\menu.o: ..\inc\common.h
 .\obj\menu.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\menu.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\menu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\menu.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\menu.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\menu.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\menu.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -24,9 +24,9 @@
 .\obj\menu.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\obj\menu.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\menu.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\menu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\menu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\obj\menu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\menu.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\menu.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\obj\menu.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\menu.o: ..\usart\usart.h
 .\obj\menu.o: ..\sys\sys.h
 .\obj\menu.o: ..\..\..\..\..\libraries\NDEF\inc\lib_wrapper.h
@@ -64,6 +64,7 @@
 .\obj\menu.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h
 .\obj\menu.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h
 .\obj\menu.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h
+.\obj\menu.o: ..\M1emulation\lib_nfcm1picc.h
 .\obj\menu.o: ..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h
 .\obj\menu.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h
 .\obj\menu.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h

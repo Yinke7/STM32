@@ -8,7 +8,7 @@
 .\obj\lib_proprietaryp2p.o: ..\inc\stm32f10x_it.h
 .\obj\lib_proprietaryp2p.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\lib_proprietaryp2p.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\lib_proprietaryp2p.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\lib_proprietaryp2p.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\lib_proprietaryp2p.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\lib_proprietaryp2p.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\lib_proprietaryp2p.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -27,9 +27,9 @@
 .\obj\lib_proprietaryp2p.o: ..\..\..\..\..\libraries\95HF\inc\drv_interrupt.h
 .\obj\lib_proprietaryp2p.o: ..\inc\hw_config.h
 .\obj\lib_proprietaryp2p.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\lib_proprietaryp2p.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\lib_proprietaryp2p.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\obj\lib_proprietaryp2p.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\lib_proprietaryp2p.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\lib_proprietaryp2p.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\obj\lib_proprietaryp2p.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\lib_proprietaryp2p.o: ..\usart\usart.h
 .\obj\lib_proprietaryp2p.o: ..\sys\sys.h
 .\obj\lib_proprietaryp2p.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h
@@ -54,5 +54,6 @@
 .\obj\lib_proprietaryp2p.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h
 .\obj\lib_proprietaryp2p.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h
 .\obj\lib_proprietaryp2p.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h
+.\obj\lib_proprietaryp2p.o: ..\M1emulation\lib_nfcm1picc.h
 .\obj\lib_proprietaryp2p.o: ..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h
 .\obj\lib_proprietaryp2p.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h

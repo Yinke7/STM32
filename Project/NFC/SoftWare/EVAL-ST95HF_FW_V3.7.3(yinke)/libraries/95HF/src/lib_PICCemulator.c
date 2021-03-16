@@ -112,7 +112,7 @@ static void PICCEmul_ReceiveCommand( void )
 		CardEmulator.State = PICCSTATE_RFFIELD_CUTOFF;	
 		SelectedTechno = PICCPROTOCOL_UNKNOWN;
 		RF_TechnoFounded = false;
-	}	
+	}
 	else 
 	{	
 		if( pData[PICC_COMMAND_OFFSET] != LISTEN_RESULTSCODE_OK)
@@ -131,7 +131,10 @@ static void PICCEmul_ReceiveCommand( void )
 		
 			case PICCEMULATOR_TAG_TYPE_2:
 				SelectedTechno = PICCPROTOCOL_14443A;
-				if (PICCNFCT2_ReplyCommand ( pData ) != PICCNFCT2_ERRORCODE_COMMANDUNKNOWN)
+           //add yinke modified
+//				if (PICCNFCT2_ReplyCommand ( pData ) != PICCNFCT2_ERRORCODE_COMMANDUNKNOWN)
+                if (PICCNFCM1_ReplyCommand ( pData ) != PICCNFCM1_ERRORCODE_COMMANDUNKNOWN)
+           //end add 
 					commandReceived = PICCEMULATOR_TAG_TYPE_2;
 			break;
 				
@@ -481,7 +484,7 @@ void PICCEmul_InitPICCEmulation ( PICCEMULATOR_SELECT_TAG_TYPE PICC_Emulated_Tag
 	CardEmulator.TagType = PICC_Emulated_TagType;		
 	if (PICC_Emulated_TagType == PICCEMULATOR_TAG_TYPE_2) nfc_tagtype = TT2;
 	else if (PICC_Emulated_TagType == PICCEMULATOR_TAG_TYPE_4A) nfc_tagtype = TT4A;
-	
+    
 	CardEmulator.State = PICCSTATE_UNKNOWN;
 
 #ifdef SPI_INTERRUPT_MODE_ACTIVATED	

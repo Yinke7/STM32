@@ -32,6 +32,10 @@
 
 #include "lib_nfctype2picc.h"
 #include "lib_nfctype4picc.h"
+//add yinke 
+#include "lib_nfcm1picc.h"
+//en add 
+
 #include "lib_cardemul.h"
 #ifdef ST95HF
 #include "lib_nfcdeptarget.h"

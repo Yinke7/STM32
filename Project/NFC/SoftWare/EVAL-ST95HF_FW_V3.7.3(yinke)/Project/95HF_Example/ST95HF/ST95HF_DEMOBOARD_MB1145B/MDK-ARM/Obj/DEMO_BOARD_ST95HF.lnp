@@ -82,8 +82,6 @@
 ".\obj\startup_stm32f10x_xl.o"
 ".\obj\core_cm3.o"
 ".\obj\system_stm32f10x.o"
-".\obj\usart.o"
-".\obj\sys.o"
 ".\obj\mcc.o"
 ".\obj\mcc_crypto.o"
 ".\obj\mcc_crypto_card.o"
@@ -91,6 +89,9 @@
 ".\obj\mcc_macros.o"
 ".\obj\mcc_raw_request.o"
 ".\obj\rfal_crc.o"
+".\obj\usart.o"
+".\obj\sys.o"
+".\obj\lib_nfcm1picc.o"
 --library_type=microlib --strict --scatter ".\Obj\DEMO_BOARD_ST95HF.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

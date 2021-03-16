@@ -130,7 +130,7 @@ int8_t PICC14A_PPS( uc8 *pData )
 		return LIB14443APICC_ERRORCODE_CODECOMMAND;  
 	
 	/* check the CID value */
-	if (pData[PICC_DATA_OFFSET] & ISO14443A_CID_MASK != ISO14443A_Card.CID)
+	if ((pData[PICC_DATA_OFFSET] & ISO14443A_CID_MASK) != ISO14443A_Card.CID)
 		return LIB14443APICC_ERRORCODE_CODECOMMAND ;
 	
  	/* save the RF commmand parameters */

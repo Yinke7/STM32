@@ -4,7 +4,7 @@
 .\obj\drv_interrupt.o: ..\inc\stm32f10x_it.h
 .\obj\drv_interrupt.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\drv_interrupt.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\drv_interrupt.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\drv_interrupt.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\drv_interrupt.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\drv_interrupt.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\drv_interrupt.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -22,9 +22,9 @@
 .\obj\drv_interrupt.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\drv_interrupt.o: ..\..\..\..\..\libraries\95HF\inc\drv_interrupt.h
 .\obj\drv_interrupt.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\drv_interrupt.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\drv_interrupt.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\obj\drv_interrupt.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\drv_interrupt.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\drv_interrupt.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\obj\drv_interrupt.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\drv_interrupt.o: ..\usart\usart.h
 .\obj\drv_interrupt.o: ..\sys\sys.h
 .\obj\drv_interrupt.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h

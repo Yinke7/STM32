@@ -24,17 +24,25 @@
 #define M1_Transfer                 0xB0
 
 
+/*ErrorCode*/
+#define PICCNFCM1_SUCCESSCODE                               RESULTOK    
+#define PICCNFCM1_ERRORCODE_GENERIC                         0x71
+#define PICCNFCM1_ERRORCODE_PARAMETER                       0x72
+#define PICCNFCM1_ERRORCODE_COMMANDUNKNOWN                  0x73
+#define PICCNFCM1_ERRORCODE_WRONG_ID                        0x74
+
 /*Macros*/
-#define PICCNFCM1_SUCCESSCODE                       RESULTOK    
-#define PICCNFCM1_ERRORCODE_COMMANDUNKNOWN          0x76           
-
-
+#define M1_READ_BUFFER_SIZE         16
+#define M1_UID_SIZE                 4
+#define M1_BLOCK_MAXNUM             64
 
 /*M1 Functions*/
 int8_t PICCNFCM1_ReplyCommand( uc8 *pData );
 int8_t PICCNFCM1_Read(uc8 *pData);
 int8_t PICCNFCM1_Write(uc8 *pData);
 int8_t PICCNFCM1_ATQA(uc8 *pData);
+void M1_NACK (void);
+void M1_ACK (void);
 
 #endif
 

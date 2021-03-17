@@ -202,6 +202,7 @@ void TagEmulT2(void)
 
 	LED_Off(LED2);
 }
+
 /**
   * @brief  Runs the tag emulation with the selected tag type.
   */
@@ -254,3 +255,9 @@ void TagEmul(void)
 	/* Display Menu */
   //DisplayMenu();
 }
+
+
+
+
+
+

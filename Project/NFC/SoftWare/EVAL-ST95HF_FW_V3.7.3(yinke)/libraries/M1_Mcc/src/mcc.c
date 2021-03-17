@@ -280,7 +280,8 @@ int8_t mccAuthenticateStep1 ( const uint8_t keySelect,
         rv = ERR_PARAM;
         goto out;
     }
-
+    
+    
     if ( key == 0 )
     {
 				sprintf( dataOut, "E: no key given!\n");
@@ -289,10 +290,14 @@ int8_t mccAuthenticateStep1 ( const uint8_t keySelect,
 				//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );			
         rv = ERR_PARAM;
         goto out;
+        
     }
-
+    
 		sprintf( dataOut, "A: mcc auth step 1\n");
-		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );		
+		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
+    
+    //从这里开始截取
+    //构造命令
     rv = buildCommand( cmd, keySelect, block );
     EVAL_ERR_NE_GOTO( ERR_NONE, rv, out );
 
@@ -300,7 +305,8 @@ int8_t mccAuthenticateStep1 ( const uint8_t keySelect,
     {
         buffer[i] = cmd[i];
     }
-
+    
+    //添加奇偶校验位
     rv = attachParityInformation( buffer, AUTH_CMD_LEN );
     EVAL_ERR_NE_GOTO( ERR_NONE, rv, out );
 
@@ -324,7 +330,9 @@ int8_t mccAuthenticateStep1 ( const uint8_t keySelect,
         mccResetCipher( );
         return ERR_NOTFOUND;
     }
-
+    
+    
+    
     mccCryptoReset( handle, 1 );
     mccSetKey( key );
 
@@ -346,7 +354,8 @@ int8_t mccAuthenticateStep1 ( const uint8_t keySelect,
                                     , (uint16_t)( handle->lfsr_lfsr >> 16 )
                                     , (uint16_t)( handle->lfsr_lfsr ) );
 		HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
-
+        
+        
 #endif // DEBUG_LFSR
 		sprintf( dataOut, "I: Success: Auth Step 1\n");
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );	
@@ -446,7 +455,7 @@ int8_t mccAuthenticateStep2 ( uint32_t nonce )
 
 		sprintf( dataOut, "I: Success: Auth Step 2\n" );
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );	
-
+    
 out:
     return rv;
 }

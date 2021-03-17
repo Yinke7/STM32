@@ -111,7 +111,7 @@ ReturnCode mccSendRawRequest ( uint16_t *request,
 			mccRawBuffer95HF[i+2] = mccRawBuffer[i];
 		}
 		mccRawBuffer95HF[PCD_COMMAND_OFFSET ] = SEND_RECEIVE;
-		mccRawBuffer95HF[PCD_LENGTH_OFFSET  ]	= requestLength *2 + 1;
+		mccRawBuffer95HF[PCD_LENGTH_OFFSET  ] = requestLength *2 + 1;
 		mccRawBuffer95HF[requestLength*2 + 2] = 0x18;
 		//fdt=rfalGetFDTListen( );
 

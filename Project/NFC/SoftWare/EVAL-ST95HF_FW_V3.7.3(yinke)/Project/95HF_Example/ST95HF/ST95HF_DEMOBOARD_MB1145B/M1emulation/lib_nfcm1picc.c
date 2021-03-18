@@ -30,27 +30,27 @@ static bool IsWritting = false;
 //send buffer 
 static uint8_t M1_SendBuffer[255] ;
 
-typedef struct SectorTrailer{
-    uint8_t key_a[6];           //keya
-    uint8_t access[4];          //control byte
-    uint8_t key_b[6];           //keyb
-}Trailer_t;
-
-typedef struct SectorData{
+                                          
+typedef struct MifareBlock {
     uint8_t data[16];
-}Data_t;
+}Block_t;
 
-typedef struct MifareSector{
-    Data_t datablock[3];            //data block
-    Trailer_t trailerblock;         //trailer block per sector
+
+typedef struct MifareSector {
+    Block_t datablock[3];               //data block
+    Block_t trailerblock;               //trailer block per sector
 }Sector_t;
 
-typedef struct MifareCard1K{
-    Sector_t Sector[64];  
+
+typedef struct MifareCard1K {
+    Sector_t Sector[64];
 }Card1K_t;
 
+
+//定义全局变量M1 卡 1K容量
 static Card1K_t M1_Card1K;
 
+//需要写入的页
 static uint8_t pagetowrite;
 
 
@@ -71,6 +71,7 @@ int8_t PICCNFCM1_ReplyCommand( uc8 *pData )
     //M1 reader cmd
 	switch (InsCode)
 	{
+        
 //		case PICCNFCT2_SECTOR_SELECT :
 //			PICCNFCT2_SelectSector ( pData );
 //		break;
@@ -117,7 +118,7 @@ int8_t PICCNFCM1_ReplyCommand( uc8 *pData )
 	return PICCNFCM1_SUCCESSCODE; 
 }
 
-
+//处理应答
 int8_t PICCNFCM1_ATQA(uc8 *pData)
 {
     uc8 pDataToEmit[2] = {0xAA, 0x14};
@@ -127,7 +128,6 @@ int8_t PICCNFCM1_ATQA(uc8 *pData)
     PICC_Send(2,pDataToEmit);
     
 }
-
 
 //Respone Read
 int8_t PICCNFCM1_Read(uc8 *pData)

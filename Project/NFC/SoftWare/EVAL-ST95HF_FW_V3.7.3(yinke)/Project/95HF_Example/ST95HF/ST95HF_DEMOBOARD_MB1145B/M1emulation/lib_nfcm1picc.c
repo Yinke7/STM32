@@ -21,16 +21,22 @@ static uint8_t defualttrialerblock[16] = {0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,
 //Manufacturer block 
 static uint8_t manufacturerblock[16];
 
-//外部全部变量
-extern uint8_t          u95HFBuffer [RFTRANS_95HF_MAX_BUFFER_SIZE+3];       
+     
 
 //writing flag
 static bool IsWritting = false;
     
 //send buffer 
 static uint8_t M1_SendBuffer[255] ;
-
-                                          
+																					
+																					
+																					
+//extern varies
+extern uint8_t          u95HFBuffer [RFTRANS_95HF_MAX_BUFFER_SIZE+3];  
+extern DeviceMode_t devicemode;
+extern TagType_t nfc_tagtype;               
+extern uint8_t contentToWrite;
+																					
 typedef struct MifareBlock {
     uint8_t data[16];
 }Block_t;
@@ -277,6 +283,12 @@ void M1_ACK (void)
 	PICC_Send(2,pDataToEmit);
 }
 
+
+
+void TagEmulM1(void)
+{
+		ConfigManager_TagEmulation(PICCEMULATOR_TAG_TYPE_2,0,0);
+}
 
 
 /*  import from proxmark3 @https://github.com/Yinke7/proxmark3-1    */

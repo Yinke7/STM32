@@ -213,12 +213,14 @@ int main(void)
 //			{
 			
 				printf("read tag...\r\n");
-				TagReading();
+//				TagReading();
 				//CardEmul14443A();
 				//TagWriting();
 //				printf("write tag...\r\n");
 //				TagWriteEMAIL();
 //				autoTypeAll();
+//				TagEmulT2GEO();
+				TagEmulT2();
 				delay_ms(3000);
 //			} 
 			 

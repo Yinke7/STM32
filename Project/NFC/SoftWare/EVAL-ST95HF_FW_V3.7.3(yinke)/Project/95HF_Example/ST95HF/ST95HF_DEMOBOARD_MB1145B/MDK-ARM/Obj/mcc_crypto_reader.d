@@ -1,6 +1,6 @@
 .\obj\mcc_crypto_reader.o: ..\..\..\..\..\libraries\M1_Mcc\src\mcc_crypto_reader.c
 .\obj\mcc_crypto_reader.o: ..\..\..\..\..\libraries\M1_Mcc\inc\mcc_crypto.h
-.\obj\mcc_crypto_reader.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\mcc_crypto_reader.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\mcc_crypto_reader.o: ..\..\..\..\..\libraries\M1_Mcc\inc\mcc_crypto_reader.h
 .\obj\mcc_crypto_reader.o: ..\..\..\..\..\libraries\M1_Mcc\inc\mcc_macros.h
 .\obj\mcc_crypto_reader.o: ..\inc\main.h
@@ -34,9 +34,9 @@
 .\obj\mcc_crypto_reader.o: ..\..\..\..\..\libraries\95HF\inc\drv_interrupt.h
 .\obj\mcc_crypto_reader.o: ..\inc\hw_config.h
 .\obj\mcc_crypto_reader.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\mcc_crypto_reader.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\mcc_crypto_reader.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
-.\obj\mcc_crypto_reader.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\mcc_crypto_reader.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\mcc_crypto_reader.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\mcc_crypto_reader.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\mcc_crypto_reader.o: ..\usart\usart.h
 .\obj\mcc_crypto_reader.o: ..\sys\sys.h
 .\obj\mcc_crypto_reader.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h

@@ -192,7 +192,7 @@ void TagEmulT2SMS(void)
   */
 void TagEmulT2(void)
 {
-	LED_On(LED2);
+//	LED_On(LED2);
 	/* Initilialize tag emulation mode */
 	devicemode = PICC;
 	nfc_tagtype = TT2;
@@ -200,7 +200,7 @@ void TagEmulT2(void)
 	contentToWrite = WRITE_NOTHING;
 	TagEmul();
 
-	LED_Off(LED2);
+//	LED_Off(LED2);
 }
 
 /**
@@ -244,10 +244,15 @@ void TagEmul(void)
 
 	/* Start the configuration manager in infinite tag emulation (delay=0)*/
 	if( nfc_tagtype == TT2)
+	{
 		ConfigManager_TagEmulation(PICCEMULATOR_TAG_TYPE_2,0,0);
+		printf("nfc_tage TT2\r\n");
+	}
 	else if( nfc_tagtype == TT4A)
+	{
 		ConfigManager_TagEmulation(PICCEMULATOR_TAG_TYPE_4A,0,0);
-	
+		printf("nfc_tage TT4\r\n");
+	}
 	manageFlashNDEF();
 	
 	/* External Interrupt Disable */

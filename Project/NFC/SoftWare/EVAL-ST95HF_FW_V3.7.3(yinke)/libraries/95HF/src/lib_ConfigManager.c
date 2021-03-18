@@ -457,7 +457,7 @@ uint8_t ConfigManager_TagEmulation (PICCEMULATOR_SELECT_TAG_TYPE TagEmulated, ui
 	PICCEmul_InitPICCEmulation(TagEmulated);
 	
 	// If the timeout is set to 0 it means that we want to emulate a tag until the user stops
-	if( timeoutEmul != 0)//不会进入这里
+	if( timeoutEmul != 0)//不会进入这里           
 		StartAppliTimeOut(timeoutEmul);
 
 	// This variable is used to check if the command received correspond to the good type of tag

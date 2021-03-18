@@ -1,7 +1,7 @@
 .\obj\mcc.o: ..\..\..\..\..\libraries\M1_Mcc\src\mcc.c
 .\obj\mcc.o: ..\..\..\..\..\libraries\M1_Mcc\inc\rfal_crc.h
-.\obj\mcc.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdint.h
-.\obj\mcc.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\mcc.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\mcc.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\mcc.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443a.h
 .\obj\mcc.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apcd.h
 .\obj\mcc.o: ..\..\..\..\..\libraries\95HF\inc\lib_PCD.h
@@ -30,8 +30,8 @@
 .\obj\mcc.o: ..\..\..\..\..\libraries\95HF\inc\drv_interrupt.h
 .\obj\mcc.o: ..\inc\hw_config.h
 .\obj\mcc.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\mcc.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\string.h
-.\obj\mcc.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\mcc.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\obj\mcc.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\mcc.o: ..\usart\usart.h
 .\obj\mcc.o: ..\sys\sys.h
 .\obj\mcc.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h

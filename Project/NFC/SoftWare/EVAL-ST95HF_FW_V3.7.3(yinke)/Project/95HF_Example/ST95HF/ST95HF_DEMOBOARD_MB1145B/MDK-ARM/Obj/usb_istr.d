@@ -1,7 +1,7 @@
 .\obj\usb_istr.o: ..\..\..\..\..\libraries\USB_Composite\src\usb_istr.c
 .\obj\usb_istr.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\usb_istr.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\usb_istr.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\usb_istr.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\usb_istr.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\usb_istr.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\usb_istr.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -22,7 +22,7 @@
 .\obj\usb_istr.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_regs.h
 .\obj\usb_istr.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h
 .\obj\usb_istr.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_core.h
-.\obj\usb_istr.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\usb_istr.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\usb_istr.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_istr.h
 .\obj\usb_istr.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_init.h
 .\obj\usb_istr.o: ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc\usb_int.h

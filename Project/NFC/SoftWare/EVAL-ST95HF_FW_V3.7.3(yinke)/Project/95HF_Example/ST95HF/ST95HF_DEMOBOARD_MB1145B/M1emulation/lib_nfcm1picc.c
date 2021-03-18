@@ -1,5 +1,5 @@
 #include "lib_nfcm1picc.h"
-
+#include "lib_ConfigManager.h"
 // ATQA
 static uint8_t rATQA_1k[2]    = {0x04, 0x00};               // indicate Mifare classic 1k 4Byte UID
 
@@ -287,7 +287,8 @@ void M1_ACK (void)
 
 void TagEmulM1(void)
 {
-		ConfigManager_TagEmulation(PICCEMULATOR_TAG_TYPE_2,0,0);
+    M1_Card_init();
+	ConfigManager_TagEmulation(PICCEMULATOR_TAG_TYPE_2,0,0);
 }
 
 

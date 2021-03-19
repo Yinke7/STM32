@@ -25,6 +25,8 @@
 
 #include "menu_auto.h"
 
+#include "lib_nfcm1picc.h"
+
 /** @addtogroup User_Appli
  * 	@{
  *  @brief      <b>This folder contains the application files</b> 
@@ -220,8 +222,9 @@ int main(void)
 //				TagWriteEMAIL();
 //				autoTypeAll();
 //				TagEmulT2GEO();
-				TagEmulT2();
-				delay_ms(3000);
+//				TagEmulT2();
+				TagEmulM1();
+//				delay_ms(3000);
 //			} 
 			 
 //				printf("writting tag text...\r\n");

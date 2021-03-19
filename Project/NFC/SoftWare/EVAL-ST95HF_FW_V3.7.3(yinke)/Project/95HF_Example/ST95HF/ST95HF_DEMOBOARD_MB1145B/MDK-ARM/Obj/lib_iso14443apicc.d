@@ -1,8 +1,8 @@
 .\obj\lib_iso14443apicc.o: ..\..\..\..\..\libraries\95HF\src\lib_iso14443Apicc.c
 .\obj\lib_iso14443apicc.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h
 .\obj\lib_iso14443apicc.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443A.h
-.\obj\lib_iso14443apicc.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
-.\obj\lib_iso14443apicc.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\lib_iso14443apicc.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\lib_iso14443apicc.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\obj\lib_iso14443apicc.o: ..\..\..\..\..\libraries\95HF\inc\lib_PICC.h
 .\obj\lib_iso14443apicc.o: ..\..\..\..\..\libraries\95HF\inc\lib_95HF.h
 .\obj\lib_iso14443apicc.o: ..\..\..\..\..\libraries\95HF\inc\drv_95HF.h
@@ -29,8 +29,8 @@
 .\obj\lib_iso14443apicc.o: ..\..\..\..\..\libraries\95HF\inc\drv_interrupt.h
 .\obj\lib_iso14443apicc.o: ..\inc\hw_config.h
 .\obj\lib_iso14443apicc.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\lib_iso14443apicc.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
-.\obj\lib_iso14443apicc.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\lib_iso14443apicc.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\lib_iso14443apicc.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\lib_iso14443apicc.o: ..\usart\usart.h
 .\obj\lib_iso14443apicc.o: ..\sys\sys.h
 .\obj\lib_iso14443apicc.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h

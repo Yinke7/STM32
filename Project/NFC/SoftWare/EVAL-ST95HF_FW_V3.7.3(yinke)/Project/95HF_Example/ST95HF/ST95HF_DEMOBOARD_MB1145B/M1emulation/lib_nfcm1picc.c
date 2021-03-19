@@ -63,7 +63,7 @@ static uint8_t pagetowrite;
 int8_t PICCNFCM1_ReplyCommand( uc8 *pData )
 {
 	uint8_t	InsCode = pData[PICC_DATA_OFFSET];
-	
+	uint8_t i ;
     
     if(IsWritting == true)
     {
@@ -74,7 +74,14 @@ int8_t PICCNFCM1_ReplyCommand( uc8 *pData )
         return PICCNFCM1_SUCCESSCODE;
         
     }
-    //M1 reader cmd
+    //M1 reader cmd 60是啥？读uid命令？验证。那tm的要先验证通过才能读到uid？
+		//可以先读uid,流程没对啊，他这没先读uid的嘛，以来就验证
+		//我这里printf 就是看st95皆灭接收到
+		printf("reply Cmd pData :");
+		for (i = 0 ;i <pData[PICC_LENGTH_OFFSET]; i++)
+		{
+			printf("[%02X] ", pData[i+PICC_DATA_OFFSET]);
+		}
 	switch (InsCode)
 	{
         
@@ -98,7 +105,7 @@ int8_t PICCNFCM1_ReplyCommand( uc8 *pData )
             /*Code B*/
             break;
         
-        //read data
+        //read data读uid也会进入这里？读是 
 		case M1_READ:
 			PICCNFCM1_Read(pData);
 		break;
@@ -130,7 +137,8 @@ int8_t PICCNFCM1_ATQA(uc8 *pData)
     uc8 pDataToEmit[2] = {0xAA, 0x14};
     if (pData[PICC_DATA_OFFSET] != M1_REQA)
 		return PICCNFCM1_ERRORCODE_COMMANDUNKNOWN;	
-    
+    printf("REQA\r\n");//你这样，你把收到rc522的命令都打印出来
+		
     PICC_Send(2,pDataToEmit);
     
 }
@@ -228,6 +236,8 @@ int8_t PICCNFCM1_Write_Step2(uc8 * pData)
 //Init Card Data
 int8_t M1_Card_init(void)
 {
+		//你这构造的不对吧
+		//怎么不对
     uint8_t i;
     //uid
     memcpy(manufacturerblock, uid, M1_UID_SIZE);
@@ -235,7 +245,7 @@ int8_t M1_Card_init(void)
     //other bytes 
     memcpy(manufacturerblock + M1_UID_SIZE, dumpbyte, M1_BYTE_PER_BLOCK_SIZE - M1_UID_SIZE);
     
-    //copy to card
+    //copy to card 这是啥，数据 block 0 第一个block
     memcpy( &(M1_Card1K.Sector[0].datablock[0]), manufacturerblock, M1_BYTE_PER_BLOCK_SIZE);
     
     for(i = 0;i < M1_BLOCK_MAXNUM_SIZE; i++)

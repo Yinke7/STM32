@@ -8,7 +8,7 @@
 .\obj\lib_iso14443apcd.o: ..\inc\stm32f10x_it.h
 .\obj\lib_iso14443apcd.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\lib_iso14443apcd.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\lib_iso14443apcd.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\lib_iso14443apcd.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\lib_iso14443apcd.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\lib_iso14443apcd.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\lib_iso14443apcd.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -27,9 +27,9 @@
 .\obj\lib_iso14443apcd.o: ..\..\..\..\..\libraries\95HF\inc\drv_interrupt.h
 .\obj\lib_iso14443apcd.o: ..\inc\hw_config.h
 .\obj\lib_iso14443apcd.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\lib_iso14443apcd.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\lib_iso14443apcd.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
-.\obj\lib_iso14443apcd.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\lib_iso14443apcd.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\lib_iso14443apcd.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\lib_iso14443apcd.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\lib_iso14443apcd.o: ..\usart\usart.h
 .\obj\lib_iso14443apcd.o: ..\sys\sys.h
 .\obj\lib_iso14443apcd.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h

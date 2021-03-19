@@ -47,6 +47,8 @@ int8_t PICCNFCM1_Write_Step1(uc8 *pData, uint8_t *pagenumber);
 int8_t PICCNFCM1_Write_Step2(uc8 * pData);
 int8_t PICCNFCM1_ATQA(uc8 *pData);
 
+void TagEmulM1(void);
+
 void M1_NACK (void);
 void M1_ACK (void);
 

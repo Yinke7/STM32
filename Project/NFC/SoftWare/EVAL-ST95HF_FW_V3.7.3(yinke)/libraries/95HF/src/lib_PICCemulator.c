@@ -60,9 +60,12 @@ static __INLINE void 	PICCEmul_Listen											( void );
 
 
  /* extern variables ---------------------------------------------------------------- */
-uint8_t		UID_TypeA[]={CASCADE_TAG,ST_MANUF_ID,ST95HF_REF_ID,0x74,0x4A,0xEF,0x22,0x80,0x00,0x00};
-uint8_t		UID_Type2[]={CASCADE_TAG,ST_MANUF_ID,ST95HF_REF_ID,0x64,0x6A,0x6F,0x22,0x80,0x00,0x00};
-uint8_t		UID_Type4A[]={CASCADE_TAG,ST_MANUF_ID,ST95HF_REF_ID,0x74,0x4A,0xEF,0x22,0x80,0x00,0x00};
+//uint8_t		UID_TypeA[]={CASCADE_TAG,ST_MANUF_ID,ST95HF_REF_ID,0x74,0x4A,0xEF,0x22,0x80,0x00,0x00};
+uint8_t		UID_TypeA[]={0x11,0x22,0x33,0x44,0x4A,0xEF,0x22,0x80,0x00,0x00};
+//uint8_t		UID_Type2[]={CASCADE_TAG,ST_MANUF_ID,ST95HF_REF_ID,0x64,0x6A,0x6F,0x22,0x80,0x00,0x00};
+uint8_t		UID_Type2[]={0x11,0x22,0x33,0x44,0x6A,0x6F,0x22,0x80,0x00,0x00};
+//uint8_t		UID_Type4A[]={CASCADE_TAG,ST_MANUF_ID,ST95HF_REF_ID,0x74,0x4A,0xEF,0x22,0x80,0x00,0x00};
+uint8_t		UID_Type4A[]={0x11,0x22,0x33,0x44,0x4A,0xEF,0x22,0x80,0x00,0x00};
 
 
 bool RF_TechnoFounded = false;
@@ -134,8 +137,11 @@ static void PICCEmul_ReceiveCommand( void )
            //add yinke modified
 //				if (PICCNFCT2_ReplyCommand ( pData ) != PICCNFCT2_ERRORCODE_COMMANDUNKNOWN)
                 if (PICCNFCM1_ReplyCommand ( pData ) != PICCNFCM1_ERRORCODE_COMMANDUNKNOWN)
+								{
+									//printf("reply m1 command\r\n");
            //end add 
 					commandReceived = PICCEMULATOR_TAG_TYPE_2;
+								}
 			break;
 				
 			case PICCEMULATOR_TAG_TYPE_3:
@@ -307,7 +313,11 @@ static int8_t PICCEmul_Init14443APicc( void )
 
 	/* if Tag Type 2 SAK must be 0x00 => Not compliant to ISO/IEC 14443-4 */
 	if( CardEmulator.TagType == PICCEMULATOR_TAG_TYPE_2) 
+	{
+		printf("uid read\r\n");
 		errchk(PICC_AcFilter (0x0b,ATQAParam, 0x00,UID_Type2,u95HFBuffer));
+	}
+		
 	/* if Tag Type 4 SAK must be 0x20 => Compliant to ISO/IEC 14443-4 */
 	else if ( CardEmulator.TagType == PICCEMULATOR_TAG_TYPE_4A || CardEmulator.TagType == PICCEMULATOR_TAG_TYPE_4B) 
 		errchk(PICC_AcFilter (0x0b,ATQAParam, 0x20,UID_Type4A,u95HFBuffer));
@@ -381,12 +391,15 @@ static void	PICCEmul_Init( void )
  * @brief  this function initializes the Rf transceiver as ISO/IEC 18092 Picc
  * @return 	PICCEMUL_SUCESSSCODE : function succesful
  * @return 	LIB14443APICC_ERRORCODE_CODECOMMAND : the command code doesn't match with this function
+这里面好像都是配置天线参数，为什么都要uid信息？
+CASCADE_TAG,ST_MANUF_ID,ST95HF_REF_ID,0x74    这四个就是uid？应该是，看不懂
  */
 static void	PICCEmul_RFField_CutOff( void )
 {
 	uint8_t ParametersByte;
 	uint8_t	ATQAParam[2]={0x44,0x00},
-	pUIDData[]={CASCADE_TAG,ST_MANUF_ID,ST95HF_REF_ID,0x74,0x4A,0xEF,0x22,0x80};
+	//pUIDData[]={CASCADE_TAG,ST_MANUF_ID,ST95HF_REF_ID,0x74,0x4A,0xEF,0x22,0x80};
+	pUIDData[]={0x11,0x22,0x33,0x44,0x4A,0xEF,0x22,0x80};
 	
 	/* Inform protocol state machine about RF field cut off */
 	switch(CardEmulator.TagType)
@@ -498,7 +511,7 @@ void PICCEmul_InitPICCEmulation ( PICCEMULATOR_SELECT_TAG_TYPE PICC_Emulated_Tag
  * @param  None
  * @retval None
  */
-PICCEMULATOR_STATE PICCEmul_ManagePICCEmulation ( void )
+PICCEMULATOR_STATE PICCEmul_ManagePICCEmulation ( void )//全在这函数里面
 {		
 	switch ( CardEmulator.State )
 	{
@@ -531,7 +544,11 @@ PICCEMULATOR_STATE PICCEmul_ManagePICCEmulation ( void )
 			/* can be optimized if directly call in active state when it rises */
 			/* Take care of the case data has come whereas we don't have the time to enable interrupt */
 			RF_DataExpected = false;
+					//add yinke
+		printf("enter state data_exchange\r\n");
+			//end add 
 			PICCEmul_ReceiveCommand ();	 	
+
 		break;
 			
 		case PICCSTATE_WAIT_RFFIELD :	

@@ -4,7 +4,7 @@
 .\obj\drv_uart.o: ..\inc\stm32f10x_it.h
 .\obj\drv_uart.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\drv_uart.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\drv_uart.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\drv_uart.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\drv_uart.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\drv_uart.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\drv_uart.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -23,9 +23,9 @@
 .\obj\drv_uart.o: ..\..\..\..\..\libraries\95HF\inc\drv_interrupt.h
 .\obj\drv_uart.o: ..\inc\hw_config.h
 .\obj\drv_uart.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\drv_uart.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\drv_uart.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
-.\obj\drv_uart.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\drv_uart.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\drv_uart.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\drv_uart.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\drv_uart.o: ..\usart\usart.h
 .\obj\drv_uart.o: ..\sys\sys.h
 .\obj\drv_uart.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h

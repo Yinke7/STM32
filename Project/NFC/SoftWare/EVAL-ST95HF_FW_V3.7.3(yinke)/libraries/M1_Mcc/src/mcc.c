@@ -168,12 +168,12 @@ void mccSetKey ( const uint8_t *key )
     uint64_t bigKey = 0;
     unsigned int i;
 
-    sprintf( dataOut, "mcc set key\n");
+    //sprintf( dataOut, "mcc set key\n");
     //HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
 
     if ( key == 0 )
     {
-				sprintf( dataOut, "no key passed!\n");
+				//sprintf( dataOut, "no key passed!\n");
 				//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
         return;
     }
@@ -185,17 +185,17 @@ void mccSetKey ( const uint8_t *key )
         bigKey |= ((uint64_t)key[i] << ((5-i)*8));
     }
 
-		sprintf( dataOut, "  orig key:");
+		//sprintf( dataOut, "  orig key:");
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
     MCC_DUMP( key, 6 );
-		sprintf( dataOut, "  trans key: ");
+		//sprintf( dataOut, "  trans key: ");
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
 		
-		sprintf( dataOut, " %x %x %x %x\n", (uint16_t)(bigKey >> 48),
-                              (uint16_t)(bigKey >> 32),
-                              (uint16_t)(bigKey >> 16),
-                              (uint16_t)(bigKey >> 0)
-                            );
+//		sprintf( dataOut, " %x %x %x %x\n", (uint16_t)(bigKey >> 48),
+//                              (uint16_t)(bigKey >> 32),
+//                              (uint16_t)(bigKey >> 16),
+//                              (uint16_t)(bigKey >> 0)
+//                            );
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
 
     mccCryptoInit( handle, bigKey );
@@ -269,13 +269,13 @@ int8_t mccAuthenticateStep1 ( const uint8_t keySelect,
     uint32_t uid32;
     int i;
     
-		sprintf( dataOut, "A: mcc auth step 1\n");
+		//sprintf( dataOut, "A: mcc auth step 1\n");
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
     if ( uidLength != UID_LEN || uid == 0 )
     {
-				sprintf( dataOut, "E: uid incorrect! Expected %d bytes, got %d -> abort!\n", UID_LEN, uidLength);
+				//sprintf( dataOut, "E: uid incorrect! Expected %d bytes, got %d -> abort!\n", UID_LEN, uidLength);
 				//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
-				sprintf( dataOut, "I; Failed authentication step 1\n");
+				//sprintf( dataOut, "I; Failed authentication step 1\n");
 				//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
         rv = ERR_PARAM;
         goto out;
@@ -284,20 +284,20 @@ int8_t mccAuthenticateStep1 ( const uint8_t keySelect,
     
     if ( key == 0 )
     {
-				sprintf( dataOut, "E: no key given!\n");
+				//sprintf( dataOut, "E: no key given!\n");
 				//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
-				sprintf( dataOut, "I; Failed authentication step 1\n");
+				//sprintf( dataOut, "I; Failed authentication step 1\n");
 				//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );			
         rv = ERR_PARAM;
         goto out;
         
     }
     
-		sprintf( dataOut, "A: mcc auth step 1\n");
+		//sprintf( dataOut, "A: mcc auth step 1\n");
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
     
-    //从这里开始截取
-    //构造命令
+
+    //构造认证请求命令
     rv = buildCommand( cmd, keySelect, block );
     EVAL_ERR_NE_GOTO( ERR_NONE, rv, out );
 
@@ -315,6 +315,7 @@ int8_t mccAuthenticateStep1 ( const uint8_t keySelect,
         mccCryptoTranscode( handle, buffer, AUTH_CMD_LEN, 0 );
     }
 
+    //发送 构造好的请求命令 到 tag,并接收tag返回的数据
     rv = mccSendRawRequest( buffer, AUTH_CMD_LEN,
                     rsp, AUTH_RSP_LEN,
                     &bytesReceived, MCC_AUTHENTICATION_STEP1_TIMEOUT, 0 );
@@ -322,9 +323,9 @@ int8_t mccAuthenticateStep1 ( const uint8_t keySelect,
 
     if ( bytesReceived != AUTH_RSP_LEN - 1)
     {
-				sprintf( dataOut, "E: received 0x%x bytes, expected %d bytes -> abort!\n", bytesReceived, AUTH_RSP_LEN - 1);
+				//sprintf( dataOut, "E: received 0x%x bytes, expected %d bytes -> abort!\n", bytesReceived, AUTH_RSP_LEN - 1);
 				//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );				
-				sprintf( dataOut, "I: Failed: Auth Step 1\n");
+				//sprintf( dataOut, "I: Failed: Auth Step 1\n");
 				//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );					
         MCC_DUMP( rsp, bytesReceived );
         mccResetCipher( );
@@ -335,18 +336,20 @@ int8_t mccAuthenticateStep1 ( const uint8_t keySelect,
     
     mccCryptoReset( handle, 1 );
     mccSetKey( key );
-
+    
+    //将tag返回的 rsp 数据做加密算法，得到handle
     mccCryptoAuthReaderStep1( handle, TO_UINT32_T( uid ), TO_UINT32_T( rsp ) );
 
+    //无用操作，用于打印
     uid32 = TO_UINT32_T( uid );
 
-		sprintf( dataOut, "I: uid: %X%X\n", (uint16_t)( uid32 >> 16 ), (uint16_t)uid32);
+		//sprintf( dataOut, "I: uid: %X%X\n", (uint16_t)( uid32 >> 16 ), (uint16_t)uid32);
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );				
-		sprintf( dataOut, "I: N_c: 0x%X%X\n", (uint16_t)( TO_UINT32_T(rsp) >> 16 ), (uint16_t) TO_UINT32_T(rsp));
+		//sprintf( dataOut, "I: N_c: 0x%X%X\n", (uint16_t)( TO_UINT32_T(rsp) >> 16 ), (uint16_t) TO_UINT32_T(rsp));
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );	
-		sprintf( dataOut, "D: odd = 0x%x%x\n", (uint16_t)(handle->lfsr_odd >> 16), (uint16_t)handle->lfsr_odd);
+		//sprintf( dataOut, "D: odd = 0x%x%x\n", (uint16_t)(handle->lfsr_odd >> 16), (uint16_t)handle->lfsr_odd);
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );			
-		sprintf( dataOut, "D: evn = 0x%x%x\n", (uint16_t)(handle->lfsr_even >> 16), (uint16_t)handle->lfsr_even);
+		//sprintf( dataOut, "D: evn = 0x%x%x\n", (uint16_t)(handle->lfsr_even >> 16), (uint16_t)handle->lfsr_even);
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );	
 #ifdef DEBUG_LFSR
 		sprintf( dataOut,  "I: LFSR: 0x%X%X%X%X\n", (uint16_t)( handle->lfsr_lfsr >> 48 )
@@ -357,7 +360,7 @@ int8_t mccAuthenticateStep1 ( const uint8_t keySelect,
         
         
 #endif // DEBUG_LFSR
-		sprintf( dataOut, "I: Success: Auth Step 1\n");
+		//sprintf( dataOut, "I: Success: Auth Step 1\n");
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );	
 
 out:
@@ -377,9 +380,9 @@ int8_t mccAuthenticateStep2 ( uint32_t nonce )
 	uint8_t TempByte;
     unsigned int i;
 
-		sprintf( dataOut, "A: mcc auth step 2\n");
+		//sprintf( dataOut, "A: mcc auth step 2\n");
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );	
-		sprintf( dataOut,  "I: N_r: 0x%x%x\n", (uint16_t)(nonce >> 16), (uint16_t)(nonce));
+		//sprintf( dataOut,  "I: N_r: 0x%x%x\n", (uint16_t)(nonce >> 16), (uint16_t)(nonce));
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );		
 
     // 1. Set nonce for reader
@@ -388,10 +391,10 @@ int8_t mccAuthenticateStep2 ( uint32_t nonce )
     // 2. Step 2 of authentication in the crypto algorithm
     mccCryptoAuthReaderStep2( handle, cmd );
 
-		sprintf( dataOut,  "D: odd = 0x%x%x\n", (uint16_t)(handle->lfsr_odd >> 16), (uint16_t)handle->lfsr_odd);
+		//sprintf( dataOut,  "D: odd = 0x%x%x\n", (uint16_t)(handle->lfsr_odd >> 16), (uint16_t)handle->lfsr_odd);
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );		
 		
-		sprintf( dataOut,  "D: evn = 0x%x%x\n", (uint16_t)(handle->lfsr_even >> 16), (uint16_t)handle->lfsr_even );
+		//sprintf( dataOut,  "D: evn = 0x%x%x\n", (uint16_t)(handle->lfsr_even >> 16), (uint16_t)handle->lfsr_even );
 		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
 		
 #ifdef DEBUG_LFSR
@@ -402,10 +405,10 @@ int8_t mccAuthenticateStep2 ( uint32_t nonce )
 		HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
 #endif // DEBUG_LFSR
 
-
+    
 		for( ii = 0; ii < AUTH2_CMD_LEN; ii++)
 		{
-			 TempByte = cmd[ii] >> 8;
+			TempByte = cmd[ii] >> 8;
 			cmd[ii] = (cmd[ii] <<8) | (TempByte << 7);
 		}
 		

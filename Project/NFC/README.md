@@ -371,13 +371,7 @@
 
         * `Payload`
 
-        
 
-        
+### 2021.03.19
 
-        
-
-        
-
-
-
+* `Mifare Classic S50`卡加密算法：https://blog.csdn.net/trouble_makers/article/details/102879491  

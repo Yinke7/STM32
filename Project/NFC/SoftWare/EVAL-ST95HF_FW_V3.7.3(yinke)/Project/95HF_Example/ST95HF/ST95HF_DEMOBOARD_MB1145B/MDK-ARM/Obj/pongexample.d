@@ -1,5 +1,5 @@
 .\obj\pongexample.o: ..\src\PongExample.c
-.\obj\pongexample.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\pongexample.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\pongexample.o: ..\inc\proprietary_p2p.h
 .\obj\pongexample.o: ..\inc\menu.h
 .\obj\pongexample.o: ..\inc\menu_writer.h
@@ -9,7 +9,7 @@
 .\obj\pongexample.o: ..\inc\common.h
 .\obj\pongexample.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\pongexample.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\pongexample.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\pongexample.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\pongexample.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\pongexample.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\pongexample.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -26,8 +26,8 @@
 .\obj\pongexample.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\obj\pongexample.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\pongexample.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\pongexample.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\pongexample.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\pongexample.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\pongexample.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
 .\obj\pongexample.o: ..\usart\usart.h
 .\obj\pongexample.o: ..\sys\sys.h
 .\obj\pongexample.o: ..\..\..\..\..\libraries\NDEF\inc\lib_wrapper.h

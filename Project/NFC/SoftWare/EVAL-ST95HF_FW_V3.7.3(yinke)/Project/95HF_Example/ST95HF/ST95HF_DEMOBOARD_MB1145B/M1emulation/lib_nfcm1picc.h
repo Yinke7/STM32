@@ -38,9 +38,9 @@
 
 
 /*M1 Functions*/
-int8_t PICCNFCM1_AUTHENTICATION_Step1(uint8_t * pData);
-int8_t PICCNFCM1_AUTHENTICATION_Step2(uint8_t * pData);
-int8_t PICCNFCM1_AUTHENTICATION_Step3(uint8_t * pData);
+int8_t PICCNFCM1_AUTHENTICATION_Step1(uc8 * pData);
+int8_t PICCNFCM1_AUTHENTICATION_Step2(uc8 * pData);
+int8_t PICCNFCM1_AUTHENTICATION_Step3(uc8 * pData);
 int8_t PICCNFCM1_ReplyCommand( uc8 *pData );
 int8_t PICCNFCM1_Read(uc8 *pData);
 int8_t PICCNFCM1_Write_Step1(uc8 *pData, uint8_t *pagenumber);

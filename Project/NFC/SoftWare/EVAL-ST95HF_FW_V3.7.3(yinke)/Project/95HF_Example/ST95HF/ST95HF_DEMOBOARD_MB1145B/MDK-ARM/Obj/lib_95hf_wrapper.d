@@ -3,7 +3,7 @@
 .\obj\lib_95hf_wrapper.o: ..\inc\common.h
 .\obj\lib_95hf_wrapper.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\lib_95hf_wrapper.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\lib_95hf_wrapper.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\lib_95hf_wrapper.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\lib_95hf_wrapper.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\lib_95hf_wrapper.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\lib_95hf_wrapper.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -20,9 +20,9 @@
 .\obj\lib_95hf_wrapper.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\obj\lib_95hf_wrapper.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\lib_95hf_wrapper.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\lib_95hf_wrapper.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\lib_95hf_wrapper.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\string.h
-.\obj\lib_95hf_wrapper.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\lib_95hf_wrapper.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\lib_95hf_wrapper.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
+.\obj\lib_95hf_wrapper.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\lib_95hf_wrapper.o: ..\usart\usart.h
 .\obj\lib_95hf_wrapper.o: ..\sys\sys.h
 .\obj\lib_95hf_wrapper.o: ..\..\..\..\..\libraries\NDEF\inc\lib_ndef.h

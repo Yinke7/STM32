@@ -2,7 +2,7 @@
 .\obj\drv_lcdspi_ili9341.o: ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\inc\drv_lcdspi_ili9341.h
 .\obj\drv_lcdspi_ili9341.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
 .\obj\drv_lcdspi_ili9341.o: ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport\core_cm3.h
-.\obj\drv_lcdspi_ili9341.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\drv_lcdspi_ili9341.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\drv_lcdspi_ili9341.o: ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
 .\obj\drv_lcdspi_ili9341.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
 .\obj\drv_lcdspi_ili9341.o: ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h

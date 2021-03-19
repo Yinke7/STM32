@@ -1,9 +1,9 @@
 .\obj\mcc_raw_request.o: ..\..\..\..\..\libraries\M1_Mcc\src\mcc_raw_request.c
 .\obj\mcc_raw_request.o: ..\..\..\..\..\libraries\M1_Mcc\inc\mcc.h
-.\obj\mcc_raw_request.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\mcc_raw_request.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 .\obj\mcc_raw_request.o: ..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h
-.\obj\mcc_raw_request.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\obj\mcc_raw_request.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\mcc_raw_request.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\mcc_raw_request.o: E:\MDK\ARM\ARMCC\Bin\..\include\string.h
 .\obj\mcc_raw_request.o: ..\..\..\..\..\libraries\M1_Mcc\inc\utils.h
 .\obj\mcc_raw_request.o: ..\..\..\..\..\libraries\95HF\inc\drv_95HF.h
 .\obj\mcc_raw_request.o: ..\..\..\..\..\libraries\95HF\inc\drv_spi.h
@@ -29,7 +29,7 @@
 .\obj\mcc_raw_request.o: ..\..\..\..\..\libraries\95HF\inc\drv_interrupt.h
 .\obj\mcc_raw_request.o: ..\inc\hw_config.h
 .\obj\mcc_raw_request.o: ..\..\..\..\..\libraries\95HF\inc\miscellaneous.h
-.\obj\mcc_raw_request.o: D:\WorkSoftware\kei5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\mcc_raw_request.o: E:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\mcc_raw_request.o: ..\usart\usart.h
 .\obj\mcc_raw_request.o: ..\sys\sys.h
 .\obj\mcc_raw_request.o: ..\..\..\..\..\libraries\USB_Composite\inc\usb_pwr.h

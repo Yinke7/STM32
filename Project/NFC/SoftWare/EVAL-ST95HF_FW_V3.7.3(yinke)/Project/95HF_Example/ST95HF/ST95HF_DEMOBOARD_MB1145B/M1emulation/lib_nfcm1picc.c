@@ -97,6 +97,9 @@ int8_t PICCNFCM1_ReplyCommand( uc8 *pData )
 
         //keyA authentication
         case M1_AUTHENTICATION_A:
+            
+            PICCNFCM1_AUTHENTICATION_Step1(pData);
+            
             /*Code A*/
             break;
         
@@ -134,12 +137,14 @@ int8_t PICCNFCM1_ReplyCommand( uc8 *pData )
 //处理应答
 int8_t PICCNFCM1_ATQA(uc8 *pData)
 {
-    uc8 pDataToEmit[2] = {0xAA, 0x14};
+    uint8_t datalen = 2;
+    uint8_t pDataToEmit[] = {0xAA, 0x14};
     if (pData[PICC_DATA_OFFSET] != M1_REQA)
 		return PICCNFCM1_ERRORCODE_COMMANDUNKNOWN;	
     printf("REQA\r\n");//你这样，你把收到rc522的命令都打印出来
 		
-    PICC_Send(2,pDataToEmit);
+    pDataToEmit [datalen] = SEND_MASK_APPENDCRC | SEND_MASK_8BITSINFIRSTBYTE;
+    PICC_Send(datalen + 1,pDataToEmit);
     
 }
 
@@ -256,21 +261,25 @@ int8_t M1_Card_init(void)
     return PICCNFCM1_SUCCESSCODE;
 }
 //auth 1
-int8_t PICCNFCM1_AUTHENTICATION_Step1(uint8_t * pData)
+int8_t PICCNFCM1_AUTHENTICATION_Step1(uc8 * pData)
 {
+    uint8_t len = 4;
+    uint8_t pDataToEmit[] = {0x12,0x34,0x56,0x78};
     
+    pDataToEmit[len] = SEND_MASK_APPENDCRC | SEND_MASK_8BITSINFIRSTBYTE;
+        PICC_Send(len + 1 ,pDataToEmit);
     return PICCNFCM1_SUCCESSCODE;
 }
 
 //auth 2
-int8_t PICCNFCM1_AUTHENTICATION_Step2(uint8_t * pData)
+int8_t PICCNFCM1_AUTHENTICATION_Step2(uc8 * pData)
 {
     
     return PICCNFCM1_SUCCESSCODE;
 }
 
 //auth 3 
-int8_t PICCNFCM1_AUTHENTICATION_Step3(uint8_t * pData)
+int8_t PICCNFCM1_AUTHENTICATION_Step3(uc8 * pData)
 {
     
     return PICCNFCM1_SUCCESSCODE;

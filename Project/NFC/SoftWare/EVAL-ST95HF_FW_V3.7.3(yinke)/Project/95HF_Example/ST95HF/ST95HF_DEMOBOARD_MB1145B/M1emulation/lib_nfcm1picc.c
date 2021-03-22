@@ -273,7 +273,7 @@ int8_t PICCNFCM1_AUTHENTICATION_Step1(uc8 * pData)
 
 //auth 2
 int8_t PICCNFCM1_AUTHENTICATION_Step2(uc8 * pData)
-{
+{   
     
     return PICCNFCM1_SUCCESSCODE;
 }

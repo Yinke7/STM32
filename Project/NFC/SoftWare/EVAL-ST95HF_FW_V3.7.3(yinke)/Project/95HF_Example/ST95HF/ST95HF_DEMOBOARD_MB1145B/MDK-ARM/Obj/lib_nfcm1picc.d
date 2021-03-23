@@ -49,6 +49,7 @@
 .\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443A.h
 .\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfctype5pcd.h
 .\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h
+.\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h
 .\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\95HF\inc\lib_ConfigManager.h
 .\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\95HF\inc\lib_PICCemulator.h
 .\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfctype2picc.h
@@ -62,3 +63,8 @@
 .\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\95HF\inc\lib_llcp.h
 .\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\95HF\inc\lib_snep.h
 .\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\95HF\inc\lib_proprietaryP2P.h
+.\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\M1_Mcc\inc\mcc_crypto.h
+.\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\M1_Mcc\inc\mcc_crypto_card.h
+.\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\M1_Mcc\inc\mcc_macros.h
+.\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\M1_Mcc\inc\mcc_raw_request.h
+.\obj\lib_nfcm1picc.o: ..\..\..\..\..\libraries\M1_Mcc\inc\mcc.h

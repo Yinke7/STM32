@@ -54,7 +54,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -151,7 +152,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -230,7 +232,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -308,7 +311,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -416,7 +420,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -570,7 +575,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -665,7 +671,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -743,7 +750,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -821,7 +829,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -899,7 +908,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -1573,7 +1583,7 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443A.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype5pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
-F (..\..\..\..\..\libraries\95HF\src\lib_PICCemulator.c)(0x60540F63)(-c --cpu Cortex-M3 -D__MICROLIB -g -W -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\..\..\libraries\95HF\inc -I ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc -I ..\..\..\..\..\libraries\USB_Composite\inc -I ..\..\..\..\..\libraries\USB_MSD\inc -I ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport -I ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\pictures -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LED\inc -I ..\..\..\..\..\libraries\NDEF\inc -I ..\sys -I ..\usart -I ..\..\..\..\..\libraries\M1_Mcc\inc -I ..\M1emulation-I.\RTE\_DEMO_BOARD_ST95HF-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IE:\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_XL -DST95HF -DUSE_MB1145_BOARD-o .\obj\lib_piccemulator.o --omf_browse .\obj\lib_piccemulator.crf --depend .\obj\lib_piccemulator.d)
+F (..\..\..\..\..\libraries\95HF\src\lib_PICCemulator.c)(0x605847FA)(-c --cpu Cortex-M3 -D__MICROLIB -g -W -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\..\..\libraries\95HF\inc -I ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc -I ..\..\..\..\..\libraries\USB_Composite\inc -I ..\..\..\..\..\libraries\USB_MSD\inc -I ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport -I ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\pictures -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LED\inc -I ..\..\..\..\..\libraries\NDEF\inc -I ..\sys -I ..\usart -I ..\..\..\..\..\libraries\M1_Mcc\inc -I ..\M1emulation-I.\RTE\_DEMO_BOARD_ST95HF-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IE:\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_XL -DST95HF -DUSE_MB1145_BOARD-o .\obj\lib_piccemulator.o --omf_browse .\obj\lib_piccemulator.crf --depend .\obj\lib_piccemulator.d)
 I (..\..\..\..\..\libraries\95HF\inc\lib_PICCEmulator.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype2picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_PICC.h)(0x60540F63)
@@ -1625,7 +1635,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 F (..\..\..\..\..\libraries\95HF\src\lib_nfctype2picc.c)(0x60540F63)(-c --cpu Cortex-M3 -D__MICROLIB -g -W -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\..\..\libraries\95HF\inc -I ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc -I ..\..\..\..\..\libraries\USB_Composite\inc -I ..\..\..\..\..\libraries\USB_MSD\inc -I ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport -I ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\pictures -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LED\inc -I ..\..\..\..\..\libraries\NDEF\inc -I ..\sys -I ..\usart -I ..\..\..\..\..\libraries\M1_Mcc\inc -I ..\M1emulation-I.\RTE\_DEMO_BOARD_ST95HF-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IE:\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_XL -DST95HF -DUSE_MB1145_BOARD-o .\obj\lib_nfctype2picc.o --omf_browse .\obj\lib_nfctype2picc.crf --depend .\obj\lib_nfctype2picc.d)
@@ -1730,7 +1741,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_proprietaryP2P.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_piccemulator.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype2picc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 F (..\..\..\..\..\libraries\95HF\src\lib_cardemul.c)(0x60540F63)(-c --cpu Cortex-M3 -D__MICROLIB -g -W -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\..\..\libraries\95HF\inc -I ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc -I ..\..\..\..\..\libraries\USB_Composite\inc -I ..\..\..\..\..\libraries\USB_MSD\inc -I ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport -I ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\pictures -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LED\inc -I ..\..\..\..\..\libraries\NDEF\inc -I ..\sys -I ..\usart -I ..\..\..\..\..\libraries\M1_Mcc\inc -I ..\M1emulation-I.\RTE\_DEMO_BOARD_ST95HF-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IE:\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_XL -DST95HF -DUSE_MB1145_BOARD-o .\obj\lib_cardemul.o --omf_browse .\obj\lib_cardemul.crf --depend .\obj\lib_cardemul.d)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
@@ -1978,10 +1990,11 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_PICC.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
-F (..\..\..\..\..\libraries\95HF\src\lib_ConfigManager.c)(0x60540F63)(-c --cpu Cortex-M3 -D__MICROLIB -g -W -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\..\..\libraries\95HF\inc -I ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc -I ..\..\..\..\..\libraries\USB_Composite\inc -I ..\..\..\..\..\libraries\USB_MSD\inc -I ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport -I ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\pictures -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LED\inc -I ..\..\..\..\..\libraries\NDEF\inc -I ..\sys -I ..\usart -I ..\..\..\..\..\libraries\M1_Mcc\inc -I ..\M1emulation-I.\RTE\_DEMO_BOARD_ST95HF-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IE:\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_XL -DST95HF -DUSE_MB1145_BOARD-o .\obj\lib_configmanager.o --omf_browse .\obj\lib_configmanager.crf --depend .\obj\lib_configmanager.d)
+F (..\..\..\..\..\libraries\95HF\src\lib_ConfigManager.c)(0x60585E4F)(-c --cpu Cortex-M3 -D__MICROLIB -g -W -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\..\..\libraries\95HF\inc -I ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc -I ..\..\..\..\..\libraries\USB_Composite\inc -I ..\..\..\..\..\libraries\USB_MSD\inc -I ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport -I ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\pictures -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LED\inc -I ..\..\..\..\..\libraries\NDEF\inc -I ..\sys -I ..\usart -I ..\..\..\..\..\libraries\M1_Mcc\inc -I ..\M1emulation-I.\RTE\_DEMO_BOARD_ST95HF-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IE:\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_XL -DST95HF -DUSE_MB1145_BOARD-o .\obj\lib_configmanager.o --omf_browse .\obj\lib_configmanager.crf --depend .\obj\lib_configmanager.d)
 I (..\..\..\..\..\libraries\95HF\inc\lib_ConfigManager.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_PICCemulator.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype2picc.h)(0x60540F63)
@@ -2034,7 +2047,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -2043,7 +2057,6 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_llcp.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_snep.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_proprietaryP2P.h)(0x60540F63)
 I (..\..\..\..\..\libraries\M1_Mcc\inc\mcc.h)(0x60540F63)
-I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 F (..\..\..\..\..\libraries\NDEF\src\lib_flash_ndef.c)(0x60540F63)(-c --cpu Cortex-M3 -D__MICROLIB -g -W -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\..\..\libraries\95HF\inc -I ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc -I ..\..\..\..\..\libraries\USB_Composite\inc -I ..\..\..\..\..\libraries\USB_MSD\inc -I ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport -I ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\pictures -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LED\inc -I ..\..\..\..\..\libraries\NDEF\inc -I ..\sys -I ..\usart -I ..\..\..\..\..\libraries\M1_Mcc\inc -I ..\M1emulation-I.\RTE\_DEMO_BOARD_ST95HF-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IE:\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_XL -DST95HF -DUSE_MB1145_BOARD-o .\obj\lib_flash_ndef.o --omf_browse .\obj\lib_flash_ndef.crf --depend .\obj\lib_flash_ndef.d)
 I (..\..\..\..\..\libraries\NDEF\inc\lib_flash_ndef.h)(0x60540F63)
 I (..\inc\common.h)(0x60540F63)
@@ -2855,7 +2868,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -3064,7 +3078,7 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_PICC.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -3131,7 +3145,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -3226,7 +3241,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype4picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h)(0x60540F63)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h)(0x60540F63)
@@ -3354,8 +3370,8 @@ I (..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x60
 I (..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x60540F63)
 I (..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x60540F63)
 I (..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x60540F63)
-F (..\M1emulation\lib_nfcm1picc.c)(0x60580010)(-c --cpu Cortex-M3 -D__MICROLIB -g -W -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\..\..\libraries\95HF\inc -I ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc -I ..\..\..\..\..\libraries\USB_Composite\inc -I ..\..\..\..\..\libraries\USB_MSD\inc -I ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport -I ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\pictures -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LED\inc -I ..\..\..\..\..\libraries\NDEF\inc -I ..\sys -I ..\usart -I ..\..\..\..\..\libraries\M1_Mcc\inc -I ..\M1emulation-I.\RTE\_DEMO_BOARD_ST95HF-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IE:\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_XL -DST95HF -DUSE_MB1145_BOARD-o .\obj\lib_nfcm1picc.o --omf_browse .\obj\lib_nfcm1picc.crf --depend .\obj\lib_nfcm1picc.d)
-I (..\M1emulation\lib_nfcm1picc.h)(0x60547C16)
+F (..\M1emulation\lib_nfcm1picc.c)(0x60598F56)(-c --cpu Cortex-M3 -D__MICROLIB -g -W -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\..\..\libraries\95HF\inc -I ..\..\..\..\..\libraries\USB-FS-Device_Driver\inc -I ..\..\..\..\..\libraries\USB_Composite\inc -I ..\..\..\..\..\libraries\USB_MSD\inc -I ..\..\..\..\..\libraries\CMSIS\CM3\CoreSupport -I ..\..\..\..\..\libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I ..\..\..\..\..\libraries\STM32F10x_StdPeriph_Driver\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\inc -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LCD\pictures -I ..\..\..\..\..\Utilities\ST95HF_DEMOBOARD_MB1145B\LED\inc -I ..\..\..\..\..\libraries\NDEF\inc -I ..\sys -I ..\usart -I ..\..\..\..\..\libraries\M1_Mcc\inc -I ..\M1emulation-I.\RTE\_DEMO_BOARD_ST95HF-IE:\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IE:\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_XL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_XL -DST95HF -DUSE_MB1145_BOARD-o .\obj\lib_nfcm1picc.o --omf_browse .\obj\lib_nfcm1picc.crf --depend .\obj\lib_nfcm1picc.d)
+I (..\M1emulation\lib_nfcm1picc.h)(0x6059818B)
 I (..\..\..\..\..\libraries\95HF\inc\lib_PICC.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_95HF.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\drv_95HF.h)(0x60540F63)
@@ -3402,6 +3418,7 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso14443A.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype5pcd.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_iso15693pcd.h)(0x60540F63)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_ConfigManager.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_PICCemulator.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_nfctype2picc.h)(0x60540F63)
@@ -3415,3 +3432,8 @@ I (..\..\..\..\..\libraries\95HF\inc\lib_nfcdepinitiator.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_llcp.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_snep.h)(0x60540F63)
 I (..\..\..\..\..\libraries\95HF\inc\lib_proprietaryP2P.h)(0x60540F63)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\mcc_crypto.h)(0x60540F63)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\mcc_crypto_card.h)(0x60540F63)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\mcc_macros.h)(0x60540F63)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\mcc_raw_request.h)(0x60540F63)
+I (..\..\..\..\..\libraries\M1_Mcc\inc\mcc.h)(0x60540F63)

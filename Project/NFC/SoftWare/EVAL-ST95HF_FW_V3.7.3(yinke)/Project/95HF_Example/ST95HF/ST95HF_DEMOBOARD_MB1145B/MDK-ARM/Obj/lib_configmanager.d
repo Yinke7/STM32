@@ -55,6 +55,7 @@
 .\obj\lib_configmanager.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h
 .\obj\lib_configmanager.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h
 .\obj\lib_configmanager.o: ..\M1emulation\lib_nfcm1picc.h
+.\obj\lib_configmanager.o: ..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h
 .\obj\lib_configmanager.o: ..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h
 .\obj\lib_configmanager.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h
 .\obj\lib_configmanager.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h
@@ -63,4 +64,3 @@
 .\obj\lib_configmanager.o: ..\..\..\..\..\libraries\95HF\inc\lib_snep.h
 .\obj\lib_configmanager.o: ..\..\..\..\..\libraries\95HF\inc\lib_proprietaryP2P.h
 .\obj\lib_configmanager.o: ..\..\..\..\..\libraries\M1_Mcc\inc\mcc.h
-.\obj\lib_configmanager.o: ..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h

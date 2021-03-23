@@ -67,6 +67,7 @@
 .\obj\menu_writer.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h
 .\obj\menu_writer.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h
 .\obj\menu_writer.o: ..\M1emulation\lib_nfcm1picc.h
+.\obj\menu_writer.o: ..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h
 .\obj\menu_writer.o: ..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h
 .\obj\menu_writer.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h
 .\obj\menu_writer.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h

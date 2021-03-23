@@ -54,5 +54,6 @@
 .\obj\lib_piccemulator.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h
 .\obj\lib_piccemulator.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h
 .\obj\lib_piccemulator.o: ..\M1emulation\lib_nfcm1picc.h
+.\obj\lib_piccemulator.o: ..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h
 .\obj\lib_piccemulator.o: ..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h
 .\obj\lib_piccemulator.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h

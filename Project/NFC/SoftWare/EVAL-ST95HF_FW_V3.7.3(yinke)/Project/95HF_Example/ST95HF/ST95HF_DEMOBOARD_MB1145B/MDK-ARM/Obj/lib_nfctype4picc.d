@@ -56,4 +56,5 @@
 .\obj\lib_nfctype4picc.o: ..\..\..\..\..\libraries\95HF\inc\lib_piccemulator.h
 .\obj\lib_nfctype4picc.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfctype2picc.h
 .\obj\lib_nfctype4picc.o: ..\M1emulation\lib_nfcm1picc.h
+.\obj\lib_nfctype4picc.o: ..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h
 .\obj\lib_nfctype4picc.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h

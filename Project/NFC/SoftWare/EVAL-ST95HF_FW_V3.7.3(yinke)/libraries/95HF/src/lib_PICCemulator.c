@@ -545,7 +545,7 @@ PICCEMULATOR_STATE PICCEmul_ManagePICCEmulation ( void )//全在这函数里面
 			/* Take care of the case data has come whereas we don't have the time to enable interrupt */
 			RF_DataExpected = false;
 					//add yinke
-		printf("enter state data_exchange\r\n");
+		//printf("enter state data_exchange\r\n");
 			//end add 
 			PICCEmul_ReceiveCommand ();	 	
 

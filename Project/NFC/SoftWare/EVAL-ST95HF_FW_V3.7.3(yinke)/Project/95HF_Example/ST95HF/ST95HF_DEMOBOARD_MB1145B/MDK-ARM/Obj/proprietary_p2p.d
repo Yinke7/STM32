@@ -66,6 +66,7 @@
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h
 .\obj\proprietary_p2p.o: ..\M1emulation\lib_nfcm1picc.h
+.\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h
 .\obj\proprietary_p2p.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h

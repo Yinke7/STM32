@@ -2,6 +2,7 @@
 #define _LIB_NFCM1PICC_H_
 
 #include "lib_PICC.h"
+#include "st_errno.h"
 
 
 /*M1 Commands*/
@@ -46,9 +47,17 @@ int8_t PICCNFCM1_Read(uc8 *pData);
 int8_t PICCNFCM1_Write_Step1(uc8 *pData, uint8_t *pagenumber);
 int8_t PICCNFCM1_Write_Step2(uc8 * pData);
 int8_t PICCNFCM1_ATQA(uc8 *pData);
+int8_t AuthenticateCardStep1(const uint8_t keySelect,
+                                uint8_t block,
+                                const uint8_t *uid,
+                                uint8_t uidLength,
+                                const uint8_t *key,
+                                uint8_t *nonce);
+
+ReturnCode MifareAuthenticationCard(uint8_t authentication_key,uint8_t *key,uint8_t block);
+                                
 
 void TagEmulM1(void);
-
 void M1_NACK (void);
 void M1_ACK (void);
 

@@ -65,6 +65,7 @@
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso7816picc.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Apicc.h
 .\obj\stm32f10x_it.o: ..\M1emulation\lib_nfcm1picc.h
+.\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\M1_Mcc\inc\st_errno.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\95HF\inc\lib_cardemul.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\95HF\inc\lib_nfcdeptarget.h
 .\obj\stm32f10x_it.o: ..\..\..\..\..\libraries\95HF\inc\lib_iso14443Bpcd.h

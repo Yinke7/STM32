@@ -56,7 +56,8 @@ int8_t AuthenticateCardStep1(const uint8_t keySelect,
 
 ReturnCode MifareAuthenticationCard(uint8_t authentication_key,uint8_t *key,uint8_t block);
                                 
-
+                                
+void mccSetKeyCard( const uint8_t *key );
 void TagEmulM1(void);
 void M1_NACK (void);
 void M1_ACK (void);

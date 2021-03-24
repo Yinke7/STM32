@@ -273,7 +273,7 @@ void mccCryptoReset ( CryptoHandle_t *handle, uint8_t keepActive )
 
 void mccCryptoAuthInit ( CryptoHandle_t *handle, uint32_t uid, uint32_t nonce )
 {
-    handle->prng = nonce;
+    handle->prng = nonce; 
 	
 #ifdef mcc_DBG
 		sprintf( dataOut, "D: nonce: %x%x\n", (uint16_t)(nonce >> 16), (uint16_t)(nonce));

@@ -333,7 +333,6 @@ int8_t mccAuthenticateStep1 ( const uint8_t keySelect,
     }
     
     
-    
     mccCryptoReset( handle, 1 );
     mccSetKey( key );
     

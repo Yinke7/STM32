@@ -53,9 +53,12 @@ uint16_t u16buffer[MCC_BUFFER_SIZE];
 #define CRC_PRELOAD_VALUE                   (0x6363)
 #define CRC_LEN                             (2)
 
-#define CARD_AUTH_CMD_LEN       (4)
+#define AUTH1_CMD_LEN           (4)
+#define AUTH1_RSP_LEN           (8)
+
+#define CARD_AUTH_CMD_LEN       (AUTH1_CMD_LEN)
+#define CARD_AUTH_RSP_LEN       (AUTH1_RSP_LEN * 2)
 #define CARD_AUTH2_CMD_LEN      (4)
-#define CARD_AUTH_RSP_LEN       (8)
 
 #define UID_LEN     (4)
 
@@ -114,7 +117,6 @@ int8_t PICCNFCM1_ReplyCommand( uc8 *pData )
     
     //M1 reader cmd 60是啥？读uid命令？验证。那tm的要先验证通过才能读到uid？
     //可以先读uid,流程没对啊，他这没先读uid的嘛，以来就验证
-    //我这里printf 就是看st95皆灭接收到
     printf("reply Cmd pData :");
     for (i = 0 ;i <pData[PICC_LENGTH_OFFSET]; i++)
     {
@@ -137,6 +139,7 @@ int8_t PICCNFCM1_ReplyCommand( uc8 *pData )
         case M1_AUTHENTICATION_A:
             
 //            PICCNFCM1_AUTHENTICATION_Step1(pData);
+            blocknum = pData[PICC_DATA_OFFSET + 1];
             
             AuthenticateCardStep1(MCC_AUTH_KEY_A, blocknum, carduid, sizeof(carduid), KeyA, nonce);
             /*Code A*/
@@ -299,34 +302,6 @@ int8_t M1_Card_init(void)
     
     return PICCNFCM1_SUCCESSCODE;
 }
-//auth 1
-//发送4个字节的随机数
-int8_t PICCNFCM1_AUTHENTICATION_Step1(uc8 * pData)
-{
-    uint8_t len = 4;
-    uint8_t pDataToEmit[] = {0x12,0x34,0x56,0x78};
-    
-    pDataToEmit[len] = SEND_MASK_APPENDCRC | SEND_MASK_8BITSINFIRSTBYTE;
-        PICC_Send(len + 1 ,pDataToEmit);
-    return PICCNFCM1_SUCCESSCODE;
-}
-
-//auth 2
-//解析出reader的加密字节
-int8_t PICCNFCM1_AUTHENTICATION_Step2(uc8 * pData)
-{   
-    
-    return PICCNFCM1_SUCCESSCODE;
-}
-
-//auth 3 
-
-int8_t PICCNFCM1_AUTHENTICATION_Step3(uc8 * pData)
-{
-    
-    return PICCNFCM1_SUCCESSCODE;
-}
-
 
 //nack
 void M1_NACK (void)
@@ -343,7 +318,6 @@ void M1_ACK (void)
 	uc8 pDataToEmit[2] = {0xAA,0x14};
 	PICC_Send(2,pDataToEmit);
 }
-
 
 
 void TagEmulM1(void)
@@ -371,6 +345,7 @@ static int8_t attachParityInformation ( uint16_t *cmd, size_t length )
     return ERR_NONE;
 }
 
+//
 
 //发送四字节随机数给reader
 int8_t AuthenticateCardStep1(const uint8_t keySelect,
@@ -384,6 +359,7 @@ int8_t AuthenticateCardStep1(const uint8_t keySelect,
     uint8_t cmd[CARD_AUTH_CMD_LEN];
     uint16_t bytesReceived;
     uint8_t rsp[CARD_AUTH_RSP_LEN];
+    uint16_t rsp2crypto[AUTH1_RSP_LEN];
     uint32_t uid32;
     int i;
     
@@ -418,15 +394,22 @@ int8_t AuthenticateCardStep1(const uint8_t keySelect,
     {
         printf("[%02X] \r\n",rsp[i]);
     }
+    
+    //接收的rsp字节数不等于预期值  
     if ( bytesReceived != CARD_AUTH_RSP_LEN)
     {
-        printf( "E: received 0x%x bytes, expected %d bytes -> abort!\n", bytesReceived, CARD_AUTH_RSP_LEN);
-        printf( "I: Failed: Auth Step 1\n");
+        printf( "E: received 0x%x bytes, expected %d bytes -> abort!\r\n", bytesReceived, CARD_AUTH_RSP_LEN);
+        printf( "I: Failed: Auth Step 1\r\n");
     }
     
-    mccCryptoReset( &handle_M1, 1 );
-    mccSetKey( key );
     
+    //先重置寄存器
+    mccCryptoReset( &handle_M1, 1 );
+    //导入密钥key
+//    mccSetKey( key );
+    mccSetKeyCard(key);
+    
+    //加密第一步，使用uid和随机数
     mccCryptoAuthCardStep1 (&handle_M1, TO_UINT32_T(uid), TO_UINT32_T(nonce));
     
     printf( "I: uid: %X%X\n", (uint16_t)( uid32 >> 16 ), (uint16_t)uid32);		
@@ -434,14 +417,57 @@ int8_t AuthenticateCardStep1(const uint8_t keySelect,
     printf( "D: odd = 0x%x%x\n", (uint16_t)(handle_M1.lfsr_odd >> 16), (uint16_t)&handle_M1.lfsr_odd);
     printf( "D: evn = 0x%x%x\n", (uint16_t)(handle_M1.lfsr_even >> 16), (uint16_t)&handle_M1.lfsr_even);
     
-//    mccCryptoAuthCardStep2(&handle_M1, rsp);
+    for (i = 0; i< AUTH1_RSP_LEN; i++)
+    {
+        
+    }
+    
+    //加密第二步,解析rsp
+    mccCryptoAuthCardStep2(&handle_M1, (uint16_t *)rsp);
+    
     
     
 out:
     return rv;
 }
 
+void mccSetKeyCard( const uint8_t *key )
+{
+    uint64_t bigKey = 0;
+    unsigned int i;
 
+    //sprintf( dataOut, "mcc set key\n");
+    //HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
+
+    if ( key == 0 )
+    {
+				//sprintf( dataOut, "no key passed!\n");
+				//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
+        return;
+    }
+
+    // Copy key into an variable that is big enouth to hold the 
+    // 48bits of the key at once
+    for ( i = 0; i < 6; i++ )
+    {
+        bigKey |= ((uint64_t)key[i] << ((5-i)*8));
+    }
+
+		//sprintf( dataOut, "  orig key:");
+		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
+//    MCC_DUMP( key, 6 );
+		//sprintf( dataOut, "  trans key: ");
+		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
+		
+//		sprintf( dataOut, " %x %x %x %x\n", (uint16_t)(bigKey >> 48),
+//                              (uint16_t)(bigKey >> 32),
+//                              (uint16_t)(bigKey >> 16),
+//                              (uint16_t)(bigKey >> 0)
+//                            );
+		//HAL_UART_Transmit( &UartHandle, ( uint8_t * )dataOut, strlen( dataOut ), 500 );
+
+    mccCryptoInit( &handle_M1, bigKey );
+}
 
 int8_t mccAuthenticateCardStep2(uint8_t *nonce)
 {
@@ -457,7 +483,7 @@ int8_t mccAuthenticateCardStep2(uint8_t *nonce)
     
 //    mccCryptoAuthCardStep2(&handle_M1,rsp)
     return rv;
-    
+
 }
 
 

@@ -10,7 +10,7 @@
     <aExt>*.s*; *.src; *.a*</aExt>
     <oExt>*.obj; *.o</oExt>
     <lExt>*.lib</lExt>
-    <tExt>*.txt; *.h; *.inc</tExt>
+    <tExt>*.txt; *.h; *.inc; *.md</tExt>
     <pExt>*.plm</pExt>
     <CppX>*.cpp</CppX>
     <nMigrate>0</nMigrate>
@@ -140,7 +140,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>JL2CM3</Key>
-          <Name>-U4294967295 -O78 -S2 -ZTIFSpeedSel5000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight SW-DP") -D00(1BA01477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_1024.FLM -FS08000000 -FL0100000 -FP0($$Device:STM32F103RG$Flash\STM32F10x_1024.FLM)</Name>
+          <Name>-U20090928 -O78 -S2 -ZTIFSpeedSel5000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD20000000 -FC1000 -FN1 -FF0STM32F10x_1024.FLM -FS08000000 -FL0100000 -FP0($$Device:STM32F103RG$Flash\STM32F10x_1024.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -241,7 +241,7 @@
 
   <Group>
     <GroupName>Application/MDK-ARM</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -260,7 +260,7 @@
   </Group>
 
   <Group>
-    <GroupName>Application/User/Core</GroupName>
+    <GroupName>Drivers/STM32F1xx_HAL_Driver</GroupName>
     <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
@@ -272,8 +272,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../Core/Src/main.c</PathWithFileName>
-      <FilenameWithoutPath>main.c</FilenameWithoutPath>
+      <PathWithFileName>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f1xx_hal_gpio_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -284,8 +284,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../Core/Src/gpio.c</PathWithFileName>
-      <FilenameWithoutPath>gpio.c</FilenameWithoutPath>
+      <PathWithFileName>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f1xx_hal_spi.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -296,8 +296,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../Core/Src/spi.c</PathWithFileName>
-      <FilenameWithoutPath>spi.c</FilenameWithoutPath>
+      <PathWithFileName>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f1xx_hal.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -308,8 +308,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../Core/Src/usart.c</PathWithFileName>
-      <FilenameWithoutPath>usart.c</FilenameWithoutPath>
+      <PathWithFileName>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f1xx_hal_rcc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -320,8 +320,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../Core/Src/stm32f1xx_it.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f1xx_it.c</FilenameWithoutPath>
+      <PathWithFileName>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f1xx_hal_rcc_ex.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -332,94 +332,14 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../Core/Src/stm32f1xx_hal_msp.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f1xx_hal_msp.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-  </Group>
-
-  <Group>
-    <GroupName>Drivers/STM32F1xx_HAL_Driver</GroupName>
-    <tvExp>0</tvExp>
-    <tvExpOptDlg>0</tvExpOptDlg>
-    <cbSel>0</cbSel>
-    <RteFlg>0</RteFlg>
-    <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>8</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f1xx_hal_gpio_ex.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>9</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f1xx_hal_spi.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>10</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f1xx_hal.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>11</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f1xx_hal_rcc.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>12</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c</PathWithFileName>
-      <FilenameWithoutPath>stm32f1xx_hal_rcc_ex.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>13</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
       <PathWithFileName>../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c</PathWithFileName>
       <FilenameWithoutPath>stm32f1xx_hal_gpio.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>14</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>8</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -430,8 +350,8 @@
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>15</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>9</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -442,8 +362,8 @@
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>16</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>10</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -454,8 +374,8 @@
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>17</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>11</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -466,8 +386,8 @@
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>18</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>12</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -478,8 +398,8 @@
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>19</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>13</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -490,8 +410,8 @@
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>20</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>14</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -502,8 +422,8 @@
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>21</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>15</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -514,8 +434,8 @@
       <bShared>0</bShared>
     </File>
     <File>
-      <GroupNumber>3</GroupNumber>
-      <FileNumber>22</FileNumber>
+      <GroupNumber>2</GroupNumber>
+      <FileNumber>16</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -528,8 +448,88 @@
   </Group>
 
   <Group>
+    <GroupName>Application/User/Core</GroupName>
+    <tvExp>1</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>17</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>../Core/Src/main.c</PathWithFileName>
+      <FilenameWithoutPath>main.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>18</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>../Core/Src/gpio.c</PathWithFileName>
+      <FilenameWithoutPath>gpio.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>19</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>1</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>../Core/Src/spi.c</PathWithFileName>
+      <FilenameWithoutPath>spi.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>20</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>../Core/Src/usart.c</PathWithFileName>
+      <FilenameWithoutPath>usart.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>21</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>../Core/Src/stm32f1xx_it.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f1xx_it.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>22</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>../Core/Src/stm32f1xx_hal_msp.c</PathWithFileName>
+      <FilenameWithoutPath>stm32f1xx_hal_msp.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+
+  <Group>
     <GroupName>Drivers/CMSIS</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -542,6 +542,98 @@
       <bDave2>0</bDave2>
       <PathWithFileName>../Core/Src/system_stm32f1xx.c</PathWithFileName>
       <FilenameWithoutPath>system_stm32f1xx.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+
+  <Group>
+    <GroupName>mcc</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>24</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\mcc_src\mcc.c</PathWithFileName>
+      <FilenameWithoutPath>mcc.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>25</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\mcc_src\mcc_crypto.c</PathWithFileName>
+      <FilenameWithoutPath>mcc_crypto.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>26</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\mcc_src\mcc_crypto_card.c</PathWithFileName>
+      <FilenameWithoutPath>mcc_crypto_card.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>27</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\mcc_src\mcc_crypto_reader.c</PathWithFileName>
+      <FilenameWithoutPath>mcc_crypto_reader.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>28</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\mcc_src\mcc_macros.c</PathWithFileName>
+      <FilenameWithoutPath>mcc_macros.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>29</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\mcc_src\mcc_raw_request.c</PathWithFileName>
+      <FilenameWithoutPath>mcc_raw_request.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>30</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\mcc_src\rfal_crc.c</PathWithFileName>
+      <FilenameWithoutPath>rfal_crc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

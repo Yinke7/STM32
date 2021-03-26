@@ -29,6 +29,7 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "../../st25r3916_bsp/Inc/platform.h"
 #include "../../st25r3916_bsp/Inc/st_errno.h"
+#include "rfal_nfc.h"
 
 /** @addtogroup X-CUBE-NFC6_Applications
  *  @{
@@ -53,6 +54,7 @@ extern "C" {
  */
 bool demoIni( void );
 extern void demoCycle(void);
+void demoCE( rfalNfcDevice *nfcDev );
 
 /**
   * @}

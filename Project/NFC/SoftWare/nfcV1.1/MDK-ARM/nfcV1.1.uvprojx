@@ -16,7 +16,7 @@
         <TargetCommonOption>
           <Device>STM32F103RG</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F1xx_DFP.2.2.0</PackID>
+          <PackID>Keil.STM32F1xx_DFP.2.3.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000-0x20017FFF) IROM(0x8000000-0x80FFFFF) CLOCK(8000000) CPUTYPE("Cortex-M3") TZ</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xG,ST95HF</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;               ../Drivers/STM32F1xx_HAL_Driver/Inc;               ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;               ../Drivers/CMSIS/Device/ST/STM32F1xx/Include;               ../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Application/inc;../mcc_src;../Inlcude;../lib/common/inc;../lib/lib_ndef/inc;../lib/lib_pcd/inc;../Component</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -385,41 +385,6 @@
               <FileName>startup_stm32f103xg.s</FileName>
               <FileType>2</FileType>
               <FilePath>startup_stm32f103xg.s</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Application/User/Core</GroupName>
-          <Files>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/main.c</FilePath>
-            </File>
-            <File>
-              <FileName>gpio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/gpio.c</FilePath>
-            </File>
-            <File>
-              <FileName>spi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/spi.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f1xx_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/stm32f1xx_it.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f1xx_hal_msp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/stm32f1xx_hal_msp.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -504,12 +469,87 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Application/User/Core</GroupName>
+          <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/main.c</FilePath>
+            </File>
+            <File>
+              <FileName>gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f1xx_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/stm32f1xx_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f1xx_hal_msp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/stm32f1xx_hal_msp.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>Drivers/CMSIS</GroupName>
           <Files>
             <File>
               <FileName>system_stm32f1xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/system_stm32f1xx.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>mcc</GroupName>
+          <Files>
+            <File>
+              <FileName>mcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcc_src\mcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>mcc_crypto.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcc_src\mcc_crypto.c</FilePath>
+            </File>
+            <File>
+              <FileName>mcc_crypto_card.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcc_src\mcc_crypto_card.c</FilePath>
+            </File>
+            <File>
+              <FileName>mcc_crypto_reader.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcc_src\mcc_crypto_reader.c</FilePath>
+            </File>
+            <File>
+              <FileName>mcc_macros.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcc_src\mcc_macros.c</FilePath>
+            </File>
+            <File>
+              <FileName>mcc_raw_request.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcc_src\mcc_raw_request.c</FilePath>
+            </File>
+            <File>
+              <FileName>rfal_crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcc_src\rfal_crc.c</FilePath>
             </File>
           </Files>
         </Group>
